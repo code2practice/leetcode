@@ -1,7 +1,8 @@
 '''
 32. Longest Valid Parentheses
 Hard
-Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses substring.
+Given a string containing just the characters '(' and ')', return the length of the longest valid 
+(well-formed) parentheses substring.
 Example 1:
 Input: s = "(()"
 Output: 2
@@ -21,7 +22,8 @@ s[i] is '(', or ')'.
 Solution:
 
 We can use a stack to find the longest valid parentheses.
-We keep storing the indices for the invalid parentheses in the string. Every time we find a valid parentheses substring, we compare the 
+We keep storing the indices for the invalid parentheses in the string. Every time we find a valid parentheses 
+substring, we compare the 
 length of current index - last invalid index to find the longest
 Time Complexity : O(N), for iterating over the string s.
 Space Complexity : O(N), for maintaining the stack.

@@ -36,6 +36,7 @@ recursive case: word1[0] != word2[0] => recurse by inserting, deleting, or repla
 '''
 # Brute Force Solution(TLE)
 class Solution:
+   @cache
    def minDistance(self, word1, word2):
        """Naive recursive solution"""
        if not word1 and not word2:
@@ -46,39 +47,10 @@ class Solution:
            return len(word1)
        if word1[0] == word2[0]:
            return self.minDistance(word1[1:], word2[1:])
-       insert = 1 + self.minDistance(word1, word2[1:])
-       delete = 1 + self.minDistance(word1[1:], word2)
-       replace = 1 + self.minDistance(word1[1:], word2[1:])
-       return min(insert, replace, delete)
-
-# Memoized Solution(Accepted):
-class Solution:
-   def minDistance2(self, word1, word2, i, j, memo):
-       """Memoized solution"""
-       if i == len(word1) and j == len(word2):
-           memo[(i, j)] = 0
-           return 0
-       if i == len(word1):
-           memo[(i, j)] = len(word2) - j
-           return len(word2) - j
-       if j == len(word2):
-           memo[(i, j)] = len(word1) - i
-           return len(word1) - i
-       if (i, j) not in memo:
-           if word1[i] == word2[j]:
-               ans = self.minDistance2(word1, word2, i + 1, j + 1, memo)
-           else:
-               insert = 1 + self.minDistance2(word1, word2, i, j + 1, memo)
-               delete = 1 + self.minDistance2(word1, word2, i + 1, j, memo)
-               replace = 1 + self.minDistance2(word1, word2, i + 1, j + 1, memo)
-               ans = min(insert, delete, replace)
-           memo[(i, j)] = ans
-       return memo[(i, j)]
-   def minDistance(self, word1, word2):
-       """Memoized solution"""
-       memo = defaultdict(int)
-       self.minDistance2(word1, word2, 0, 0, memo)
-       return memo[(0,0)]
+       insert =  self.minDistance(word1, word2[1:])
+       delete =  self.minDistance(word1[1:], word2)
+       replace = self.minDistance(word1[1:], word2[1:])
+       return 1 + min(insert, replace, delete)
 
 # DP Solution(Accepted)
 '''

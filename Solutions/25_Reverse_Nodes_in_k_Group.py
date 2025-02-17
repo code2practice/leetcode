@@ -39,6 +39,6 @@ class Solution:
         
 		
         # After reverse, we know that `head` is the tail of the group.
-		    # And `curr` is the next pointer in original linked list order
+	# And `curr` is the next pointer in original linked list order
         head.next = self.reverseKGroup(curr, k)
         return prev

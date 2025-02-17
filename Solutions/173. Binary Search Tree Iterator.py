@@ -47,14 +47,11 @@ class BSTIterator:
        if not self.hasNext():
            return -1
        top = self.s.pop()
-       ret = top.val
        root = top.right
-       if not root:
-           return ret
        while root:
            self.s.append(root)
            root = root.left
-       return ret
+       return top.val
    def hasNext(self) -> bool:
        return self.s != []
 '''

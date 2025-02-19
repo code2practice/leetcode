@@ -23,14 +23,17 @@ Output: [1]
 
 class Solution:
    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-       q = deque()
-       ans = []
-       for i, v in enumerate(nums):
-           if q and i - k + 1 > q[0]:
-               q.popleft() # remove index if out of window left
-           while q and nums[q[-1]] <= v:
-               q.pop()
-           q.append(i)
-           if i >= k - 1:
-               ans.append(nums[q[0]])
-       return ans
+        q = deque()
+        ans = []
+        for i, v in enumerate(nums):
+            # Make sure the queue stores only index in the range up to
+            # q[0] ----> q[0] + k and remove index if out of window left
+            if q and i - k + 1 > q[0]:
+               q.popleft()
+            # Pop from right all indices with value less than current index   
+            while q and nums[q[-1]] <= v:
+                q.pop()
+            q.append(i)
+            if i >= k - 1:
+                ans.append(nums[q[0]])
+        return ans

@@ -1,0 +1,42 @@
+'''
+243. Shortest Word Distance
+Given an array of strings wordsDict and two different strings that already exist in the array word1 and word2, return the shortest distance between these two words in the list.
+ 
+Example 1:
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "coding", word2 = "practice"
+Output: 3
+Example 2:
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "makes", word2 = "coding"
+Output: 1
+ 
+Constraints:
+2 <= wordsDict.length <= 3 * 104
+1 <= wordsDict[i].length <= 10
+wordsDict[i] consists of lowercase English letters.
+word1 and word2 are in wordsDict.
+word1 != word2
+It is enough to traverse the array once, initialize the two variables p1, p2 to -1, and then traverse the array.
+When word 1 is encountered, its position is stored in p1, and if word 2 is encountered, its position is stored in p2. If p1, p2 are not -1 anymore, then update the result.
+'''
+
+class Solution:
+   def shortestDistance(self, wordsDict: List[str], word1: str, word2: str) -> int:
+       # Initialize indices for the positions of word1 and word2
+       index1 = index2 = -1
+       # Initialize the answer as infinite to ensure any actual distance found is smaller
+       shortest_distance = float('inf')
+    
+       # Loop through the words in the dictionary to find the closest distance
+       for index, word in enumerate(wordsDict):
+           if word == word1:
+               index1 = index  # Update the position of word1
+           if word == word2:
+               index2 = index  # Update the position of word2
+            
+           # If both words have been found at least once, calculate the distance
+           if index1 != -1 and index2 != -1:
+               distance = abs(index1 - index2)  # Compute absolute difference
+               shortest_distance = min(shortest_distance, distance)  # Update the shortest distance
+    
+       # Return the shortest distance found between the two words
+       return shortest_distance

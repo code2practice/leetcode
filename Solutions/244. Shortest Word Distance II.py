@@ -1,0 +1,76 @@
+'''
+244. Shortest Word Distance II
+Design a data structure that will be initialized with a string array, and then it should answer queries of the shortest distance between two different strings from the array.
+Implement the WordDistance class:
+WordDistance(String[] wordsDict) initializes the object with the strings array wordsDict.
+int shortest(String word1, String word2) returns the shortest distance between word1 and word2 in the array wordsDict.
+ 
+Example 1:
+Input
+["WordDistance", "shortest", "shortest"]
+[[["practice", "makes", "perfect", "coding", "makes"]], ["coding", "practice"], ["makes", "coding"]]
+Output
+[null, 3, 1]
+Explanation
+WordDistance wordDistance = new WordDistance(["practice", "makes", "perfect", "coding", "makes"]);
+wordDistance.shortest("coding", "practice"); // return 3
+wordDistance.shortest("makes", "coding");    // return 1
+ 
+Constraints:
+1 <= wordsDict.length <= 3 * 104
+1 <= wordsDict[i].length <= 10
+wordsDict[i] consists of lowercase English letters.
+word1 and word2 are in wordsDict.
+word1 != word2
+At most 5000 calls will be made to shortest.
+'''
+
+'''
+Constructor: __init__
+A dictionary self.d is initialized using defaultdict(list) from the collections module. This allows for appending indices to lists for each word without needing to check if the key exists.
+The constructor iterates over wordsDict, enumerating each word w along with its index i. Each word’s index is appended to its corresponding list in self.d. This setup facilitates quick access to all positions where each word appears in the list, crucial for efficiently calculating the distance between any two words later on.
+Method: shortest
+Given two words, word1 and word2, the method retrieves their respective index lists (a and b) from self.d.
+It initializes ans with inf (infinity) to ensure that any actual distance found will be smaller than this initial value.
+Two pointers, i and j, are initialized to iterate over the index lists a and b, respectively.
+The method enters a loop that continues until either i or j has traversed its entire list. Inside the loop:
+The absolute difference between the current indices a[i] and b[j] is calculated and used to update ans if it’s smaller than the current value of ans. This step finds the minimum distance between the current pair of indices.
+The pointer (i or j) corresponding to the smaller index is incremented. If a[i] is less than or equal to b[j], i is incremented; otherwise, j is incremented. This approach ensures that the loop efficiently finds the minimum distance by always moving the pointer that points to the smaller index, thereby reducing the difference in the next iteration.
+Once the loop completes, ans holds the minimum distance found between any pair of indices from a and b.
+Example
+Consider wordsDict = ["practice", "makes", "perfect", "coding", "makes"], and we want to find the shortest distance between "coding" and "makes":
+self.d["coding"] = [3], and self.d["makes"] = [1, 4].
+The shortest distance calculation checks the differences abs(3 - 1) = 2 and abs(3 - 4) = 1.
+The minimum distance is 1, so ans = 1.
+This class provides an efficient way to find the shortest distance between two words in a list, optimizing for cases where multiple queries are made against the same list by preprocessing the list into a more accessible form.
+'''
+
+class WordDistance:
+   def __init__(self, words_dict: List[str]):
+       # Initializing a default dictionary to store the indices of each word
+       self.indices_map = defaultdict(list)
+    
+       # Loop through the list of words and populate the indices map
+       for index, word in enumerate(words_dict):
+           self.indices_map[word].append(index)
+   def shortest(self, word1: str, word2: str) -> int:
+       # Retrieve the list of indices for the two words
+       indices_word1, indices_word2 = self.indices_map[word1], self.indices_map[word2]
+       # Initialize the minimum distance to infinity
+       min_distance = inf
+       # Initialize two pointers for the lists of indices
+       i, j = 0, 0
+    
+       # Iterate until we reach the end of one of the lists of indices
+       while i < len(indices_word1) and j < len(indices_word2):
+           # Update the minimum distance as the smaller between the previous
+           # minimum distance and the current distance between word1 and word2
+           min_distance = min(min_distance, abs(indices_word1[i] - indices_word2[j]))
+           # Move the pointer of the list which currently has a smaller index forward
+           if indices_word1[i] <= indices_word2[j]:
+               i += 1
+           else:
+               j += 1
+    
+       # Return the minimum distance found
+       return min_distance

@@ -14,8 +14,8 @@ Output: 4
 '''
 
 '''
-1. First, we need to choose so-calledpivotand partition element ofnumsinto 3 parts: elements, smaller than pivot, equal to pivot and bigger than pivot. (sometimes two groups enough: less and more or equal)
-2. Next step is to see how many elements we have in each group: ifk <= L, whereLis size ofleft, than we can be sure that we need to look into the left part. Ifk > L + M, whereMis size ofmidgroup, than we can be sure, that we need to look into the right part. Finally, if none of these two condition holds, we need to look in themidpart, but because all elements there are equal, we can immedietly returnmid[0].
+1. First, we need to choose so-calledpivotand partition element of nums into 3 parts: elements, smaller than pivot, equal to pivot and bigger than pivot. (sometimes two groups enough: less and more or equal)
+2. Next step is to see how many elements we have in each group: ifk <= L, whereLis size of left, than we can be sure that we need to look into the left part. Ifk > L + M, whereMis size ofmidgroup, than we can be sure, that we need to look into the right part. Finally, if none of these two condition holds, we need to look in themidpart, but because all elements there are equal, we can immedietly returnmid[0].
 
 Complexity: time complexity isO(n)in average, because on each time we reduce searching range approximately2times. This is not strict proof, for more details you can do some googling. Space complexity isO(n)as well.
 '''

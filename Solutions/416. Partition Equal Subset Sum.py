@@ -14,9 +14,9 @@ Explanation: The array cannot be partitioned into equal sum subsets.
 Constraints:
 1 <= nums.length <= 200
 1 <= nums[i] <= 100
-Using the 0/1 Knapsack concept. Pay attention the inner loop is decreasing in order to avoid repetition.
 '''
 
+# Using the 0/1 Knapsack concept. Pay attention the inner loop is decreasing in order to avoid repetition.
 class Solution:
    def canPartition(self, nums: List[int]) -> bool:
        sum = 0

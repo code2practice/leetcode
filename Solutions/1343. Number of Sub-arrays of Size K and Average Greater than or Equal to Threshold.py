@@ -26,9 +26,11 @@ class Solution:
         for i in a:
             prefixSum.append(i + prefixSum[-1])
         count = 0
-        for i in range(len(a) - k + 1):
-            if prefixSum[i + k] - prefixSum[i] >= k * threshold:
+        i = 0
+        while i + k <= len(a):
+            if prefixSum[i+k] - prefixSum[i] >= k * threshold:
                 count += 1
+            i += 1
         return count
 
 # Using Sliding Window

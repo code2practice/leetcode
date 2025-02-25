@@ -151,10 +151,13 @@
 [785.Is Graph Bipartite?]()
 [833.Find And Replace in String]()
 [895.Maximum Frequency Stack]()
-[946.Validate Stack Sequences]()
+[946.Validate Stack Sequences](https://github.com/code2practice/leetcode/blob/main/Solutions/946.%20Validate%20Stack%20Sequences.py)
+
 [953.Verifying an Alien Dictionary]()
-[973.K Closest Points to Origin]()
-[994.Rotting Oranges]()
+[973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/973.%20K%20Closest%20Points%20to%20Origin.py)
+
+[994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.py)
+
 [1017.Convert to Base -2]()
 [1041.Robot Bounded In Circle]()
 [1046.Last Stone Weight]()

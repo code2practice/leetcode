@@ -18,6 +18,7 @@ Constraints:
 -10 <= nums[i] <= 10
 All the integers of nums are unique.
 '''
+
 class Solution:
    def permute(self, nums: List[int]) -> List[List[int]]:
        def util(nums):
@@ -26,10 +27,7 @@ class Solution:
            if len(nums) == 1:
                return [[nums[0]]]
            res = []
-           temp = util(nums[1:])
-           for t in temp:
-               res.append([nums[0]] + t)
-           for i in range(1, len(nums)):
+           for i in range(len(nums)):
                nums[0], nums[i] = nums[i], nums[0]
                for t in self.permute(nums[1:]):
                    res.append([nums[0]] + t)

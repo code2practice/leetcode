@@ -19,6 +19,9 @@ costs.length == n
 costs[i].length == 3
 1 <= n <= 100
 1 <= costs[i][j] <= 20
+'''
+
+'''
 Explanation of the Solution:
 Initialization: Three variables a, b, and c are initialized to 0. These variables will hold the cumulative minimum costs of painting up to the current house, ending with each of the three colors respectively.
 

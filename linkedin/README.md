@@ -2,23 +2,23 @@
 
 [4.Median of Two Sorted Arrays]()
 
-[5.Longest Palindromic Substring]()
+[5.Longest Palindromic Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/5.%20Longest%20Palindromic%20Substring.py)
 
 [8.String to Integer (atoi)]()
 
 [12.Integer to Roman]()
 
-[15.3Sum]()
+[15.3Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/15.%203Sum.py)
 
-[17.Letter Combinations of a Phone Number]()
+[17.Letter Combinations of a Phone Number](https://github.com/code2practice/leetcode/blob/main/Solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.py)
 
-[18.4Sum]()
+[18.4Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/18.%204Sum.py)
 
 [20.Valid Parentheses]()
 
 [21.Merge Two Sorted Lists]()
 
-[23.Merge k Sorted Lists]()
+[23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/23.%20Merge%20k%20Sorted%20Lists.py)
 
 [26.Remove Duplicates from Sorted Array]()
 
@@ -28,33 +28,33 @@
 
 [35.Search Insert Position]()
 
-[39.Combination Sum]()
+[39.Combination Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/39.Combination%20Sum.py)
 
-[46.Permutations]()
+[46.Permutations](https://github.com/code2practice/leetcode/blob/main/Solutions/46.%20Permutations.py)
 
-[47.Permutations II]()
+[47.Permutations II](https://github.com/code2practice/leetcode/blob/main/Solutions/47.%20Permutations%20%20II.py)
 
-[50.Pow(x, n)]()
+[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/50.%20Pow.py)
 
-[53.Maximum Subarray]()
+[53.Maximum Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/53.%20Maximum%20Subarray.py)
 
-[56.Merge Intervals]()
+[56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/56.%20Merge%20Intervals.py)
 
-[57.Insert Interval]()
+[57.Insert Interval](https://github.com/code2practice/leetcode/blob/main/Solutions/57.%20Insert%20Interval.py)
 
-[61.Rotate List]()
+[61.Rotate List](https://github.com/code2practice/leetcode/blob/main/Solutions/61.%20Rotate%20List.py)
 
-[65.Valid Number]()
+[65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/65.%20Valid%20Number.py)
 
-[68.Text Justification]()
+[68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/68.%20Text%20Justification.py)
 
 [69.Sqrt(x)]()
 
 [72.Edit Distance]()
 
-[76.Minimum Window Substring]()
+[76.Minimum Window Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/76.%20Minimum%20Window%20Substring.py)
 
-[81.Search in Rotated Sorted Array II]()
+[81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/81.%20Search%20in%20Rotated%20Sorted%20Array.py)
 
 [88.Merge Sorted Array]()
 
@@ -76,7 +76,7 @@
 
 [146.LRU Cache](https://github.com/code2practice/leetcode/blob/main/Solutions/146.%20LRU%20Cache.py)
 
-[149.Max Points on a Line]()
+[149.Max Points on a Line](https://github.com/code2practice/leetcode/blob/main/Solutions/149.%20Max%20Points%20on%20a%20Line.py)
 
 [150.Evaluate Reverse Polish Notation](https://github.com/code2practice/leetcode/blob/main/Solutions/150.%20Evaluate%20Reverse%20Polish%20Notation.py)
 

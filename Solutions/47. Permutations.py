@@ -17,26 +17,24 @@ Constraints:
 -10 <= nums[i] <= 10
 '''
 class Solution:
-   def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-       def util(nums):
-           if not nums:
-               return []
-           if len(nums) == 1:
-               return [[nums[0]]]
-           res = []
-           temp = util(nums[1:])
-           for t in temp:
-               res.append([nums[0]] + t)
-           i = 1
-           while i < len(nums):
-               if nums[i] == nums[i-1]:
-                   i += 1
-                   continue
-               nums[i], nums[0] = nums[0], nums[i]
-               for t in self.permuteUnique(nums[1:]):
-                   res.append([nums[0]] + t)
-               nums[i], nums[0] = nums[0], nums[i]
-               i += 1
-           return res
-       nums.sort()
-       return util(nums)
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        def util(nums):
+            if not nums:
+                return []
+            if len(nums) == 1:
+                return [[nums[0]]]
+            res = []
+            i = 0
+            while i < len(nums):
+                if i > 0 and nums[i] == nums[i - 1]:
+                    i += 1
+                    continue
+                nums[i], nums[0] = nums[0], nums[i]
+                for t in self.permuteUnique(nums[1:]):
+                    res.append([nums[0]] + t)
+                nums[i], nums[0] = nums[0], nums[i]
+                i += 1
+            return res
+
+        nums.sort()
+        return util(nums)

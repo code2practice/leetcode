@@ -324,7 +324,7 @@
 
 [2344.Minimum Deletions to Make Array Divisible]()
 
-[2472.Maximum Number of Non-overlapping Palindrome Substrings]()
+[2472.Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.py)
 
 [2431.Maximize Total Tastiness of Purchased Fruits]()
 

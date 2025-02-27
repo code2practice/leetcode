@@ -1,0 +1,108 @@
+'''
+1696. Jump Game VI
+Medium
+You are given a 0-indexed integer array nums and an integer k.
+You are initially standing at index 0. In one move, you can jump at most k steps forward without going outside the boundaries of the array. That is, you can jump from index i to any index in the range [i + 1, min(n - 1, i + k)] inclusive.
+You want to reach the last index of the array (index n - 1). Your score is the sum of all nums[j] for each index j you visited in the array.
+Return the maximum score you can get.
+ 
+Example 1:
+Input: nums = [1,-1,-2,4,-7,3], k = 2
+Output: 7
+Explanation: You can choose your jumps forming the subsequence [1,-1,4,3] (underlined above). The sum is 7.
+Example 2:
+Input: nums = [10,-5,-2,4,0,3], k = 3
+Output: 17
+Explanation: You can choose your jumps forming the subsequence [10,4,3] (underlined above). The sum is 17.
+Example 3:
+Input: nums = [1,-5,-20,4,-1,3,-6,-3], k = 2
+Output: 0
+ 
+Constraints:
+1 <= nums.length, k <= 105
+-104 <= nums[i] <= 104
+'''
+
+'''
+Approach 1: Naive Dynamic Programming (Time Limit Exceeded)
+Let dp[i] is the maximum score we can get when ending at index i.
+Base case: dp[0] = nums[0], we start at index 0
+State transfer equation:
+If we have already computed dp[0], dp[1], ..., dp[i-1], how can we compute dp[i]?
+Since we can jump at most k steps, to arrive index i, we must jump from one of indices [i-k, i-k+1, ..., i-1].
+So dp[i] = max(dp[i-k], dp[i-k+1], ..., dp[i-1]) + nums[i].
+Finally, dp[n-1] is the maximum score when reaching the last index of the array, index n-1.
+
+Complexity:
+Time: O(N * K), where N <= 10^5 is number of elements in nums, K <= 10^5 is the maximum steps that we can jump.
+Space: O(N)
+'''
+class Solution:
+    def maxResult(self, nums: List[int], k: int) -> int:
+        n = len(nums)
+        dp = [-math.inf] * n
+        dp[0] = nums[0]
+        for i in range(1, n):
+            for j in range(max(i - k, 0), i):
+                dp[i] = max(dp[i], dp[j] + nums[i])
+        return dp[n - 1]
+
+
+
+
+# Reuse nums to eliminate dp array (Space Optimized)
+class Solution:
+   def maxResult(self, nums: List[int], k: int) -> int:
+       n = len(nums)
+       for i in range(1, n):
+           best = -math.inf
+           for j in range(max(i-k, 0), i):
+               best = max(best, nums[j] + nums[i])
+           nums[i] = best
+       return nums[n-1]
+'''
+Complexity:
+Time: O(N * K), where N <= 10^5 is number of elements in nums, K <= 10^5 is the maximum steps that we can jump.
+Space: O(1)
+'''
+
+'''
+✔️Approach 2: Dynamic Programming + Decreasing Deque (Accepted)
+We need a way to get a maximum value in range [dp[i-k], dp[i-k+1], ..., dp[i-1]] better than O(K) to avoid Time Limit Exceeded.
+This is the same with problem 239. Maximum in Sliding Window Size K problem.
+There are total 3 ways:
+By using MaxHeap, it costs O(logN)
+By using TreeMap, it costs O(logK)
+By using Decreasing Deque, it costs O(1)
+To make this post short, I choose to use Decreasing Deque which is O(1), for other ways please reference to this 239. Maximum in Sliding Window Size K post.
+In Decreasing Deque approach:
+We used a deque to store indices of nums elements, elements is in decreasing order, the front is the maximum element.
+When adding a new number nums[i], we eliminate elements which is less or equal to nums[i] in deque, which will never be chosen in the future.
+Push index of current nums[i] to back of the deque.
+If the last element in deque is out of range K then remove it.
+
+Complexity:
+Time: O(N), where N <= 10^5 is number of elements in nums, K <= 10^5 is the maximum steps that we can jump.
+Space: O(K)
+'''
+
+class Solution:
+    def maxResult(self, nums: List[int], k: int) -> int:
+        n = len(nums)
+        dq = deque(
+            [0]
+        )  # store index of `nums` elements, elements is in decreasing order, the front is the maximum element.
+        for i in range(1, n):
+            # nums[i] = max(nums[i-k], nums[i-k+1],.., nums[i-1]) + nums[i] = nums[dq.front()] + nums[i]
+            nums[i] = nums[dq[0]] + nums[i]
+            # Add a nums[i] to the deq
+            while dq and nums[dq[-1]] <= nums[i]:
+                dq.pop()  # Eliminate elements less or equal to nums[i], which will never be chosen in the future
+            dq.append(i)
+            # Remove if the last element is out of window size k
+            if i - dq[0] >= k:
+                dq.popleft()
+        return nums[n - 1]
+
+
+=======================================================================

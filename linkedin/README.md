@@ -298,7 +298,7 @@
 
 [1423.Maximum Points You Can Obtain from Cards]()
 
-[1541.Minimum Insertions to Balance a Parentheses String]()
+[1541.Minimum Insertions to Balance a Parentheses String](https://github.com/code2practice/leetcode/blob/main/Solutions/1541.%20Minimum%20Insertions%20to%20Balance%20a%20Parentheses%20String.py)
 
 [1588.Sum of All Odd Length Subarrays]()
 
@@ -310,7 +310,7 @@
 
 [1650.Lowest Common Ancestor of a Binary Tree III]()
 
-[1696.Jump Game VI]()
+[1696.Jump Game VI](https://github.com/code2practice/leetcode/blob/main/Solutions/1696.%20Jump%20Game%20VI.py)
 
 [1710.Maximum Units on a Truck]()
 

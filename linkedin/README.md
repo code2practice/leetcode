@@ -318,7 +318,7 @@
 
 [2174.Remove All Ones With Row and Column Flips II]()
 
-[2196.Create Binary Tree From Descriptions]()
+[2196.Create Binary Tree From Descriptions](https://github.com/code2practice/leetcode/blob/main/Solutions/2196.%20Create%20Binary%20Tree%20From%20Descriptions.py)
 
 [2276.Count Integers in Intervals]()
 

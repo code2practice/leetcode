@@ -204,6 +204,8 @@
 
 [528.Random Pick with Weight]()
 
+[559.Maximum Depth of N-ary Tree]()
+
 [560.Subarray Sum Equals K]()
 
 [642.Design Search Autocomplete System]()
@@ -230,33 +232,32 @@
 
 [695.Max Area of Island]()
 
-[730.Count Different Palindromic Subsequences]()
-
-[698.Partition to K Equal Sum Subsets]()
-
-[744.Find Smallest Letter Greater Than Target]()
+[698.Partition to K Equal Sum Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.py)
 
 [701.Insert into a Binary Search Tree]()
 
-[559.Maximum Depth of N-ary Tree]()
+[703.Kth Largest Element in a Stream]()
 
 [713.Subarray Product Less Than K]()
 
-[703.Kth Largest Element in a Stream]()
+[721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/721.%20Accounts%20Merge.py)
 
-[721.Accounts Merge]()
+[730.Count Different Palindromic Subsequences]()
+
+[744.Find Smallest Letter Greater Than Target]()
+
 
 [796.Rotate String]()
 
 [706.Design HashMap]()
 
-[740.Delete and Earn]()
+[740.Delete and Earn](https://github.com/code2practice/leetcode/blob/main/Solutions/740.%20Delete%20and%20Earn.py)
 
-[785.Is Graph Bipartite?]()
+[785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/785.%20Is%20Graph%20Bipartite%3F.py)
 
 [833.Find And Replace in String]()
 
-[895.Maximum Frequency Stack]()
+[895.Maximum Frequency Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/895.%20Maximum%20Frequency%20Stack.py)
 
 [946.Validate Stack Sequences](https://github.com/code2practice/leetcode/blob/main/Solutions/946.%20Validate%20Stack%20Sequences.py)
 
@@ -276,23 +277,24 @@
 
 [1117.Building H2O]()
 
-[1129.Shortest Path with Alternating Colors]()
-
-[1149.Article Views II]()
-
 [1127.User Purchase Platform]()
 
-[1188.Design Bounded Blocking Queue]()
-
-[1197.Minimum Knight Moves]()
+[1129.Shortest Path with Alternating Colors](https://github.com/code2practice/leetcode/blob/main/Solutions/1129.%20Shortest%20Path%20with%20Alternating%20Colors.py)
 
 [1148.Article Views I]()
 
-[1328.Break a Palindrome]()
+[1149.Article Views II]()
 
-[1235.Maximum Profit in Job Scheduling]()
+[1188.Design Bounded Blocking Queue]()
+
+[1197.Minimum Knight Moves](https://github.com/code2practice/leetcode/blob/main/Solutions/1197.%20Minimum%20Knight%20Moves.py)
+
+
+[1235.Maximum Profit in Job Scheduling](https://github.com/code2practice/leetcode/blob/main/Solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling.py)
 
 [1312.Minimum Insertion Steps to Make a String Palindrome]()
+
+[1328.Break a Palindrome]()
 
 [1343.Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold]()
 

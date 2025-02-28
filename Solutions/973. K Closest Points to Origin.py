@@ -37,6 +37,21 @@ class Solution:
             ans.append(q.get()[1])
         return ans
 
+'''
+Randomized QuickSelect
+This solution is a modifed version of Quick-sort meant to be used when we need to find k(or kth) smallest(or largest) elements (based on some comparator) but not in any particular order. Most of the partition logic used in this algorithm remains the same as in quicksort but we just modify the recursive part of quicksort to suit our use case.
+
+Each time, we choose a pivot and partition the array around that pivot using a comparator. In this case, we will choose a randomized pivot (the choice of pivot majorly affects the performace of algorithm and we need to try to choose a pivot that partitions the range roughly equally for best result. Without any knowledge of the way that elements occur in array, it's best to choose randomized pivot each time to avoid worst case) and for comparator, we will use the squared euclidean distance.
+
+Initially we start with whole range of array [L, R] = [0, size(P)-1]. After each partition, the partition function will return the pivot index (denoted as p below) which is basically the element which separates all the elements <= than it to left side and all elements > than it to the right side (not in particular order). We have:
+
+If p < k, then we now have p elements which are closest to origin (although they aren't sorted in any particular order) but we still need some more elements to get k points in total. Thus, we iterate again and partition the array from indices [p+1, R] till we find k elements (by getting pivot at kth index)
+If p > k, then we now have more than k elements with us that are closest to origin. But we are sure that any element to the right of p wont be ever in our answer. So we iterate again and partition just the range [L, p-1] till we find k elements
+If p == k, we now have exactly k elements with us which are closest to origin. Thus, we return the 1st k elements of array
+
+Time Complexity : O(N), at each partition, we are eliminating one end and re-partitioning the other end till we get pivot at kth index. On average, the partitions roughly eliminate half of remaining elements each time thus leading to N + N/2 + N/4 + ... + 1 = O(2N) iterations. However, in the worst case, there's still a chance (although very low) that we choose the worst pivot at each partition and this leads to N + N-1 + N-2 + ... + 1 = N2 total iterations leading to time complexity of O(N2)
+Space Complexity : O(1), only constant extra space is being used
+'''
 # Using quick select
 class Solution:
    def kClosest(self, P, k):

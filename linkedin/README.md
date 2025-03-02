@@ -1,6 +1,6 @@
 [1.Two Sum]()
 
-[4.Median of Two Sorted Arrays](https://github.com/code2practice/leetcode/blob/main/Solutions/4.%20Median%20of%20Two%20Sorted%20Arrays.py)
+[4.Median of Two Sorted Arrays](https://github.com/code2practice/leetcode/blob/main/Solutions/4.%20Median%20of%20Two%20Sorted%20Arrays.md)
 
 [5.Longest Palindromic Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/5.%20Longest%20Palindromic%20Substring.py)
 

@@ -4,7 +4,7 @@ Given A and B two interval lists, A has no overlap inside A and B has no overlap
 A naive method can combine the two list, and sort and apply merge interval in the leetcode, but is not efficient enough.
 
 
-For example,
+For example,  
 A: [1,5], [10,14], [16,18]  
 B: [2,6], [8,10], [11,20]  
 

@@ -24,39 +24,47 @@
 
 [26.Remove Duplicates from Sorted Array]()
 
+[31. Next Permutation](https://github.com/code2practice/leetcode/blob/main/Solutions/31.%20Next%20Permutation.md)
+
 [33.Search in Rotated Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/33.%20Search%20in%20Rotated%20Sorted%20Array.md)
 
 [34.Find First and Last Position of Element in Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.md)
 
 [35.Search Insert Position]()
 
+[36. Valid Sudoku](https://github.com/code2practice/leetcode/blob/main/Solutions/36.%20Valid%20Sudoku.md)
+
 [39.Combination Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/39.Combination%20Sum.md)
 
-[46.Permutations](https://github.com/code2practice/leetcode/blob/main/Solutions/46.%20Permutations.py)
+[40. Combination Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/40.Combination%20Sum%202.md#40-combination-sum-ii)
 
-[47.Permutations II](https://github.com/code2practice/leetcode/blob/main/Solutions/47.%20Permutations%20%20II.py)
+[216. Combination Sum III]()
 
-[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/50.%20Pow.py)
+[46.Permutations](https://github.com/code2practice/leetcode/blob/main/Solutions/46.%20Permutations.md)
 
-[53.Maximum Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/53.%20Maximum%20Subarray.py)
+[47.Permutations II](https://github.com/code2practice/leetcode/blob/main/Solutions/47.%20Permutations%20%20II.md)
 
-[56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/56.%20Merge%20Intervals.py)
+[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/50.%20Pow.md)
 
-[57.Insert Interval](https://github.com/code2practice/leetcode/blob/main/Solutions/57.%20Insert%20Interval.py)
+[53.Maximum Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/53.%20Maximum%20Subarray.md)
 
-[61.Rotate List](https://github.com/code2practice/leetcode/blob/main/Solutions/61.%20Rotate%20List.py)
+[56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/56.%20Merge%20Intervals.md)
 
-[65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/65.%20Valid%20Number.py)
+[57.Insert Interval](https://github.com/code2practice/leetcode/blob/main/Solutions/57.%20Insert%20Interval.md)
 
-[68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/68.%20Text%20Justification.py)
+[61.Rotate List](https://github.com/code2practice/leetcode/blob/main/Solutions/61.%20Rotate%20List.md)
+
+[65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/65.%20Valid%20Number.md)
+
+[68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/68.%20Text%20Justification.md)
 
 [69.Sqrt(x)]()
 
-[72.Edit Distance]()
+[72.Edit Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/72.%20Edit%20Distance.md)
 
-[76.Minimum Window Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/76.%20Minimum%20Window%20Substring.py)
+[76.Minimum Window Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/76.%20Minimum%20Window%20Substring.md)
 
-[81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/81.%20Search%20in%20Rotated%20Sorted%20Array.py)
+[81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/81.%20Search%20in%20Rotated%20Sorted%20Array.md)
 
 [88.Merge Sorted Array]()
 

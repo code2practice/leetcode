@@ -120,6 +120,12 @@
 
 [205.Isomorphic Strings]()
 
+[210. Course Schedule II](https://github.com/code2practice/leetcode/blob/main/Solutions/210.%20Course%20Schedule%20II.md)
+
+[211. Design Add and Search Words Data Structure](https://github.com/code2practice/leetcode/blob/main/Solutions/211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure.md)
+
+[213. House Robber II](https://github.com/code2practice/leetcode/blob/main/Solutions/213.%20House%20Robber%20II.md)
+
 [215.Kth Largest Element in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/215.%20Kth%20Largest%20Element%20in%20an%20Array.py)
 
 [224.Basic Calculator]()
@@ -134,6 +140,13 @@
 
 [238.Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/238.%20Product%20of%20Array%20Except%20Self.py)
 
+
+[239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/239.%20Sliding%20Window%20Maximum.py)
+
+
+[240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/240.%20Search%20a%202D%20Matrix.py)
+
+
 [241.Different Ways to Add Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/241.%20Different%20Ways%20to%20Add%20Parentheses.py)
 
 [243.Shortest Word Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/243.%20Shortest%20Word%20Distance.py)
@@ -142,27 +155,27 @@
 
 [245.Shortest Word Distance III](https://github.com/code2practice/leetcode/blob/main/Solutions/245.%20Shortest%20Word%20Distance%20III.py)
 
-[254.Factor Combinations](https://github.com/code2practice/leetcode/blob/main/Solutions/254.%20Factor%20Combinations.py)
+[254.Factor Combinations](https://github.com/code2practice/leetcode/blob/main/Solutions/254.%20Factor%20Combinations.md)
 
 [256.Paint House](https://github.com/code2practice/leetcode/blob/main/Solutions/256.%20Paint%20House.py)
 
 [261.Graph Valid Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/261.%20Graph%20Valid%20Tree.py)
 
-[271.Encode and Decode Strings]()
+[271.Encode and Decode Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/271.%20Encode%20and%20Decode%20Strings.py)
 
 [272.Closest Binary Search Tree Value II](https://github.com/code2practice/leetcode/blob/main/Solutions/272.%20Closest%20Binary%20Search%20Tree%20Value%20II.py)
 
-[273.Integer to English Words]()
+[273.Integer to English Words](https://github.com/code2practice/leetcode/blob/main/Solutions/273.%20Integer%20to%20English%20Words.md)
 
 [277.Find the Celebrity](https://github.com/code2practice/leetcode/blob/main/Solutions/277.%20Find%20the%20Celebrity.py)
 
 [283.Move Zeroes]()
 
-[295.Find Median from Data Stream]()
+[295.Find Median from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/295.%20Find%20Median%20from%20Data%20Stream.md)
 
-[297.Serialize and Deserialize Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.py)
+[297.Serialize and Deserialize Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.md)
 
-[311.Sparse Matrix Multiplication]()
+[311.Sparse Matrix Multiplication](https://github.com/code2practice/leetcode/blob/main/Solutions/311.%20Sparse%20Matrix%20Multiplication.md)
 
 [319.Bulb Switcher]()
 
@@ -172,91 +185,99 @@
 
 [341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/341.%20Flatten%20Nested%20List%20Iterator.py)
 
+[343. Integer Break](https://github.com/code2practice/leetcode/blob/main/Solutions/343.%20Integer%20Break.md)
+
+[346. Moving Average from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/346.%20Moving%20Average%20from%20Data%20Stream.md)
+
 [347.Top K Frequent Elements](https://github.com/code2practice/leetcode/blob/main/Solutions/347.%20Top%20K%20Frequent%20Elements.py)
 
 [349.Intersection of Two Arrays]()
 
 [350.Intersection of Two Arrays II]()
 
-[360.Sort Transformed Array]()
+[360.Sort Transformed Array](https://github.com/code2practice/leetcode/blob/main/Solutions/360.%20Sort%20Transformed%20Array.md)
 
-[361.Bomb Enemy]()
+[361.Bomb Enemy](https://github.com/code2practice/leetcode/blob/main/Solutions/361.%20Bomb%20Enemy.md)
 
 [364.Nested List Weight Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/364.%20Nested%20List%20Weight%20Sum%20II.py)
 
-[366.Find Leaves of Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/366.%20Find%20Leaves%20of%20Binary%20Tree.py)
+[366.Find Leaves of Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/366.%20Find%20Leaves%20of%20Binary%20Tree.md)
 
 [367.Valid Perfect Square]()
 
-[373.Find K Pairs with Smallest Sums](https://github.com/code2practice/leetcode/blob/main/Solutions/373.%20Find%20K%20Pairs%20with%20Smallest%20Sums.py)
+[373.Find K Pairs with Smallest Sums](https://github.com/code2practice/leetcode/blob/main/Solutions/373.%20Find%20K%20Pairs%20with%20Smallest%20Sums.md)
 
-[380.Insert Delete GetRandom O(1)](https://github.com/code2practice/leetcode/blob/main/Solutions/380.%20Insert%20Delete%20GetRandom%20O(1).py)
+[380.Insert Delete GetRandom O(1)](https://github.com/code2practice/leetcode/blob/main/Solutions/380.%20Insert%20Delete%20GetRandom%20O(1).md)
 
-[381.Insert Delete GetRandom O(1) - Duplicates allowed](https://github.com/code2practice/leetcode/blob/main/Solutions/381.%20Insert%20Delete%20GetRandom%20O(1)%20-%20Duplicates%20allowed.py)
+[381.Insert Delete GetRandom O(1) - Duplicates allowed](https://github.com/code2practice/leetcode/blob/main/Solutions/381.%20Insert%20Delete%20GetRandom%20O(1)%20-%20Duplicates%20allowed.md)
+
+[384. Shuffle an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/384.%20Shuffle%20an%20Array.md)
 
 [412.Fizz Buzz]()
 
-[416.Partition Equal Subset Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/416.%20Partition%20Equal%20Subset%20Sum.py)
+[416.Partition Equal Subset Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/416.%20Partition%20Equal%20Subset%20Sum.md)
 
-[430.Flatten a Multilevel Doubly Linked List](https://github.com/code2practice/leetcode/blob/main/Solutions/430.%20Flatten%20a%20Multilevel%20Doubly%20Linked%20List.py)
+[430.Flatten a Multilevel Doubly Linked List](https://github.com/code2practice/leetcode/blob/main/Solutions/430.%20Flatten%20a%20Multilevel%20Doubly%20Linked%20List.md)
 
-[432.All O`one Data Structure](https://github.com/code2practice/leetcode/blob/main/Solutions/432.%20All%20O%60one%20Data%20Structure.py)
+[432.All O`one Data Structure](https://github.com/code2practice/leetcode/blob/main/Solutions/432.%20All%20O%60one%20Data%20Structure.md)
 
 [449.Serialize and Deserialize BST](https://github.com/code2practice/leetcode/blob/main/Solutions/449.%20Serialize%20and%20Deserialize%20BST.py)
 
 [450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/450.%20Delete%20Node%20in%20a%20BST.py)
 
-[460.LFU Cache]()
+[460.LFU Cache](https://github.com/code2practice/leetcode/blob/main/Solutions/460.%20LFU%20Cache.md)
 
 [464.Can I Win](https://github.com/code2practice/leetcode/blob/main/Solutions/464.%20Can%20I%20Win.py)
 
-[470.Implement Rand10() Using Rand7()]()
+[470.Implement Rand10() Using Rand7()](https://github.com/code2practice/leetcode/blob/main/Solutions/470.%20Implement%20Rand10()%20Using%20Rand7().md)
 
-[515.Find Largest Value in Each Tree Row]()
+[489. Robot Room Cleaner](https://github.com/code2practice/leetcode/blob/main/Solutions/489.%20Robot%20Room%20Cleaner.md)
 
-[516.Longest Palindromic Subsequence]()
+[515.Find Largest Value in Each Tree Row](https://github.com/code2practice/leetcode/blob/main/Solutions/515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row.md)
 
-[605.Can Place Flowers]()
+[516.Longest Palindromic Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/516.%20Longest%20Palindromic%20Subsequence.md)
 
-[526.Beautiful Arrangement]()
+[605.Can Place Flowers](https://github.com/code2practice/leetcode/blob/main/Solutions/605.%20Can%20Place%20Flowers.md)
 
-[528.Random Pick with Weight]()
+[526.Beautiful Arrangement](https://github.com/code2practice/leetcode/blob/main/Solutions/526.%20Beautiful%20Arrangement.md)
+
+[528.Random Pick with Weight](https://github.com/code2practice/leetcode/blob/main/Solutions/528.%20Random%20Pick%20with%20Weight.md)
 
 [559.Maximum Depth of N-ary Tree]()
 
-[560.Subarray Sum Equals K]()
+[560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/560.%20Subarray%20Sum%20Equals%20K.md)
 
-[642.Design Search Autocomplete System]()
+[642.Design Search Autocomplete System]()https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md
 
-[611.Valid Triangle Number]()
+[611.Valid Triangle Number](https://github.com/code2practice/leetcode/blob/main/Solutions/611.%20Valid%20Triangle%20Number.md)
 
-[653.Two Sum IV - Input is a BST]()
+[653.Two Sum IV - Input is a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST.md)
 
-[633.Sum of Square Numbers]()
+[633.Sum of Square Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/633.%20Sum%20of%20Square%20Numbers.md)
 
-[671.Second Minimum Node In a Binary Tree]()
+[671.Second Minimum Node In a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/671.%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree.md)
 
-[636.Exclusive Time of Functions]()
+[636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/636.%20Exclusive%20Time%20of%20Functions.md)
 
-[647.Palindromic Substrings]()
+[647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/647.%20Palindromic%20Substrings.md)
 
-[655.Print Binary Tree]()
+[655.Print Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/655.%20Print%20Binary%20Tree.md)
 
-[678.Valid Parenthesis String]()
+[678.Valid Parenthesis String](https://github.com/code2practice/leetcode/blob/main/Solutions/678.%20Valid%20Parenthesis%20String.md)
 
 [715.Range Module]()
 
-[716.Max Stack]()
+[716.Max Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/716.%20Max%20Stack.md)
 
-[695.Max Area of Island]()
+[695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/695.%20Max%20Area%20of%20Island.py)
 
 [698.Partition to K Equal Sum Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.py)
 
-[701.Insert into a Binary Search Tree]()
+[701.Insert into a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/701.%20Insert%20into%20a%20Binary%20Search%20Tree.md)
 
 [703.Kth Largest Element in a Stream]()
 
-[713.Subarray Product Less Than K]()
+[713.Subarray Product Less Than K](https://github.com/code2practice/leetcode/blob/main/Solutions/713.%20Subarray%20Product%20Less%20Than%20K.md)
 
 [721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/721.%20Accounts%20Merge.py)
 
@@ -267,13 +288,13 @@
 
 [796.Rotate String]()
 
-[706.Design HashMap]()
+[706.Design HashMap](https://github.com/code2practice/leetcode/blob/main/Solutions/706.%20Design%20HashMap.md)
 
 [740.Delete and Earn](https://github.com/code2practice/leetcode/blob/main/Solutions/740.%20Delete%20and%20Earn.py)
 
 [785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/785.%20Is%20Graph%20Bipartite%3F.py)
 
-[833.Find And Replace in String]()
+[833.Find And Replace in String](https://github.com/code2practice/leetcode/blob/main/Solutions/833.%20Find%20And%20Replace%20in%20String.md)
 
 [895.Maximum Frequency Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/895.%20Maximum%20Frequency%20Stack.py)
 
@@ -312,7 +333,7 @@
 
 [1312.Minimum Insertion Steps to Make a String Palindrome]()
 
-[1328.Break a Palindrome]()
+[1328.Break a Palindrome](https://github.com/code2practice/leetcode/blob/main/Solutions/1328.%20Break%20a%20Palindrome.py)
 
 [1343.Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold]()
 
@@ -346,6 +367,6 @@
 
 [2472.Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.py)
 
-[2431.Maximize Total Tastiness of Purchased Fruits]()
+[2431.Maximize Total Tastiness of Purchased Fruits](https://github.com/code2practice/leetcode/blob/main/Solutions/2431.%20Maximize%20Total%20Tastiness%20of%20Purchased%20Fruits.py)
 
 [2532.Time to Cross a Bridge]()

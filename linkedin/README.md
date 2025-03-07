@@ -1,34 +1,36 @@
 [1.Two Sum]()
 
+[3. Longest Substring Without Repeating Characters](https://github.com/code2practice/leetcode/blob/main/Solutions/3.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
+
 [4.Median of Two Sorted Arrays](https://github.com/code2practice/leetcode/blob/main/Solutions/4.%20Median%20of%20Two%20Sorted%20Arrays.md)
 
-[5.Longest Palindromic Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/5.%20Longest%20Palindromic%20Substring.py)
+[5.Longest Palindromic Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/5.%20Longest%20Palindromic%20Substring.md)
 
-[8.String to Integer (atoi)]()
+[8.String to Integer (atoi)](https://github.com/code2practice/leetcode/blob/main/Solutions/8.%20String%20to%20Integer%20(atoi).md)
 
-[12.Integer to Roman]()
+[12.Integer to Roman](https://github.com/code2practice/leetcode/blob/main/Solutions/12.%20Integer%20to%20Roman.md)
 
-[15.3Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/15.%203Sum.py)
+[15.3Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/15.%203Sum.md)
 
-[17.Letter Combinations of a Phone Number](https://github.com/code2practice/leetcode/blob/main/Solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.py)
+[17.Letter Combinations of a Phone Number](https://github.com/code2practice/leetcode/blob/main/Solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.md)
 
-[18.4Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/18.%204Sum.py)
+[18.4Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/18.%204Sum.md)
 
-[20.Valid Parentheses]()
+[20.Valid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/20.%20Valid%20Parentheses.md)
 
-[21.Merge Two Sorted Lists]()
+[21.Merge Two Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/21.%20Merge%20Two%20Sorted%20Lists.md)
 
-[23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/23.%20Merge%20k%20Sorted%20Lists.py)
+[23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/23.%20Merge%20k%20Sorted%20Lists.md)
 
 [26.Remove Duplicates from Sorted Array]()
 
-[33.Search in Rotated Sorted Array]()
+[33.Search in Rotated Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/33.%20Search%20in%20Rotated%20Sorted%20Array.md)
 
-[34.Find First and Last Position of Element in Sorted Array]()
+[34.Find First and Last Position of Element in Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.md)
 
 [35.Search Insert Position]()
 
-[39.Combination Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/39.Combination%20Sum.py)
+[39.Combination Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/39.Combination%20Sum.md)
 
 [46.Permutations](https://github.com/code2practice/leetcode/blob/main/Solutions/46.%20Permutations.py)
 

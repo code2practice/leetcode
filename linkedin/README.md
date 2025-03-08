@@ -249,7 +249,7 @@
 
 [611.Valid Triangle Number](https://github.com/code2practice/leetcode/blob/main/Solutions/611.%20Valid%20Triangle%20Number.md)
 
-[632. Smallest Range Covering Elements from K Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists.md
+[632. Smallest Range Covering Elements from K Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists.md)
 
 [633.Sum of Square Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/633.%20Sum%20of%20Square%20Numbers.md)
 
@@ -393,7 +393,7 @@
 
 [2431.Maximize Total Tastiness of Purchased Fruits](https://github.com/code2practice/leetcode/blob/main/Solutions/2431.%20Maximize%20Total%20Tastiness%20of%20Purchased%20Fruits.py)
 
-[2472. Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.py
+[2472. Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.py)
 
 [2532.Time to Cross a Bridge]()
 

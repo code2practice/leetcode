@@ -30,7 +30,7 @@
 
 [34.Find First and Last Position of Element in Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.md)
 
-[35.Search Insert Position]()
+[35.Search Insert Position](https://github.com/code2practice/leetcode/blob/main/Solutions/35.%20Search%20Insert%20Position.md)
 
 [36. Valid Sudoku](https://github.com/code2practice/leetcode/blob/main/Solutions/36.%20Valid%20Sudoku.md)
 
@@ -38,7 +38,7 @@
 
 [40. Combination Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/40.Combination%20Sum%202.md#40-combination-sum-ii)
 
-[216. Combination Sum III]()
+[216. Combination Sum III](https://github.com/code2practice/leetcode/blob/main/Solutions/216.%20Combination%20Sum%20III.md)
 
 [46.Permutations](https://github.com/code2practice/leetcode/blob/main/Solutions/46.%20Permutations.md)
 
@@ -58,7 +58,7 @@
 
 [68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/68.%20Text%20Justification.md)
 
-[69.Sqrt(x)]()
+[69.Sqrt(x)](https://github.com/code2practice/leetcode/blob/main/Solutions/69.%20Sqrt(x).py)
 
 [72.Edit Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/72.%20Edit%20Distance.md)
 
@@ -237,8 +237,6 @@
 
 [516.Longest Palindromic Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/516.%20Longest%20Palindromic%20Subsequence.md)
 
-[605.Can Place Flowers](https://github.com/code2practice/leetcode/blob/main/Solutions/605.%20Can%20Place%20Flowers.md)
-
 [526.Beautiful Arrangement](https://github.com/code2practice/leetcode/blob/main/Solutions/526.%20Beautiful%20Arrangement.md)
 
 [528.Random Pick with Weight](https://github.com/code2practice/leetcode/blob/main/Solutions/528.%20Random%20Pick%20with%20Weight.md)
@@ -247,27 +245,29 @@
 
 [560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/560.%20Subarray%20Sum%20Equals%20K.md)
 
-[642.Design Search Autocomplete System](https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md)
+[605.Can Place Flowers](https://github.com/code2practice/leetcode/blob/main/Solutions/605.%20Can%20Place%20Flowers.md)
 
 [611.Valid Triangle Number](https://github.com/code2practice/leetcode/blob/main/Solutions/611.%20Valid%20Triangle%20Number.md)
 
-[653.Two Sum IV - Input is a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST.md)
+[632. Smallest Range Covering Elements from K Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists.md
 
 [633.Sum of Square Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/633.%20Sum%20of%20Square%20Numbers.md)
 
-[671.Second Minimum Node In a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/671.%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree.md)
 
 [636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/636.%20Exclusive%20Time%20of%20Functions.md)
 
+
+[642.Design Search Autocomplete System](https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md)
+
 [647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/647.%20Palindromic%20Substrings.md)
+
+[653.Two Sum IV - Input is a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST.md)
 
 [655.Print Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/655.%20Print%20Binary%20Tree.md)
 
+[671.Second Minimum Node In a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/671.%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree.md)
+
 [678.Valid Parenthesis String](https://github.com/code2practice/leetcode/blob/main/Solutions/678.%20Valid%20Parenthesis%20String.md)
-
-[715.Range Module]()
-
-[716.Max Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/716.%20Max%20Stack.md)
 
 [695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/695.%20Max%20Area%20of%20Island.py)
 
@@ -277,24 +277,36 @@
 
 [703.Kth Largest Element in a Stream]()
 
+[706. Design HashMap](https://github.com/code2practice/leetcode/blob/main/Solutions/706.%20Design%20HashMap.md)
+
 [713.Subarray Product Less Than K](https://github.com/code2practice/leetcode/blob/main/Solutions/713.%20Subarray%20Product%20Less%20Than%20K.md)
+
+
+[715.Range Module]()
+
+[716.Max Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/716.%20Max%20Stack.md)
 
 [721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/721.%20Accounts%20Merge.py)
 
 [730.Count Different Palindromic Subsequences]()
 
+[740.Delete and Earn](https://github.com/code2practice/leetcode/blob/main/Solutions/740.%20Delete%20and%20Earn.py)
+
+[742. Closest Leaf in a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/742.%20Closest%20Leaf%20in%20a%20Binary%20Tree.md)
+
 [744.Find Smallest Letter Greater Than Target]()
 
-
-[796.Rotate String]()
-
-[706.Design HashMap](https://github.com/code2practice/leetcode/blob/main/Solutions/706.%20Design%20HashMap.md)
-
-[740.Delete and Earn](https://github.com/code2practice/leetcode/blob/main/Solutions/740.%20Delete%20and%20Earn.py)
+[763. Partition Labels](https://github.com/code2practice/leetcode/blob/main/Solutions/763.%20Partition%20Labels.md)
 
 [785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/785.%20Is%20Graph%20Bipartite%3F.py)
 
+[796.Rotate String]()
+
+
+
 [833.Find And Replace in String](https://github.com/code2practice/leetcode/blob/main/Solutions/833.%20Find%20And%20Replace%20in%20String.md)
+
+[886. Possible Bipartition](https://github.com/code2practice/leetcode/blob/main/Solutions/886.%20Possible%20Bipartition.md)
 
 [895.Maximum Frequency Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/895.%20Maximum%20Frequency%20Stack.py)
 

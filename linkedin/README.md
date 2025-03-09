@@ -58,7 +58,7 @@
 
 [68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/68.%20Text%20Justification.md)
 
-[69.Sqrt(x)](https://github.com/code2practice/leetcode/blob/main/Solutions/69.%20Sqrt(x).py)
+[69.Sqrt(x)](https://github.com/code2practice/leetcode/blob/main/Solutions/69.%20Sqrt(x).md)
 
 [72.Edit Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/72.%20Edit%20Distance.md)
 
@@ -169,6 +169,8 @@
 
 [277.Find the Celebrity](https://github.com/code2practice/leetcode/blob/main/Solutions/277.%20Find%20the%20Celebrity.py)
 
+[(pending)282. Expression Add Operators](https://github.com/code2practice/leetcode/blob/main/Solutions/282.%20Expression%20Add%20Operators.md)
+
 [283.Move Zeroes]()
 
 [295.Find Median from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/295.%20Find%20Median%20from%20Data%20Stream.md)
@@ -267,6 +269,8 @@
 
 [655.Print Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/655.%20Print%20Binary%20Tree.md)
 
+[658. Find K Closest Elements](https://github.com/code2practice/leetcode/blob/main/Solutions/658.%20Find%20K%20Closest%20Elements.md)
+
 [671.Second Minimum Node In a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/671.%20Second%20Minimum%20Node%20In%20a%20Binary%20Tree.md)
 
 [678.Valid Parenthesis String](https://github.com/code2practice/leetcode/blob/main/Solutions/678.%20Valid%20Parenthesis%20String.md)
@@ -296,7 +300,7 @@
 
 [742. Closest Leaf in a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/742.%20Closest%20Leaf%20in%20a%20Binary%20Tree.md)
 
-[744.Find Smallest Letter Greater Than Target]()
+[744.Find Smallest Letter Greater Than Target](https://github.com/code2practice/leetcode/blob/main/Solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target.md)
 
 [763. Partition Labels](https://github.com/code2practice/leetcode/blob/main/Solutions/763.%20Partition%20Labels.md)
 

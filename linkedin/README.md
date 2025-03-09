@@ -241,6 +241,8 @@
 
 [528.Random Pick with Weight](https://github.com/code2practice/leetcode/blob/main/Solutions/528.%20Random%20Pick%20with%20Weight.md)
 
+[542. 01 Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/542.%2001%20Matrix.md)
+
 [559.Maximum Depth of N-ary Tree]()
 
 [560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/560.%20Subarray%20Sum%20Equals%20K.md)
@@ -400,3 +402,5 @@
 [2532.Time to Cross a Bridge]()
 
 [2560. House Robber IV](https://github.com/code2practice/leetcode/blob/main/Solutions/2560.%20House%20Robber%20IV.md)
+
+[2964. Number of Divisible Triplet Sums 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/2964.%20Number%20of%20Divisible%20Triplet%20Sums.md)

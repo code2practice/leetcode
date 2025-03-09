@@ -34,6 +34,8 @@
 
 [36. Valid Sudoku](https://github.com/code2practice/leetcode/blob/main/Solutions/36.%20Valid%20Sudoku.md)
 
+[37. Sudoku Solver](https://github.com/code2practice/leetcode/blob/main/Solutions/37.%20Sudoku%20Solver.md)
+
 [39.Combination Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/39.Combination%20Sum.md)
 
 [40. Combination Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/40.Combination%20Sum%202.md#40-combination-sum-ii)

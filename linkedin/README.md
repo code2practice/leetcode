@@ -365,7 +365,7 @@
 
 [1588.Sum of All Odd Length Subarrays]()
 
-[1598.Crawler Log Folder]()
+[1598.Crawler Log Folder](https://github.com/code2practice/leetcode/blob/main/Solutions/1598.%20Crawler%20Log%20Folder.md)
 
 [1611.Minimum One Bit Operations to Make Integers Zero]()
 

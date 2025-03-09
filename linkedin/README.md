@@ -306,6 +306,8 @@
 
 [833.Find And Replace in String](https://github.com/code2practice/leetcode/blob/main/Solutions/833.%20Find%20And%20Replace%20in%20String.md)
 
+[875. Koko Eating Bananas](https://github.com/code2practice/leetcode/blob/main/Solutions/875.%20Koko%20Eating%20Bananas.md)
+
 [886. Possible Bipartition](https://github.com/code2practice/leetcode/blob/main/Solutions/886.%20Possible%20Bipartition.md)
 
 [921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)

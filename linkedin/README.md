@@ -379,7 +379,7 @@
 
 [1797. Design Authentication Manager](https://github.com/code2practice/leetcode/blob/main/Solutions/1797.%20Design%20Authentication%20Manager.md)
 
-[2040.Kth Smallest Product of Two Sorted Arrays]()
+[(pending)2040.Kth Smallest Product of Two Sorted Arrays]()
 
 [(pending)2174.Remove All Ones With Row and Column Flips II](https://github.com/code2practice/leetcode/blob/main/Solutions/2174.%20Remove%20All%20Ones%20With%20Row%20and%20Column%20Flips.md)
 

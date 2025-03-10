@@ -128,25 +128,25 @@
 
 [213. House Robber II](https://github.com/code2practice/leetcode/blob/main/Solutions/213.%20House%20Robber%20II.md)
 
-[215.Kth Largest Element in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/215.%20Kth%20Largest%20Element%20in%20an%20Array.py)
+[215.Kth Largest Element in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/215.%20Kth%20Largest%20Element%20in%20an%20Array.md)
 
 [224.Basic Calculator]()
 
-[227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/227.%20Basic%20Calculator%202.py)
+[227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/227.%20Basic%20Calculator%202.md)
 
-[230.Kth Smallest Element in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/230.%20Kth%20Smallest%20Element%20in%20a%20BST.py)
+[230.Kth Smallest Element in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/230.%20Kth%20Smallest%20Element%20in%20a%20BST.md)
 
-[235.Lowest Common Ancestor of a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.py)
+[235.Lowest Common Ancestor of a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.md)
 
-[236.Lowest Common Ancestor of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.py)
+[236.Lowest Common Ancestor of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.md)
 
-[238.Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/238.%20Product%20of%20Array%20Except%20Self.py)
-
-
-[239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/239.%20Sliding%20Window%20Maximum.py)
+[238.Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/238.%20Product%20of%20Array%20Except%20Self.md)
 
 
-[240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/240.%20Search%20a%202D%20Matrix.py)
+[239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/239.%20Sliding%20Window%20Maximum.md)
+
+
+[240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/240.%20Search%20a%202D%20Matrix.md)
 
 
 [241.Different Ways to Add Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/241.%20Different%20Ways%20to%20Add%20Parentheses.py)
@@ -328,7 +328,7 @@
 
 [953.Verifying an Alien Dictionary]()
 
-[973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/973.%20K%20Closest%20Points%20to%20Origin.py)
+[973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/973.%20K%20Closest%20Points%20to%20Origin.md)
 
 [994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.py)
 

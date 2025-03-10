@@ -149,27 +149,27 @@
 [240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/240.%20Search%20a%202D%20Matrix.md)
 
 
-[241.Different Ways to Add Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/241.%20Different%20Ways%20to%20Add%20Parentheses.py)
+[241.Different Ways to Add Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/241.%20Different%20Ways%20to%20Add%20Parentheses.md)
 
-[243.Shortest Word Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/243.%20Shortest%20Word%20Distance.py)
+[243.Shortest Word Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/243.%20Shortest%20Word%20Distance.md)
 
-[244.Shortest Word Distance II](https://github.com/code2practice/leetcode/blob/main/Solutions/244.%20Shortest%20Word%20Distance%20II.py)
+[244.Shortest Word Distance II](https://github.com/code2practice/leetcode/blob/main/Solutions/244.%20Shortest%20Word%20Distance%20II.md)
 
-[245.Shortest Word Distance III](https://github.com/code2practice/leetcode/blob/main/Solutions/245.%20Shortest%20Word%20Distance%20III.py)
+[245.Shortest Word Distance III](https://github.com/code2practice/leetcode/blob/main/Solutions/245.%20Shortest%20Word%20Distance%20III.md)
 
 [254.Factor Combinations](https://github.com/code2practice/leetcode/blob/main/Solutions/254.%20Factor%20Combinations.md)
 
-[256.Paint House](https://github.com/code2practice/leetcode/blob/main/Solutions/256.%20Paint%20House.py)
+[256.Paint House](https://github.com/code2practice/leetcode/blob/main/Solutions/256.%20Paint%20House.md)
 
-[261.Graph Valid Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/261.%20Graph%20Valid%20Tree.py)
+[261.Graph Valid Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/261.%20Graph%20Valid%20Tree.md)
 
-[271.Encode and Decode Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/271.%20Encode%20and%20Decode%20Strings.py)
+[271.Encode and Decode Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/271.%20Encode%20and%20Decode%20Strings.md)
 
-[272.Closest Binary Search Tree Value II](https://github.com/code2practice/leetcode/blob/main/Solutions/272.%20Closest%20Binary%20Search%20Tree%20Value%20II.py)
+[272.Closest Binary Search Tree Value II](https://github.com/code2practice/leetcode/blob/main/Solutions/272.%20Closest%20Binary%20Search%20Tree%20Value%20II.md)
 
 [273.Integer to English Words](https://github.com/code2practice/leetcode/blob/main/Solutions/273.%20Integer%20to%20English%20Words.md)
 
-[277.Find the Celebrity](https://github.com/code2practice/leetcode/blob/main/Solutions/277.%20Find%20the%20Celebrity.py)
+[277.Find the Celebrity](https://github.com/code2practice/leetcode/blob/main/Solutions/277.%20Find%20the%20Celebrity.md)
 
 [(pending)282. Expression Add Operators](https://github.com/code2practice/leetcode/blob/main/Solutions/282.%20Expression%20Add%20Operators.md)
 
@@ -183,9 +183,9 @@
 
 [319.Bulb Switcher]()
 
-[323.Number of Connected Components in an Undirected Graph](https://github.com/code2practice/leetcode/blob/main/Solutions/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.py)
+[323.Number of Connected Components in an Undirected Graph](https://github.com/code2practice/leetcode/blob/main/Solutions/323.%20Number%20of%20Connected%20Components%20in%20an%20Undirected%20Graph.md)
 
-[339.Nested List Weight Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/339.%20Nested%20List%20Weight%20Sum.py)
+[339.Nested List Weight Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/339.%20Nested%20List%20Weight%20Sum.md)
 
 [341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/341.%20Flatten%20Nested%20List%20Iterator.py)
 

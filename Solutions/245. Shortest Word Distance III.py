@@ -1,5 +1,5 @@
-'''
-245. Shortest Word Distance III
+# 245. Shortest Word Distance III
+```
 Given an array of strings wordsDict and two strings that already exist in the array word1 and word2, return the shortest distance between the occurrence of these two words in the list.
 Note that word1 and word2 may be the same. It is guaranteed that they represent two individual words in the list.
  
@@ -15,13 +15,17 @@ Constraints:
 1 <= wordsDict[i].length <= 10
 wordsDict[i] consists of lowercase English letters.
 word1 and word2 are in wordsDict.
-'''
+```
 
-'''
+### Solution
+```
 A condition is added here, that is, two words may be the same.
-When word1 and word2 are equal, use p1 to save the result of p2, and p2 is assigned to the current position i, so that the result can be updated.
+When word1 and word2 are equal, use p1 to save the result of p2, and p2 is assigned 
+to the current position i, so that the result can be updated.
 If word1 and word2 are not equal, the same logic is still valid.
-'''
+```
+
+```python
 class Solution:
    def shortest_word_distance(self, words_dict: List[str], word1: str, word2: str) -> int:
        # Initialize the minimum distance to the length of the word list
@@ -54,3 +58,6 @@ class Solution:
     
        # Return the minimum distance found
        return min_distance
+```
+
+

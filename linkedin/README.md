@@ -223,19 +223,19 @@
 
 [430.Flatten a Multilevel Doubly Linked List](https://github.com/code2practice/leetcode/blob/main/Solutions/430.%20Flatten%20a%20Multilevel%20Doubly%20Linked%20List.md)
 
-[432.All O`one Data Structure](https://github.com/code2practice/leetcode/blob/main/Solutions/432.%20All%20O%60one%20Data%20Structure.md)
+[432.All O`one Data Structure (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/432.%20All%20O%60one%20Data%20Structure.md)
 
 [449.Serialize and Deserialize BST](https://github.com/code2practice/leetcode/blob/main/Solutions/449.%20Serialize%20and%20Deserialize%20BST.md)
 
 [450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/450.%20Delete%20Node%20in%20a%20BST.md)
 
-[460.LFU Cache](https://github.com/code2practice/leetcode/blob/main/Solutions/460.%20LFU%20Cache.md)
+[460.LFU Cache (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/460.%20LFU%20Cache.md)
 
-[464.Can I Win](https://github.com/code2practice/leetcode/blob/main/Solutions/464.%20Can%20I%20Win.py)
+[464.Can I Win](https://github.com/code2practice/leetcode/blob/main/Solutions/464.%20Can%20I%20Win.md)
 
 [470.Implement Rand10() Using Rand7()](https://github.com/code2practice/leetcode/blob/main/Solutions/470.%20Implement%20Rand10()%20Using%20Rand7().md)
 
-[489. Robot Room Cleaner](https://github.com/code2practice/leetcode/blob/main/Solutions/489.%20Robot%20Room%20Cleaner.md)
+[489. Robot Room Cleaner (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/489.%20Robot%20Room%20Cleaner.md)
 
 [515.Find Largest Value in Each Tree Row](https://github.com/code2practice/leetcode/blob/main/Solutions/515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row.md)
 
@@ -259,9 +259,7 @@
 
 [633.Sum of Square Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/633.%20Sum%20of%20Square%20Numbers.md)
 
-
 [636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/636.%20Exclusive%20Time%20of%20Functions.md)
-
 
 [642.Design Search Autocomplete System](https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md)
 
@@ -289,7 +287,6 @@
 
 [713.Subarray Product Less Than K](https://github.com/code2practice/leetcode/blob/main/Solutions/713.%20Subarray%20Product%20Less%20Than%20K.md)
 
-
 [715.Range Module]()
 
 [716.Max Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/716.%20Max%20Stack.md)
@@ -309,8 +306,6 @@
 [785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/785.%20Is%20Graph%20Bipartite%3F.py)
 
 [796.Rotate String]()
-
-
 
 [833.Find And Replace in String](https://github.com/code2practice/leetcode/blob/main/Solutions/833.%20Find%20And%20Replace%20in%20String.md)
 
@@ -355,7 +350,6 @@
 [1188.Design Bounded Blocking Queue]()
 
 [1197.Minimum Knight Moves](https://github.com/code2practice/leetcode/blob/main/Solutions/1197.%20Minimum%20Knight%20Moves.py)
-
 
 [1235.Maximum Profit in Job Scheduling](https://github.com/code2practice/leetcode/blob/main/Solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling.py)
 

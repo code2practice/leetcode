@@ -187,13 +187,13 @@
 
 [339.Nested List Weight Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/339.%20Nested%20List%20Weight%20Sum.md)
 
-[341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/341.%20Flatten%20Nested%20List%20Iterator.py)
+[341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/341.%20Flatten%20Nested%20List%20Iterator.md)
 
 [343. Integer Break](https://github.com/code2practice/leetcode/blob/main/Solutions/343.%20Integer%20Break.md)
 
 [346. Moving Average from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/346.%20Moving%20Average%20from%20Data%20Stream.md)
 
-[347.Top K Frequent Elements](https://github.com/code2practice/leetcode/blob/main/Solutions/347.%20Top%20K%20Frequent%20Elements.py)
+[347.Top K Frequent Elements](https://github.com/code2practice/leetcode/blob/main/Solutions/347.%20Top%20K%20Frequent%20Elements.md)
 
 [349.Intersection of Two Arrays]()
 
@@ -203,7 +203,7 @@
 
 [361.Bomb Enemy](https://github.com/code2practice/leetcode/blob/main/Solutions/361.%20Bomb%20Enemy.md)
 
-[364.Nested List Weight Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/364.%20Nested%20List%20Weight%20Sum%20II.py)
+[364.Nested List Weight Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/364.%20Nested%20List%20Weight%20Sum%20II.md)
 
 [366.Find Leaves of Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/366.%20Find%20Leaves%20of%20Binary%20Tree.md)
 
@@ -225,9 +225,9 @@
 
 [432.All O`one Data Structure](https://github.com/code2practice/leetcode/blob/main/Solutions/432.%20All%20O%60one%20Data%20Structure.md)
 
-[449.Serialize and Deserialize BST](https://github.com/code2practice/leetcode/blob/main/Solutions/449.%20Serialize%20and%20Deserialize%20BST.py)
+[449.Serialize and Deserialize BST](https://github.com/code2practice/leetcode/blob/main/Solutions/449.%20Serialize%20and%20Deserialize%20BST.md)
 
-[450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/450.%20Delete%20Node%20in%20a%20BST.py)
+[450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/450.%20Delete%20Node%20in%20a%20BST.md)
 
 [460.LFU Cache](https://github.com/code2practice/leetcode/blob/main/Solutions/460.%20LFU%20Cache.md)
 

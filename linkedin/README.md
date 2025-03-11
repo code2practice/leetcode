@@ -327,6 +327,8 @@
 
 [994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.md)
 
+[1004. Max Consecutive Ones III](https://github.com/code2practice/leetcode/blob/main/Solutions/1004.%20Max%20Consecutive%20Ones%20III.md)
+
 [1017.Convert to Base -2](https://github.com/code2practice/leetcode/blob/main/Solutions/1017.%20Convert%20to%20Base%20-2.md)
 
 [1041.Robot Bounded In Circle](https://github.com/code2practice/leetcode/blob/main/Solutions/1041.%20Robot%20Bounded%20In%20Circle.md)

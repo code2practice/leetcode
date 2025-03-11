@@ -277,7 +277,7 @@
 
 [695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/695.%20Max%20Area%20of%20Island.md)
 
-[698.Partition to K Equal Sum Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.pmd)
+[698.Partition to K Equal Sum Subsets (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.pmd)
 
 [701.Insert into a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/701.%20Insert%20into%20a%20Binary%20Search%20Tree.md)
 

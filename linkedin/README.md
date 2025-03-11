@@ -335,12 +335,6 @@
 
 [1048. Longest String Chain](https://github.com/code2practice/leetcode/blob/main/Solutions/1048.%20Longest%20String%20Chain.md)
 
-[1107.New Users Daily Count]()
-
-[1117.Building H2O]()
-
-[1127.User Purchase Platform]()
-
 [1129.Shortest Path with Alternating Colors](https://github.com/code2practice/leetcode/blob/main/Solutions/1129.%20Shortest%20Path%20with%20Alternating%20Colors.py)
 
 [1197.Minimum Knight Moves](https://github.com/code2practice/leetcode/blob/main/Solutions/1197.%20Minimum%20Knight%20Moves.py)
@@ -361,7 +355,7 @@
 
 [1570. Dot Product of Two Sparse Vectors](https://github.com/code2practice/leetcode/blob/main/Solutions/1570.%20Dot%20Product%20of%20Two%20Sparse%20Vectors.md)
 
-[1588.Sum of All Odd Length Subarrays]()
+[1588.Sum of All Odd Length Subarrays](https://github.com/code2practice/leetcode/blob/main/Solutions/1588.%20Sum%20of%20All%20Odd%20Length%20Subarrays.md)
 
 [1598.Crawler Log Folder](https://github.com/code2practice/leetcode/blob/main/Solutions/1598.%20Crawler%20Log%20Folder.md)
 

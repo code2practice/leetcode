@@ -291,7 +291,7 @@
 
 [716.Max Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/716.%20Max%20Stack.md)
 
-[721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/721.%20Accounts%20Merge.py)
+[721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/721.%20Accounts%20Merge.md)
 
 [730.Count Different Palindromic Subsequences]()
 

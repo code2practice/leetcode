@@ -295,7 +295,7 @@
 
 [730.Count Different Palindromic Subsequences]()
 
-[740.Delete and Earn](https://github.com/code2practice/leetcode/blob/main/Solutions/740.%20Delete%20and%20Earn.py)
+[740.Delete and Earn](https://github.com/code2practice/leetcode/blob/main/Solutions/740.%20Delete%20and%20Earn.md)
 
 [742. Closest Leaf in a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/742.%20Closest%20Leaf%20in%20a%20Binary%20Tree.md)
 
@@ -303,7 +303,7 @@
 
 [763. Partition Labels](https://github.com/code2practice/leetcode/blob/main/Solutions/763.%20Partition%20Labels.md)
 
-[785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/785.%20Is%20Graph%20Bipartite%3F.py)
+[785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/785.%20Is%20Graph%20Bipartite.md)
 
 [796.Rotate String]()
 
@@ -311,11 +311,11 @@
 
 [875. Koko Eating Bananas](https://github.com/code2practice/leetcode/blob/main/Solutions/875.%20Koko%20Eating%20Bananas.md)
 
-[886. Possible Bipartition](https://github.com/code2practice/leetcode/blob/main/Solutions/886.%20Possible%20Bipartition.md)
-
-[921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)
+[886. Possible Bipartition (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/886.%20Possible%20Bipartition.md)
 
 [895.Maximum Frequency Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/895.%20Maximum%20Frequency%20Stack.py)
+
+[921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)
 
 [925. Long Pressed Name](https://github.com/code2practice/leetcode/blob/main/Solutions/925.%20Long%20Pressed%20Name.md)
 

@@ -255,13 +255,13 @@
 
 [611.Valid Triangle Number](https://github.com/code2practice/leetcode/blob/main/Solutions/611.%20Valid%20Triangle%20Number.md)
 
-[632. Smallest Range Covering Elements from K Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists.md)
+[(pending)632. Smallest Range Covering Elements from K Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/632.%20Smallest%20Range%20Covering%20Elements%20from%20K%20Lists.md)
 
 [633.Sum of Square Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/633.%20Sum%20of%20Square%20Numbers.md)
 
 [636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/636.%20Exclusive%20Time%20of%20Functions.md)
 
-[642.Design Search Autocomplete System](https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md)
+[642.Design Search Autocomplete System (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md)
 
 [647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/647.%20Palindromic%20Substrings.md)
 
@@ -275,9 +275,9 @@
 
 [678.Valid Parenthesis String](https://github.com/code2practice/leetcode/blob/main/Solutions/678.%20Valid%20Parenthesis%20String.md)
 
-[695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/695.%20Max%20Area%20of%20Island.py)
+[695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/695.%20Max%20Area%20of%20Island.md)
 
-[698.Partition to K Equal Sum Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.py)
+[698.Partition to K Equal Sum Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.pmd)
 
 [701.Insert into a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/701.%20Insert%20into%20a%20Binary%20Search%20Tree.md)
 

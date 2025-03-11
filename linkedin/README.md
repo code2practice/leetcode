@@ -343,12 +343,6 @@
 
 [1129.Shortest Path with Alternating Colors](https://github.com/code2practice/leetcode/blob/main/Solutions/1129.%20Shortest%20Path%20with%20Alternating%20Colors.py)
 
-[1148.Article Views I]()
-
-[1149.Article Views II]()
-
-[1188.Design Bounded Blocking Queue]()
-
 [1197.Minimum Knight Moves](https://github.com/code2practice/leetcode/blob/main/Solutions/1197.%20Minimum%20Knight%20Moves.py)
 
 [1235.Maximum Profit in Job Scheduling](https://github.com/code2practice/leetcode/blob/main/Solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling.md)

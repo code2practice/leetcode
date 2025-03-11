@@ -313,19 +313,19 @@
 
 [886. Possible Bipartition (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/886.%20Possible%20Bipartition.md)
 
-[895.Maximum Frequency Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/895.%20Maximum%20Frequency%20Stack.py)
+[895.Maximum Frequency Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/895.%20Maximum%20Frequency%20Stack.md)
 
 [921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)
 
 [925. Long Pressed Name](https://github.com/code2practice/leetcode/blob/main/Solutions/925.%20Long%20Pressed%20Name.md)
 
-[946.Validate Stack Sequences](https://github.com/code2practice/leetcode/blob/main/Solutions/946.%20Validate%20Stack%20Sequences.py)
+[946.Validate Stack Sequences](https://github.com/code2practice/leetcode/blob/main/Solutions/946.%20Validate%20Stack%20Sequences.md)
 
-[953.Verifying an Alien Dictionary]()
+[953.Verifying an Alien Dictionary](https://github.com/code2practice/leetcode/blob/main/Solutions/953.%20Verifying%20an%20Alien%20Dictionary.md)
 
 [973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/973.%20K%20Closest%20Points%20to%20Origin.md)
 
-[994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.py)
+[994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.md)
 
 [1017.Convert to Base -2](https://github.com/code2practice/leetcode/blob/main/Solutions/1017.%20Convert%20to%20Base%20-2.md)
 
@@ -351,7 +351,7 @@
 
 [1197.Minimum Knight Moves](https://github.com/code2practice/leetcode/blob/main/Solutions/1197.%20Minimum%20Knight%20Moves.py)
 
-[1235.Maximum Profit in Job Scheduling](https://github.com/code2practice/leetcode/blob/main/Solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling.py)
+[1235.Maximum Profit in Job Scheduling](https://github.com/code2practice/leetcode/blob/main/Solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling.md)
 
 [1312.Minimum Insertion Steps to Make a String Palindrome](https://github.com/code2practice/leetcode/blob/main/Solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome.md)
 
@@ -361,9 +361,9 @@
 
 [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/code2practice/leetcode/blob/main/Solutions/1368.%20Minimum%20Cost%20to%20Make%20at%20Least%20One%20Valid%20Path%20in%20a%20Grid.md)
 
-[1423.Maximum Points You Can Obtain from Cards](https://github.com/code2practice/leetcode/blob/main/Solutions/1423.%20Maximum%20Points%20You%20Can%20Obtain%20from%20Cards.py)
+[1423.Maximum Points You Can Obtain from Cards](https://github.com/code2practice/leetcode/blob/main/Solutions/1423.%20Maximum%20Points%20You%20Can%20Obtain%20from%20Cards.md)
 
-[1541.Minimum Insertions to Balance a Parentheses String](https://github.com/code2practice/leetcode/blob/main/Solutions/1541.%20Minimum%20Insertions%20to%20Balance%20a%20Parentheses%20String.py)
+[1541.Minimum Insertions to Balance a Parentheses String](https://github.com/code2practice/leetcode/blob/main/Solutions/1541.%20Minimum%20Insertions%20to%20Balance%20a%20Parentheses%20String.md)
 
 [1570. Dot Product of Two Sparse Vectors](https://github.com/code2practice/leetcode/blob/main/Solutions/1570.%20Dot%20Product%20of%20Two%20Sparse%20Vectors.md)
 
@@ -377,7 +377,7 @@
 
 [1650.Lowest Common Ancestor of a Binary Tree III](https://github.com/code2practice/leetcode/blob/main/Solutions/1650.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20III.md)
 
-[1696.Jump Game VI](https://github.com/code2practice/leetcode/blob/main/Solutions/1696.%20Jump%20Game%20VI.py)
+[1696.Jump Game VI](https://github.com/code2practice/leetcode/blob/main/Solutions/1696.%20Jump%20Game%20VI.md)
 
 [1710.Maximum Units on a Truck]()
 
@@ -387,17 +387,17 @@
 
 [(pending)2174.Remove All Ones With Row and Column Flips II](https://github.com/code2practice/leetcode/blob/main/Solutions/2174.%20Remove%20All%20Ones%20With%20Row%20and%20Column%20Flips.md)
 
-[2196.Create Binary Tree From Descriptions](https://github.com/code2practice/leetcode/blob/main/Solutions/2196.%20Create%20Binary%20Tree%20From%20Descriptions.py)
+[2196.Create Binary Tree From Descriptions](https://github.com/code2practice/leetcode/blob/main/Solutions/2196.%20Create%20Binary%20Tree%20From%20Descriptions.md)
 
 [2276.Count Integers in Intervals]()
 
 [2344.Minimum Deletions to Make Array Divisible]()
 
-[2472.Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.py)
+[2472.Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.md)
 
-[2431.Maximize Total Tastiness of Purchased Fruits](https://github.com/code2practice/leetcode/blob/main/Solutions/2431.%20Maximize%20Total%20Tastiness%20of%20Purchased%20Fruits.py)
+[2431.Maximize Total Tastiness of Purchased Fruits](https://github.com/code2practice/leetcode/blob/main/Solutions/2431.%20Maximize%20Total%20Tastiness%20of%20Purchased%20Fruits.md)
 
-[2472. Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.py)
+[2472. Maximum Number of Non-overlapping Palindrome Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings.md)
 
 [2532.Time to Cross a Bridge]()
 

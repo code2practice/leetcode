@@ -15,10 +15,7 @@
 
 [23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/23.%20Merge%20k%20Sorted%20Lists.md)
 
-
-
 [26. Remove Duplicates from Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0026.Remove%20Duplicates%20from%20Sorted%20Array.md)
-
 
 [31. Next Permutation](https://github.com/code2practice/leetcode/blob/main/Solutions/0031.%20Next%20Permutation.md)
 
@@ -86,6 +83,8 @@
 
 
 [219. Contains Duplicate II](https://github.com/code2practice/leetcode/blob/main/Solutions/0219.%20Contains%20Duplicate%20II.md)
+
+[224. Basic Calculator](https://github.com/code2practice/leetcode/blob/main/Solutions/0224.%20Basic%20Calculator.md)
 
 
 [227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md)

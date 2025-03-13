@@ -1,14 +1,32 @@
 [50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md)
 
+[56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/56.%20Merge%20Intervals.md)
+
+[57.Insert Interval](https://github.com/code2practice/leetcode/blob/main/Solutions/57.%20Insert%20Interval.md)
+
+[65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0065.%20Valid%20Number.md)
+
 [71. Simplify Path](https://github.com/code2practice/leetcode/blob/main/Solutions/0071.%20Simplify%20Path.md)
 
 [88. Merge Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0088.%20Merge%20Sorted%20Array.md)
+
+[121. Best Time to Buy and Sell Stock](https://github.com/code2practice/leetcode/blob/main/Solutions/0121.Best%20Time%20to%20Buy%20and%20Sell%20Stock.md)
+
+[122. Best Time to Buy and Sell Stock II](https://github.com/code2practice/leetcode/blob/main/Solutions/0122.Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.md)
+
+[123. Best Time to Buy and Sell Stock III](https://github.com/code2practice/leetcode/blob/main/Solutions/0123.Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.md)
+
+[129. Sum Root to Leaf Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/0129.%20Sum%20Root%20to%20Leaf%20Numbers.md)
 
 [125. Valid Palindrome](https://github.com/code2practice/leetcode/blob/main/Solutions/00125.%20Valid%20Palindrome.md)
 
 [138. Copy List with Random Pointer](https://github.com/code2practice/leetcode/blob/main/Solutions/0138.%20Copy%20List%20with%20Random%20Pointer.md)
 
+[146.LRU Cache](https://github.com/code2practice/leetcode/blob/main/Solutions/0146.%20LRU%20Cache.md)
+
 [162. Find Peak Element](https://github.com/code2practice/leetcode/blob/main/Solutions/0162.%20Find%20Peak%20Element.md)
+
+[199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/0199.%20Binary%20Tree%20Right%20Side%20View.md)
 
 [215.Kth Largest Element in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0215.%20Kth%20Largest%20Element%20in%20an%20Array.md)
 
@@ -32,11 +50,25 @@
 
 [560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/0560.%20Subarray%20Sum%20Equals%20K.md)
 
+[670. Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
+
 [680. Valid Palindrome II](https://github.com/code2practice/leetcode/blob/main/Solutions/0680.%20Valid%20Palindrome%20II.md)
 
 [791. Custom Sort String](https://github.com/code2practice/leetcode/blob/main/Solutions/0791.%20Custom%20Sort%20String.md)
 
+[827. Making A Large Island](https://github.com/code2practice/leetcode/blob/main/Solutions/0827.%20Making%20A%20Large%20Island.md)
+
 [938. Range Sum of BST](https://github.com/code2practice/leetcode/blob/main/Solutions/0938.%20Range%20Sum%20of%20BST.md)
+
+[973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/0973.%20K%20Closest%20Points%20to%20Origin.md)
+
+[986. Interval List Intersections](https://github.com/code2practice/leetcode/blob/main/Solutions/0986.%20Interval%20List%20Intersections.md)
+
+[987. Vertical Order Traversal of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0987.%20Vertical%20Order%20Traversal%20of%20a%20Binary%20Tree.md)
+
+[1004. Max Consecutive Ones III](https://github.com/code2practice/leetcode/blob/main/Solutions/1004.%20Max%20Consecutive%20Ones%20III.md)
+
+[1091. Shortest Path in Binary Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix.md)
 
 [1249. Minimum Remove to Make Valid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/1249.%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.md)
 

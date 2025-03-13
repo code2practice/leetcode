@@ -1,8 +1,8 @@
 [1.Two Sum]()
 
-[3. Longest Substring Without Repeating Characters](https://github.com/code2practice/leetcode/blob/main/Solutions/3.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
+[3. Longest Substring Without Repeating Characters](https://github.com/code2practice/leetcode/blob/main/Solutions/0003.%20Longest%20Substring%20Without%20Repeating%20Characters.md)
 
-[4.Median of Two Sorted Arrays](https://github.com/code2practice/leetcode/blob/main/Solutions/4.%20Median%20of%20Two%20Sorted%20Arrays.md)
+[4.Median of Two Sorted Arrays](https://github.com/code2practice/leetcode/blob/main/Solutions/0004.%20Median%20of%20Two%20Sorted%20Arrays.md)
 
 [5.Longest Palindromic Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/5.%20Longest%20Palindromic%20Substring.md)
 
@@ -16,19 +16,19 @@
 
 [18.4Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/18.%204Sum.md)
 
-[20.Valid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/20.%20Valid%20Parentheses.md)
+[20.Valid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/0020.%20Valid%20Parentheses.md)
 
 [21.Merge Two Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/21.%20Merge%20Two%20Sorted%20Lists.md)
 
-[23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/23.%20Merge%20k%20Sorted%20Lists.md)
+[23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/0023.%20Merge%20k%20Sorted%20Lists.md)
 
 [26.Remove Duplicates from Sorted Array]()
 
-[31. Next Permutation](https://github.com/code2practice/leetcode/blob/main/Solutions/31.%20Next%20Permutation.md)
+[31. Next Permutation](https://github.com/code2practice/leetcode/blob/main/Solutions/0031.%20Next%20Permutation.md)
 
-[33.Search in Rotated Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/33.%20Search%20in%20Rotated%20Sorted%20Array.md)
+[33.Search in Rotated Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0033.%20Search%20in%20Rotated%20Sorted%20Array.md)
 
-[34.Find First and Last Position of Element in Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.md)
+[34.Find First and Last Position of Element in Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0034.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.md)
 
 [35.Search Insert Position](https://github.com/code2practice/leetcode/blob/main/Solutions/35.%20Search%20Insert%20Position.md)
 
@@ -56,7 +56,7 @@
 
 [61.Rotate List](https://github.com/code2practice/leetcode/blob/main/Solutions/61.%20Rotate%20List.md)
 
-[65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/65.%20Valid%20Number.md)
+[65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0065.%20Valid%20Number.md)
 
 [68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/68.%20Text%20Justification.md)
 
@@ -64,7 +64,7 @@
 
 [72.Edit Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/72.%20Edit%20Distance.md)
 
-[76.Minimum Window Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/76.%20Minimum%20Window%20Substring.md)
+[76.Minimum Window Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/0076.%20Minimum%20Window%20Substring.md)
 
 [81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/81.%20Search%20in%20Rotated%20Sorted%20Array.md)
 
@@ -84,13 +84,13 @@
 
 [125.Valid Palindrome]()
 
-[127.Word Ladder](https://github.com/code2practice/leetcode/blob/main/Solutions/127.%20Word%20Ladder.md)
+[127.Word Ladder](https://github.com/code2practice/leetcode/blob/main/Solutions/0127.%20Word%20Ladder.md)
 
-[128.Longest Consecutive Sequence](https://github.com/code2practice/leetcode/blob/main/Solutions/128.%20Longest%20Consecutive%20Sequence.md)
+[128.Longest Consecutive Sequence](https://github.com/code2practice/leetcode/blob/main/Solutions/0128.%20Longest%20Consecutive%20Sequence.md)
 
 [143. Reorder List](https://github.com/code2practice/leetcode/blob/main/Solutions/143.%20Reorder%20List.md)
 
-[146.LRU Cache](https://github.com/code2practice/leetcode/blob/main/Solutions/146.%20LRU%20Cache.md)
+[146.LRU Cache](https://github.com/code2practice/leetcode/blob/main/Solutions/0146.%20LRU%20Cache.md)
 
 [149.Max Points on a Line](https://github.com/code2practice/leetcode/blob/main/Solutions/149.%20Max%20Points%20on%20a%20Line.md)
 
@@ -116,7 +116,7 @@
 
 [198.House Robber](https://github.com/code2practice/leetcode/blob/main/Solutions/198.%20House%20Robber.py)
 
-[199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/199.%20Binary%20Tree%20Right%20Side%20View.md)
+[199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/0199.%20Binary%20Tree%20Right%20Side%20View.md)
 
 [200.Number of Islands](https://github.com/code2practice/leetcode/blob/main/Solutions/200.%20Number%20of%20Islands.md)
 
@@ -143,7 +143,7 @@
 [238.Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/238.%20Product%20of%20Array%20Except%20Self.md)
 
 
-[239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/239.%20Sliding%20Window%20Maximum.md)
+[239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/0239.%20Sliding%20Window%20Maximum.md)
 
 
 [240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/240.%20Search%20a%202D%20Matrix.md)
@@ -187,7 +187,7 @@
 
 [339.Nested List Weight Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/339.%20Nested%20List%20Weight%20Sum.md)
 
-[341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/341.%20Flatten%20Nested%20List%20Iterator.md)
+[341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/0341.%20Flatten%20Nested%20List%20Iterator.md)
 
 [343. Integer Break](https://github.com/code2practice/leetcode/blob/main/Solutions/343.%20Integer%20Break.md)
 
@@ -211,7 +211,7 @@
 
 [373.Find K Pairs with Smallest Sums](https://github.com/code2practice/leetcode/blob/main/Solutions/373.%20Find%20K%20Pairs%20with%20Smallest%20Sums.md)
 
-[380.Insert Delete GetRandom O(1)](https://github.com/code2practice/leetcode/blob/main/Solutions/380.%20Insert%20Delete%20GetRandom%20O(1).md)
+[380.Insert Delete GetRandom O(1)](https://github.com/code2practice/leetcode/blob/main/Solutions/0380.%20Insert%20Delete%20GetRandom%20O(1).md)
 
 [381.Insert Delete GetRandom O(1) - Duplicates allowed](https://github.com/code2practice/leetcode/blob/main/Solutions/381.%20Insert%20Delete%20GetRandom%20O(1)%20-%20Duplicates%20allowed.md)
 
@@ -259,7 +259,7 @@
 
 [633.Sum of Square Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/633.%20Sum%20of%20Square%20Numbers.md)
 
-[636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/636.%20Exclusive%20Time%20of%20Functions.md)
+[636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/0636.%20Exclusive%20Time%20of%20Functions.md)
 
 [642.Design Search Autocomplete System (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md)
 
@@ -291,7 +291,7 @@
 
 [716.Max Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/716.%20Max%20Stack.md)
 
-[721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/721.%20Accounts%20Merge.md)
+[721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/0721.%20Accounts%20Merge.md)
 
 [730.Count Different Palindromic Subsequences]()
 
@@ -323,7 +323,7 @@
 
 [953.Verifying an Alien Dictionary](https://github.com/code2practice/leetcode/blob/main/Solutions/953.%20Verifying%20an%20Alien%20Dictionary.md)
 
-[973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/973.%20K%20Closest%20Points%20to%20Origin.md)
+[973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/0973.%20K%20Closest%20Points%20to%20Origin.md)
 
 [994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.md)
 

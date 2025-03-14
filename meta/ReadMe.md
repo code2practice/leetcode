@@ -4,9 +4,21 @@
 
 [4.Median of Two Sorted Arrays](https://github.com/code2practice/leetcode/blob/main/Solutions/0004.%20Median%20of%20Two%20Sorted%20Arrays.md)
 
+[5. Longest Palindromic Substring](https://github.com/code2practice/leetcode/blob/main/Solutions/0005.%20Longest%20Palindromic%20Substring.md)
+
+[8. String to Integer (atoi)](https://github.com/code2practice/leetcode/blob/main/Solutions/0008.%20String%20to%20Integer%20(atoi).md)
+
 [9. Palindrome Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0009.Palindrome%20Number.md)
 
+[11. Container With Most Water](https://github.com/code2practice/leetcode/blob/main/Solutions/0011.Container%20With%20Most%20Water.md)
+
+[13. Roman to Integer](https://github.com/code2practice/leetcode/blob/main/Solutions/0013.Roman%20to%20Integer.md)
+
 [14. Longest Common Prefix](https://github.com/code2practice/leetcode/blob/main/Solutions/0014.Longest%20Common%20Prefix.md)
+
+[15.3Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/15.%203Sum.md)
+
+[17.Letter Combinations of a Phone Number](https://github.com/code2practice/leetcode/blob/main/Solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.md)
 
 [19. Remove Nth Node From End of List](https://github.com/code2practice/leetcode/blob/main/Solutions/0019.%20Remove%20Nth%20Node%20From%20End%20of%20List.md)
 
@@ -25,6 +37,8 @@
 
 [43. Multiply Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/0043.Multiply%20Strings.md)
 
+[49. Group Anagrams](https://github.com/code2practice/leetcode/blob/main/Solutions/0049.Group%20Anagrams.md)
+
 [50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md)
 
 [56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/56.%20Merge%20Intervals.md)
@@ -35,6 +49,8 @@
 
 [66. Plus One](https://github.com/code2practice/leetcode/blob/main/Solutions/0066.Plus%20One.md)
 
+[70. Climbing Stairs](https://github.com/code2practice/leetcode/blob/main/Solutions/0070.Climbing%20Stairs.md)
+
 [71. Simplify Path](https://github.com/code2practice/leetcode/blob/main/Solutions/0071.%20Simplify%20Path.md)
 
 [75. Sort Colors](https://github.com/code2practice/leetcode/blob/main/Solutions/0075.Sort%20Colors.md)
@@ -43,7 +59,11 @@
 
 [78. Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/0078.Subsets.md)
 
+[80. Remove Duplicates from Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/0080.Remove%20Duplicates%20from%20Sorted%20Array%20II.md)
+
 [88. Merge Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0088.%20Merge%20Sorted%20Array.md)
+
+[116. Populating Next Right Pointers in Each Node](https://github.com/code2practice/leetcode/blob/main/Solutions/0116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md)
 
 [121. Best Time to Buy and Sell Stock](https://github.com/code2practice/leetcode/blob/main/Solutions/0121.Best%20Time%20to%20Buy%20and%20Sell%20Stock.md)
 
@@ -77,6 +97,8 @@
 
 [199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/0199.%20Binary%20Tree%20Right%20Side%20View.md)
 
+[200.Number of Islands](https://github.com/code2practice/leetcode/blob/main/Solutions/200.%20Number%20of%20Islands.md)
+
 [207. Course Schedule](https://github.com/code2practice/leetcode/blob/main/Solutions/0207.Course%20Schedule.md)
 
 [215.Kth Largest Element in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0215.%20Kth%20Largest%20Element%20in%20an%20Array.md)
@@ -89,9 +111,13 @@
 
 [227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md)
 
+[235.Lowest Common Ancestor of a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.md)
+
 [236.Lowest Common Ancestor of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.md)
 
 [239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/0239.%20Sliding%20Window%20Maximum.md)
+
+[240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/240.%20Search%20a%202D%20Matrix.md)
 
 [249. Group Shifted Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/0249.%20Group%20Shifted%20Strings.md)
 
@@ -101,11 +127,19 @@
 
 [270. Closest Binary Search Tree Value](https://github.com/code2practice/leetcode/blob/main/Solutions/0270.%20Closest%20Binary%20Search%20Tree%20Value.md)
 
+[(pending)282. Expression Add Operators](https://github.com/code2practice/leetcode/blob/main/Solutions/282.%20Expression%20Add%20Operators.md)
+
 [283. Move Zeroes](https://github.com/code2practice/leetcode/blob/main/Solutions/0283.Move%20Zeroes.md)
+
+[295.Find Median from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/295.%20Find%20Median%20from%20Data%20Stream.md)
 
 [301. Remove Invalid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/0301.Remove%20Invalid%20Parentheses.md)
 
+[311.Sparse Matrix Multiplication](https://github.com/code2practice/leetcode/blob/main/Solutions/311.%20Sparse%20Matrix%20Multiplication.md)
+
 [314. Binary Tree Vertical Order Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/0314.%20Binary%20Tree%20Vertical%20Order%20Traversal.md)
+
+[317. Shortest Distance from All Buildings 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0317.Shortest%20Distance%20from%20All%20Buildings.md)
 
 [339.Nested List Weight Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0339.%20Nested%20List%20Weight%20Sum.md)
 
@@ -115,7 +149,13 @@
 
 [347.Top K Frequent Elements](https://github.com/code2practice/leetcode/blob/main/Solutions/0347.%20Top%20K%20Frequent%20Elements.md)
 
+[348. Design Tic-Tac-Toe 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0348.Design%20Tic-Tac-Toe.md)
+
+[378. Kth Smallest Element in a Sorted Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/0378.Kth%20Smallest%20Element%20in%20a%20Sorted%20Matrix.md)
+
 [380.Insert Delete GetRandom O(1)](https://github.com/code2practice/leetcode/blob/main/Solutions/0380.%20Insert%20Delete%20GetRandom%20O(1).md)
+
+[392. Is Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/0392.Is%20Subsequence.md)
 
 [398. Random Pick Index](https://github.com/code2practice/leetcode/blob/main/Solutions/0398.Random%20Pick%20Index.md)
 
@@ -129,9 +169,15 @@
 
 [480. Sliding Window Median](https://github.com/code2practice/leetcode/blob/main/Solutions/0480.Sliding%20Window%20Median.md)
 
+[489. Robot Room Cleaner (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/489.%20Robot%20Room%20Cleaner.md)
+
 [498. Diagonal Traverse](https://github.com/code2practice/leetcode/blob/main/Solutions/0498.Diagonal%20Traverse.md)
 
+[503. Next Greater Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0503.Next%20Greater%20Element%20II.md)
+
 [523. Continuous Subarray Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0523.%20Continuous%20Subarray%20Sum.md)
+
+[525. Contiguous Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0525.Contiguous%20Array.md)
 
 [528.Random Pick with Weight](https://github.com/code2practice/leetcode/blob/main/Solutions/0528.%20Random%20Pick%20with%20Weight.md)
 
@@ -146,9 +192,13 @@
 
 [636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/636.%20Exclusive%20Time%20of%20Functions.md)
 
+[647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/647.%20Palindromic%20Substrings.md)
+
 [670. Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
 
 [680. Valid Palindrome II](https://github.com/code2practice/leetcode/blob/main/Solutions/0680.%20Valid%20Palindrome%20II.md)
+
+[695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/695.%20Max%20Area%20of%20Island.md)
 
 [708. Insert into a Sorted Circular Linked List 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0708.%20Insert%20into%20a%20Sorted%20Circular%20Linked%20List.md)
 
@@ -166,8 +216,13 @@
 
 [863. All Nodes Distance K in Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree.md)
 
+[865. Smallest Subtree with all the Deepest Nodes](https://github.com/code2practice/leetcode/blob/main/Solutions/0865.Smallest%20Subtree%20with%20all%20the%20Deepest%20Nodes.md)
+
+[921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)
 
 [938. Range Sum of BST](https://github.com/code2practice/leetcode/blob/main/Solutions/0938.%20Range%20Sum%20of%20BST.md)
+
+[953.Verifying an Alien Dictionary](https://github.com/code2practice/leetcode/blob/main/Solutions/953.%20Verifying%20an%20Alien%20Dictionary.md)
 
 [958. Check Completeness of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0958.Check%20Completeness%20of%20a%20Binary%20Tree.md)
 
@@ -179,9 +234,19 @@
 
 [1004. Max Consecutive Ones III](https://github.com/code2practice/leetcode/blob/main/Solutions/1004.%20Max%20Consecutive%20Ones%20III.md)
 
+[1011. Capacity To Ship Packages Within D Days](https://github.com/code2practice/leetcode/blob/main/Solutions/1011.Capacity%20To%20Ship%20Packages%20Within%20D%20Days.md)
+
+[1028. Recover a Tree From Preorder Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/1028.Recover%20a%20Tree%20From%20Preorder%20Traversal.md)
+
 [1047. Remove All Adjacent Duplicates In String](https://github.com/code2practice/leetcode/blob/main/Solutions/1047.Remove%20All%20Adjacent%20Duplicates%20In%20String.md)
 
+[1079. Letter Tile Possibilities](https://github.com/code2practice/leetcode/blob/main/Solutions/1079.Letter%20Tile%20Possibilities.md)
+
 [1091. Shortest Path in Binary Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix.md)
+
+[1209. Remove All Adjacent Duplicates in String II](https://github.com/code2practice/leetcode/blob/main/Solutions/1209.Remove%20All%20Adjacent%20Duplicates%20in%20String%20II.md)
+
+[1216. Valid Palindrome III 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1216.Valid%20Palindrome%20III.md)
 
 [1249. Minimum Remove to Make Valid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/1249.%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.md)
 
@@ -202,3 +267,7 @@
 [1790. Check if One String Swap Can Make Strings Equal](https://github.com/code2practice/leetcode/blob/main/Solutions/1790.Check%20if%20One%20String%20Swap%20Can%20Make%20Strings%20Equal.md)
 
 [1891. Cutting Ribbons 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1891.Cutting%20Ribbons.md)
+
+[2965. Find Missing and Repeated Values](https://github.com/code2practice/leetcode/blob/main/Solutions/2965.Find%20Missing%20and%20Repeated%20Values.md)
+
+[3371. Identify the Largest Outlier in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/3371.Identify%20the%20Largest%20Outlier%20in%20an%20Array.md)

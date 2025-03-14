@@ -53,7 +53,7 @@
 
 [129. Sum Root to Leaf Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/0129.%20Sum%20Root%20to%20Leaf%20Numbers.md)
 
-[125. Valid Palindrome](https://github.com/code2practice/leetcode/blob/main/Solutions/00125.%20Valid%20Palindrome.md)
+[125. Valid Palindrome](https://github.com/code2practice/leetcode/blob/main/Solutions/0125.%20Valid%20Palindrome.md)
 
 [127.Word Ladder](https://github.com/code2practice/leetcode/blob/main/Solutions/0127.%20Word%20Ladder.md)
 

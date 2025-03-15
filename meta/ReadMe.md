@@ -220,11 +220,11 @@
 
 [865. Smallest Subtree with all the Deepest Nodes](https://github.com/code2practice/leetcode/blob/main/Solutions/0865.Smallest%20Subtree%20with%20all%20the%20Deepest%20Nodes.md)
 
-[921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)
+[921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/0921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)
 
 [938. Range Sum of BST](https://github.com/code2practice/leetcode/blob/main/Solutions/0938.%20Range%20Sum%20of%20BST.md)
 
-[953.Verifying an Alien Dictionary](https://github.com/code2practice/leetcode/blob/main/Solutions/953.%20Verifying%20an%20Alien%20Dictionary.md)
+[953.Verifying an Alien Dictionary](https://github.com/code2practice/leetcode/blob/main/Solutions/0953.%20Verifying%20an%20Alien%20Dictionary.md)
 
 [958. Check Completeness of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0958.Check%20Completeness%20of%20a%20Binary%20Tree.md)
 

@@ -153,7 +153,7 @@
 
 [348. Design Tic-Tac-Toe 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0348.Design%20Tic-Tac-Toe.md)
 
-[378. Kth Smallest Element in a Sorted Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/0378.Kth%20Smallest%20Element%20in%20a%20Sorted%20Matrix.md)
+[(pending)378. Kth Smallest Element in a Sorted Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/0378.Kth%20Smallest%20Element%20in%20a%20Sorted%20Matrix.md)
 
 [380.Insert Delete GetRandom O(1)](https://github.com/code2practice/leetcode/blob/main/Solutions/0380.%20Insert%20Delete%20GetRandom%20O(1).md)
 
@@ -169,9 +169,9 @@
 
 [435. Non-overlapping Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/0435.Non-overlapping%20Intervals.md)
 
-[480. Sliding Window Median](https://github.com/code2practice/leetcode/blob/main/Solutions/0480.Sliding%20Window%20Median.md)
+[(pending)480. Sliding Window Median](https://github.com/code2practice/leetcode/blob/main/Solutions/0480.Sliding%20Window%20Median.md)
 
-[489. Robot Room Cleaner (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/489.%20Robot%20Room%20Cleaner.md)
+[489. Robot Room Cleaner (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/0489.%20Robot%20Room%20Cleaner.md)
 
 [498. Diagonal Traverse](https://github.com/code2practice/leetcode/blob/main/Solutions/0498.Diagonal%20Traverse.md)
 
@@ -185,30 +185,30 @@
 
 [529. Minesweeper](https://github.com/code2practice/leetcode/blob/main/Solutions/0529.Minesweeper.md)
 
-[536. Construct Binary Tree from String 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0536.Construct%20Binary%20Tree%20from%20String.md)
+[(pending)536. Construct Binary Tree from String 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0536.Construct%20Binary%20Tree%20from%20String.md)
 
 
 [543. Diameter of Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0543.%20Diameter%20of%20Binary%20Tree.md)
 
 [560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/0560.%20Subarray%20Sum%20Equals%20K.md)
 
-[636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/636.%20Exclusive%20Time%20of%20Functions.md)
+[636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/0636.%20Exclusive%20Time%20of%20Functions.md)
 
-[647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/647.%20Palindromic%20Substrings.md)
+[647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/0647.%20Palindromic%20Substrings.md)
 
-[670. Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
+[(revise)670. Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
 
 [680. Valid Palindrome II](https://github.com/code2practice/leetcode/blob/main/Solutions/0680.%20Valid%20Palindrome%20II.md)
 
-[695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/695.%20Max%20Area%20of%20Island.md)
+[695.Max Area of Island](https://github.com/code2practice/leetcode/blob/main/Solutions/0695.%20Max%20Area%20of%20Island.md)
 
-[708. Insert into a Sorted Circular Linked List 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0708.%20Insert%20into%20a%20Sorted%20Circular%20Linked%20List.md)
+[(revise) 708. Insert into a Sorted Circular Linked List 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0708.%20Insert%20into%20a%20Sorted%20Circular%20Linked%20List.md)
 
 [721.Accounts Merge](https://github.com/code2practice/leetcode/blob/main/Solutions/0721.%20Accounts%20Merge.md)
 
 [733. Flood Fill](https://github.com/code2practice/leetcode/blob/main/Solutions/0733.Flood%20Fill.md)
 
-[766. Toeplitz Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/0766.Toeplitz%20Matrix.md)
+[(revise)766. Toeplitz Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/0766.Toeplitz%20Matrix.md)
 
 [791. Custom Sort String](https://github.com/code2practice/leetcode/blob/main/Solutions/0791.%20Custom%20Sort%20String.md)
 

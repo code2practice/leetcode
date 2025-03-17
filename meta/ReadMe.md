@@ -41,9 +41,9 @@
 
 [50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md)
 
-[56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/56.%20Merge%20Intervals.md)
+[56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/0056.%20Merge%20Intervals.md)
 
-[57.Insert Interval](https://github.com/code2practice/leetcode/blob/main/Solutions/57.%20Insert%20Interval.md)
+[57.Insert Interval](https://github.com/code2practice/leetcode/blob/main/Solutions/0057.%20Insert%20Interval.md)
 
 [65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0065.%20Valid%20Number.md)
 

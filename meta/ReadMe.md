@@ -71,7 +71,7 @@
 
 [122. Best Time to Buy and Sell Stock II](https://github.com/code2practice/leetcode/blob/main/Solutions/0122.Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.md)
 
-[123. Best Time to Buy and Sell Stock III](https://github.com/code2practice/leetcode/blob/main/Solutions/0123.Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.md)
+[(pending hard)123. Best Time to Buy and Sell Stock III](https://github.com/code2practice/leetcode/blob/main/Solutions/0123.Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.md)
 
 [129. Sum Root to Leaf Numbers](https://github.com/code2practice/leetcode/blob/main/Solutions/0129.%20Sum%20Root%20to%20Leaf%20Numbers.md)
 
@@ -95,7 +95,7 @@
 
 [163. Missing Ranges 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0163.Missing%20Ranges.md)
 
-[173.Binary Search Tree Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/173.%20Binary%20Search%20Tree%20Iterator.md)
+[173.Binary Search Tree Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/0173.%20Binary%20Search%20Tree%20Iterator.md)
 
 [199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/0199.%20Binary%20Tree%20Right%20Side%20View.md)
 
@@ -113,13 +113,13 @@
 
 [227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md)
 
-[235.Lowest Common Ancestor of a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.md)
+[235.Lowest Common Ancestor of a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.md)
 
 [236.Lowest Common Ancestor of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.md)
 
 [239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/0239.%20Sliding%20Window%20Maximum.md)
 
-[240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/240.%20Search%20a%202D%20Matrix.md)
+[240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/0240.%20Search%20a%202D%20Matrix.md)
 
 [249. Group Shifted Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/0249.%20Group%20Shifted%20Strings.md)
 

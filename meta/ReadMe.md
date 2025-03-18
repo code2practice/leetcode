@@ -16,9 +16,9 @@
 
 [14. Longest Common Prefix](https://github.com/code2practice/leetcode/blob/main/Solutions/0014.Longest%20Common%20Prefix.md)
 
-[15.3Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/15.%203Sum.md)
+[15.3Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0015.%203Sum.md)
 
-[17.Letter Combinations of a Phone Number](https://github.com/code2practice/leetcode/blob/main/Solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.md)
+[17.Letter Combinations of a Phone Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0017.%20Letter%20Combinations%20of%20a%20Phone%20Number.md)
 
 [19. Remove Nth Node From End of List](https://github.com/code2practice/leetcode/blob/main/Solutions/0019.%20Remove%20Nth%20Node%20From%20End%20of%20List.md)
 

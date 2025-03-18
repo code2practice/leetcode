@@ -99,7 +99,7 @@
 
 [199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/0199.%20Binary%20Tree%20Right%20Side%20View.md)
 
-[200.Number of Islands](https://github.com/code2practice/leetcode/blob/main/Solutions/200.%20Number%20of%20Islands.md)
+[200.Number of Islands](https://github.com/code2practice/leetcode/blob/main/Solutions/0200.%20Number%20of%20Islands.md)
 
 [207. Course Schedule](https://github.com/code2practice/leetcode/blob/main/Solutions/0207.Course%20Schedule.md)
 
@@ -129,15 +129,15 @@
 
 [270. Closest Binary Search Tree Value](https://github.com/code2practice/leetcode/blob/main/Solutions/0270.%20Closest%20Binary%20Search%20Tree%20Value.md)
 
-[(pending)282. Expression Add Operators](https://github.com/code2practice/leetcode/blob/main/Solutions/282.%20Expression%20Add%20Operators.md)
+[(pending)282. Expression Add Operators](https://github.com/code2practice/leetcode/blob/main/Solutions/0282.%20Expression%20Add%20Operators.md)
 
 [283. Move Zeroes](https://github.com/code2practice/leetcode/blob/main/Solutions/0283.Move%20Zeroes.md)
 
-[295.Find Median from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/295.%20Find%20Median%20from%20Data%20Stream.md)
+[295.Find Median from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/0295.%20Find%20Median%20from%20Data%20Stream.md)
 
 [301. Remove Invalid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/0301.Remove%20Invalid%20Parentheses.md)
 
-[311.Sparse Matrix Multiplication](https://github.com/code2practice/leetcode/blob/main/Solutions/311.%20Sparse%20Matrix%20Multiplication.md)
+[311.Sparse Matrix Multiplication](https://github.com/code2practice/leetcode/blob/main/Solutions/0311.%20Sparse%20Matrix%20Multiplication.md)
 
 [314. Binary Tree Vertical Order Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/0314.%20Binary%20Tree%20Vertical%20Order%20Traversal.md)
 

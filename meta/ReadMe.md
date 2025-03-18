@@ -25,7 +25,7 @@
 [20.Valid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/0020.%20Valid%20Parentheses.md)
 
 
-[23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/23.%20Merge%20k%20Sorted%20Lists.md)
+[23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/0023.%20Merge%20k%20Sorted%20Lists.md)
 
 [26. Remove Duplicates from Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0026.Remove%20Duplicates%20from%20Sorted%20Array.md)
 

@@ -784,7 +784,150 @@ class Solution:
 
         return longest_palindrom
 ```
-404: Not Found---
+# [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)
+
+[中文文档](/solution/0000-0099/0008.String%20to%20Integer%20%28atoi%29/README.md)
+
+## Description
+
+<!-- description:start -->
+
+<p>Implement the <code>myAtoi(string s)</code> function, which converts a string to a 32-bit signed integer.</p>
+
+<p>The algorithm for <code>myAtoi(string s)</code> is as follows:</p>
+
+<ol>
+	<li><strong>Whitespace</strong>: Ignore any leading whitespace (<code>&quot; &quot;</code>).</li>
+	<li><strong>Signedness</strong>: Determine the sign by checking if the next character is <code>&#39;-&#39;</code> or <code>&#39;+&#39;</code>, assuming positivity if neither present.</li>
+	<li><strong>Conversion</strong>: Read the integer by skipping leading zeros&nbsp;until a non-digit character is encountered or the end of the string is reached. If no digits were read, then the result is 0.</li>
+	<li><strong>Rounding</strong>: If the integer is out of the 32-bit signed integer range <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>, then round the integer to remain in the range. Specifically, integers less than <code>-2<sup>31</sup></code> should be rounded to <code>-2<sup>31</sup></code>, and integers greater than <code>2<sup>31</sup> - 1</code> should be rounded to <code>2<sup>31</sup> - 1</code>.</li>
+</ol>
+
+<p>Return the integer as the final result.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;42&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">42</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<pre>
+The underlined characters are what is read in and the caret is the current reader position.
+Step 1: &quot;42&quot; (no characters read because there is no leading whitespace)
+         ^
+Step 2: &quot;42&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)
+         ^
+Step 3: &quot;<u>42</u>&quot; (&quot;42&quot; is read in)
+           ^
+</pre>
+</div>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot; -042&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">-42</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<pre>
+Step 1: &quot;<u>   </u>-042&quot; (leading whitespace is read and ignored)
+            ^
+Step 2: &quot;   <u>-</u>042&quot; (&#39;-&#39; is read, so the result should be negative)
+             ^
+Step 3: &quot;   -<u>042</u>&quot; (&quot;042&quot; is read in, leading zeros ignored in the result)
+               ^
+</pre>
+</div>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;1337c0d3&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">1337</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<pre>
+Step 1: &quot;1337c0d3&quot; (no characters read because there is no leading whitespace)
+         ^
+Step 2: &quot;1337c0d3&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)
+         ^
+Step 3: &quot;<u>1337</u>c0d3&quot; (&quot;1337&quot; is read in; reading stops because the next character is a non-digit)
+             ^
+</pre>
+</div>
+
+<p><strong class="example">Example 4:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;0-1&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">0</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<pre>
+Step 1: &quot;0-1&quot; (no characters read because there is no leading whitespace)
+         ^
+Step 2: &quot;0-1&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)
+         ^
+Step 3: &quot;<u>0</u>-1&quot; (&quot;0&quot; is read in; reading stops because the next character is a non-digit)
+          ^
+</pre>
+</div>
+
+<p><strong class="example">Example 5:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;words and 987&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">0</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>Reading stops at the first non-digit character &#39;w&#39;.</p>
+</div>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>0 &lt;= s.length &lt;= 200</code></li>
+	<li><code>s</code> consists of English letters (lower-case and upper-case), digits (<code>0-9</code>), <code>&#39; &#39;</code>, <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, and <code>&#39;.&#39;</code>.</li>
+</ul>
+
+```python
+class Solution:
+    def myAtoi(self, s: str) -> int:
+        s = s.strip()
+        if not s:
+            return 0
+        neg = s[0] == "-"
+        pos = s[0] == "+"
+        i = 1 if neg or pos else 0
+        while i < len(s) and s[i] == "0":
+            i += 1
+        num = 0
+        while i < len(s) and s[i].isdigit():
+            num *= 10
+            num += int(s[i])
+            i += 1
+        if neg and num >= pow(2, 31):
+            return -pow(2, 31)
+        if num > pow(2, 31) - 1:
+            num = pow(2, 31) - 1
+        if neg:
+            return -num
+        return num
+```
+---
 comments: true
 difficulty: Easy
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/0000-0099/0009.Palindrome%20Number/README_EN.md
@@ -1888,21 +2031,200 @@ end
 <!-- solution:end -->
 
 <!-- problem:end -->
-404: Not Found404: Not Found# [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
+# [15. 3Sum](https://leetcode.com/problems/3sum)
 
-### Question:
-Given a linked list, remove the n-th node from the end of list and return its head.
 
+## Description
+
+<!-- description:start -->
+
+<p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+
+<p>Notice that the solution set must not contain duplicate triplets.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [-1,0,1,2,-1,-4]
+<strong>Output:</strong> [[-1,-1,2],[-1,0,1]]
+<strong>Explanation:</strong> 
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+The distinct triplets are [-1,0,1] and [-1,-1,2].
+Notice that the order of the output and the order of the triplets does not matter.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [0,1,1]
+<strong>Output:</strong> []
+<strong>Explanation:</strong> The only possible triplet does not sum up to 0.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [0,0,0]
+<strong>Output:</strong> [[0,0,0]]
+<strong>Explanation:</strong> The only possible triplet sums up to 0.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
+</ul>
+
+<!-- description:end -->
+
+```python
+class Solution:
+   def threeSum(self, nums):
+       nums.sort()
+       result = []
+       for left in range(len(nums) - 2): # renamed this to left because this will always be the leftmost pointer in the triplet
+           if left > 0 and nums[left] == nums[left - 1]: # this step makes sure that we do not have any duplicates in our result output
+               continue
+           mid = left + 1 # renamed this to mid because this is the pointer that is between the left and right pointers
+           right = len(nums) - 1
+           while mid < right:
+               curr_sum = nums[left] + nums[mid] + nums[right]
+               if curr_sum < 0:
+                   mid += 1
+               elif curr_sum > 0:
+                   right -= 1
+               else:
+                   result.append([nums[left], nums[mid], nums[right]])
+                   while mid < right and nums[mid] == nums[mid + 1]: # Another conditional for not calculating duplicates
+                       mid += 1
+                   while mid < right and nums[right] == nums[right - 1]: # Avoiding duplicates check
+                       right -= 1
+                   mid += 1
+                   right -= 1
+       return result
 ```
-Example:
 
-Given linked list: 1->2->3->4->5, and n = 2.
 
-After removing the second node from the end, the linked list becomes 1->2->3->5.
 
+### Time Complexity
+The time complexity of the given code is O(n^2). This is because there is a nested loop where the outer loop runs for n times (reduced by 2 to avoid unnecessary 
+last iterations due to triplets), and within this loop, there are two pointers that are moving independently towards each other, which in total will lead to n iterations 
+in the worst case. There are no nested loops inside the while loop, so the inner operations are constant time notwithstanding the while conditions which are also O(n). 
+Multiplying these together gives us n * n = n^2, hence O(n^2).
+### Space Complexity
+The space complexity of the code is O(log n) if we don't take the output space into consideration, which would be O(n). The space complexity arises due to the space used 
+by the sorting algorithm, which is typically O(log n) for the commonly used algorithms like QuickSort or MergeSort in many standard programming libraries.
+# [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
+
+
+## Description
+
+<!-- description:start -->
+
+<p>Given a string containing digits from <code>2-9</code> inclusive, return all possible letter combinations that the number could represent. Return the answer in <strong>any order</strong>.</p>
+
+<p>A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.</p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0000-0099/0017.Letter%20Combinations%20of%20a%20Phone%20Number/images/1200px-telephone-keypad2svg.png" style="width: 300px; height: 243px;" />
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> digits = &quot;23&quot;
+<strong>Output:</strong> [&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> digits = &quot;&quot;
+<strong>Output:</strong> []
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> digits = &quot;2&quot;
+<strong>Output:</strong> [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>0 &lt;= digits.length &lt;= 4</code></li>
+	<li><code>digits[i]</code> is a digit in the range <code>[&#39;2&#39;, &#39;9&#39;]</code>.</li>
+</ul>
+
+
+```python
+class Solution:
+   def letterCombinations(self, digits: str) -> List[str]:
+       d = { "2": "abc", "3": "def", "4":"ghi", "5":"jkl", "6":"mno", "7":"pqrs", "8":"tuv", "9":"wxyz"}
+       def dfs(digits, curr, ans, index):
+           if index > len(digits):
+               return
+           if index == len(digits):
+               ans.append(curr)
+               return
+           for c in d[digits[index]]:
+               dfs(digits, curr + c, ans, index + 1)
+       if not digits:
+           return []
+       ans = []
+       dfs(digits, '', ans, 0)
+       return ans
 ```
+# [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
+
+[中文文档](/solution/0000-0099/0019.Remove%20Nth%20Node%20From%20End%20of%20List/README.md)
+
+## Description
+
+<!-- description:start -->
+
+<p>Given the <code>head</code> of a linked list, remove the <code>n<sup>th</sup></code> node from the end of the list and return its head.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0000-0099/0019.Remove%20Nth%20Node%20From%20End%20of%20List/images/remove_ex1.jpg" style="width: 542px; height: 222px;" />
+<pre>
+<strong>Input:</strong> head = [1,2,3,4,5], n = 2
+<strong>Output:</strong> [1,2,3,5]
+</pre>
 
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> head = [1], n = 1
+<strong>Output:</strong> []
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> head = [1,2], n = 1
+<strong>Output:</strong> [1]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the list is <code>sz</code>.</li>
+	<li><code>1 &lt;= sz &lt;= 30</code></li>
+	<li><code>0 &lt;= Node.val &lt;= 100</code></li>
+	<li><code>1 &lt;= n &lt;= sz</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> Could you do this in one pass?</p>
+
+### Solution with One pass only
 ```python
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
@@ -1916,6 +2238,7 @@ class Solution:
         slow.next = slow.next.next
         return head
 ```
+
 #### Check if list size is less than n
 
 ```python
@@ -2025,7 +2348,133 @@ class Solution:
                 return False
         return not stk
 ```
-404: Not Found---
+# [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)
+
+[中文文档](/solution/0000-0099/0023.Merge%20k%20Sorted%20Lists/README.md)
+
+## Description
+
+<!-- description:start -->
+
+<p>You are given an array of <code>k</code> linked-lists <code>lists</code>, each linked-list is sorted in ascending order.</p>
+
+<p><em>Merge all the linked-lists into one sorted linked-list and return it.</em></p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> lists = [[1,4,5],[1,3,4],[2,6]]
+<strong>Output:</strong> [1,1,2,3,4,4,5,6]
+<strong>Explanation:</strong> The linked-lists are:
+[
+  1-&gt;4-&gt;5,
+  1-&gt;3-&gt;4,
+  2-&gt;6
+]
+merging them into one sorted list:
+1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> lists = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> lists = [[]]
+<strong>Output:</strong> []
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>k == lists.length</code></li>
+	<li><code>0 &lt;= k &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= lists[i].length &lt;= 500</code></li>
+	<li><code>-10<sup>4</sup> &lt;= lists[i][j] &lt;= 10<sup>4</sup></code></li>
+	<li><code>lists[i]</code> is sorted in <strong>ascending order</strong>.</li>
+	<li>The sum of <code>lists[i].length</code> will not exceed <code>10<sup>4</sup></code>.</li>
+</ul>
+
+
+### Using Merge Sort
+```python
+class Solution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        def merge2list(l1, l2):
+            if not l1:
+                return l2
+            if not l2:
+                return l1
+            if l1.val < l2.val:
+                l1.next = merge2list(l1.next, l2)
+                return l1
+            else:
+                l2.next = merge2list(l1, l2.next)
+                return l2
+
+        if not lists:
+            return None
+        if len(lists) == 1:
+            return lists[0]
+        l = len(lists) // 2
+        first = self.mergeKLists(lists[:l])
+        second = self.mergeKLists(lists[l:])
+        return merge2list(first, second)
+```
+### Time and Space Complexity
+```
+For those who curious about why Divide-Conquer method has TC : O(Nlog(N))
+
+Splitting list into two, log(N) times = O(log(N))
+Merging split lists into one in ascending order, need to traverse every element = O(N)
+In Summary, we merging it log(N) times and in each merging we should traverse N element.
+Therefore the Time Complexity is O(Nlog(N)) where n is the number of element.
+
+In this case, the element is a linked list, so I think Time Complexity is O(Mlog(N))
+N : number of linked lists
+M : number of element of merged linked list
+```
+
+
+### Using Priority Queue
+```python
+import queue
+class Solution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        if not lists:
+            return None
+        curr = res = ListNode(0)
+        q = queue.PriorityQueue()
+        for index, l in enumerate(lists):
+            if not l:
+                continue
+            q.put((l.val, index, l))
+        while q.qsize():
+            v, index, node = q.get()
+            curr.next = node
+            curr = curr.next
+            if node.next:
+                q.put((node.next.val, index, node.next))
+        return res.next
+```
+
+
+### Time complexity:
+Heap Operations: Each insertion and extraction from the heap takes O(logk), where k is the number of lists.  
+Total Nodes Processed: Across all lists, there are N nodes in total.  
+Overall Complexity: Since each node is pushed and popped once, the total time complexity is O(Nlogk).  
+### Space complexity:
+The heap stores at most k elements at any time, giving O(k) space for the heap.  
+Other auxiliary space used is O(1) (excluding the output list).  
+Total Space Complexity: O(k).  
+---
 comments: true
 difficulty: Easy
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/0000-0099/0026.Remove%20Duplicates%20from%20Sorted%20Array/README_EN.md
@@ -2552,22 +3001,17 @@ The time complexity is $O(m \times n)$, and the space complexity is $O(m + n)$. 
 #### Python3
 
 ```python
-class Solution:
-    def multiply(self, num1: str, num2: str) -> str:
-        if num1 == "0" or num2 == "0":
-            return "0"
-        m, n = len(num1), len(num2)
-        arr = [0] * (m + n)
-        for i in range(m - 1, -1, -1):
-            a = int(num1[i])
-            for j in range(n - 1, -1, -1):
-                b = int(num2[j])
-                arr[i + j + 1] += a * b
-        for i in range(m + n - 1, 0, -1):
-            arr[i - 1] += arr[i] // 10
-            arr[i] %= 10
-        i = 0 if arr[0] else 1
-        return "".join(str(x) for x in arr[i:])
+class Solution(object):
+    def multiply(self, num1, num2):
+        res = [0] * (len(num1) + len(num2))
+        for i in range(len(num1) - 1, -1, -1):
+            for j in range(len(num2) - 1, -1, -1):
+                prod_pos = i + j + 1
+                res[prod_pos] += int(num1[i]) * int(num2[j])
+                res[prod_pos - 1] += res[prod_pos] // 10
+                res[prod_pos] = res[prod_pos] % 10
+        res = "".join(map(str, res))
+        return "0" if not res.lstrip("0") else res.lstrip("0")
 ```
 
 #### Java
@@ -8087,22 +8531,35 @@ The time complexity is $O(n)$, where $n$ is the length of the array $nums$. Igno
 #### Python3
 
 ```python
+from typing import List
 class Solution:
-    def findMissingRanges(
-        self, nums: List[int], lower: int, upper: int
-    ) -> List[List[int]]:
-        n = len(nums)
-        if n == 0:
-            return [[lower, upper]]
-        ans = []
-        if nums[0] > lower:
-            ans.append([lower, nums[0] - 1])
-        for a, b in pairwise(nums):
-            if b - a > 1:
-                ans.append([a + 1, b - 1])
-        if nums[-1] < upper:
-            ans.append([nums[-1] + 1, upper])
-        return ans
+   def findMissingRanges(self, nums: List[int], lower: int, upper: int) -> List[List[int]]:
+       # Initialize the size of the nums array
+       num_elements = len(nums)
+    
+       # If nums is empty, return the entire range from lower to upper
+       if num_elements == 0:
+           return [[lower, upper]]
+    
+       # List to store the missing ranges
+       missing_ranges = []
+    
+       # Check if there is a missing range before the start of the array
+       if nums[0] > lower:
+           missing_ranges.append([lower, nums[0] - 1])
+    
+       # Use zip to create pairs of sequential elements (a, b) and loop through
+       for a, b in zip(nums, nums[1:]):
+           # If there is a gap greater than one between the two numbers, a missing range is found
+           if b - a > 1:
+               missing_ranges.append([a + 1, b - 1])
+    
+       # Check if there is a missing range after the end of the array
+       if nums[-1] < upper:
+           missing_ranges.append([nums[-1] + 1, upper])
+    
+       # Return the list of missing ranges
+       return missing_ranges
 ```
 
 #### Java
@@ -8392,7 +8849,87 @@ class Solution:
         util(root, 0)
         return ans
 ```
-404: Not Found---
+
+
+# [200. Number of Islands](https://leetcode.com/problems/number-of-islands)
+
+
+## Description
+
+<!-- description:start -->
+
+<p>Given an <code>m x n</code> 2D binary grid <code>grid</code> which represents a map of <code>&#39;1&#39;</code>s (land) and <code>&#39;0&#39;</code>s (water), return <em>the number of islands</em>.</p>
+
+<p>An <strong>island</strong> is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> grid = [
+  [&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;0&quot;],
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;],
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;]
+]
+<strong>Output:</strong> 1
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> grid = [
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;0&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;1&quot;,&quot;1&quot;]
+]
+<strong>Output:</strong> 3
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>m == grid.length</code></li>
+	<li><code>n == grid[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 300</code></li>
+	<li><code>grid[i][j]</code> is <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
+</ul>
+
+<!-- description:end -->
+
+## Solutions
+
+<!-- solution:start -->
+
+### Solution 1
+
+<!-- tabs:start -->
+
+#### Python3
+
+```python
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        def dfs(i, j):
+            grid[i][j] = '0'
+            for a, b in pairwise(dirs):
+                x, y = i + a, j + b
+                if 0 <= x < m and 0 <= y < n and grid[x][y] == '1':
+                    dfs(x, y)
+
+        ans = 0
+        dirs = (-1, 0, 1, 0, -1)
+        m, n = len(grid), len(grid[0])
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == '1':
+                    dfs(i, j)
+                    ans += 1
+        return ans
+```
+---
 comments: true
 difficulty: Medium
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/0200-0299/0207.Course%20Schedule/README_EN.md
@@ -10557,7 +11094,37 @@ var closestValue = function (root, target) {
 <!-- solution:end -->
 
 <!-- problem:end -->
-404: Not Found---
+# 282. Expression Add Operators
+Hard
+Given a string num that contains only digits and an integer target, return all possibilities to insert the binary operators '+', '-', and/or '*' between the digits of num so that the resultant expression evaluates to the target value.
+
+Note that operands in the returned expressions should not contain leading zeros.
+
+ 
+
+Example 1:
+
+Input: num = "123", target = 6
+Output: ["1*2*3","1+2+3"]
+Explanation: Both "1*2*3" and "1+2+3" evaluate to 6.
+Example 2:
+
+Input: num = "232", target = 8
+Output: ["2*3+2","2+3*2"]
+Explanation: Both "2*3+2" and "2+3*2" evaluate to 8.
+Example 3:
+
+Input: num = "3456237490", target = 9191
+Output: []
+Explanation: There are no expressions that can be created from "3456237490" to evaluate to 9191.
+ 
+
+Constraints:
+
+1 <= num.length <= 10
+num consists of only digits.
+-231 <= target <= 231 - 1
+---
 comments: true
 difficulty: Easy
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/0200-0299/0283.Move%20Zeroes/README_EN.md
@@ -10754,7 +11321,101 @@ void moveZeroes(int* nums, int numsSize) {
 <!-- solution:end -->
 
 <!-- problem:end -->
-404: Not Found---
+# [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)
+
+
+## Description
+
+<!-- description:start -->
+
+<p>The <strong>median</strong> is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.</p>
+
+<ul>
+	<li>For example, for <code>arr = [2,3,4]</code>, the median is <code>3</code>.</li>
+	<li>For example, for <code>arr = [2,3]</code>, the median is <code>(2 + 3) / 2 = 2.5</code>.</li>
+</ul>
+
+<p>Implement the MedianFinder class:</p>
+
+<ul>
+	<li><code>MedianFinder()</code> initializes the <code>MedianFinder</code> object.</li>
+	<li><code>void addNum(int num)</code> adds the integer <code>num</code> from the data stream to the data structure.</li>
+	<li><code>double findMedian()</code> returns the median of all elements so far. Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input</strong>
+[&quot;MedianFinder&quot;, &quot;addNum&quot;, &quot;addNum&quot;, &quot;findMedian&quot;, &quot;addNum&quot;, &quot;findMedian&quot;]
+[[], [1], [2], [], [3], []]
+<strong>Output</strong>
+[null, null, null, 1.5, null, 2.0]
+
+<strong>Explanation</strong>
+MedianFinder medianFinder = new MedianFinder();
+medianFinder.addNum(1);    // arr = [1]
+medianFinder.addNum(2);    // arr = [1, 2]
+medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
+medianFinder.addNum(3);    // arr[1, 2, 3]
+medianFinder.findMedian(); // return 2.0
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>-10<sup>5</sup> &lt;= num &lt;= 10<sup>5</sup></code></li>
+	<li>There will be at least one element in the data structure before calling <code>findMedian</code>.</li>
+	<li>At most <code>5 * 10<sup>4</sup></code> calls will be made to <code>addNum</code> and <code>findMedian</code>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong></p>
+
+<ul>
+	<li>If all integer numbers from the stream are in the range <code>[0, 100]</code>, how would you optimize your solution?</li>
+	<li>If <code>99%</code> of all integer numbers from the stream are in the range <code>[0, 100]</code>, how would you optimize your solution?</li>
+</ul>
+
+
+### Solution
+
+The invariant of the algorithm is two heaps, small and large, each represent half of the current list. The length of smaller half is kept to be n / 2 at all time and the length of the larger half is either n / 2 or n / 2 + 1 depend on n's parity.  
+This way we only need to peek the two heaps' top number to calculate median.  
+Any time before we add a new number, there are two scenarios, (total n numbers, k = n / 2):  
+(1) length of (small, large) == (k, k)  
+(2) length of (small, large) == (k, k + 1)  
+After adding the number, total (n + 1) numbers, they will become:  
+(1) length of (small, large) == (k, k + 1)  
+(2) length of (small, large) == (k + 1, k + 1)  
+Here we take the first scenario for example, we know the large will gain one more item and small will remain the same size, but we cannot just push the item into large. What we should do is we push the new number into small and pop the maximum item from small then push it into large (all the pop and push here are heappop and heappush). By doing this kind of operations for the two scenarios we can keep our invariant.  
+Therefore to add a number, we have 3 O(log n) heap operations. Luckily the heapq provided us a function "heappushpop" which saves some time by combine two into one. The document says:  
+Push item on the heap, then pop and return the smallest item from the heap. The combined action runs more efficiently than heappush() followed by a separate call to heappop().  
+Alltogether, the add operation is O(logn), The findMedian operation is O(1).  
+Note that the heapq in python is a min heap, thus we need to invert the values in the smaller half to mimic a "max heap".  
+
+```python
+from heapq import *
+class MedianFinder:
+    def __init__(self):
+        self.maxheap = []  # the maxheaper half of the list, max heap (invert min-heap)
+        self.minheap = []  # the minheapr half of the list, min heap
+
+    def addNum(self, num):
+        if len(self.maxheap) == len(self.minheap):
+            heappush(self.minheap, -heappushpop(self.maxheap, -num))
+        else:
+            heappush(self.maxheap, -heappushpop(self.minheap, num))
+
+    def findMedian(self):
+        if len(self.maxheap) == len(self.minheap):
+            return float(self.minheap[0] - self.maxheap[0]) / 2.0
+        else:
+            return float(self.minheap[0])
+```
+---
 comments: true
 difficulty: Hard
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/0300-0399/0301.Remove%20Invalid%20Parentheses/README_EN.md
@@ -11014,7 +11675,82 @@ func removeInvalidParentheses(s string) []string {
 <!-- solution:end -->
 
 <!-- problem:end -->
-404: Not Found# [314. Binary Tree Vertical Order Traversal 🔒](https://leetcode.com/problems/binary-tree-vertical-order-traversal)
+# [311. Sparse Matrix Multiplication 🔒](https://leetcode.com/problems/sparse-matrix-multiplication)
+
+
+## Description
+
+<!-- description:start -->
+
+<p>Given two <a href="https://en.wikipedia.org/wiki/Sparse_matrix" target="_blank">sparse matrices</a> <code>mat1</code> of size <code>m x k</code> and <code>mat2</code> of size <code>k x n</code>, return the result of <code>mat1 x mat2</code>. You may assume that multiplication is always possible.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0300-0399/0311.Sparse%20Matrix%20Multiplication/images/mult-grid.jpg" style="width: 500px; height: 142px;" />
+<pre>
+<strong>Input:</strong> mat1 = [[1,0,0],[-1,0,3]], mat2 = [[7,0,0],[0,0,0],[0,0,1]]
+<strong>Output:</strong> [[7,0,0],[-7,0,3]]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> mat1 = [[0]], mat2 = [[0]]
+<strong>Output:</strong> [[0]]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>m == mat1.length</code></li>
+	<li><code>k == mat1[i].length == mat2.length</code></li>
+	<li><code>n == mat2[i].length</code></li>
+	<li><code>1 &lt;= m, n, k &lt;= 100</code></li>
+	<li><code>-100 &lt;= mat1[i][j], mat2[i][j] &lt;= 100</code></li>
+</ul>
+
+### Solution 1: Direct Multiplication
+We can directly calculate each element in the result matrix according to the definition of matrix multiplication.  
+The time complexity isO(m*n*k), and the space complexity is O(m*n). Where and are the number of rows of matrix and the number of columns of matrix respectively, and is the number of columns of matrix or the number of rows of matrix .  
+
+```python
+class Solution:
+    def multiply(self, mat1: List[List[int]], mat2: List[List[int]]) -> List[List[int]]:
+        m = len(mat1)
+        n = len(mat2)
+        l = len(mat2[0])
+        ans = [[0] * l for _ in range(m)]
+        for i in range(m):
+         for j in range(l):
+           for k in range(n):
+             ans[i][j] += mat1[i][k] * mat2[k][j]
+        return ans 
+
+```
+### Solution 2: Preprocessing with hashmaps
+
+```python
+class Solution:
+    def multiply(self, mat1: List[List[int]], mat2: List[List[int]]) -> List[List[int]]:
+       def f(mat: List[List[int]]) -> List[List[int]]:
+           g = [[] for _ in range(len(mat))]
+           for i, row in enumerate(mat):
+               for j, x in enumerate(row):
+                   if x:
+                       g[i].append((j, x))
+           return g
+       g1 = f(mat1)
+       g2 = f(mat2)
+       m, n = len(mat1), len(mat2[0])
+       ans = [[0] * n for _ in range(m)]
+       for i in range(m):
+           for k, x in g1[i]:
+               for j, y in g2[k]:
+                   ans[i][j] += x * y
+       return ans
+```
+# [314. Binary Tree Vertical Order Traversal 🔒](https://leetcode.com/problems/binary-tree-vertical-order-traversal)
 
 
 ## Description
@@ -12306,7 +13042,86 @@ func check(matrix [][]int, mid, k, n int) bool {
 <!-- solution:end -->
 
 <!-- problem:end -->
-404: Not Found---
+# [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)
+
+
+## Description
+
+<!-- description:start -->
+
+<p>Implement the <code>RandomizedSet</code> class:</p>
+
+<ul>
+	<li><code>RandomizedSet()</code> Initializes the <code>RandomizedSet</code> object.</li>
+	<li><code>bool insert(int val)</code> Inserts an item <code>val</code> into the set if not present. Returns <code>true</code> if the item was not present, <code>false</code> otherwise.</li>
+	<li><code>bool remove(int val)</code> Removes an item <code>val</code> from the set if present. Returns <code>true</code> if the item was present, <code>false</code> otherwise.</li>
+	<li><code>int getRandom()</code> Returns a random element from the current set of elements (it&#39;s guaranteed that at least one element exists when this method is called). Each element must have the <b>same probability</b> of being returned.</li>
+</ul>
+
+<p>You must implement the functions of the class such that each function works in&nbsp;<strong>average</strong>&nbsp;<code>O(1)</code>&nbsp;time complexity.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input</strong>
+[&quot;RandomizedSet&quot;, &quot;insert&quot;, &quot;remove&quot;, &quot;insert&quot;, &quot;getRandom&quot;, &quot;remove&quot;, &quot;insert&quot;, &quot;getRandom&quot;]
+[[], [1], [2], [2], [], [1], [2], []]
+<strong>Output</strong>
+[null, true, false, true, 2, true, false, 2]
+
+<strong>Explanation</strong>
+RandomizedSet randomizedSet = new RandomizedSet();
+randomizedSet.insert(1); // Inserts 1 to the set. Returns true as 1 was inserted successfully.
+randomizedSet.remove(2); // Returns false as 2 does not exist in the set.
+randomizedSet.insert(2); // Inserts 2 to the set, returns true. Set now contains [1,2].
+randomizedSet.getRandom(); // getRandom() should return either 1 or 2 randomly.
+randomizedSet.remove(1); // Removes 1 from the set, returns true. Set now contains [2].
+randomizedSet.insert(2); // 2 was already in the set, so return false.
+randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom() will always return 2.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>-2<sup>31</sup> &lt;= val &lt;= 2<sup>31</sup> - 1</code></li>
+	<li>At most <code>2 *&nbsp;</code><code>10<sup>5</sup></code> calls will be made to <code>insert</code>, <code>remove</code>, and <code>getRandom</code>.</li>
+	<li>There will be <strong>at least one</strong> element in the data structure when <code>getRandom</code> is called.</li>
+</ul>
+
+```python
+import random
+class RandomizedSet:
+   def __init__(self):
+       self.arr = []
+       self.m = {}
+       self.index = -1
+      
+   def insert(self, val: int) -> bool:
+       if val in self.m:
+           return False
+       self.arr.append(val)
+       self.index += 1
+       self.m[val] = self.index
+       return True
+   def remove(self, val: int) -> bool:
+       if not val in self.m:
+           return False
+       val_index = self.m[val]
+       self.arr[val_index] = self.arr[-1]
+       self.m[self.arr[val_index]] = val_index
+       self.arr.pop()
+       self.m.pop(val)
+       self.index -= 1
+       return True
+      
+   def getRandom(self) -> int:
+       return self.arr[random.randint(0, self.index)]
+```
+
+
+---
 comments: true
 difficulty: Easy
 edit_url: https://github.com/doocs/leetcode/edit/main/solution/0300-0399/0392.Is%20Subsequence/README_EN.md

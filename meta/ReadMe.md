@@ -274,4 +274,4 @@
 
 [2965. Find Missing and Repeated Values](https://github.com/code2practice/leetcode/blob/main/Solutions/2965.Find%20Missing%20and%20Repeated%20Values.md)
 
-[3371. Identify the Largest Outlier in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/3371.Identify%20the%20Largest%20Outlier%20in%20an%20Array.md)
+[(revise)3371. Identify the Largest Outlier in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/3371.Identify%20the%20Largest%20Outlier%20in%20an%20Array.md)

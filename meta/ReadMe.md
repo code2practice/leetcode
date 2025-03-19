@@ -192,6 +192,8 @@
 
 [560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/0560.%20Subarray%20Sum%20Equals%20K.md)
 
+[606. Construct String from Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0606.Construct%20String%20from%20Binary%20Tree.md)
+
 [636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/0636.%20Exclusive%20Time%20of%20Functions.md)
 
 [647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/0647.%20Palindromic%20Substrings.md)

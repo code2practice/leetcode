@@ -1027,153 +1027,6 @@ class Solution:
             x //= 10
         return x in (y, y // 10)
 ```
-
-#### Java
-
-```java
-class Solution {
-    public boolean isPalindrome(int x) {
-        if (x < 0 || (x > 0 && x % 10 == 0)) {
-            return false;
-        }
-        int y = 0;
-        for (; y < x; x /= 10) {
-            y = y * 10 + x % 10;
-        }
-        return x == y || x == y / 10;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    bool isPalindrome(int x) {
-        if (x < 0 || (x && x % 10 == 0)) {
-            return false;
-        }
-        int y = 0;
-        for (; y < x; x /= 10) {
-            y = y * 10 + x % 10;
-        }
-        return x == y || x == y / 10;
-    }
-};
-```
-
-#### Go
-
-```go
-func isPalindrome(x int) bool {
-	if x < 0 || (x > 0 && x%10 == 0) {
-		return false
-	}
-	y := 0
-	for ; y < x; x /= 10 {
-		y = y*10 + x%10
-	}
-	return x == y || x == y/10
-}
-```
-
-#### TypeScript
-
-```ts
-function isPalindrome(x: number): boolean {
-    if (x < 0 || (x > 0 && x % 10 === 0)) {
-        return false;
-    }
-    let y = 0;
-    for (; y < x; x = ~~(x / 10)) {
-        y = y * 10 + (x % 10);
-    }
-    return x === y || x === ~~(y / 10);
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn is_palindrome(mut x: i32) -> bool {
-        if x < 0 || (x != 0 && x % 10 == 0) {
-            return false;
-        }
-        let mut y = 0;
-        while x > y {
-            y = y * 10 + x % 10;
-            x /= 10;
-        }
-        x == y || x == y / 10
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {number} x
- * @return {boolean}
- */
-var isPalindrome = function (x) {
-    if (x < 0 || (x > 0 && x % 10 === 0)) {
-        return false;
-    }
-    let y = 0;
-    for (; y < x; x = ~~(x / 10)) {
-        y = y * 10 + (x % 10);
-    }
-    return x === y || x === ~~(y / 10);
-};
-```
-
-#### C#
-
-```cs
-public class Solution {
-    public bool IsPalindrome(int x) {
-        if (x < 0 || (x > 0 && x % 10 == 0)) {
-            return false;
-        }
-        int y = 0;
-        for (; y < x; x /= 10) {
-            y = y * 10 + x % 10;
-        }
-        return x == y || x == y / 10;
-    }
-}
-```
-
-#### PHP
-
-```php
-class Solution {
-    /**
-     * @param Integer $x
-     * @return Boolean
-     */
-    function isPalindrome($x) {
-        if ($x < 0 || ($x && $x % 10 == 0)) {
-            return false;
-        }
-        $y = 0;
-        while ($x > $y) {
-            $y = $y * 10 + ($x % 10);
-            $x = (int) ($x / 10);
-        }
-        return $x == $y || $x == (int) ($y / 10);
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -1263,183 +1116,6 @@ class Solution:
                 r -= 1
         return ans
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int maxArea(int[] height) {
-        int l = 0, r = height.length - 1;
-        int ans = 0;
-        while (l < r) {
-            int t = Math.min(height[l], height[r]) * (r - l);
-            ans = Math.max(ans, t);
-            if (height[l] < height[r]) {
-                ++l;
-            } else {
-                --r;
-            }
-        }
-        return ans;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int maxArea(vector<int>& height) {
-        int l = 0, r = height.size() - 1;
-        int ans = 0;
-        while (l < r) {
-            int t = min(height[l], height[r]) * (r - l);
-            ans = max(ans, t);
-            if (height[l] < height[r]) {
-                ++l;
-            } else {
-                --r;
-            }
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func maxArea(height []int) (ans int) {
-	l, r := 0, len(height)-1
-	for l < r {
-		t := min(height[l], height[r]) * (r - l)
-		ans = max(ans, t)
-		if height[l] < height[r] {
-			l++
-		} else {
-			r--
-		}
-	}
-	return
-}
-```
-
-#### TypeScript
-
-```ts
-function maxArea(height: number[]): number {
-    let [l, r] = [0, height.length - 1];
-    let ans = 0;
-    while (l < r) {
-        const t = Math.min(height[l], height[r]) * (r - l);
-        ans = Math.max(ans, t);
-        if (height[l] < height[r]) {
-            ++l;
-        } else {
-            --r;
-        }
-    }
-    return ans;
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn max_area(height: Vec<i32>) -> i32 {
-        let mut l = 0;
-        let mut r = height.len() - 1;
-        let mut ans = 0;
-        while l < r {
-            ans = ans.max(height[l].min(height[r]) * ((r - l) as i32));
-            if height[l] < height[r] {
-                l += 1;
-            } else {
-                r -= 1;
-            }
-        }
-        ans
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {number[]} height
- * @return {number}
- */
-var maxArea = function (height) {
-    let [l, r] = [0, height.length - 1];
-    let ans = 0;
-    while (l < r) {
-        const t = Math.min(height[l], height[r]) * (r - l);
-        ans = Math.max(ans, t);
-        if (height[l] < height[r]) {
-            ++l;
-        } else {
-            --r;
-        }
-    }
-    return ans;
-};
-```
-
-#### C#
-
-```cs
-public class Solution {
-    public int MaxArea(int[] height) {
-        int l = 0, r = height.Length - 1;
-        int ans = 0;
-        while (l < r) {
-            int t = Math.Min(height[l], height[r]) * (r - l);
-            ans = Math.Max(ans, t);
-            if (height[l] < height[r]) {
-                ++l;
-            } else {
-                --r;
-            }
-        }
-        return ans;
-    }
-}
-```
-
-#### PHP
-
-```php
-class Solution {
-    /**
-     * @param Integer[] $height
-     * @return Integer
-     */
-    function maxArea($height) {
-        $l = 0;
-        $r = count($height) - 1;
-        $ans = 0;
-        while ($l < $r) {
-            $t = min($height[$l], $height[$r]) * ($r - $l);
-            $ans = max($ans, $t);
-            if ($height[$l] < $height[$r]) {
-                ++$l;
-            } else {
-                --$r;
-            }
-        }
-        return $ans;
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Easy
@@ -1849,188 +1525,6 @@ class Solution:
                     return s[:i]
         return strs[0]
 ```
-
-#### Java
-
-```java
-class Solution {
-    public String longestCommonPrefix(String[] strs) {
-        int n = strs.length;
-        for (int i = 0; i < strs[0].length(); ++i) {
-            for (int j = 1; j < n; ++j) {
-                if (strs[j].length() <= i || strs[j].charAt(i) != strs[0].charAt(i)) {
-                    return strs[0].substring(0, i);
-                }
-            }
-        }
-        return strs[0];
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    string longestCommonPrefix(vector<string>& strs) {
-        int n = strs.size();
-        for (int i = 0; i < strs[0].size(); ++i) {
-            for (int j = 1; j < n; ++j) {
-                if (strs[j].size() <= i || strs[j][i] != strs[0][i]) {
-                    return strs[0].substr(0, i);
-                }
-            }
-        }
-        return strs[0];
-    }
-};
-```
-
-#### Go
-
-```go
-func longestCommonPrefix(strs []string) string {
-	n := len(strs)
-	for i := range strs[0] {
-		for j := 1; j < n; j++ {
-			if len(strs[j]) <= i || strs[j][i] != strs[0][i] {
-				return strs[0][:i]
-			}
-		}
-	}
-	return strs[0]
-}
-```
-
-#### TypeScript
-
-```ts
-function longestCommonPrefix(strs: string[]): string {
-    const len = strs.reduce((r, s) => Math.min(r, s.length), Infinity);
-    for (let i = len; i > 0; i--) {
-        const target = strs[0].slice(0, i);
-        if (strs.every(s => s.slice(0, i) === target)) {
-            return target;
-        }
-    }
-    return '';
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn longest_common_prefix(strs: Vec<String>) -> String {
-        let mut len = strs.iter().map(|s| s.len()).min().unwrap();
-        for i in (1..=len).rev() {
-            let mut is_equal = true;
-            let target = strs[0][0..i].to_string();
-            if strs.iter().all(|s| target == s[0..i]) {
-                return target;
-            }
-        }
-        String::new()
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {string[]} strs
- * @return {string}
- */
-var longestCommonPrefix = function (strs) {
-    for (let j = 0; j < strs[0].length; j++) {
-        for (let i = 0; i < strs.length; i++) {
-            if (strs[0][j] !== strs[i][j]) {
-                return strs[0].substring(0, j);
-            }
-        }
-    }
-    return strs[0];
-};
-```
-
-#### C#
-
-```cs
-public class Solution {
-    public string LongestCommonPrefix(string[] strs) {
-        int n = strs.Length;
-        for (int i = 0; i < strs[0].Length; ++i) {
-            for (int j = 1; j < n; ++j) {
-                if (i >= strs[j].Length || strs[j][i] != strs[0][i]) {
-                    return strs[0].Substring(0, i);
-                }
-            }
-        }
-        return strs[0];
-    }
-}
-```
-
-#### PHP
-
-```php
-class Solution {
-    /**
-     * @param String[] $strs
-     * @return String
-     */
-    function longestCommonPrefix($strs) {
-        $rs = '';
-        for ($i = 0; $i < strlen($strs[0]); $i++) {
-            for ($j = 1; $j < count($strs); $j++) {
-                if ($strs[0][$i] != $strs[$j][$i]) {
-                    return $rs;
-                }
-            }
-            $rs = $rs . $strs[0][$i];
-        }
-        return $rs;
-    }
-}
-```
-
-#### Ruby
-
-```rb
-# @param {String[]} strs
-# @return {String}
-def longest_common_prefix(strs)
-  return '' if strs.nil? || strs.length.zero?
-
-  return strs[0] if strs.length == 1
-
-  idx = 0
-  while idx < strs[0].length
-    cur_char = strs[0][idx]
-
-    str_idx = 1
-    while str_idx < strs.length
-      return idx > 0 ? strs[0][0..idx-1] : '' if strs[str_idx].length <= idx
-
-      return '' if strs[str_idx][idx] != cur_char && idx.zero?
-      return strs[0][0..idx - 1] if strs[str_idx][idx] != cur_char
-      str_idx += 1
-    end
-
-    idx += 1
-  end
-
-  idx > 0 ? strs[0][0..idx] : ''
-end
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [15. 3Sum](https://leetcode.com/problems/3sum)
 
 
@@ -2813,6 +2307,80 @@ class Solution:
             r -= 1
 
 ```
+
+## Meta variant
+VARIANT: What if you had to find the previous permutation?
+
+```python
+class Solution:
+    def previousPermutation(self, nums: list[int]) -> None:
+        peak = None
+        for i in range(len(nums) - 1, 0, -1):
+            if nums[i - 1] > nums[i]:
+                peak = i - 1
+                break
+
+        if peak is None:
+            nums.reverse()
+            return
+
+        next_lower = len(nums) - 1
+        while nums[next_lower] >= nums[peak]:
+            next_lower -= 1
+
+        nums[peak], nums[next_lower] = nums[next_lower], nums[peak]
+
+        left = peak + 1
+        right = len(nums) - 1
+
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
+
+
+if __name__ == "__main__":
+    # Basic cases
+    solution = Solution()
+    nums = [9, 4, 8, 3, 5, 5, 8, 9]
+    solution.previousPermutation(nums)
+    assert nums == [9, 4, 5, 9, 8, 8, 5, 3]
+    solution.previousPermutation(nums)
+    assert nums == [9, 4, 5, 9, 8, 8, 3, 5]
+    nums = [3, 2, 1]
+    solution.previousPermutation(nums)
+    assert nums == [3, 1, 2]
+    nums = [1, 2, 3]
+    solution.previousPermutation(nums)
+    assert nums == [3, 2, 1]
+    nums = [9, 6, 5, 4, 3, 2]
+    solution.previousPermutation(nums)
+    assert nums == [9, 6, 5, 4, 2, 3]
+    nums = [4, 5, 1, 1, 3, 7]
+    solution.previousPermutation(nums)
+    assert nums == [4, 3, 7, 5, 1, 1]
+    nums = [1, 5, 8, 5, 1, 3, 4, 6, 7]
+    solution.previousPermutation(nums)
+    assert nums == [1, 5, 8, 4, 7, 6, 5, 3, 1]
+    nums = [9, 4, 8, 3, 5, 5, 8, 9]
+    solution.previousPermutation(nums)
+    assert nums == [9, 4, 5, 9, 8, 8, 5, 3]
+
+    # Single digit case
+    nums = [5]
+    solution.previousPermutation(nums)
+    assert nums == [5]
+
+    # Duplicate digits case
+    nums = [1, 1, 1]
+    solution.previousPermutation(nums)
+    assert nums == [1, 1, 1]
+
+    # Already smallest case (loops around)
+    nums = [1, 2, 3, 4, 5, 6]
+    solution.previousPermutation(nums)
+    assert nums == [6, 5, 4, 3, 2, 1]
+```
 # [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
 
 
@@ -2931,6 +2499,64 @@ class Solution:
                l = mid + 1
        res[1] = l-1
        return res
+```
+
+## Meta variant
+ What if you had to return the number of unique elements in an integer array?
+Note this must be done in K LOG N time complexity (unless the input has all unique integers)
+
+```python
+class Solution:
+    def countUnique(self, nums: list[int]) -> int:
+        # Should run in O(k * log(N)) complexity, where k is # of unique elements
+        if len(nums) == 0:
+            return 0
+
+        def upper(arr, target):
+            left, right = 0, len(arr) - 1
+            while left <= right:
+                mid = (left + right) // 2
+                if arr[mid] <= target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return right
+
+        start = 0
+        count = 0
+        while start < len(nums):
+            end = upper(nums, nums[start])
+            start = end + 1
+            count += 1
+
+        return count
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    # Nonzero Count cases
+    nums = [2, 2, 3, 3, 3, 9, 9, 9, 9, 9, 10, 12, 12]
+    assert solution.countUnique(nums) == 5
+    nums = [-3, -2, -1, 0, 1, 2, 3]
+    assert solution.countUnique(nums) == 7
+    nums = [-3, -3, -3, -2, -2, -2, -1, -1, -1, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+    assert solution.countUnique(nums) == 7
+    nums = [1, 1, 1, 1, 2, 2, 2, 2, 5, 5, 5, 7, 7, 8, 8, 10]
+    assert solution.countUnique(nums) == 6
+    nums = [19, 19, 19, 19]
+    assert solution.countUnique(nums) == 1
+    nums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    assert solution.countUnique(nums) == 1
+    nums = [9001]
+    assert solution.countUnique(nums) == 1
+    nums = [5, 7, 7, 8, 8, 10]
+    assert solution.countUnique(nums) == 4
+    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    assert solution.countUnique(nums) == 10
+
+    # Zero Count case
+    nums = []
+    assert solution.countUnique(nums) == 0
 ```
 ---
 comments: true
@@ -3437,163 +3063,6 @@ class Solution:
         return list(d.values())
 ```
 
-#### Java
-
-```java
-class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        Map<String, List<String>> d = new HashMap<>();
-        for (String s : strs) {
-            char[] t = s.toCharArray();
-            Arrays.sort(t);
-            String k = String.valueOf(t);
-            d.computeIfAbsent(k, key -> new ArrayList<>()).add(s);
-        }
-        return new ArrayList<>(d.values());
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        unordered_map<string, vector<string>> d;
-        for (auto& s : strs) {
-            string k = s;
-            sort(k.begin(), k.end());
-            d[k].emplace_back(s);
-        }
-        vector<vector<string>> ans;
-        for (auto& [_, v] : d) ans.emplace_back(v);
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func groupAnagrams(strs []string) (ans [][]string) {
-	d := map[string][]string{}
-	for _, s := range strs {
-		t := []byte(s)
-		sort.Slice(t, func(i, j int) bool { return t[i] < t[j] })
-		k := string(t)
-		d[k] = append(d[k], s)
-	}
-	for _, v := range d {
-		ans = append(ans, v)
-	}
-	return
-}
-```
-
-#### TypeScript
-
-```ts
-function groupAnagrams(strs: string[]): string[][] {
-    const d: Map<string, string[]> = new Map();
-    for (const s of strs) {
-        const k = s.split('').sort().join('');
-        if (!d.has(k)) {
-            d.set(k, []);
-        }
-        d.get(k)!.push(s);
-    }
-    return Array.from(d.values());
-}
-```
-
-#### Rust
-
-```rust
-use std::collections::HashMap;
-
-impl Solution {
-    pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
-        let mut map = HashMap::new();
-        for s in strs {
-            let key = {
-                let mut arr = s.chars().collect::<Vec<char>>();
-                arr.sort();
-                arr.iter().collect::<String>()
-            };
-            let val = map.entry(key).or_insert(vec![]);
-            val.push(s);
-        }
-        map.into_iter().map(|(_, v)| v).collect()
-    }
-}
-```
-
-#### C#
-
-```cs
-using System.Collections.Generic;
-
-public class Comparer : IEqualityComparer<string>
-{
-    public bool Equals(string left, string right)
-    {
-        if (left.Length != right.Length) return false;
-
-        var leftCount = new int[26];
-        foreach (var ch in left)
-        {
-            ++leftCount[ch - 'a'];
-        }
-
-        var rightCount = new int[26];
-        foreach (var ch in right)
-        {
-            var index = ch - 'a';
-            if (++rightCount[index] > leftCount[index]) return false;
-        }
-
-        return true;
-    }
-
-    public int GetHashCode(string obj)
-    {
-        var hashCode = 0;
-        for (int i = 0; i < obj.Length; ++i)
-        {
-            hashCode ^= 1 << (obj[i] - 'a');
-        }
-        return hashCode;
-    }
-}
-
-public class Solution {
-    public IList<IList<string>> GroupAnagrams(string[] strs) {
-        var dict = new Dictionary<string, List<string>>(new Comparer());
-        foreach (var str in strs)
-        {
-            List<string> list;
-            if (!dict.TryGetValue(str, out list))
-            {
-                list = new List<string>();
-                dict.Add(str, list);
-            }
-            list.Add(str);
-        }
-        foreach (var list in dict.Values)
-        {
-            list.Sort();
-        }
-        return new List<IList<string>>(dict.Values);
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- solution:start -->
 
 ### Solution 2: Counting
 
@@ -3617,94 +3086,22 @@ class Solution:
         return list(d.values())
 ```
 
-#### Java
-
-```java
-class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        Map<String, List<String>> d = new HashMap<>();
-        for (String s : strs) {
-            int[] cnt = new int[26];
-            for (int i = 0; i < s.length(); ++i) {
-                ++cnt[s.charAt(i) - 'a'];
-            }
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < 26; ++i) {
-                if (cnt[i] > 0) {
-                    sb.append((char) ('a' + i)).append(cnt[i]);
-                }
-            }
-            String k = sb.toString();
-            d.computeIfAbsent(k, key -> new ArrayList<>()).add(s);
-        }
-        return new ArrayList<>(d.values());
-    }
-}
+#### Counting and using count as key
+You have to create the key like this and you can't use counters. Remember Counters cannot be used as a key for dictionary.
+```python
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        res = []
+        d = defaultdict(list)
+        for s in strs:
+            count = [0] * 256
+            for c in s:
+                count[ord(c)] += 1
+            d[tuple(count)].append(s)
+        return list(d.values())
 ```
 
-#### C++
 
-```cpp
-class Solution {
-public:
-    vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        unordered_map<string, vector<string>> d;
-        for (auto& s : strs) {
-            int cnt[26] = {0};
-            for (auto& c : s) ++cnt[c - 'a'];
-            string k;
-            for (int i = 0; i < 26; ++i) {
-                if (cnt[i]) {
-                    k += 'a' + i;
-                    k += to_string(cnt[i]);
-                }
-            }
-            d[k].emplace_back(s);
-        }
-        vector<vector<string>> ans;
-        for (auto& [_, v] : d) ans.emplace_back(v);
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func groupAnagrams(strs []string) (ans [][]string) {
-	d := map[[26]int][]string{}
-	for _, s := range strs {
-		cnt := [26]int{}
-		for _, c := range s {
-			cnt[c-'a']++
-		}
-		d[cnt] = append(d[cnt], s)
-	}
-	for _, v := range d {
-		ans = append(ans, v)
-	}
-	return
-}
-```
-
-#### TypeScript
-
-```ts
-function groupAnagrams(strs: string[]): string[][] {
-    const map = new Map<string, string[]>();
-    for (const str of strs) {
-        const k = str.split('').sort().join('');
-        map.set(k, (map.get(k) ?? []).concat([str]));
-    }
-    return [...map.values()];
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [50. Pow(x, n)](https://leetcode.com/problems/powx-n)
 
 [中文文档](/solution/0000-0099/0050.Pow%28x%2C%20n%29/README.md)
@@ -3851,6 +3248,63 @@ insertion sort) for sorting lists.
 The iteration over the list has a complexity of O(n), because we go through the intervals only once.  
 Hence, the total time complexity is the sum of these two operations, which is O(n log n) + O(n). Since O(n log n) is the higher order term,   
 it dominates the total time complexity, which simplifies to O(n log n).  
+
+## Meta variant
+What if you had to merge two interval lists instead of one?
+```python
+from typing import List
+
+def try_merge(result: List[List[int]], curr_interval: List[int]):
+    if not result or curr_interval[0] > result[-1][1]:
+        result.append(curr_interval)
+    else:
+        result[-1][1] = max(curr_interval[1], result[-1][1])
+
+def merge_2_interval_lists_56_variant_python(A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
+    result = []
+    i, j = 0, 0
+    while i < len(A) and j < len(B):
+        if A[i][0] <= B[j][0]:
+            curr_interval = A[i]
+            i += 1
+        else:
+            curr_interval = B[j]
+            j += 1
+
+        try_merge(result, curr_interval)
+
+    if i < len(A):
+        while i < len(A):
+            try_merge(result, A[i])
+            i += 1
+    else:
+        while j < len(B):
+            try_merge(result, B[j])
+            j += 1
+
+    return result
+
+if __name__ == "__main__":
+    A = [[3, 11], [14, 15], [18, 22], [23, 24], [25, 26]]
+    B = [[2, 8], [13, 20]]
+    expected = [[2, 11], [13, 22], [23, 24], [25, 26]]
+    assert expected == merge_2_interval_lists_56_variant_python(A, B)
+
+    A = []
+    B = [[2, 8], [13, 20]]
+    expected = [[2, 8], [13, 20]]
+    assert expected == merge_2_interval_lists_56_variant_python(A, B)
+
+    A = [[1, 5], [10, 15], [20, 25]]
+    B = [[5, 10], [15, 20]]
+    expected = [[1, 25]]
+    assert expected == merge_2_interval_lists_56_variant_python(A, B)
+
+    A = [[1, 5], [11, 15], [21, 25]]
+    B = [[6, 10], [16, 20]]
+    expected = [[1, 5], [6, 10], [11, 15], [16, 20], [21, 25]]
+    assert expected == merge_2_interval_lists_56_variant_python(A, B)
+```
 # [57. Insert Interval](https://leetcode.com/problems/insert-interval)
 
 
@@ -4003,6 +3457,68 @@ class Solution(object):
            else:
                return False
        return met_digit
+```
+
+## Meta variant
+What if you didn't have to implement exponents?
+```python
+class Solution(object):
+    def isNumber(self, s: str):
+        seen_digit, seen_dot = [False, False]
+        for i in range(len(s)):
+            if s[i].isdigit():
+                seen_digit = True
+            elif s[i] in {"+", "-"}:
+                if i != 0:
+                    return False
+            elif s[i] == ".":
+                if seen_dot:
+                    return False
+                seen_dot = True
+            else:
+                return False
+
+        if not seen_digit:
+            return False
+        return True
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert solution.isNumber("0089")
+    assert solution.isNumber("-0.1")
+    assert solution.isNumber("+3.14")
+    assert solution.isNumber("4.")
+    assert solution.isNumber("-.9")
+    assert solution.isNumber("420")
+    assert solution.isNumber("+3")
+    assert solution.isNumber("-10")
+    assert solution.isNumber("2")
+    # Exponents not valid anymore
+    assert not solution.isNumber("3e+7")
+    assert not solution.isNumber("+6e-1")
+    assert not solution.isNumber("53.5e93")
+    assert not solution.isNumber("-123.456e789")
+    assert not solution.isNumber("abc")
+    assert not solution.isNumber("2e10")
+    assert not solution.isNumber("-90E3")
+    assert not solution.isNumber("1a")
+    assert not solution.isNumber("1e")
+    assert not solution.isNumber("e3")
+    assert not solution.isNumber("99e2.5")
+    assert not solution.isNumber("--6")
+    assert not solution.isNumber("-+3")
+    assert not solution.isNumber("95a54e53")
+    assert not solution.isNumber("7..")
+    assert not solution.isNumber(".")
+    assert not solution.isNumber("3-")
+    assert not solution.isNumber("+7e5")
+    assert not solution.isNumber("7E5")
+    assert not solution.isNumber("7ee")
+    assert not solution.isNumber("7e")
+    assert not solution.isNumber("8e1.2")
+    assert not solution.isNumber("+20e-5")
+    assert not solution.isNumber("Abc")
 ```
 
 
@@ -4805,15 +4321,67 @@ The time complexity is $O(n)$ and the space complexity is $O(n)$, where $n$ is t
 class Solution:
     def simplifyPath(self, path: str) -> str:
         stk = []
-        for s in path.split('/'):
-            if not s or s == '.':
+        for s in path.split("/"):
+            # if not s is used to check for repeating / in the path
+            # split function will return a empty string for multiple /
+            # Ex - '/a/b/c//d////e'.split('/') = ['', 'a', 'b', 'c', '', 'd', '', '', '', 'e']
+            if not s or s == ".":
                 continue
-            if s == '..':
+            if s == "..":
                 if stk:
                     stk.pop()
             else:
                 stk.append(s)
-        return '/' + '/'.join(stk)
+        return "/" + "/".join(stk)
+```
+
+## Meta variant
+ What if you were given a new "cd" parameter to change where you currently were on your filesystem (represented by "cwd")? If "cd" starts with "/" then this has many implications on the code.
+
+ ```python
+class Solution:
+    def changeDirectory(self, cwd: str, cd: str) -> str:
+        if not cd:
+            return cwd
+        
+        if cd[0] == '/':
+            cwd = ''
+        
+        tokens = []
+        for token in cwd.split('/'):
+            if token:
+                tokens.append(token)
+        
+        for token in cd.split('/'):
+            if not token:
+                continue
+            if token == '.':
+                continue
+            elif token == '..':
+                if tokens:
+                    tokens.pop()
+            else:
+                tokens.append(token)
+        
+        if not tokens:
+            return '/'
+        
+        return '/' + '/'.join(tokens)
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert solution.changeDirectory("/a/b/c", "/d/./e") == "/d/e"
+    assert solution.changeDirectory("", "/d/./e") == "/d/e"
+    assert solution.changeDirectory("/a/b/c", "") == "/a/b/c"
+    assert solution.changeDirectory("/a/b", ".//c/../../d/f") == "/a/d/f"
+    assert solution.changeDirectory("/", "foo") == "/foo"
+    assert solution.changeDirectory("/", "foo/bar/././xyz///") == "/foo/bar/xyz"
+    assert solution.changeDirectory("/baz", "/bar") == "/bar"
+    assert solution.changeDirectory("/foo/bar", "../../../../..") == "/"
+    assert solution.changeDirectory("/x/y", "../p/../q") == "/x/q"
+    assert solution.changeDirectory("/x/y", "/p/./q") == "/p/q"
+    assert solution.changeDirectory("/facebook/anin", "../abc/def") == "/facebook/abc/def"
+    assert solution.changeDirectory("/facebook/instagram", "../../../../.") == "/"
 ```
 ---
 comments: true
@@ -6542,138 +6110,52 @@ class Solution:
         return ans
 ```
 
-#### Java
+## Meta variant
+What if you had to return the minimum cost to buy a roundtrip flight?
+Note you cannot fly somewhere and back on the same day.
 
-```java
-class Solution {
-    public int maxProfit(int[] prices) {
-        int ans = 0, mi = prices[0];
-        for (int v : prices) {
-            ans = Math.max(ans, v - mi);
-            mi = Math.min(mi, v);
-        }
-        return ans;
-    }
-}
+```python
+def find_cheapest_tickets(departures, returns):
+    min_departure_cost = departures[0]
+    min_cost = float('inf')
+    
+    for i in range(1, len(departures)):
+        min_cost = min(min_cost, min_departure_cost + returns[i])
+
+        if departures[i] < min_departure_cost:
+            min_departure_cost = departures[i]
+    
+    return min_cost
+
+if __name__ == "__main__":
+    departures = [8, 3, 6, 10]
+    returns = [10, 9, 5, 8]
+    assert find_cheapest_tickets(departures, returns) == 8
+
+    departures = [10, 3, 10, 9, 3]
+    returns = [4, 20, 6, 7, 10]
+    assert find_cheapest_tickets(departures, returns) == 9
+
+    departures = [1, 3, 10, 9, 3]
+    returns = [1, 20, 6, 7, 10]
+    assert find_cheapest_tickets(departures, returns) == 7
+
+    departures = [1, 3, 10, 9, 3]
+    returns = [1, 1, 6, 7, 10]
+    assert find_cheapest_tickets(departures, returns) == 2
+
+    departures = [1, 3, 10, 9, 3]
+    returns = [10, 9, 8, 7, 6]
+    assert find_cheapest_tickets(departures, returns) == 7
+
+    departures = [12, 33, 44, 9, 23]
+    returns = [100, 90, 80, 70, 15]
+    assert find_cheapest_tickets(departures, returns) == 24
+
+    departures = [4, 3, 5, 11, 2]
+    returns = [1, 6, 10, 2, 9]
+    assert find_cheapest_tickets(departures, returns) == 5
 ```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int maxProfit(vector<int>& prices) {
-        int ans = 0, mi = prices[0];
-        for (int& v : prices) {
-            ans = max(ans, v - mi);
-            mi = min(mi, v);
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func maxProfit(prices []int) (ans int) {
-	mi := prices[0]
-	for _, v := range prices {
-		ans = max(ans, v-mi)
-		mi = min(mi, v)
-	}
-	return
-}
-```
-
-#### TypeScript
-
-```ts
-function maxProfit(prices: number[]): number {
-    let ans = 0;
-    let mi = prices[0];
-    for (const v of prices) {
-        ans = Math.max(ans, v - mi);
-        mi = Math.min(mi, v);
-    }
-    return ans;
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn max_profit(prices: Vec<i32>) -> i32 {
-        let mut ans = 0;
-        let mut mi = prices[0];
-        for &v in &prices {
-            ans = ans.max(v - mi);
-            mi = mi.min(v);
-        }
-        ans
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {number[]} prices
- * @return {number}
- */
-var maxProfit = function (prices) {
-    let ans = 0;
-    let mi = prices[0];
-    for (const v of prices) {
-        ans = Math.max(ans, v - mi);
-        mi = Math.min(mi, v);
-    }
-    return ans;
-};
-```
-
-#### C#
-
-```cs
-public class Solution {
-    public int MaxProfit(int[] prices) {
-        int ans = 0, mi = prices[0];
-        foreach (int v in prices) {
-            ans = Math.Max(ans, v - mi);
-            mi = Math.Min(mi, v);
-        }
-        return ans;
-    }
-}
-```
-
-#### PHP
-
-```php
-class Solution {
-    /**
-     * @param Integer[] $prices
-     * @return Integer
-     */
-    function maxProfit($prices) {
-        $ans = 0;
-        $mi = $prices[0];
-        foreach ($prices as $v) {
-            $ans = max($ans, $v - $mi);
-            $mi = min($mi, $v);
-        }
-        return $ans;
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -7351,6 +6833,160 @@ class Solution:
        return util(root, 0)
 ```
 
+## Meta variant
+```
+What if you nodes could be larger than 9?
+```
+```python
+class Solution:
+    class TreeNode:
+        def __init__(self, val=0, left=None, right=None):
+            self.val = val
+            self.left = left
+            self.right = right
+
+    def sumNumbers(self, root: Optional[TreeNode]) -> int:
+        s = [0]
+        
+        def getMultiplier(n):
+            if n < 10:
+                return 10
+            m = 1
+            while n:
+                m *= 10
+                n = n//10
+            return m
+
+        def util(root, n, s):
+            if not root:
+                return
+            curr = n * getMultiplier(root.val) + root.val
+            if not (root.left or root.right):
+                s[0] += curr
+            util(root.left, curr, s)
+            util(root.right, curr, s)
+
+        util(root, 0, s)
+        return s[0]
+
+solution = Solution()
+root = Solution.TreeNode(3)
+root.left = Solution.TreeNode(79, right=Solution.TreeNode(111))
+root.right = Solution.TreeNode(2)
+assert solution.sumNumbers(root) == 379143
+
+root = Solution.TreeNode(1)
+root.left = Solution.TreeNode(2)
+root.left.left = Solution.TreeNode(90)
+root.right = Solution.TreeNode(42)
+root.right.left = Solution.TreeNode(511)
+assert solution.sumNumbers(root) == 1290 + 142511
+
+root = Solution.TreeNode(1)
+root.left = Solution.TreeNode(2)
+root.left.left = Solution.TreeNode(912)
+root.left.left.left = Solution.TreeNode(3)
+root.left.left.right = Solution.TreeNode(4)
+root.right = Solution.TreeNode(46)
+root.right.left = Solution.TreeNode(5)
+root.right.right = Solution.TreeNode(61)
+assert solution.sumNumbers(root) == 129123 + 129124 + 1465 + 14661
+
+root = Solution.TreeNode(1)
+root.left = Solution.TreeNode(2)
+root.right = Solution.TreeNode(3)
+assert solution.sumNumbers(root) == 12 + 13
+
+root = Solution.TreeNode(10)
+root.left = Solution.TreeNode(200)
+root.right = Solution.TreeNode(3000)
+assert solution.sumNumbers(root) == 10200 + 103000
+
+root = Solution.TreeNode(10)
+root.left = Solution.TreeNode(0)
+root.right = Solution.TreeNode(0)
+assert solution.sumNumbers(root) == 200
+
+root = None
+assert solution.sumNumbers(root) == 0
+```
+
+## Meta variant
+```
+What if you had to ignore negative signs in your calculations until
+you reached a leaf node, and instead, only consider signage if a root-to-leaf path is
+a "negative path"?
+```
+```python
+class Solution:
+    class TreeNode:
+        def __init__(self, val=0, left=None, right=None):
+            self.val = val
+            self.left = left
+            self.right = right
+
+    def sumNumbers(self, root: TreeNode) -> int:
+        def helper(node, curr_sum, num_negatives):
+            if node is None:
+                return 0
+
+            curr_sum = (curr_sum * 10) + abs(node.val)
+            if node.val < 0:
+                num_negatives += 1
+
+            if node.left is None and node.right is None:
+                sign = -1 if num_negatives % 2 == 1 else 1
+                return curr_sum * sign
+
+            left_sum = helper(node.left, curr_sum, num_negatives)
+            right_sum = helper(node.right, curr_sum, num_negatives)
+
+            return left_sum + right_sum
+
+        return helper(root, 0, 0)
+
+
+solution = Solution()
+root = Solution.TreeNode(1, 
+    left=Solution.TreeNode(-2), 
+    right=Solution.TreeNode(3))
+assert solution.sumNumbers(root) == 1
+
+root = Solution.TreeNode(-1, 
+    left=Solution.TreeNode(-2, 
+	left=Solution.TreeNode(-9)), 
+    right=Solution.TreeNode(4, 
+	left=Solution.TreeNode(-5)))
+assert solution.sumNumbers(root) == -129 + 145
+
+root = Solution.TreeNode(-1, 
+    left=Solution.TreeNode(-2, 
+	left=Solution.TreeNode(-9, 
+	    left=Solution.TreeNode(3), 
+		right=Solution.TreeNode(-3))),
+    right=Solution.TreeNode(4, 
+	left=Solution.TreeNode(-5), 
+	    right=Solution.TreeNode(6)))
+assert solution.sumNumbers(root) == -1293 + 1293 + 145 + -146
+
+root = Solution.TreeNode(1, 
+    left=Solution.TreeNode(2), 
+    right=Solution.TreeNode(3))
+assert solution.sumNumbers(root) == 12 + 13
+
+root = Solution.TreeNode(-1, 
+    left=Solution.TreeNode(-2), 
+    right=Solution.TreeNode(-3))
+assert solution.sumNumbers(root) == 12 + 13
+
+root = Solution.TreeNode(-1, 
+    left=Solution.TreeNode(-2, 
+	left=Solution.TreeNode(-3)))
+assert solution.sumNumbers(root) == -123
+
+root = None
+assert solution.sumNumbers(root) == 0
+```
 
 # [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
 
@@ -7436,6 +7072,47 @@ class Solution:
             left, right = left + 1, right - 1
         return True
 ```
+
+## Meta variant
+What if you could only consider a limited set of characters as a part of a potential palindrome?
+```python
+class Solution:
+    def isPalindrome(self, s: str, include: list[str]) -> bool:
+        include_set = set(include)
+        left, right = 0, len(s) - 1
+        while left < right:
+            while s[left] not in include_set and left < right:
+                left += 1
+            while s[right] not in include_set and left < right:
+                right -= 1
+            if s[left] != s[right]:
+                return False
+            left += 1
+            right -= 1
+        return True
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert not solution.isPalindrome("racecarX", ["r", "X"])
+    assert solution.isPalindrome("Yo, banana boY!", ["Y", "o", "b", "a", "n"])
+    assert solution.isPalindrome("yo banana boy!", ["y", "o", "b", "a", "n"])
+    assert solution.isPalindrome("a b c d e d c b a", ["a", " ", "b", "c", "d", "e"])
+    assert solution.isPalindrome("a b c d e d c b a", ["a", "b", "c", "d", "e"])
+    assert solution.isPalindrome("a b c d e d c b a", ["a", "b", "e"])
+    assert not solution.isPalindrome("Wow", ["W", "o", "w"])
+    assert solution.isPalindrome("WwoWWWWWWWWWWWWWow", ["o", "w"])
+    assert solution.isPalindrome("__________________", ["1", "2"])
+    assert not solution.isPalindrome("________133__________", ["1", "3"])
+    assert not solution.isPalindrome("____1____133_______________", ["1", "3", "_"])
+    assert solution.isPalindrome("", ["1", "3", "_"])
+    assert solution.isPalindrome("", [])
+    assert solution.isPalindrome("MadaM", [])
+    assert solution.isPalindrome("MadaM", ["z", "M", "d"])
+    assert not solution.isPalindrome("MadaMM", ["z", "M", "d"])
+    assert not solution.isPalindrome("racecarX", ["r", "X"])
+```
+
 # [127. Word Ladder](https://leetcode.com/problems/word-ladder)
 
 
@@ -7744,6 +7421,12 @@ class Solution:
            return new_node
        return dfs(node, {})
 ```
+## Meta variant
+What if you had to define the data structures yourself and clone the disconnected graph?
+```
+Use multiple roots and create a clone of each root same as the normal solution.
+```
+
 
 # [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)
 
@@ -7828,6 +7511,28 @@ class Solution:
         return m[head]
 ```
 
+### Using DFS
+```python
+class Solution:
+    def copyRandomList(self, head: "Optional[Node]") -> "Optional[Node]":
+        visited = {}
+
+        def dfs(head):
+            if head is None:
+                return None
+            if head in visited:
+                return visited[head]
+            node = Node(head.val)
+            visited[head] = node
+            node.next = dfs(head.next)
+            node.random = dfs(head.random)
+            return node
+
+        return dfs(head)
+```
+
+
+
 
 ### Without Extra space
 
@@ -7865,6 +7570,44 @@ class Solution:
        return chead   
 ```
 
+## Meta Variant
+What if you had to deep copy a binary tree, not a linked list?
+
+```python
+from typing import Optional
+
+class Node:
+    def __init__(self, val=0, left=None, right=None, random=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.random = random
+
+class NodeCopy:
+    def __init__(self, val=0, left=None, right=None, random=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.random = random
+
+class Solution:
+    def copyRandomBinaryTree(self, root: "Optional[Node]") -> "Optional[NodeCopy]":
+        visited = {}
+
+        def dfs(root) -> "Optional[NodeCopy]":
+            if root is None:
+                return None
+            if root in visited:
+                return visited[root]
+            copy = NodeCopy(root.val)
+            visited[root] = copy
+            copy.left = dfs(root.left)
+            copy.right = dfs(root.right)
+            copy.random = dfs(root.random)
+            return copy
+
+        return dfs(root)
+```
 # [139. Word Break](https://leetcode.com/problems/word-break)
 
 
@@ -8456,7 +8199,42 @@ class Solution(object):
        return left
 ```
 
+## Meta variant
+What if you had to find the valley element, no longer a peak element?
 
+```python
+def findValleyElement(nums):
+    left = 0
+    right = len(nums)-1
+    while left < right:
+       mid = (left+right)//2
+       if nums[mid] < nums[mid+1] and nums[mid] < nums[mid-1]:
+           return mid
+       if nums[mid] > nums[mid+1]:
+           left = mid+1
+       else:
+           right = mid-1
+    return left
+    
+if __name__ == "__main__":
+    nums = [1, 2, 3, 1]
+    assert findValleyElement(nums) == 0  # Left pos infinity yields valley
+
+    nums = [1, 2, 3, 5, 3, 4, 3, 1, 6]
+    assert findValleyElement(nums) == 4
+
+    nums = [3, 2, 3, 4, 3, 2]
+    assert findValleyElement(nums) == 1
+
+    nums = [1, 2, 3, 4, 3, 2]
+    assert findValleyElement(nums) == 0
+
+    nums = [1, 2, 3, 2, 1, 0]
+    assert findValleyElement(nums) == 5  # Right pos infinity yields valley
+
+    nums = [1, 2, 3, 2, 1, 6]
+    assert findValleyElement(nums) == 4    
+```
 ---
 comments: true
 difficulty: Easy
@@ -8562,111 +8340,161 @@ class Solution:
        return missing_ranges
 ```
 
-#### Java
+## Meta Variant
+What if you had to abide by 3 formatting requirements when capturing missing ranges?
 
-```java
-class Solution {
-    public List<List<Integer>> findMissingRanges(int[] nums, int lower, int upper) {
-        int n = nums.length;
-        if (n == 0) {
-            return List.of(List.of(lower, upper));
-        }
-        List<List<Integer>> ans = new ArrayList<>();
-        if (nums[0] > lower) {
-            ans.add(List.of(lower, nums[0] - 1));
-        }
-        for (int i = 1; i < n; ++i) {
-            if (nums[i] - nums[i - 1] > 1) {
-                ans.add(List.of(nums[i - 1] + 1, nums[i] - 1));
-            }
-        }
-        if (nums[n - 1] < upper) {
-            ans.add(List.of(nums[n - 1] + 1, upper));
-        }
-        return ans;
-    }
-}
+```python
+class Solution:
+    def findMissingRangesVariant(self, nums, lower, upper):
+        curr_lower = lower
+        missing_ranges = []
+        nums.append(upper + 1)
+        
+        for num in nums:
+            if num - curr_lower > 2:
+                missing_ranges.append(f"{curr_lower}-{num - 1}")
+            elif num - curr_lower == 2:
+                missing_ranges.append(str(curr_lower))
+                missing_ranges.append(str(curr_lower + 1))
+            elif num - curr_lower == 1:
+                missing_ranges.append(str(curr_lower))
+            
+            curr_lower = num + 1
+        
+        return missing_ranges
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 2, 87) == [
+        "2-4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+        "21-87",
+    ]
+
+    solution = Solution()
+    # Empty vector cases
+    assert solution.findMissingRangesVariant([], 0, 0) == ["0"]
+    assert solution.findMissingRangesVariant([], 5, 35) == ["5-35"]
+    assert solution.findMissingRangesVariant([], 0, 35) == ["0-35"]
+
+    # Valid cases
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 2, 87) == [
+        "2-4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+        "21-87",
+    ]
+
+    # Upper bound with dash
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 1, 800) == [
+        "1-4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+        "21-800",
+    ]
+
+    # Upper bound with one missing number
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 1, 21) == [
+        "1-4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+        "21",
+    ]
+
+    # Upper bound with two missing numbers
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 1, 22) == [
+        "1-4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+        "21",
+        "22",
+    ]
+
+    # Upper bound with no missing numbers
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 1, 20) == [
+        "1-4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+    ]
+
+    # No missing ranges with one element
+    assert solution.findMissingRangesVariant([0], 0, 0) == []
+
+    # No missing ranges with one element V2
+    assert solution.findMissingRangesVariant([6], 6, 6) == []
+
+    # Lower bound with dash
+    assert solution.findMissingRangesVariant([0, 8, 9, 15, 16, 18, 20], 0, 20) == [
+        "1-7",
+        "10-14",
+        "17",
+        "19",
+    ]
+
+    # Lower bound with no missing numbers
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 5, 20) == [
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+    ]
+
+    # Lower bound with two missing numbers
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 3, 20) == [
+        "3",
+        "4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+    ]
+
+    # Lower bound with one missing number
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 4, 20) == [
+        "4",
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+    ]
+
+    # Upper bound with no dash
+    assert solution.findMissingRangesVariant([5, 8, 9, 15, 16, 18, 20], 5, 22) == [
+        "6",
+        "7",
+        "10-14",
+        "17",
+        "19",
+        "21",
+        "22",
+    ]
+
+    # One element with two ranges missing
+    assert solution.findMissingRangesVariant([10], 5, 22) == ["5-9", "11-22"]
 ```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<vector<int>> findMissingRanges(vector<int>& nums, int lower, int upper) {
-        int n = nums.size();
-        if (n == 0) {
-            return {{lower, upper}};
-        }
-        vector<vector<int>> ans;
-        if (nums[0] > lower) {
-            ans.push_back({lower, nums[0] - 1});
-        }
-        for (int i = 1; i < nums.size(); ++i) {
-            if (nums[i] - nums[i - 1] > 1) {
-                ans.push_back({nums[i - 1] + 1, nums[i] - 1});
-            }
-        }
-        if (nums[n - 1] < upper) {
-            ans.push_back({nums[n - 1] + 1, upper});
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func findMissingRanges(nums []int, lower int, upper int) (ans [][]int) {
-	n := len(nums)
-	if n == 0 {
-		return [][]int{{lower, upper}}
-	}
-	if nums[0] > lower {
-		ans = append(ans, []int{lower, nums[0] - 1})
-	}
-	for i, b := range nums[1:] {
-		if a := nums[i]; b-a > 1 {
-			ans = append(ans, []int{a + 1, b - 1})
-		}
-	}
-	if nums[n-1] < upper {
-		ans = append(ans, []int{nums[n-1] + 1, upper})
-	}
-	return
-}
-```
-
-#### TypeScript
-
-```ts
-function findMissingRanges(nums: number[], lower: number, upper: number): number[][] {
-    const n = nums.length;
-    if (n === 0) {
-        return [[lower, upper]];
-    }
-    const ans: number[][] = [];
-    if (nums[0] > lower) {
-        ans.push([lower, nums[0] - 1]);
-    }
-    for (let i = 1; i < n; ++i) {
-        if (nums[i] - nums[i - 1] > 1) {
-            ans.push([nums[i - 1] + 1, nums[i] - 1]);
-        }
-    }
-    if (nums[n - 1] < upper) {
-        ans.push([nums[n - 1] + 1, upper]);
-    }
-    return ans;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)
 
 [中文文档](/solution/0100-0199/0173.Binary%20Search%20Tree%20Iterator/README.md)
@@ -8848,6 +8676,107 @@ class Solution:
 
         util(root, 0)
         return ans
+```
+
+## Meta variant
+What if you had to return both the left- and right side views of a binary tree?
+```python
+from typing import Optional
+from collections import deque
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def leftRightSideViewVariant(self, root: Optional[TreeNode]) -> list[int]:
+        if not root:
+            return []
+
+        left_side = []
+        right_side = []
+        q = deque([root])
+        while q:
+            size = len(q)
+            for i in range(size):
+                node = q.popleft()
+
+                if i == 0:
+                    left_side.append(node.val)
+                if size == i + 1:
+                    right_side.append(node.val)
+
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+
+        result = []
+        result.extend(reversed(left_side))
+        result.extend(right_side[1:])
+        return result
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    # Test Case 1: Based on the example in the problem
+    # Tree structure:
+    #       1
+    #      / \
+    #     2   3
+    #    /     \
+    #   5       4
+    root1 = TreeNode(1)
+    root1.left = TreeNode(2)
+    root1.right = TreeNode(3)
+    root1.left.left = TreeNode(5)
+    root1.right.right = TreeNode(4)
+    assert solution.leftRightSideViewVariant(root1) == [5, 2, 1, 3, 4]
+    # Test Case 2: Based on the second example
+    # Tree structure:
+    #       1
+    #      / \
+    #     2   3
+    #    / \
+    #   4   5
+    root2 = TreeNode(1)
+    root2.left = TreeNode(2)
+    root2.right = TreeNode(3)
+    root2.left.left = TreeNode(4)
+    root2.left.right = TreeNode(5)
+    assert solution.leftRightSideViewVariant(root2) == [4, 2, 1, 3, 5]
+
+    root1 = TreeNode(1)
+    root1.left = TreeNode(2)
+    root1.right = TreeNode(3)
+    root1.right.right = TreeNode(7)
+    root1.right.left = TreeNode(6)
+    root1.right.right.left = TreeNode(8)
+    root1.left.left = TreeNode(4)
+    root1.left.right = TreeNode(5)
+    assert solution.leftRightSideViewVariant(root1) == [8, 4, 2, 1, 3, 7, 8]
+
+    root2 = TreeNode(1)
+    assert solution.leftRightSideViewVariant(root2) == [1]
+
+    root3 = TreeNode(1)
+    root3.left = TreeNode(2)
+    root3.left.left = TreeNode(3)
+    assert solution.leftRightSideViewVariant(root3) == [3, 2, 1, 2, 3]
+
+    root4 = None
+    assert solution.leftRightSideViewVariant(root4) == []
+
+    root5 = TreeNode(1)
+    root5.left = TreeNode(2)
+    root5.right = TreeNode(3)
+    root5.right.left = TreeNode(5)
+    root5.right.left.right = TreeNode(6)
+    root5.right.left.right.right = TreeNode(7)
+    root5.left.right = TreeNode(4)
+    assert solution.leftRightSideViewVariant(root5) == [7, 6, 4, 2, 1, 3, 5, 6, 7]
 ```
 
 
@@ -9823,6 +9752,162 @@ class Solution:
        return left if left else right
 
 ```
+
+## Meta variant
+How to do this for n-ary tree?
+
+```python
+class TreeNode:
+    def __init__(self, val=None, children=[]):
+        self.val = val
+        self.children = children
+
+class Solution:
+    def lowestCommonAncestor(self, root: "TreeNode", p: "TreeNode", q: "TreeNode") -> "TreeNode":
+        parent = {root: None}
+        stack = [root]
+        while p not in parent or q not in parent:
+            node = stack.pop()
+            for child in node.children:
+                parent[child] = node
+                stack.append(child)
+
+        ancestors = set()
+        while p:
+            ancestors.add(p)
+            p = parent[p]
+
+        while q not in ancestors:
+            q = parent[q]
+
+        return q
+
+
+if __name__ == "__main__":
+    # Tree structure:
+    #       1
+    #    /  |  \
+    #   3   2   4
+    #  / \
+    # 5   6
+    root1 = TreeNode(1)
+    node3 = TreeNode(3)
+    node2 = TreeNode(2)
+    node4 = TreeNode(4)
+    node5 = TreeNode(5)
+    node6 = TreeNode(6)
+
+    root1.children = [node3, node2, node4]
+    node3.children = [node5, node6]
+    solution = Solution()
+    assert solution.lowestCommonAncestor(root1, node5, node2) == root1
+    assert solution.lowestCommonAncestor(root1, node5, node6) == node3
+
+    # Test Case 2: More complex tree
+    # Tree structure:
+    #        10
+    #     /  |  \  \
+    #    5   1   7  8
+    #   / \  |      |
+    #  2  4  3      9
+    #    /
+    #   6
+    root2 = TreeNode(10)
+    node5_2 = TreeNode(5)
+    node1 = TreeNode(1)
+    node7 = TreeNode(7)
+    node8 = TreeNode(8)
+    node2_2 = TreeNode(2)
+    node4_2 = TreeNode(4)
+    node3_2 = TreeNode(3)
+    node9 = TreeNode(9)
+    node6_2 = TreeNode(6)
+
+    root2.children = [node5_2, node1, node7, node8]
+    node5_2.children = [node2_2, node4_2]
+    node1.children = [node3_2]
+    node8.children = [node9]
+    node4_2.children = [node6_2]
+    assert solution.lowestCommonAncestor(root2, node6_2, node3_2) == root2
+    assert solution.lowestCommonAncestor(root2, node6_2, node2_2) == node5_2
+
+    # Tree structure:
+    #       1
+    #    /  |  \
+    #   2   3   4
+    #  / \     / | \
+    # 5   6   7  8  9
+    root = TreeNode(1)
+    node2 = TreeNode(2)
+    node3 = TreeNode(3)
+    node4 = TreeNode(4)
+    node5 = TreeNode(5)
+    node6 = TreeNode(6)
+    node7 = TreeNode(7)
+    node8 = TreeNode(8)
+    node9 = TreeNode(9)
+    root.children = [node2, node3, node4]
+    node2.children = [node5, node6]
+    node4.children = [node7, node8, node9]
+    solution = Solution()
+    # Root as the LCA
+    assert solution.lowestCommonAncestor(root, node5, node7) == root
+    assert solution.lowestCommonAncestor(root, node5, node8) == root
+    assert solution.lowestCommonAncestor(root, node5, node9) == root
+    assert solution.lowestCommonAncestor(root, node6, node7) == root
+    assert solution.lowestCommonAncestor(root, node6, node8) == root
+    assert solution.lowestCommonAncestor(root, node6, node9) == root
+
+    assert solution.lowestCommonAncestor(root, node2, node9) == root
+
+    assert solution.lowestCommonAncestor(root, node2, node4) == root
+    assert solution.lowestCommonAncestor(root, node2, node3) == root
+
+    # Node 4 as the LCA
+    assert solution.lowestCommonAncestor(root, node7, node8) == node4
+    assert solution.lowestCommonAncestor(root, node7, node9) == node4
+
+    # Node 2 as the LCA
+    assert solution.lowestCommonAncestor(root, node5, node6) == node2
+
+    # Same tree structure for the second test case:
+    #       1
+    #    /  |  \
+    #   2   3   4
+    #  / \     / | \
+    # 5   6   7  8  9
+    root = TreeNode(1)
+    node2 = TreeNode(2)
+    node3 = TreeNode(3)
+    node4 = TreeNode(4)
+    node5 = TreeNode(5)
+    node6 = TreeNode(6)
+    node7 = TreeNode(7)
+    node8 = TreeNode(8)
+    node9 = TreeNode(9)
+
+    root.children = [node2, node3, node4]
+    node2.children = [node5, node6]
+    node4.children = [node7, node8, node9]
+
+    solution = Solution()
+    # Root as the LCA
+    assert solution.lowestCommonAncestor(root, root, node2) == root
+    assert solution.lowestCommonAncestor(root, root, node3) == root
+    assert solution.lowestCommonAncestor(root, root, node4) == root
+    assert solution.lowestCommonAncestor(root, root, node5) == root
+    assert solution.lowestCommonAncestor(root, root, node6) == root
+    assert solution.lowestCommonAncestor(root, root, node7) == root
+    assert solution.lowestCommonAncestor(root, root, node8) == root
+    assert solution.lowestCommonAncestor(root, root, node9) == root
+
+    # Node 4 as the LCA
+    assert solution.lowestCommonAncestor(root, node4, node8) == node4
+    assert solution.lowestCommonAncestor(root, node4, node9) == node4
+
+    # Node 2 as the LCA
+    assert solution.lowestCommonAncestor(root, node2, node6) == node2
+```
 # 239. Sliding Window Maximum
 Hard
 ```
@@ -10037,6 +10122,7 @@ Then, in this case, all strings that are offset from each other have a unique di
 #### Python3
 
 ```python
+import collections
 # Total lowercase letter
 ALPHA = 26
 # Method to a difference string for a given string. If string
@@ -10045,99 +10131,20 @@ ALPHA = 26
 def getDiffString(str):
    shift=""
    for i in range(1, len(str)):
-       dif = (ord(str[i]) - ord(str[i - 1]))
-       if(dif < 0):
-           dif += ALPHA
+       dif = ((ord(str[i]) - ord(str[i - 1])) + ALPHA) % ALPHA
        shift += chr(dif + ord('a'))
    return shift
-def groupShiftedString(str,n):
-   groupMap = defaultdict(list)
+def groupShiftedString(str):
+   n = len(str)
+   groupMap = collections.defaultdict(list)
    for i in range(n):
        diffStr = getDiffString(str[i])
-       groupMap[diffStr].append(i)
+       groupMap[diffStr].append(str[i])
   
    return list(groupMap.values())
+   
+print(groupShiftedString(["abc","bcd","acef","xyz","az","ba","a","z"]))
 ```
-
-#### Java
-
-```java
-class Solution {
-    public List<List<String>> groupStrings(String[] strings) {
-        Map<String, List<String>> g = new HashMap<>();
-        for (var s : strings) {
-            char[] t = s.toCharArray();
-            int diff = t[0] - 'a';
-            for (int i = 0; i < t.length; ++i) {
-                t[i] = (char) (t[i] - diff);
-                if (t[i] < 'a') {
-                    t[i] += 26;
-                }
-            }
-            g.computeIfAbsent(new String(t), k -> new ArrayList<>()).add(s);
-        }
-        return new ArrayList<>(g.values());
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<vector<string>> groupStrings(vector<string>& strings) {
-        unordered_map<string, vector<string>> g;
-        for (auto& s : strings) {
-            string t;
-            int diff = s[0] - 'a';
-            for (int i = 0; i < s.size(); ++i) {
-                char c = s[i] - diff;
-                if (c < 'a') {
-                    c += 26;
-                }
-                t.push_back(c);
-            }
-            g[t].emplace_back(s);
-        }
-        vector<vector<string>> ans;
-        for (auto& p : g) {
-            ans.emplace_back(move(p.second));
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func groupStrings(strings []string) [][]string {
-	g := make(map[string][]string)
-	for _, s := range strings {
-		t := []byte(s)
-		diff := t[0] - 'a'
-		for i := range t {
-			t[i] -= diff
-			if t[i] < 'a' {
-				t[i] += 26
-			}
-		}
-		g[string(t)] = append(g[string(t)], s)
-	}
-	ans := make([][]string, 0, len(g))
-	for _, v := range g {
-		ans = append(ans, v)
-	}
-	return ans
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -10209,110 +10216,6 @@ class Solution(object):
             ans = max(ans, count)
         return ans
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int minMeetingRooms(int[][] intervals) {
-        int n = 1000010;
-        int[] delta = new int[n];
-        for (int[] e : intervals) {
-            ++delta[e[0]];
-            --delta[e[1]];
-        }
-        int res = delta[0];
-        for (int i = 1; i < n; ++i) {
-            delta[i] += delta[i - 1];
-            res = Math.max(res, delta[i]);
-        }
-        return res;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int minMeetingRooms(vector<vector<int>>& intervals) {
-        int n = 1000010;
-        vector<int> delta(n);
-        for (auto e : intervals) {
-            ++delta[e[0]];
-            --delta[e[1]];
-        }
-        for (int i = 0; i < n - 1; ++i) {
-            delta[i + 1] += delta[i];
-        }
-        return *max_element(delta.begin(), delta.end());
-    }
-};
-```
-
-#### Go
-
-```go
-func minMeetingRooms(intervals [][]int) int {
-	n := 1000010
-	delta := make([]int, n)
-	for _, e := range intervals {
-		delta[e[0]]++
-		delta[e[1]]--
-	}
-	for i := 1; i < n; i++ {
-		delta[i] += delta[i-1]
-	}
-	return slices.Max(delta)
-}
-```
-
-#### Rust
-
-```rust
-use std::{cmp::Reverse, collections::BinaryHeap};
-
-impl Solution {
-    #[allow(dead_code)]
-    pub fn min_meeting_rooms(intervals: Vec<Vec<i32>>) -> i32 {
-        // The min heap that stores the earliest ending time among all meeting rooms
-        let mut pq = BinaryHeap::new();
-        let mut intervals = intervals;
-        let n = intervals.len();
-
-        // Let's first sort the intervals vector
-        intervals.sort_by(|lhs, rhs| lhs[0].cmp(&rhs[0]));
-
-        // Push the first end time to the heap
-        pq.push(Reverse(intervals[0][1]));
-
-        // Traverse the intervals vector
-        for i in 1..n {
-            // Get the current top element from the heap
-            if let Some(Reverse(end_time)) = pq.pop() {
-                if end_time <= intervals[i][0] {
-                    // If the end time is early than the current begin time
-                    let new_end_time = intervals[i][1];
-                    pq.push(Reverse(new_end_time));
-                } else {
-                    // Otherwise, push the end time back and we also need a new room
-                    pq.push(Reverse(end_time));
-                    pq.push(Reverse(intervals[i][1]));
-                }
-            }
-        }
-
-        pq.len() as i32
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Hard
@@ -10451,152 +10354,6 @@ class Solution:
         # Words = ['z', 'x', 'y', 'x']
         return result if len(result) == len(indegree) else ""
 ```
-
-#### Java
-
-```java
-class Solution {
-
-    public String alienOrder(String[] words) {
-        boolean[][] g = new boolean[26][26];
-        boolean[] s = new boolean[26];
-        int cnt = 0;
-        int n = words.length;
-        for (int i = 0; i < n - 1; ++i) {
-            for (char c : words[i].toCharArray()) {
-                if (cnt == 26) {
-                    break;
-                }
-                c -= 'a';
-                if (!s[c]) {
-                    ++cnt;
-                    s[c] = true;
-                }
-            }
-            int m = words[i].length();
-            for (int j = 0; j < m; ++j) {
-                if (j >= words[i + 1].length()) {
-                    return "";
-                }
-                char c1 = words[i].charAt(j), c2 = words[i + 1].charAt(j);
-                if (c1 == c2) {
-                    continue;
-                }
-                if (g[c2 - 'a'][c1 - 'a']) {
-                    return "";
-                }
-                g[c1 - 'a'][c2 - 'a'] = true;
-                break;
-            }
-        }
-        for (char c : words[n - 1].toCharArray()) {
-            if (cnt == 26) {
-                break;
-            }
-            c -= 'a';
-            if (!s[c]) {
-                ++cnt;
-                s[c] = true;
-            }
-        }
-
-        int[] indegree = new int[26];
-        for (int i = 0; i < 26; ++i) {
-            for (int j = 0; j < 26; ++j) {
-                if (i != j && s[i] && s[j] && g[i][j]) {
-                    ++indegree[j];
-                }
-            }
-        }
-        Deque<Integer> q = new LinkedList<>();
-        for (int i = 0; i < 26; ++i) {
-            if (s[i] && indegree[i] == 0) {
-                q.offerLast(i);
-            }
-        }
-        StringBuilder ans = new StringBuilder();
-        while (!q.isEmpty()) {
-            int t = q.pollFirst();
-            ans.append((char) (t + 'a'));
-            for (int i = 0; i < 26; ++i) {
-                if (i != t && s[i] && g[t][i]) {
-                    if (--indegree[i] == 0) {
-                        q.offerLast(i);
-                    }
-                }
-            }
-        }
-        return ans.length() < cnt ? "" : ans.toString();
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    string alienOrder(vector<string>& words) {
-        vector<vector<bool>> g(26, vector<bool>(26));
-        vector<bool> s(26);
-        int cnt = 0;
-        int n = words.size();
-        for (int i = 0; i < n - 1; ++i) {
-            for (char c : words[i]) {
-                if (cnt == 26) break;
-                c -= 'a';
-                if (!s[c]) {
-                    ++cnt;
-                    s[c] = true;
-                }
-            }
-            int m = words[i].size();
-            for (int j = 0; j < m; ++j) {
-                if (j >= words[i + 1].size()) return "";
-                char c1 = words[i][j], c2 = words[i + 1][j];
-                if (c1 == c2) continue;
-                if (g[c2 - 'a'][c1 - 'a']) return "";
-                g[c1 - 'a'][c2 - 'a'] = true;
-                break;
-            }
-        }
-        for (char c : words[n - 1]) {
-            if (cnt == 26) break;
-            c -= 'a';
-            if (!s[c]) {
-                ++cnt;
-                s[c] = true;
-            }
-        }
-        vector<int> indegree(26);
-        for (int i = 0; i < 26; ++i)
-            for (int j = 0; j < 26; ++j)
-                if (i != j && s[i] && s[j] && g[i][j])
-                    ++indegree[j];
-        queue<int> q;
-        for (int i = 0; i < 26; ++i)
-            if (s[i] && indegree[i] == 0)
-                q.push(i);
-        string ans = "";
-        while (!q.empty()) {
-            int t = q.front();
-            ans += (t + 'a');
-            q.pop();
-            for (int i = 0; i < 26; ++i)
-                if (i != t && s[i] && g[t][i])
-                    if (--indegree[i] == 0)
-                        q.push(i);
-        }
-        return ans.size() < cnt ? "" : ans;
-    }
-};
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Easy
@@ -10613,7 +10370,6 @@ tags:
 
 # [270. Closest Binary Search Tree Value 🔒](https://leetcode.com/problems/closest-binary-search-tree-value)
 
-[中文文档](/solution/0200-0299/0270.Closest%20Binary%20Search%20Tree%20Value/README.md)
 
 ## Description
 
@@ -10662,11 +10418,6 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Where $n$ is 
 #### Python3
 
 ```python
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
 class Solution:
     def closest_value(self, root: TreeNode, target: float) -> int:
         # Initialize the closest_value with the root's value
@@ -10695,405 +10446,6 @@ class Solution:
         # Once we find the closest value, return it
         return closest_value
 ```
-
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    private int ans;
-    private double target;
-    private double diff = Double.MAX_VALUE;
-
-    public int closestValue(TreeNode root, double target) {
-        this.target = target;
-        dfs(root);
-        return ans;
-    }
-
-    private void dfs(TreeNode node) {
-        if (node == null) {
-            return;
-        }
-        double nxt = Math.abs(node.val - target);
-        if (nxt < diff || (nxt == diff && node.val < ans)) {
-            diff = nxt;
-            ans = node.val;
-        }
-        node = target < node.val ? node.left : node.right;
-        dfs(node);
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    int closestValue(TreeNode* root, double target) {
-        int ans = root->val;
-        double diff = INT_MAX;
-        function<void(TreeNode*)> dfs = [&](TreeNode* node) {
-            if (!node) {
-                return;
-            }
-            double nxt = abs(node->val - target);
-            if (nxt < diff || (nxt == diff && node->val < ans)) {
-                diff = nxt;
-                ans = node->val;
-            }
-            node = target < node->val ? node->left : node->right;
-            dfs(node);
-        };
-        dfs(root);
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func closestValue(root *TreeNode, target float64) int {
-	ans := root.Val
-	diff := math.MaxFloat64
-	var dfs func(*TreeNode)
-	dfs = func(node *TreeNode) {
-		if node == nil {
-			return
-		}
-		nxt := math.Abs(float64(node.Val) - target)
-		if nxt < diff || (nxt == diff && node.Val < ans) {
-			diff = nxt
-			ans = node.Val
-		}
-		if target < float64(node.Val) {
-			dfs(node.Left)
-		} else {
-			dfs(node.Right)
-		}
-	}
-	dfs(root)
-	return ans
-}
-```
-
-#### TypeScript
-
-```ts
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
-
-function closestValue(root: TreeNode | null, target: number): number {
-    let ans = 0;
-    let diff = Number.POSITIVE_INFINITY;
-
-    const dfs = (node: TreeNode | null): void => {
-        if (!node) {
-            return;
-        }
-
-        const nxt = Math.abs(target - node.val);
-        if (nxt < diff || (nxt === diff && node.val < ans)) {
-            diff = nxt;
-            ans = node.val;
-        }
-
-        node = target < node.val ? node.left : node.right;
-        dfs(node);
-    };
-
-    dfs(root);
-    return ans;
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left, right) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.left = (left===undefined ? null : left)
- *     this.right = (right===undefined ? null : right)
- * }
- */
-/**
- * @param {TreeNode} root
- * @param {number} target
- * @return {number}
- */
-var closestValue = function (root, target) {
-    let ans = 0;
-    let diff = Infinity;
-
-    const dfs = node => {
-        if (!node) {
-            return;
-        }
-
-        const nxt = Math.abs(target - node.val);
-        if (nxt < diff || (nxt === diff && node.val < ans)) {
-            diff = nxt;
-            ans = node.val;
-        }
-
-        node = target < node.val ? node.left : node.right;
-        dfs(node);
-    };
-
-    dfs(root);
-    return ans;
-};
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- solution:start -->
-
-### Solution 2: Iteration
-
-We can rewrite the recursive function in an iterative form, using a loop to simulate the recursive process. We start from the root node and check whether the absolute difference between the current node's value and the target value is less than the current minimum difference. If it is, we update the answer. Then, based on the size relationship between the target value and the current node's value, we decide to move to the left subtree or the right subtree. The loop ends when we traverse to a null node.
-
-The time complexity is $O(n)$, where $n$ is the number of nodes in the binary search tree. The space complexity is $O(1)$.
-
-<!-- tabs:start -->
-
-#### Python3
-
-```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def closestValue(self, root: Optional[TreeNode], target: float) -> int:
-        ans, diff = root.val, inf
-        while root:
-            nxt = abs(root.val - target)
-            if nxt < diff or (nxt == diff and root.val < ans):
-                diff = nxt
-                ans = root.val
-            root = root.left if target < root.val else root.right
-        return ans
-```
-
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    public int closestValue(TreeNode root, double target) {
-        int ans = root.val;
-        double diff = Double.MAX_VALUE;
-        while (root != null) {
-            double nxt = Math.abs(root.val - target);
-            if (nxt < diff || (nxt == diff && root.val < ans)) {
-                diff = nxt;
-                ans = root.val;
-            }
-            root = target < root.val ? root.left : root.right;
-        }
-        return ans;
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    int closestValue(TreeNode* root, double target) {
-        int ans = root->val;
-        double diff = INT_MAX;
-        while (root) {
-            double nxt = abs(root->val - target);
-            if (nxt < diff || (nxt == diff && root->val < ans)) {
-                diff = nxt;
-                ans = root->val;
-            }
-            root = target < root->val ? root->left : root->right;
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func closestValue(root *TreeNode, target float64) int {
-	ans := root.Val
-	diff := math.MaxFloat64
-	for root != nil {
-		nxt := math.Abs(float64(root.Val) - target)
-		if nxt < diff || (nxt == diff && root.Val < ans) {
-			diff = nxt
-			ans = root.Val
-		}
-		if float64(root.Val) > target {
-			root = root.Left
-		} else {
-			root = root.Right
-		}
-	}
-	return ans
-}
-```
-
-#### TypeScript
-
-```ts
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
-
-function closestValue(root: TreeNode | null, target: number): number {
-    let ans = 0;
-    let diff = Number.POSITIVE_INFINITY;
-
-    while (root) {
-        const nxt = Math.abs(root.val - target);
-        if (nxt < diff || (nxt === diff && root.val < ans)) {
-            diff = nxt;
-            ans = root.val;
-        }
-        root = target < root.val ? root.left : root.right;
-    }
-    return ans;
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left, right) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.left = (left===undefined ? null : left)
- *     this.right = (right===undefined ? null : right)
- * }
- */
-/**
- * @param {TreeNode} root
- * @param {number} target
- * @return {number}
- */
-var closestValue = function (root, target) {
-    let ans = root.val;
-    let diff = Infinity;
-    while (root) {
-        const nxt = Math.abs(root.val - target);
-        if (nxt < diff || (nxt === diff && root.val < ans)) {
-            diff = nxt;
-            ans = root.val;
-        }
-        root = target < root.val ? root.left : root.right;
-    }
-    return ans;
-};
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # 282. Expression Add Operators
 Hard
 Given a string num that contains only digits and an integer target, return all possibilities to insert the binary operators '+', '-', and/or '*' between the digits of num so that the resultant expression evaluates to the target value.
@@ -11186,7 +10538,8 @@ The time complexity is $O(n)$, where $n$ is the length of the array $\textit{num
 
 #### Python3
 
-```pythonclass Solution:
+```python
+class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -11202,125 +10555,31 @@ The time complexity is $O(n)$, where $n$ is the length of the array $\textit{num
             lastNonZero += 1
 ```
 
-#### Java
+## Meta variant
+What if you had to move zeroes to the front, not the back?
 
-```java
-class Solution {
-    public void moveZeroes(int[] nums) {
-        int k = 0, n = nums.length;
-        for (int i = 0; i < n; ++i) {
-            if (nums[i] != 0) {
-                int t = nums[i];
-                nums[i] = nums[k];
-                nums[k++] = t;
-            }
-        }
-    }
-}
+Start iterating the array from the end instead of from the front.
+
+```python
+def moveZeroes(nums) -> None:
+    """
+    Do not return anything, modify nums in-place instead.
+    """
+    n = len(nums) -1
+    lastNonZero = n
+    for i in range(n, -1,-1):
+        if nums[i] == 0:
+            continue
+        nums[lastNonZero] = nums[i]
+        lastNonZero -= 1
+    while lastNonZero >= 0:
+        nums[lastNonZero] = 0
+        lastNonZero -= 1
+nums = [1, 3, 12, 0, 0, 0]
+moveZeroes(nums)
+print(nums)
+
 ```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    void moveZeroes(vector<int>& nums) {
-        int k = 0, n = nums.size();
-        for (int i = 0; i < n; ++i) {
-            if (nums[i]) {
-                swap(nums[i], nums[k++]);
-            }
-        }
-    }
-};
-```
-
-#### Go
-
-```go
-func moveZeroes(nums []int) {
-	k := 0
-	for i, x := range nums {
-		if x != 0 {
-			nums[i], nums[k] = nums[k], nums[i]
-			k++
-		}
-	}
-}
-```
-
-#### TypeScript
-
-```ts
-/**
- Do not return anything, modify nums in-place instead.
- */
-function moveZeroes(nums: number[]): void {
-    let k = 0;
-    for (let i = 0; i < nums.length; ++i) {
-        if (nums[i]) {
-            [nums[i], nums[k]] = [nums[k], nums[i]];
-            ++k;
-        }
-    }
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn move_zeroes(nums: &mut Vec<i32>) {
-        let mut k = 0;
-        let n = nums.len();
-        for i in 0..n {
-            if nums[i] != 0 {
-                nums.swap(i, k);
-                k += 1;
-            }
-        }
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {number[]} nums
- * @return {void} Do not return anything, modify nums in-place instead.
- */
-var moveZeroes = function (nums) {
-    let k = 0;
-    for (let i = 0; i < nums.length; ++i) {
-        if (nums[i]) {
-            [nums[i], nums[k]] = [nums[k], nums[i]];
-            ++k;
-        }
-    }
-};
-```
-
-#### C
-
-```c
-void moveZeroes(int* nums, int numsSize) {
-    int k = 0;
-    for (int i = 0; i < numsSize; ++i) {
-        if (nums[i] != 0) {
-            int t = nums[i];
-            nums[i] = nums[k];
-            nums[k++] = t;
-        }
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)
 
 
@@ -11520,161 +10779,6 @@ class Solution:
                         
         return result
 ```
-
-#### Java
-
-```java
-class Solution {
-    private String s;
-    private int n;
-    private Set<String> ans = new HashSet<>();
-
-    public List<String> removeInvalidParentheses(String s) {
-        this.s = s;
-        this.n = s.length();
-        int l = 0, r = 0;
-        for (char c : s.toCharArray()) {
-            if (c == '(') {
-                ++l;
-            } else if (c == ')') {
-                if (l > 0) {
-                    --l;
-                } else {
-                    ++r;
-                }
-            }
-        }
-        dfs(0, l, r, 0, 0, "");
-        return new ArrayList<>(ans);
-    }
-
-    private void dfs(int i, int l, int r, int lcnt, int rcnt, String t) {
-        if (i == n) {
-            if (l == 0 && r == 0) {
-                ans.add(t);
-            }
-            return;
-        }
-        if (n - i < l + r || lcnt < rcnt) {
-            return;
-        }
-        char c = s.charAt(i);
-        if (c == '(' && l > 0) {
-            dfs(i + 1, l - 1, r, lcnt, rcnt, t);
-        }
-        if (c == ')' && r > 0) {
-            dfs(i + 1, l, r - 1, lcnt, rcnt, t);
-        }
-        int x = c == '(' ? 1 : 0;
-        int y = c == ')' ? 1 : 0;
-        dfs(i + 1, l, r, lcnt + x, rcnt + y, t + c);
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<string> removeInvalidParentheses(string s) {
-        unordered_set<string> ans;
-        int l = 0, r = 0, n = s.size();
-        for (char& c : s) {
-            if (c == '(') {
-                ++l;
-            } else if (c == ')') {
-                if (l) {
-                    --l;
-                } else {
-                    ++r;
-                }
-            }
-        }
-        function<void(int, int, int, int, int, string)> dfs;
-        dfs = [&](int i, int l, int r, int lcnt, int rcnt, string t) {
-            if (i == n) {
-                if (l == 0 && r == 0) {
-                    ans.insert(t);
-                }
-                return;
-            }
-            if (n - i < l + r || lcnt < rcnt) {
-                return;
-            }
-            if (s[i] == '(' && l) {
-                dfs(i + 1, l - 1, r, lcnt, rcnt, t);
-            }
-            if (s[i] == ')' && r) {
-                dfs(i + 1, l, r - 1, lcnt, rcnt, t);
-            }
-            int x = s[i] == '(' ? 1 : 0;
-            int y = s[i] == ')' ? 1 : 0;
-            dfs(i + 1, l, r, lcnt + x, rcnt + y, t + s[i]);
-        };
-
-        dfs(0, l, r, 0, 0, "");
-        return vector<string>(ans.begin(), ans.end());
-    }
-};
-```
-
-#### Go
-
-```go
-func removeInvalidParentheses(s string) []string {
-	vis := map[string]bool{}
-	l, r, n := 0, 0, len(s)
-	for _, c := range s {
-		if c == '(' {
-			l++
-		} else if c == ')' {
-			if l > 0 {
-				l--
-			} else {
-				r++
-			}
-		}
-	}
-	var dfs func(i, l, r, lcnt, rcnt int, t string)
-	dfs = func(i, l, r, lcnt, rcnt int, t string) {
-		if i == n {
-			if l == 0 && r == 0 {
-				vis[t] = true
-			}
-			return
-		}
-		if n-i < l+r || lcnt < rcnt {
-			return
-		}
-		if s[i] == '(' && l > 0 {
-			dfs(i+1, l-1, r, lcnt, rcnt, t)
-		}
-		if s[i] == ')' && r > 0 {
-			dfs(i+1, l, r-1, lcnt, rcnt, t)
-		}
-		x, y := 0, 0
-		if s[i] == '(' {
-			x = 1
-		} else if s[i] == ')' {
-			y = 1
-		}
-		dfs(i+1, l, r, lcnt+x, rcnt+y, t+string(s[i]))
-	}
-	dfs(0, l, r, 0, 0, "")
-	ans := make([]string, 0, len(vis))
-	for v := range vis {
-		ans = append(ans, v)
-	}
-	return ans
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [311. Sparse Matrix Multiplication 🔒](https://leetcode.com/problems/sparse-matrix-multiplication)
 
 
@@ -11981,209 +11085,203 @@ class Solution:
        # If no cell can reach all buildings, return -1; otherwise, return the minimum distance
        return -1 if answer == float('inf') else answer
 ```
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0300-0399/0339.Nested%20List%20Weight%20Sum/README_EN.md
+tags:
+    - Depth-First Search
+    - Breadth-First Search
+---
 
-#### Java
+<!-- problem:start -->
 
-```java
-class Solution {
-    public int shortestDistance(int[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
-        Deque<int[]> q = new LinkedList<>();
-        int total = 0;
-        int[][] cnt = new int[m][n];
-        int[][] dist = new int[m][n];
-        int[] dirs = {-1, 0, 1, 0, -1};
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                if (grid[i][j] == 1) {
-                    ++total;
-                    q.offer(new int[] {i, j});
-                    int d = 0;
-                    boolean[][] vis = new boolean[m][n];
-                    while (!q.isEmpty()) {
-                        ++d;
-                        for (int k = q.size(); k > 0; --k) {
-                            int[] p = q.poll();
-                            for (int l = 0; l < 4; ++l) {
-                                int x = p[0] + dirs[l];
-                                int y = p[1] + dirs[l + 1];
-                                if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == 0
-                                    && !vis[x][y]) {
-                                    ++cnt[x][y];
-                                    dist[x][y] += d;
-                                    q.offer(new int[] {x, y});
-                                    vis[x][y] = true;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        int ans = Integer.MAX_VALUE;
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                if (grid[i][j] == 0 && cnt[i][j] == total) {
-                    ans = Math.min(ans, dist[i][j]);
-                }
-            }
-        }
-        return ans == Integer.MAX_VALUE ? -1 : ans;
-    }
-}
-```
+# [339. Nested List Weight Sum 🔒](https://leetcode.com/problems/nested-list-weight-sum)
 
-#### C++
 
-```cpp
-class Solution {
-public:
-    int shortestDistance(vector<vector<int>>& grid) {
-        int m = grid.size();
-        int n = grid[0].size();
-        typedef pair<int, int> pii;
-        queue<pii> q;
-        int total = 0;
-        vector<vector<int>> cnt(m, vector<int>(n));
-        vector<vector<int>> dist(m, vector<int>(n));
-        vector<int> dirs = {-1, 0, 1, 0, -1};
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                if (grid[i][j] == 1) {
-                    ++total;
-                    q.push({i, j});
-                    vector<vector<bool>> vis(m, vector<bool>(n));
-                    int d = 0;
-                    while (!q.empty()) {
-                        ++d;
-                        for (int k = q.size(); k > 0; --k) {
-                            auto p = q.front();
-                            q.pop();
-                            for (int l = 0; l < 4; ++l) {
-                                int x = p.first + dirs[l];
-                                int y = p.second + dirs[l + 1];
-                                if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == 0 && !vis[x][y]) {
-                                    ++cnt[x][y];
-                                    dist[x][y] += d;
-                                    q.push({x, y});
-                                    vis[x][y] = true;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        int ans = INT_MAX;
-        for (int i = 0; i < m; ++i)
-            for (int j = 0; j < n; ++j)
-                if (grid[i][j] == 0 && cnt[i][j] == total)
-                    ans = min(ans, dist[i][j]);
-        return ans == INT_MAX ? -1 : ans;
-    }
-};
-```
+## Description
 
-#### Go
+<!-- description:start -->
 
-```go
-func shortestDistance(grid [][]int) int {
-	m, n := len(grid), len(grid[0])
-	var q [][]int
-	total := 0
-	cnt := make([][]int, m)
-	dist := make([][]int, m)
-	for i := range cnt {
-		cnt[i] = make([]int, n)
-		dist[i] = make([]int, n)
-	}
-	dirs := []int{-1, 0, 1, 0, -1}
-	for i := 0; i < m; i++ {
-		for j := 0; j < n; j++ {
-			if grid[i][j] == 1 {
-				total++
-				q = append(q, []int{i, j})
-				vis := make([]bool, m*n)
-				d := 0
-				for len(q) > 0 {
-					d++
-					for k := len(q); k > 0; k-- {
-						p := q[0]
-						q = q[1:]
-						for l := 0; l < 4; l++ {
-							x, y := p[0]+dirs[l], p[1]+dirs[l+1]
-							if x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == 0 && !vis[x*n+y] {
-								cnt[x][y]++
-								dist[x][y] += d
-								q = append(q, []int{x, y})
-								vis[x*n+y] = true
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+<p>You are given a nested list of integers <code>nestedList</code>. Each element is either an integer or a list whose elements may also be integers or other lists.</p>
 
-	ans := math.MaxInt32
-	for i := 0; i < m; i++ {
-		for j := 0; j < n; j++ {
-			if grid[i][j] == 0 && cnt[i][j] == total {
-				if ans > dist[i][j] {
-					ans = dist[i][j]
-				}
-			}
-		}
-	}
-	if ans == math.MaxInt32 {
-		return -1
-	}
-	return ans
-}
-```
+<p>The <strong>depth</strong> of an integer is the number of lists that it is inside of. For example, the nested list <code>[1,[2,2],[[3],2],1]</code> has each integer&#39;s value set to its <strong>depth</strong>.</p>
 
-<!-- tabs:end -->
+<p>Return <em>the sum of each integer in </em><code>nestedList</code><em> multiplied by its <strong>depth</strong></em>.</p>
 
-<!-- solution:end -->
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0300-0399/0339.Nested%20List%20Weight%20Sum/images/nestedlistweightsumex1.png" style="width: 405px; height: 99px;" />
+<pre>
+<strong>Input:</strong> nestedList = [[1,1],2,[1,1]]
+<strong>Output:</strong> 10
+<strong>Explanation:</strong> Four 1&#39;s at depth 2, one 2 at depth 1. 1*2 + 1*2 + 2*1 + 1*2 + 1*2 = 10.
+</pre>
 
-<!-- problem:end -->
-# 339. Nested List Weight Sum
-```
-You are given a nested list of integers nestedList. Each element is either an integer or a
-list whose elements may also be integers or other lists.
-The depth of an integer is the number of lists that it is inside of. For example, the nested
-list [1,[2,2],[[3],2],1] has each integer's value set to its depth.
-Return the sum of each integer in nestedList multiplied by its depth.
- 
-Example 1:
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0300-0399/0339.Nested%20List%20Weight%20Sum/images/nestedlistweightsumex2.png" style="width: 315px; height: 106px;" />
+<pre>
+<strong>Input:</strong> nestedList = [1,[4,[6]]]
+<strong>Output:</strong> 27
+<strong>Explanation:</strong> One 1 at depth 1, one 4 at depth 2, and one 6 at depth 3. 1*1 + 4*2 + 6*3 = 27.</pre>
 
-Input: nestedList = [[1,1],2,[1,1]]
-Output: 10
-Explanation: Four 1's at depth 2, one 2 at depth 1. 1*2 + 1*2 + 2*1 + 1*2 + 1*2 = 10.
-Example 2:
+<p><strong class="example">Example 3:</strong></p>
 
-Input: nestedList = [1,[4,[6]]]
-Output: 27
-Explanation: One 1 at depth 1, one 4 at depth 2, and one 6 at depth 3. 1*1 + 4*2 + 6*3 = 27.
-Example 3:
-Input: nestedList = [0]
-Output: 0
-```
+<pre>
+<strong>Input:</strong> nestedList = [0]
+<strong>Output:</strong> 0
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nestedList.length &lt;= 50</code></li>
+	<li>The values of the integers in the nested list is in the range <code>[-100, 100]</code>.</li>
+	<li>The maximum <strong>depth</strong> of any integer is less than or equal to <code>50</code>.</li>
+</ul>
+
 
 ```python
 class Solution(object):
- def depthSum(self, nestedList):
-   def helper(root, depth):
-     res = 0
-     for nested in root:
-       if nested.isInteger():
-         res += depth * nested.getInteger()
-       else:
-         res += helper(nested.getList(), depth + 1)
-     return res
-   return helper(nestedList, 1)
+    def depthSum(self, nestedList):
+        def helper(root, depth):
+            res = 0
+            for nested in root:
+                if nested.isInteger():
+                    res += depth * nested.getInteger()
+                else:
+                    res += helper(nested.getList(), depth + 1)
+            return res
+
+        return helper(nestedList, 1)
 ```
+
+
+# [364. Nested List Weight Sum II 🔒](https://leetcode.com/problems/nested-list-weight-sum-ii)
+
+[中文文档](/solution/0300-0399/0364.Nested%20List%20Weight%20Sum%20II/README.md)
+
+## Description
+
+<!-- description:start -->
+
+<p>You are given a nested list of integers <code>nestedList</code>. Each element is either an integer or a list whose elements may also be integers or other lists.</p>
+
+<p>The <strong>depth</strong> of an integer is the number of lists that it is inside of. For example, the nested list <code>[1,[2,2],[[3],2],1]</code> has each integer&#39;s value set to its <strong>depth</strong>. Let <code>maxDepth</code> be the <strong>maximum depth</strong> of any integer.</p>
+
+<p>The <strong>weight</strong> of an integer is <code>maxDepth - (the depth of the integer) + 1</code>.</p>
+
+<p>Return <em>the sum of each integer in </em><code>nestedList</code><em> multiplied by its <strong>weight</strong></em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0300-0399/0364.Nested%20List%20Weight%20Sum%20II/images/nestedlistweightsumiiex1.png" style="width: 426px; height: 181px;" />
+<pre>
+<strong>Input:</strong> nestedList = [[1,1],2,[1,1]]
+<strong>Output:</strong> 8
+<strong>Explanation:</strong> Four 1&#39;s with a weight of 1, one 2 with a weight of 2.
+1*1 + 1*1 + 2*2 + 1*1 + 1*1 = 8
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0300-0399/0364.Nested%20List%20Weight%20Sum%20II/images/nestedlistweightsumiiex2.png" style="width: 349px; height: 192px;" />
+<pre>
+<strong>Input:</strong> nestedList = [1,[4,[6]]]
+<strong>Output:</strong> 17
+<strong>Explanation:</strong> One 1 at depth 3, one 4 at depth 2, and one 6 at depth 1.
+1*3 + 4*2 + 6*1 = 17
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nestedList.length &lt;= 50</code></li>
+	<li>The values of the integers in the nested list is in the range <code>[-100, 100]</code>.</li>
+	<li>The maximum <strong>depth</strong> of any integer is less than or equal to <code>50</code>.</li>
+	<li>There are no empty lists.</li>
+</ul>
+
+### 1, two passes
+Straightforward solution is 2 passes  
+1st pass to depth first  
+then calculate  
+
+```python
+class Solution:
+   def depthSumInverse(self, nestedList: List[NestedInteger]) -> int:
+       def max_depth(nestedList):
+           depth = 1
+           for item in nestedList:
+               if item.isInteger():
+                   continue
+               depth = max(depth, max_depth(item.getList()) + 1)
+           return depth
+       def dfs(nestedList, max_depth):
+           depth_sum = 0
+           for item in nestedList:
+               if item.isInteger():
+                   depth_sum += item.getInteger() * max_depth
+               else:
+                   depth_sum += dfs(item.getList(), max_depth - 1)
+           return depth_sum
+       depth = max_depth(nestedList)
+       return dfs(nestedList, depth)
+```
+ - 2, one passes  
+The solution uses an iterative approach to traverse the nested list level by level, starting from the outermost level (level 1) and moving inward. It keeps track of two sums:  
+unweighted: The cumulative sum of all integers encountered so far, regardless of their depth.  
+weighted: The weighted sum, which is recalculated at each level to reflect the increasing weight of previously encountered integers as the traversal goes deeper.  
+Initialization: If the input list is empty, the function immediately returns 0. This check is technically redundant due to Python’s treatment of empty lists as falsy values, which would naturally terminate the loop.  
+
+
+Iterative Traversal: The solution iteratively traverses the nested list. At each iteration, it processes one level of the list.  
+
+
+Accumulating unweighted Sum: For each element a in the current level (nestedList), if a is an integer, its value is added to unweighted. This sum accumulates values from all levels processed so far but does not account for their depth.  
+
+
+Preparing for Next Level: If a is not an integer but another nested list, the elements of this list are added to next_level, preparing them for processing in the next iteration.  
+
+
+Updating weighted Sum: After processing each level, weighted is increased by unweighted. This step is crucial because it effectively adds the unweighted sum repeatedly, once for each level of depth, thereby inversely weighting the depth. Deeper integers have already contributed to unweighted in earlier iterations, so they are counted multiple times in weighted, reflecting their deeper level.  
+
+
+Moving to the Next Level: The list to be processed in the next iteration is updated to next_level, moving the traversal one level deeper into the nested list structure.  
+
+
+Returning the Result: Once all levels have been processed and there are no more elements to traverse, the weighted sum represents the inverse depth sum of the original nested list, and it is returned as the result.  
+
+
+Example  
+Consider the nested list [[1,1],2,[1,1]]. The inverse depth sum is calculated as follows:  
+At the outermost level, the sum of integers is 2 (only the integer 2 is at this level). This value is added to weighted. So weighted=2 and unweighted=2  
+At the next level, the sum of integers is 4 (from the four 1s in the nested lists). This sum is added to unweighted making it 6 (once for this level and once from the previous level’s unweighted sum 2).  
+The final weighted sum is weighted + unweighted, i.e. 2 + 6 = 8, which is the inverse depth sum of the nested list.  
+This approach efficiently calculates the inverse depth sum without needing to explicitly track the depth of each integer, leveraging the iterative re-accumulation of unweighted sums to achieve the correct weighting.  
+
+```python
+class Solution_onePass: # iterative
+   def depthSumInverse(self, nestedList: List[NestedInteger]) -> int:
+       if not nestedList:
+       # can remove this check, an empty list in Python is considered "falsy"
+       # and the loop will exit when it reaches the end of the list
+           return 0
+       # weighted is like previous round result
+       unweighted = weighted = 0
+       while nestedList:
+           next_level = []
+           for a in nestedList:
+               if a.isInteger():
+                   unweighted += a.getInteger()
+               else:
+                   next_level.extend(a.getList())
+           weighted += unweighted
+           nestedList = next_level
+       return weighted
+```
+
 
 
 # [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)
@@ -12364,19 +11462,126 @@ movingAverage.next(5); // return 6.0 = (10 + 3 + 5) / 3
        self.cnt += 1
        return self.s / min(self.cnt, len(self.arr))
 ```
-# 347. Top K Frequent Elements
-Medium
+
+### Alternate and simple solution
+```python
+from queue import Queue
+
+class MovingAverage_346:
+    def __init__(self, size: int):
+        self.size = size
+        self.queue = Queue()
+        self.window_sum = 0
+
+    def next(self, val: int) -> float:
+        self.window_sum += val
+        self.queue.put(val)
+
+        if self.queue.qsize() > self.size:
+            self.window_sum -= self.queue.get()
+
+        return self.window_sum / self.queue.qsize()
 ```
-Given an integer array nums and an integer k, return the k most frequent elements.
-You may return the answer in any order.
- 
-Example 1:
-Input: nums = [1,1,1,2,2,3], k = 2
-Output: [1,2]
-Example 2:
-Input: nums = [1], k = 1
-Output: [1]
+
+
+## Meta variant
+What if you had to return a resulting array of the averages of each subarray of size, "size"?
+
+```python
+from typing import List
+def compute_running_sum_variant_346(nums: List[int], size: int) -> List[int]:
+    result = []
+    window_sum = 0
+    for right in range(len(nums)):
+        window_sum += nums[right]
+
+        left = right - size
+        if left >= 0:
+            window_sum -= nums[left]
+
+        if right >= size - 1:
+            result.append(window_sum // size)
+
+    return result
+
+if __name__ == '__main__':
+    nums = [5, 2, 8, 14, 3]
+    size = 3
+    assert compute_running_sum_variant_346(nums, size) == [5, 8, 8]
+
+    nums = [6]
+    size = 1
+    assert compute_running_sum_variant_346(nums, size) == [6]
+
+    nums = [1, 2, 3]
+    size = 1
+    assert compute_running_sum_variant_346(nums, size) == [1, 2, 3]
+
+    nums = [2, 4, 6, 8, 10, 12]
+    size = 2
+    assert compute_running_sum_variant_346(nums, size) == [3, 5, 7, 9, 11]
+
+    nums = [2, 4, 6, 8, 10, 12]
+    size = 6
+    assert compute_running_sum_variant_346(nums, size) == [(2+4+6+8+10+12)/size]
+
+    nums = [1, 2, 3, 4, 5]
+    size = 4
+    assert compute_running_sum_variant_346(nums, size) == [2, 3]
+
+    nums = [1, 2, 1, 2]
+    size = 2
+    assert compute_running_sum_variant_346(nums, size) == [1, 1, 1]
 ```
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0300-0399/0347.Top%20K%20Frequent%20Elements/README_EN.md
+tags:
+    - Array
+    - Hash Table
+    - Divide and Conquer
+    - Bucket Sort
+    - Counting
+    - Quickselect
+    - Sorting
+    - Heap (Priority Queue)
+---
+
+<!-- problem:start -->
+
+# [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
+
+[中文文档](/solution/0300-0399/0347.Top%20K%20Frequent%20Elements/README.md)
+
+## Description
+
+<!-- description:start -->
+
+<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the</em> <code>k</code> <em>most frequent elements</em>. You may return the answer in <strong>any order</strong>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [1,1,1,2,2,3], k = 2
+<strong>Output:</strong> [1,2]
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [1], k = 1
+<strong>Output:</strong> [1]
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
+	<li><code>k</code> is in the range <code>[1, the number of unique elements in the array]</code>.</li>
+	<li>It is <strong>guaranteed</strong> that the answer is <strong>unique</strong>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> Your algorithm&#39;s time complexity must be better than <code>O(n log n)</code>, where n is the array&#39;s size.</p>
+
+<!-- description:end -->
 ### Time Complexity O(nlogn)
 ```python
 from queue import PriorityQueue
@@ -12875,19 +12080,20 @@ We start the pointers to point to the beginning of each rows, then we iterate k 
 Time: O(K * logK)
 Space: O(K)
 ```python
+from queue import PriorityQueue
+
+
 class Solution:  # 204 ms, faster than 54.32%
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
-        m, n = len(matrix), len(
-            matrix[0]
-        )  # For general, the matrix need not be a square
-        minHeap = []  # val, r, c
+        m, n = len(matrix), len(matrix[0])
+        q = PriorityQueue()
         for r in range(min(k, m)):
-            heappush(minHeap, (matrix[r][0], r, 0))
+            q.put((matrix[r][0], r, 0))
         ans = -1  # any dummy value
         for i in range(k):
-            ans, r, c = heappop(minHeap)
+            ans, r, c = q.get()
             if c + 1 < n:
-                heappush(minHeap, (matrix[r][c + 1], r, c + 1))
+                q.put((matrix[r][c + 1], r, c + 1))
         return ans
 ```
 
@@ -12934,114 +12140,6 @@ class Solution:  # 160 ms, faster than 93.06%
 
         return ans
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int kthSmallest(int[][] matrix, int k) {
-        int n = matrix.length;
-        int left = matrix[0][0], right = matrix[n - 1][n - 1];
-        while (left < right) {
-            int mid = (left + right) >>> 1;
-            if (check(matrix, mid, k, n)) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
-    }
-
-    private boolean check(int[][] matrix, int mid, int k, int n) {
-        int count = 0;
-        int i = n - 1, j = 0;
-        while (i >= 0 && j < n) {
-            if (matrix[i][j] <= mid) {
-                count += (i + 1);
-                ++j;
-            } else {
-                --i;
-            }
-        }
-        return count >= k;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int kthSmallest(vector<vector<int>>& matrix, int k) {
-        int n = matrix.size();
-        int left = matrix[0][0], right = matrix[n - 1][n - 1];
-        while (left < right) {
-            int mid = left + right >> 1;
-            if (check(matrix, mid, k, n)) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
-    }
-
-private:
-    bool check(vector<vector<int>>& matrix, int mid, int k, int n) {
-        int count = 0;
-        int i = n - 1, j = 0;
-        while (i >= 0 && j < n) {
-            if (matrix[i][j] <= mid) {
-                count += (i + 1);
-                ++j;
-            } else {
-                --i;
-            }
-        }
-        return count >= k;
-    }
-};
-```
-
-#### Go
-
-```go
-func kthSmallest(matrix [][]int, k int) int {
-	n := len(matrix)
-	left, right := matrix[0][0], matrix[n-1][n-1]
-	for left < right {
-		mid := (left + right) >> 1
-		if check(matrix, mid, k, n) {
-			right = mid
-		} else {
-			left = mid + 1
-		}
-	}
-	return left
-}
-
-func check(matrix [][]int, mid, k, n int) bool {
-	count := 0
-	i, j := n-1, 0
-	for i >= 0 && j < n {
-		if matrix[i][j] <= mid {
-			count += (i + 1)
-			j++
-		} else {
-			i--
-		}
-	}
-	return count >= k
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)
 
 
@@ -13191,134 +12289,6 @@ class Solution:
             j += 1
         return i == len(s)
 ```
-
-#### Java
-
-```java
-class Solution {
-    public boolean isSubsequence(String s, String t) {
-        int m = s.length(), n = t.length();
-        int i = 0, j = 0;
-        while (i < m && j < n) {
-            if (s.charAt(i) == t.charAt(j)) {
-                ++i;
-            }
-            ++j;
-        }
-        return i == m;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    bool isSubsequence(string s, string t) {
-        int m = s.size(), n = t.size();
-        int i = 0, j = 0;
-        for (; i < m && j < n; ++j) {
-            if (s[i] == t[j]) {
-                ++i;
-            }
-        }
-        return i == m;
-    }
-};
-```
-
-#### Go
-
-```go
-func isSubsequence(s string, t string) bool {
-	i, j, m, n := 0, 0, len(s), len(t)
-	for i < m && j < n {
-		if s[i] == t[j] {
-			i++
-		}
-		j++
-	}
-	return i == m
-}
-```
-
-#### TypeScript
-
-```ts
-function isSubsequence(s: string, t: string): boolean {
-    const m = s.length;
-    const n = t.length;
-    let i = 0;
-    for (let j = 0; i < m && j < n; ++j) {
-        if (s[i] === t[j]) {
-            ++i;
-        }
-    }
-    return i === m;
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn is_subsequence(s: String, t: String) -> bool {
-        let (s, t) = (s.as_bytes(), t.as_bytes());
-        let n = t.len();
-        let mut i = 0;
-        for &c in s.iter() {
-            while i < n && t[i] != c {
-                i += 1;
-            }
-            if i == n {
-                return false;
-            }
-            i += 1;
-        }
-        true
-    }
-}
-```
-
-#### C#
-
-```cs
-public class Solution {
-    public bool IsSubsequence(string s, string t) {
-        int m = s.Length, n = t.Length;
-        int i = 0, j = 0;
-        for (; i < m && j < n; ++j) {
-            if (s[i] == t[j]) {
-                ++i;
-            }
-        }
-        return i == m;
-    }
-}
-```
-
-#### C
-
-```c
-bool isSubsequence(char* s, char* t) {
-    int m = strlen(s);
-    int n = strlen(t);
-    int i = 0;
-    for (int j = 0; i < m && j < n; ++j) {
-        if (s[i] == t[j]) {
-            ++i;
-        }
-    }
-    return i == m;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -13409,107 +12379,40 @@ class Solution:
 # param_1 = obj.pick(target)
 ```
 
-#### Java
+## Meta variant
+What if you had to use reservoir sampling to pick an index of the maximum value in the array?
+```
+#pragma once
 
-```java
-class Solution {
-    private int[] nums;
-    private Random random = new Random();
+#include <vector>
 
-    public Solution(int[] nums) {
-        this.nums = nums;
-    }
+// VARIANT: What if you had to use reservoir sampling to pick an index of the maximum value in the array?
+int randomPickIndex_second_variant_398(std::vector<int>& nums)
+{
+    int max_number = INT_MIN;
+    int picked_index = -1;
+    int n = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        int curr_num = nums[i];
+        if (curr_num < max_number)
+            continue;
 
-    public int pick(int target) {
-        int n = 0, ans = 0;
-        for (int i = 0; i < nums.length; ++i) {
-            if (nums[i] == target) {
-                ++n;
-                int x = 1 + random.nextInt(n);
-                if (x == n) {
-                    ans = i;
-                }
-            }
+        if (curr_num > max_number) {
+            max_number = curr_num;
+            picked_index = i;
+            n = 1;
         }
-        return ans;
-    }
-}
-
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(nums);
- * int param_1 = obj.pick(target);
- */
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<int> nums;
-
-    Solution(vector<int>& nums) {
-        this->nums = nums;
-    }
-
-    int pick(int target) {
-        int n = 0, ans = 0;
-        for (int i = 0; i < nums.size(); ++i) {
-            if (nums[i] == target) {
-                ++n;
-                int x = 1 + rand() % n;
-                if (n == x) ans = i;
-            }
+        else if (curr_num == max_number) {
+            n++;
+            int r = rand() % n;
+            if (r == 0)
+                picked_index = i;
         }
-        return ans;
     }
-};
-
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution* obj = new Solution(nums);
- * int param_1 = obj->pick(target);
- */
+    return picked_index;
+}
 ```
 
-#### Go
-
-```go
-type Solution struct {
-	nums []int
-}
-
-func Constructor(nums []int) Solution {
-	return Solution{nums}
-}
-
-func (this *Solution) Pick(target int) int {
-	n, ans := 0, 0
-	for i, v := range this.nums {
-		if v == target {
-			n++
-			x := 1 + rand.Intn(n)
-			if n == x {
-				ans = i
-			}
-		}
-	}
-	return ans
-}
-
-/**
- * Your Solution object will be instantiated and called as such:
- * obj := Constructor(nums);
- * param_1 := obj.Pick(target);
- */
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [408. Valid Word Abbreviation 🔒](https://leetcode.com/problems/valid-word-abbreviation)
 
 
@@ -13719,303 +12622,88 @@ class Solution:
         return ''.join(ans[::-1])
 ```
 
-#### Java
+## Meta variant
+What if you had to add two strings of numbers that could contain decimals?
+Both, one or neither could have decimals. Very, very tricky...
+```python
+class Solution:
+    def add_string_decimals_415(self, num1: str, num2: str) -> str:
+        nums1 = num1.split('.')
+        nums2 = num2.split('.')
+        decimals1 = nums1[1] if len(nums1) > 1 else ''
+        decimals2 = nums2[1] if len(nums2) > 1 else ''
 
-```java
-class Solution {
-    public String addStrings(String num1, String num2) {
-        int i = num1.length() - 1, j = num2.length() - 1;
-        StringBuilder ans = new StringBuilder();
-        for (int c = 0; i >= 0 || j >= 0 || c > 0; --i, --j) {
-            int a = i < 0 ? 0 : num1.charAt(i) - '0';
-            int b = j < 0 ? 0 : num2.charAt(j) - '0';
-            c += a + b;
-            ans.append(c % 10);
-            c /= 10;
-        }
-        return ans.reverse().toString();
-    }
+        max_len = max(len(decimals1), len(decimals2))
+        decimals1 = decimals1.ljust(max_len, '0')
+        decimals2 = decimals2.ljust(max_len, '0')
 
-    public String subStrings(String num1, String num2) {
-        int m = num1.length(), n = num2.length();
-        boolean neg = m < n || (m == n && num1.compareTo(num2) < 0);
-        if (neg) {
-            String t = num1;
-            num1 = num2;
-            num2 = t;
-        }
-        int i = num1.length() - 1, j = num2.length() - 1;
-        StringBuilder ans = new StringBuilder();
-        for (int c = 0; i >= 0; --i, --j) {
-            c = (num1.charAt(i) - '0') - c - (j < 0 ? 0 : num2.charAt(j) - '0');
-            ans.append((c + 10) % 10);
-            c = c < 0 ? 1 : 0;
-        }
-        while (ans.length() > 1 && ans.charAt(ans.length() - 1) == '0') {
-            ans.deleteCharAt(ans.length() - 1);
-        }
-        if (neg) {
-            ans.append('-');
-        }
-        return ans.reverse().toString();
-    }
-}
+        carry = [0]
+        result = []
+        
+        def add_strings_415(num1: str, num2: str, carry: list) -> str:
+            n1 = len(num1) - 1
+            n2 = len(num2) - 1
+            result = []
+            while n1 >= 0 or n2 >= 0:
+                sum = 0
+                if n1 >= 0:
+                    sum += int(num1[n1])
+                    n1 -= 1
+                if n2 >= 0:
+                    sum += int(num2[n2])
+                    n2 -= 1
+                sum += carry[0]
+
+                result.append(str(sum % 10))
+                carry[0] = sum // 10
+            
+            return ''.join(result)
+
+        result.append(add_strings_415(decimals1, decimals2, carry))
+
+        if decimals1 or decimals2:
+            result.append('.')
+        
+        result.append(add_strings_415(nums1[0], nums2[0], carry))
+        if carry[0]:
+            print(carry)
+            result.append(str(carry[0]))
+        return "".join(result)[::-1]
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    # Only Whole Numbers
+    assert solution.add_string_decimals_415("11", "123") == "134"
+    assert solution.add_string_decimals_415("456", "77") == "533"
+    assert solution.add_string_decimals_415("0", "0") == "0"
+    assert solution.add_string_decimals_415("0", "2983435243982343") == "2983435243982343"
+    assert solution.add_string_decimals_415("99999999", "2983435243982343") == "2983435343982342"
+    assert solution.add_string_decimals_415("99999999", "99999999999") == "100099999998"
+
+    # Both Decimals With And Without Carry
+    assert solution.add_string_decimals_415("123.53", "11.2") == "134.73"
+    assert solution.add_string_decimals_415("687345.3434321", "389457248.24374657243") == "390144593.58717867243"
+    assert solution.add_string_decimals_415(".56", ".12") == ".68"
+    assert solution.add_string_decimals_415(".5995495049556", ".12") == ".7195495049556"
+    assert solution.add_string_decimals_415(".9479823748932", ".716400040030") == "1.6643824149232"
+    assert solution.add_string_decimals_415(".00009479823748932", ".000000716400040030") == ".000095514637529350"
+    assert solution.add_string_decimals_415(".00009479823748932", ".00000071640004003000000") == ".00009551463752935000000"
+    assert solution.add_string_decimals_415("110.12", "9.") == "119.12"
+    assert solution.add_string_decimals_415("111111110.0013430430433434454001", "9.") == "111111119.0013430430433434454001"
+    assert solution.add_string_decimals_415("111111110.0013430430433434454001", "993483400013438854.") == "993483400124549964.0013430430433434454001"
+    assert solution.add_string_decimals_415("910.99999", "999.9999") == "1910.99989"
+    assert solution.add_string_decimals_415("999999.99999", "999999.9999") == "1999999.99989"
+    assert solution.add_string_decimals_415("123.525", "11.2") == "134.725"
+    assert solution.add_string_decimals_415("1234540458475845.", "8348736.") == "1234540466824581"
+
+    # # One Decimal, One Whole Number
+    assert solution.add_string_decimals_415("110.75", "9") == "119.75"
+    assert solution.add_string_decimals_415("110.75", "9999999") == "10000109.75"
+    assert solution.add_string_decimals_415("150423434.00000000000", "9999999.") == "160423433.00000000000"
+    assert solution.add_string_decimals_415("150423434.0000009184837483", "9999999.") == "160423433.0000009184837483"
+    assert solution.add_string_decimals_415("110.9010479382798527", "9999999.") == "10000109.9010479382798527"
 ```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    string addStrings(string num1, string num2) {
-        int i = num1.size() - 1, j = num2.size() - 1;
-        string ans;
-        for (int c = 0; i >= 0 || j >= 0 || c; --i, --j) {
-            int a = i < 0 ? 0 : num1[i] - '0';
-            int b = j < 0 ? 0 : num2[j] - '0';
-            c += a + b;
-            ans += to_string(c % 10);
-            c /= 10;
-        }
-        reverse(ans.begin(), ans.end());
-        return ans;
-    }
-
-    string subStrings(string num1, string num2) {
-        int m = num1.size(), n = num2.size();
-        bool neg = m < n || (m == n && num1 < num2);
-        if (neg) {
-            swap(num1, num2);
-        }
-        int i = num1.size() - 1, j = num2.size() - 1;
-        string ans;
-        for (int c = 0; i >= 0; --i, --j) {
-            c = (num1[i] - '0') - c - (j < 0 ? 0 : num2[j] - '0');
-            ans += to_string((c + 10) % 10);
-            c = c < 0 ? 1 : 0;
-        }
-        while (ans.size() > 1 && ans.back() == '0') {
-            ans.pop_back();
-        }
-        if (neg) {
-            ans.push_back('-');
-        }
-        reverse(ans.begin(), ans.end());
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func addStrings(num1 string, num2 string) string {
-	i, j := len(num1)-1, len(num2)-1
-	ans := []byte{}
-	for c := 0; i >= 0 || j >= 0 || c > 0; i, j = i-1, j-1 {
-		if i >= 0 {
-			c += int(num1[i] - '0')
-		}
-		if j >= 0 {
-			c += int(num2[j] - '0')
-		}
-		ans = append(ans, byte(c%10+'0'))
-		c /= 10
-	}
-	for i, j := 0, len(ans)-1; i < j; i, j = i+1, j-1 {
-		ans[i], ans[j] = ans[j], ans[i]
-	}
-	return string(ans)
-}
-
-func subStrings(num1 string, num2 string) string {
-	m, n := len(num1), len(num2)
-	neg := m < n || (m == n && num1 < num2)
-	if neg {
-		num1, num2 = num2, num1
-	}
-	i, j := len(num1)-1, len(num2)-1
-	ans := []byte{}
-	for c := 0; i >= 0; i, j = i-1, j-1 {
-		c = int(num1[i]-'0') - c
-		if j >= 0 {
-			c -= int(num2[j] - '0')
-		}
-		ans = append(ans, byte((c+10)%10+'0'))
-		if c < 0 {
-			c = 1
-		} else {
-			c = 0
-		}
-	}
-	for len(ans) > 1 && ans[len(ans)-1] == '0' {
-		ans = ans[:len(ans)-1]
-	}
-	if neg {
-		ans = append(ans, '-')
-	}
-	for i, j := 0, len(ans)-1; i < j; i, j = i+1, j-1 {
-		ans[i], ans[j] = ans[j], ans[i]
-	}
-	return string(ans)
-}
-```
-
-#### TypeScript
-
-```ts
-function addStrings(num1: string, num2: string): string {
-    let i = num1.length - 1;
-    let j = num2.length - 1;
-    const ans: number[] = [];
-    for (let c = 0; i >= 0 || j >= 0 || c; --i, --j) {
-        c += i < 0 ? 0 : +num1[i];
-        c += j < 0 ? 0 : +num2[j];
-        ans.push(c % 10);
-        c = Math.floor(c / 10);
-    }
-    return ans.reverse().join('');
-}
-
-function subStrings(num1: string, num2: string): string {
-    const m = num1.length;
-    const n = num2.length;
-    const neg = m < n || (m == n && num1 < num2);
-    if (neg) {
-        const t = num1;
-        num1 = num2;
-        num2 = t;
-    }
-    let i = num1.length - 1;
-    let j = num2.length - 1;
-    const ans: number[] = [];
-    for (let c = 0; i >= 0; --i, --j) {
-        c = +num1[i] - c;
-        if (j >= 0) {
-            c -= +num2[j];
-        }
-        ans.push((c + 10) % 10);
-        c = c < 0 ? 1 : 0;
-    }
-    while (ans.length > 1 && ans.at(-1) === 0) {
-        ans.pop();
-    }
-    return (neg ? '-' : '') + ans.reverse().join('');
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn add_strings(num1: String, num2: String) -> String {
-        let mut res = vec![];
-        let s1 = num1.as_bytes();
-        let s2 = num2.as_bytes();
-        let (mut i, mut j) = (s1.len(), s2.len());
-        let mut is_over = false;
-        while i != 0 || j != 0 || is_over {
-            let mut sum = if is_over { 1 } else { 0 };
-            if i != 0 {
-                sum += (s1[i - 1] - b'0') as i32;
-                i -= 1;
-            }
-            if j != 0 {
-                sum += (s2[j - 1] - b'0') as i32;
-                j -= 1;
-            }
-            is_over = sum >= 10;
-            res.push((sum % 10).to_string());
-        }
-        res.into_iter().rev().collect()
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {string} num1
- * @param {string} num2
- * @return {string}
- */
-var addStrings = function (num1, num2) {
-    let i = num1.length - 1;
-    let j = num2.length - 1;
-    const ans = [];
-    for (let c = 0; i >= 0 || j >= 0 || c; --i, --j) {
-        c += i < 0 ? 0 : +num1[i];
-        c += j < 0 ? 0 : +num2[j];
-        ans.push(c % 10);
-        c = Math.floor(c / 10);
-    }
-    return ans.reverse().join('');
-};
-
-/**
- * @param {string} num1
- * @param {string} num2
- * @return {string}
- */
-var subStrings = function (num1, num2) {
-    const m = num1.length;
-    const n = num2.length;
-    const neg = m < n || (m == n && num1 < num2);
-    if (neg) {
-        const t = num1;
-        num1 = num2;
-        num2 = t;
-    }
-    let i = num1.length - 1;
-    let j = num2.length - 1;
-    const ans = [];
-    for (let c = 0; i >= 0; --i, --j) {
-        c = +num1[i] - c;
-        if (j >= 0) {
-            c -= +num2[j];
-        }
-        ans.push((c + 10) % 10);
-        c = c < 0 ? 1 : 0;
-    }
-    while (ans.length > 1 && ans.at(-1) === 0) {
-        ans.pop();
-    }
-    return (neg ? '-' : '') + ans.reverse().join('');
-};
-```
-
-#### Kotlin
-
-```kotlin
-class Solution {
-    fun addStrings(num1: String, num2: String): String {
-        val result = mutableListOf<Int>()
-
-        val chars_1 = num1.toCharArray()
-        val chars_2 = num2.toCharArray()
-        var over = 0
-        var i = num1.length
-        var j = num2.length
-
-        while (i > 0 || j > 0 || over > 0) {
-            val a = if (i > 0) chars_1[--i] - '0' else 0
-            val b = if (j > 0) chars_2[--j] - '0' else 0
-            val sum = a + b + over
-            over = sum / 10
-            result.add(sum % 10)
-        }
-
-        return result.reversed().joinToString("")
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -16812,26 +15500,31 @@ Space: O(n)
 import random
 
 class Solution:
+
     def __init__(self, w: List[int]):
-        self.w_sum = []
-        self.w = w
-        self.w_sum.append(self.w[0])
-        for i in range(1, len(self.w)):
-            self.w_sum.append(self.w_sum[i - 1] + self.w[i])
+        self.w = list(w)
+        self.res = list(w)
+        for i in range(1, len(w)):
+            self.res[i] += self.res[i - 1]
 
     def pickIndex(self) -> int:
-        rand = random.randint(1, self.w_sum[-1])
-        left = 0
-        right = len(self.w)
-        while left < right:
-            mid = (left + right) // 2
-            if self.w_sum[mid] == rand:
+        rand = random.randint(1, self.res[-1])
+        low = 0
+        high = len(self.res)
+        while low < high:
+            mid = (low + high) // 2
+            if self.res[mid] == rand:
                 return mid
-            elif self.w_sum[mid] > rand:
-                right = mid
+            if self.res[mid] < rand:
+                low = mid + 1
             else:
-                left = mid + 1
-        return left
+                high = mid
+        return low
+
+
+# Your Solution object will be instantiated and called as such:
+# obj = Solution(w)
+# param_1 = obj.pickIndex()
 ```
 ---
 comments: true
@@ -17238,158 +15931,6 @@ class Solution:
 
         return dfs(s)
 ```
-
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    public TreeNode str2tree(String s) {
-        return dfs(s);
-    }
-
-    private TreeNode dfs(String s) {
-        if ("".equals(s)) {
-            return null;
-        }
-        int p = s.indexOf("(");
-        if (p == -1) {
-            return new TreeNode(Integer.parseInt(s));
-        }
-        TreeNode root = new TreeNode(Integer.parseInt(s.substring(0, p)));
-        int start = p;
-        int cnt = 0;
-        for (int i = p; i < s.length(); ++i) {
-            if (s.charAt(i) == '(') {
-                ++cnt;
-            } else if (s.charAt(i) == ')') {
-                --cnt;
-            }
-            if (cnt == 0) {
-                if (start == p) {
-                    root.left = dfs(s.substring(start + 1, i));
-                    start = i + 1;
-                } else {
-                    root.right = dfs(s.substring(start + 1, i));
-                }
-            }
-        }
-        return root;
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    TreeNode* str2tree(string s) {
-        return dfs(s);
-    }
-
-    TreeNode* dfs(string s) {
-        if (s == "") return nullptr;
-        int p = s.find("(");
-        if (p == s.npos) return new TreeNode(stoi(s));
-        TreeNode* root = new TreeNode(stoi(s.substr(0, p)));
-        int start = p;
-        int cnt = 0;
-        for (int i = p; i < s.size(); ++i) {
-            if (s[i] == '(')
-                ++cnt;
-            else if (s[i] == ')')
-                --cnt;
-            if (cnt == 0) {
-                if (start == p) {
-                    root->left = dfs(s.substr(start + 1, i - start - 1));
-                    start = i + 1;
-                } else
-                    root->right = dfs(s.substr(start + 1, i - start - 1));
-            }
-        }
-        return root;
-    }
-};
-```
-
-#### Go
-
-```go
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func str2tree(s string) *TreeNode {
-	var dfs func(s string) *TreeNode
-	dfs = func(s string) *TreeNode {
-		if s == "" {
-			return nil
-		}
-		p := strings.IndexAny(s, "(")
-		if p == -1 {
-			v, _ := strconv.Atoi(s)
-			return &TreeNode{Val: v}
-		}
-		v, _ := strconv.Atoi(s[:p])
-		root := &TreeNode{Val: v}
-		start := p
-		cnt := 0
-		for i := p; i < len(s); i++ {
-			if s[i] == '(' {
-				cnt++
-			} else if s[i] == ')' {
-				cnt--
-			}
-			if cnt == 0 {
-				if p == start {
-					root.Left = dfs(s[start+1 : i])
-					start = i + 1
-				} else {
-					root.Right = dfs(s[start+1 : i])
-				}
-			}
-		}
-		return root
-	}
-	return dfs(s)
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
 
 [中文文档](/solution/0500-0599/0543.Diameter%20of%20Binary%20Tree/README.md)
@@ -17490,6 +16031,47 @@ class Solution:
         return helper(root)[1]
 ```
 
+## Meta variant
+Diameter of a n-ary tree
+
+```python
+from typing import Optional, List
+
+class Node:
+    def __init__(self, val: Optional[int] = None, children: Optional[List['Node']] = None):
+        self.val = val
+        self.children = children if children is not None else []
+
+class Solution:
+    def diameter(self, root: 'Node') -> int:
+        """
+        :type root: 'Node'
+        :rtype: int
+        """
+        diameter = 0
+
+        def longest_path(node: 'Node'):
+            if node is None:
+                return 0
+
+            max_height = 0
+            second_max_height = 0
+            for child in node.children:
+                height = longest_path(child)
+                if height > max_height:
+                    second_max_height = max_height
+                    max_height = height
+                elif height > second_max_height:
+                    second_max_height = height
+            nonlocal diameter
+            diameter = max(diameter, max_height + second_max_height)
+            return max_height + 1
+
+        longest_path(root)
+
+        return diameter
+```
+
 
 
 
@@ -17556,6 +16138,196 @@ class Solution:
             # 1. There may be multiple subarrays with same sum
             m[running_sum] += 1
         return count
+```
+
+## meta variant
+ What if you had to return true or false if there exists at least one  subarray that equals K?
+```python
+class Solution:
+    def subarraySumExists(self, nums: list[int], k: int) -> bool:
+        count, cumulative = 0, 0
+        prefix_sums = set([0])
+        for num in nums:
+            cumulative += num
+            if (cumulative - k) in prefix_sums:
+                return True
+            prefix_sums.add(cumulative)
+        return count
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert solution.subarraySumExists([1, 1, 1], 2)
+    assert not solution.subarraySumExists([1, 4, 7], 3)
+
+    # SubarraySum_FirstVariant True
+    assert solution.subarraySumExists([1, 1, 1], 2) == True
+    assert solution.subarraySumExists([1, 2, 3, 1, 1, 1], 5) == True
+    assert solution.subarraySumExists([1, 2, 3, 1, 1, 1], 9) == True
+    assert solution.subarraySumExists([3, 4, 7, 2, -3, 1, 4, 2, 1, -14], 7) == True
+    assert solution.subarraySumExists([1, 2, 3, -3, 1, 1], 0) == True
+    assert solution.subarraySumExists([1, -3, 3, -3, 3, -3], 0) == True
+    assert solution.subarraySumExists([1, -3, 3, -6, 8, -3, 4, 5, 6], 8) == True
+    assert solution.subarraySumExists([1, -3, 3, -6, 8, -3, 4, 5, 6], -1) == True
+    assert solution.subarraySumExists([5], 5) == True
+    assert solution.subarraySumExists([5], 10) == False
+    assert solution.subarraySumExists([-1, -2, -3, -4], -5) == True
+    assert solution.subarraySumExists([-1, -2, -3, -4], -10) == True
+    assert solution.subarraySumExists([0, 0, 0, 0, 0], 0) == True
+    assert solution.subarraySumExists([8, 3, 6, 1, -5, 10], 10) == True
+
+    # SubarraySum_FirstVariant False
+    assert solution.subarraySumExists([1, 1, 1], 4) == False
+    assert solution.subarraySumExists([3, 4, 7, 2, -3, 1, 4, 2, 1, -14], -10) == False
+    assert solution.subarraySumExists([-1, -2, -3, -4], -15) == False
+```
+## meta variant
+What if you had to optimize the space complexity in the case you're only given positive integers in the array?
+```python
+class Solution:
+    def subarraySumExistsPositiveNums(self, nums: list[int], k: int) -> bool:
+        left, right = 0, 0
+        window_sum = 0
+        for right in range(len(nums)):
+            window_sum += nums[right]
+
+            while window_sum > k:
+                window_sum -= nums[left]
+                left += 1
+
+            if window_sum == k:
+                return True
+            
+        return False
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert solution.subarraySumExistsPositiveNums([1, 1, 1], 2)
+    assert solution.subarraySumExistsPositiveNums([1, 2, 3], 3)
+
+    # SubarraySum_SecondVariant True
+    assert solution.subarraySumExistsPositiveNums([1, 1, 1], 2) == True
+    assert solution.subarraySumExistsPositiveNums([1, 2, 3], 3) == True
+    assert solution.subarraySumExistsPositiveNums([1, 2, 3, 1, 1, 1], 5) == True
+    assert solution.subarraySumExistsPositiveNums([1, 2, 3, 1, 1, 1], 9) == True
+    assert solution.subarraySumExistsPositiveNums([5], 5) == True
+    assert solution.subarraySumExistsPositiveNums([5], 10) == False
+    assert solution.subarraySumExistsPositiveNums([23, 5, 4, 7, 2, 11], 20) == True
+    assert solution.subarraySumExistsPositiveNums([1, 3, 5, 23, 2], 8) == True
+    assert solution.subarraySumExistsPositiveNums([4, 2, 5, 2, 6, 1], 9) == True
+    assert solution.subarraySumExistsPositiveNums([1, 1, 1, 1, 1, 1], 1) == True
+    assert solution.subarraySumExistsPositiveNums([1], 1) == True
+
+    # SubarraySum_SecondVariant False
+    assert solution.subarraySumExistsPositiveNums([1, 1, 1], 4) == False
+    assert solution.subarraySumExistsPositiveNums([1, 2, 3, 4, 5, 6, 7], 100) == False
+    assert solution.subarraySumExistsPositiveNums([100, 101, 102, 103], 2) == False
+    assert solution.subarraySumExistsPositiveNums([1, 3, 5, 23, 2], 7) == False
+```
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0600-0699/0606.Construct%20String%20from%20Binary%20Tree/README_EN.md
+tags:
+    - Tree
+    - Depth-First Search
+    - String
+    - Binary Tree
+---
+
+<!-- problem:start -->
+
+# [606. Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree)
+
+## Description
+
+<!-- description:start -->
+
+<p>Given the <code>root</code> node of a binary tree, your task is to create a string representation of the tree following a specific set of formatting rules. The representation should be based on a preorder traversal of the binary tree and must adhere to the following guidelines:</p>
+
+<ul>
+	<li>
+	<p><strong>Node Representation</strong>: Each node in the tree should be represented by its integer value.</p>
+	</li>
+	<li>
+	<p><strong>Parentheses for Children</strong>: If a node has at least one child (either left or right), its children should be represented inside parentheses. Specifically:</p>
+	</li>
+	<ul>
+    	<li>If a node has a left child, the value of the left child should be enclosed in parentheses immediately following the node&#39;s value.</li>
+    	<li>If a node has a right child, the value of the right child should also be enclosed in parentheses. The parentheses for the right child should follow those of the left child.</li>
+    </ul>
+	<li>
+    <p><strong>Omitting Empty Parentheses</strong>: Any empty parentheses pairs (i.e., <code>()</code>) should be omitted from the final string representation of the tree, with one specific exception: when a node has a right child but no left child. In such cases, you must include an empty pair of parentheses to indicate the absence of the left child. This ensures that the one-to-one mapping between the string representation and the original binary tree structure is maintained.</p></li>
+</ul>
+
+<p>In summary, empty parentheses pairs should be omitted when a node has only a left child or no children. However, when a node has a right child but no left child, an empty pair of parentheses must precede the representation of the right child to reflect the tree&#39;s structure accurately.</p>
+
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0600-0699/0606.Construct%20String%20from%20Binary%20Tree/images/cons1-tree.jpg" style="padding: 10px; background: #fff; border-radius: .5rem;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,4]
+<strong>Output:</strong> &quot;1(2(4))(3)&quot;
+<strong>Explanation:</strong> Originally, it needs to be &quot;1(2(4)())(3()())&quot;, but you need to omit all the empty parenthesis pairs. And it will be &quot;1(2(4))(3)&quot;.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0600-0699/0606.Construct%20String%20from%20Binary%20Tree/images/cons2-tree.jpg" style="padding: 10px; background: #fff; border-radius: .5rem;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,null,4]
+<strong>Output:</strong> &quot;1(2()(4))(3)&quot;
+<strong>Explanation:</strong> Almost the same as the first example, except the <code>()</code> after <code>2</code> is necessary to indicate the absence of a left child for <code>2</code> and the presence of a right child.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+</ul>
+
+<!-- description:end -->
+
+## Solutions
+
+<!-- solution:start -->
+
+### Solution 1
+
+<!-- tabs:start -->
+
+#### Python3
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def tree2str(self, root: Optional[TreeNode]) -> str:
+        def format(val):
+            return f"({val})"
+
+        def helper(root):
+            if not root:
+                return None
+
+            left = helper(root.left)
+            right = helper(root.right)
+
+            if not left and not right:
+                return str(root.val)
+
+            result = "()" if not left else format(left)
+            if right:
+                result += format(right)
+            return str(root.val) + result
+
+        return helper(root)
 ```
 # [636. Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)
 
@@ -17813,6 +16585,71 @@ class Solution:
                 s[i], s[j] = s[j], s[i]
                 break
         return int(''.join(s))
+```
+
+## Meta variant
+
+What if you had to build the second largest number?
+```python
+class Solution:
+    def buildSecondLargestNumber(self, num: list[int]) -> list[int]:
+        if not num or len(num) == 1:
+            return []
+        
+        freqs = [0 for _ in range(10)]
+        for digit in num:
+            freqs[digit] += 1
+
+        largest_num = []
+        for i in range(9, -1, -1):
+            for _ in range(freqs[i]):
+                largest_num.append(i)
+
+        for i in range(len(largest_num) - 1, 0, -1):
+            if largest_num[i - 1] != largest_num[i]:
+                largest_num[i - 1], largest_num[i] = largest_num[i], largest_num[i - 1]
+                return largest_num
+
+        return []
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert solution.buildSecondLargestNumber([2, 7, 3, 6]) == [7, 6, 2, 3]
+    assert solution.buildSecondLargestNumber([1, 2, 1, 1, 1]) == [1, 2, 1, 1, 1]
+
+    # MaximumSwap_Variant_BuildSecondLargest True
+    assert solution.buildSecondLargestNumber([]) == []
+    assert solution.buildSecondLargestNumber([1]) == []
+    assert solution.buildSecondLargestNumber([2]) == []
+    assert solution.buildSecondLargestNumber([3]) == []
+    assert solution.buildSecondLargestNumber([4]) == []
+    assert solution.buildSecondLargestNumber([5]) == []
+    assert solution.buildSecondLargestNumber([6]) == []
+    assert solution.buildSecondLargestNumber([7]) == []
+    assert solution.buildSecondLargestNumber([8]) == []
+    assert solution.buildSecondLargestNumber([9]) == []
+    assert solution.buildSecondLargestNumber([0]) == []
+
+    # Distinct Digits And One Swap
+    assert solution.buildSecondLargestNumber([2, 7, 3, 6]) == [7, 6, 2, 3]
+    assert solution.buildSecondLargestNumber([2, 3, 4, 1, 8]) == [8, 4, 3, 1, 2]
+
+    # All Duplicate Digits Cannot Build Second Largest
+    assert solution.buildSecondLargestNumber([5, 5, 5, 5, 5, 5, 5, 5, 5, 5]) == []
+    assert solution.buildSecondLargestNumber([2, 2]) == []
+    assert solution.buildSecondLargestNumber([0, 0, 0, 0, 0, 0]) == []
+
+    # Duplicate Digits And Looped Swap
+    assert solution.buildSecondLargestNumber([1, 2, 1, 1, 1]) == [1, 2, 1, 1, 1]
+    assert solution.buildSecondLargestNumber([5, 9, 7, 6, 6, 3, 9, 6, 6]) == [9, 9, 7, 6, 6, 6, 6, 3, 5]
+    assert solution.buildSecondLargestNumber([5, 9, 7, 6, 6, 3, 9, 6, 6, 3, 3]) == [9, 9, 7, 6, 6, 6, 6, 3, 5, 3, 3]
+    assert solution.buildSecondLargestNumber([4, 4, 4, 4, 9, 9, 9, 9, 9]) == [9, 9, 9, 9, 4, 9, 4, 4, 4]
+
+    # Zeroes
+    assert solution.buildSecondLargestNumber([0, 0, 0, 0, 0, 6, 0]) == [0, 6, 0, 0, 0, 0, 0]
+    assert solution.buildSecondLargestNumber([0, 0, 1, 2, 3, 3]) == [3, 3, 2, 0, 1, 0]
+    assert solution.buildSecondLargestNumber([0, 0, 8, 4, 9, 9, 6, 7]) == [9, 9, 8, 7, 6, 0, 4, 0]
 ```
 # [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)
 
@@ -18191,8 +17028,25 @@ func insert(head *Node, x int) *Node {
 <!-- solution:end -->
 
 <!-- problem:end -->
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/0700-0799/0721.Accounts%20Merge/README_EN.md
+tags:
+    - Depth-First Search
+    - Breadth-First Search
+    - Union Find
+    - Array
+    - Hash Table
+    - String
+    - Sorting
+---
+
+<!-- problem:start -->
+
 # [721. Accounts Merge](https://leetcode.com/problems/accounts-merge)
 
+[中文文档](/solution/0700-0799/0721.Accounts%20Merge/README.md)
 
 ## Description
 
@@ -18261,7 +17115,34 @@ class Solution:
             res.append([name] + sorted(emails))
         return res
 ```
+## Meta variant
+What if you were given the input as a map from an ID to a list of corresponding emails?
+Furthermore, you have to return a 2D list of all of the same IDs.
 
+```python
+class Solution:
+    def accountsMerge(self, m):
+        d = defaultdict(set)
+        for k, v in m.items():
+            for e in v:
+                d[e].add(k)
+        visited = set()
+        ans = []
+        def dfs(e, ids):
+            if e in visited:
+                return
+            visited.add(e)
+            for k in d[e]:
+                res.add(k)
+                for oe in m[k]:
+                    dfs(oe, res)
+        for e in d:
+            if e not in visited:
+                res = set()
+                dfs(e, res)
+                ans.append(sorted(list(res)))
+        return ans
+```
 ---
 comments: true
 difficulty: Easy
@@ -18952,12 +17833,54 @@ var isToeplitzMatrix = function (matrix) {
 ## Solutions
 
 <!-- solution:start -->
+### Solution 1 Using frequency
+```python
+class Solution:
+    def customSortString(self, order: str, s: str) -> str:
+        # Get frequency of each character in the string
+        counter = Counter(s)
+        result = ''
+        # iterate over order and create sorted string
+        for c in order:
+            if c in counter:
+                result += c * counter[c]
+                counter[c] = 0
+        # process left over characters not present in order
+        for c, v in counter.items():
+            if v:
+                result += c * v
+        return result
+```
 
-### Solution 1
+## Meta variant
 
-<!-- tabs:start -->
+What if you are not allowed to use map/dict?
 
-#### Python3
+Solution - Use array instead since the alphabets are fixed
+```python
+class Solution:
+    def customSortString(self, order: str, s: str) -> str:
+        # Get frequency of each character in the string
+        counter = [0] * 26
+        result = ""
+        for c in s:
+            counter[ord(c) - ord("a")] += 1
+        # iterate over order and create sorted string
+        for c in order:
+            if counter[ord(c) - ord('a')]:
+                result += c * counter[ord(c) - ord('a')]
+                counter[ord(c) - ord('a')] = 0
+        # process left over characters not present in order
+        for i, v in enumerate(counter):
+            if v:
+                result += chr(i + ord('a')) * v
+        return result
+```
+
+
+
+        
+### Solution 2 with sorting the string based on order(Time complexity is more, avoid using in interview)
 
 ```python
 class Solution:
@@ -18965,6 +17888,8 @@ class Solution:
         d = {c: i for i, c in enumerate(order)}
         return ''.join(sorted(s, key=lambda x: d.get(x, 0)))
 ```
+
+
 ---
 comments: true
 difficulty: Easy
@@ -19248,7 +18173,6 @@ tags:
 
 # [863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)
 
-[中文文档](/solution/0800-0899/0863.All%20Nodes%20Distance%20K%20in%20Binary%20Tree/README.md)
 
 ## Description
 
@@ -19304,14 +18228,6 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is 
 #### Python3
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-
 class Solution:
     def distanceK(self, root: TreeNode, target: TreeNode, k: int) -> List[int]:
         d = defaultdict(list)
@@ -19337,196 +18253,6 @@ class Solution:
             k -= 1
         return [a.val for a in list(q) if a]
 ```
-
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
-class Solution {
-    private Map<TreeNode, TreeNode> g = new HashMap<>();
-    private List<Integer> ans = new ArrayList<>();
-
-    public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
-        dfs(root, null);
-        dfs2(target, null, k);
-        return ans;
-    }
-
-    private void dfs(TreeNode root, TreeNode fa) {
-        if (root == null) {
-            return;
-        }
-        g.put(root, fa);
-        dfs(root.left, root);
-        dfs(root.right, root);
-    }
-
-    private void dfs2(TreeNode root, TreeNode fa, int k) {
-        if (root == null) {
-            return;
-        }
-        if (k == 0) {
-            ans.add(root.val);
-            return;
-        }
-        for (TreeNode nxt : new TreeNode[] {root.left, root.right, g.get(root)}) {
-            if (nxt != fa) {
-                dfs2(nxt, root, k - 1);
-            }
-        }
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-class Solution {
-public:
-    vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
-        unordered_map<TreeNode*, TreeNode*> g;
-        vector<int> ans;
-
-        auto dfs = [&](this auto&& dfs, TreeNode* node, TreeNode* fa) {
-            if (!node) return;
-            g[node] = fa;
-            dfs(node->left, node);
-            dfs(node->right, node);
-        };
-
-        auto dfs2 = [&](this auto&& dfs2, TreeNode* node, TreeNode* fa, int k) {
-            if (!node) return;
-            if (k == 0) {
-                ans.push_back(node->val);
-                return;
-            }
-            for (auto&& nxt : {node->left, node->right, g[node]}) {
-                if (nxt != fa) {
-                    dfs2(nxt, node, k - 1);
-                }
-            }
-        };
-
-        dfs(root, nullptr);
-        dfs2(target, nullptr, k);
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func distanceK(root *TreeNode, target *TreeNode, k int) []int {
-	g := make(map[*TreeNode]*TreeNode)
-	ans := []int{}
-
-	var dfs func(node, fa *TreeNode)
-	dfs = func(node, fa *TreeNode) {
-		if node == nil {
-			return
-		}
-		g[node] = fa
-		dfs(node.Left, node)
-		dfs(node.Right, node)
-	}
-
-	var dfs2 func(node, fa *TreeNode, k int)
-	dfs2 = func(node, fa *TreeNode, k int) {
-		if node == nil {
-			return
-		}
-		if k == 0 {
-			ans = append(ans, node.Val)
-			return
-		}
-		for _, nxt := range []*TreeNode{node.Left, node.Right, g[node]} {
-			if nxt != fa {
-				dfs2(nxt, node, k-1)
-			}
-		}
-	}
-
-	dfs(root, nil)
-	dfs2(target, nil, k)
-
-	return ans
-}
-```
-
-#### TypeScript
-
-```ts
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
-
-function distanceK(root: TreeNode | null, target: TreeNode | null, k: number): number[] {
-    const g = new Map<TreeNode, TreeNode | null>();
-    const ans: number[] = [];
-
-    const dfs = (node: TreeNode | null, fa: TreeNode | null) => {
-        if (!node) {
-            return;
-        }
-        g.set(node, fa);
-        dfs(node.left, node);
-        dfs(node.right, node);
-    };
-
-    const dfs2 = (node: TreeNode | null, fa: TreeNode | null, k: number) => {
-        if (!node) {
-            return;
-        }
-        if (k === 0) {
-            ans.push(node.val);
-            return;
-        }
-        for (const nxt of [node.left, node.right, g.get(node) || null]) {
-            if (nxt !== fa) {
-                dfs2(nxt, node, k - 1);
-            }
-        }
-    };
-
-    dfs(root, null);
-    dfs2(target, null, k);
-    return ans;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -19620,14 +18346,6 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is 
 #### Python3
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-
 class Solution:
     def subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
 
@@ -19662,161 +18380,6 @@ class Solution:
 
         return deepestDepth(root, 0)[0]
 ```
-
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    public TreeNode subtreeWithAllDeepest(TreeNode root) {
-        return dfs(root).getKey();
-    }
-
-    private Pair<TreeNode, Integer> dfs(TreeNode root) {
-        if (root == null) {
-            return new Pair<>(null, 0);
-        }
-        var l = dfs(root.left);
-        var r = dfs(root.right);
-        int ld = l.getValue(), rd = r.getValue();
-        if (ld > rd) {
-            return new Pair<>(l.getKey(), ld + 1);
-        }
-        if (ld < rd) {
-            return new Pair<>(r.getKey(), rd + 1);
-        }
-        return new Pair<>(root, ld + 1);
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    TreeNode* subtreeWithAllDeepest(TreeNode* root) {
-        using pti = pair<TreeNode*, int>;
-        auto dfs = [&](this auto&& dfs, TreeNode* root) -> pti {
-            if (!root) {
-                return {nullptr, 0};
-            }
-            auto [l, ld] = dfs(root->left);
-            auto [r, rd] = dfs(root->right);
-            if (ld > rd) {
-                return {l, ld + 1};
-            }
-            if (ld < rd) {
-                return {r, rd + 1};
-            }
-            return {root, ld + 1};
-        };
-        return dfs(root).first;
-    }
-};
-```
-
-#### Go
-
-```go
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func subtreeWithAllDeepest(root *TreeNode) *TreeNode {
-	type pair struct {
-		node  *TreeNode
-		depth int
-	}
-	var dfs func(*TreeNode) pair
-	dfs = func(root *TreeNode) pair {
-		if root == nil {
-			return pair{nil, 0}
-		}
-		l, r := dfs(root.Left), dfs(root.Right)
-		ld, rd := l.depth, r.depth
-		if ld > rd {
-			return pair{l.node, ld + 1}
-		}
-		if ld < rd {
-			return pair{r.node, rd + 1}
-		}
-		return pair{root, ld + 1}
-	}
-	return dfs(root).node
-}
-```
-
-#### TypeScript
-
-```ts
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
-
-function subtreeWithAllDeepest(root: TreeNode | null): TreeNode | null {
-    const dfs = (root: TreeNode | null): [TreeNode, number] => {
-        if (!root) {
-            return [null, 0];
-        }
-        const [l, ld] = dfs(root.left);
-        const [r, rd] = dfs(root.right);
-        if (ld > rd) {
-            return [l, ld + 1];
-        }
-        if (ld < rd) {
-            return [r, rd + 1];
-        }
-        return [root, ld + 1];
-    };
-    return dfs(root)[0];
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/)
 Medium
 ```
@@ -19840,6 +18403,8 @@ Constraints:
 s[i] is either '(' or ')'.
 ```
 
+### Without Stack Solution Time O(N) Space O(1)
+What if you had to return the parentheses string itself after the minimum adds?
 ```python
 class Solution:
     def minAddToMakeValid(self, s: str) -> int:
@@ -19856,6 +18421,44 @@ class Solution:
         return closeNeeded + openNeeded
 ```
 
+### With Stack Time O(N) and space O(N)
+
+```python
+class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        st = []
+        for c in s:
+            if c == "(":
+                st.append(c)
+            else:
+                if st and st[-1] == "(":
+                    st.pop()
+                else:
+                    st.append(c)
+        return len(st)
+```
+
+## META variant
+
+```python
+class Solution:
+    def minimumAddToMakeValid(self, s: str) -> str:
+        result = []
+        extra_opens = 0
+        for c in s:
+            if c == '(':
+                extra_opens += 1
+            elif c == ')':
+                if extra_opens == 0:
+                    result.append("(")
+                else:
+                    extra_opens -= 1
+            result.append(c)
+
+        
+        result += [')'] * extra_opens
+        return "".join(result)
+```
 # [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)
 
 [中文文档](/solution/0900-0999/0938.Range%20Sum%20of%20BST/README.md)
@@ -19918,12 +18521,6 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Where $n$ is 
 #### Python3
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         if not root:
@@ -19938,6 +18535,89 @@ class Solution:
             + self.rangeSumBST(root.left, low, high)
             + self.rangeSumBST(root.right, low, high)
         )
+```
+
+## Meta variant 1
+Find the average of all numbers in the range low to high
+
+```python
+class Solution:
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        def helper(root, low, high):
+            if not root:
+                return (0, 0)
+            if root.val < low:
+                return helper(root.right, low, high)
+            if root.val > high:
+                return helper(root.left, low, high)
+
+            ls, lc = helper(root.left, low, high)
+            rs, rc = helper(root.right, low, high)
+            return (ls + rs + root.val, lc + rc + 1)
+
+        sum, count = helper(root, low, high)
+        print(sum / count)
+        return sum
+```
+
+## Meta variant 2
+What if you had to optimize your solution for 10^4 function invocations? How would your algorithm change?
+
+```python
+from typing import Optional
+from itertools import accumulate
+from bisect import bisect_left
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def __init__(self, root):
+        self.vals = []
+        self.prefix_sums = []
+        self.inorder(root)
+    
+    def inorder(self, root):
+        if root is None:
+            return
+        self.inorder(root.left)
+        self.vals.append(root.val)
+        if not self.prefix_sums:
+            self.prefix_sums.append(root.val)
+        else:
+            self.prefix_sums.append(self.prefix_sums[-1] + root.val)
+        self.inorder(root.right)
+    
+    def find_right_boundary(self, left, right, upper):
+        while left <= right:
+            mid = (right - left) // 2 + left
+            if self.vals[mid] <= upper:
+                left = mid + 1
+            else:
+                right = mid - 1
+        return right
+    
+    def find_left_boundary(self, left, right, lower):
+        while left <= right:
+            mid = (right - left) // 2 + left
+            if self.vals[mid] >= lower:
+                right = mid - 1
+            else:
+                left = mid + 1
+        return left
+    
+    def calculate(self, lower, upper):
+        right_boundary = self.find_right_boundary(0, len(self.vals) - 1, upper)
+        left_boundary = self.find_left_boundary(0, len(self.vals) - 1, lower)
+        
+        if left_boundary == 0:
+            return self.prefix_sums[right_boundary]
+        
+        return self.prefix_sums[right_boundary] - self.prefix_sums[left_boundary - 1]
 ```
 # [953. Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)
 Easy
@@ -20051,120 +18731,19 @@ tags:
 #### Python3
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 class Solution:
-    def isCompleteTree(self, root: TreeNode) -> bool:
+    def isCompleteTree(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            return True
         q = deque([root])
         while q:
-            node = q.popleft()
-            if node is None:
-                break
-            q.append(node.left)
-            q.append(node.right)
-        return all(node is None for node in q)
+            top = q.popleft()
+            if not top:
+                return not any(q)
+            q.append(top.left)
+            q.append(top.right)
+        return True
 ```
-
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    public boolean isCompleteTree(TreeNode root) {
-        Deque<TreeNode> q = new LinkedList<>();
-        q.offer(root);
-        while (q.peek() != null) {
-            TreeNode node = q.poll();
-            q.offer(node.left);
-            q.offer(node.right);
-        }
-        while (!q.isEmpty() && q.peek() == null) {
-            q.poll();
-        }
-        return q.isEmpty();
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    bool isCompleteTree(TreeNode* root) {
-        queue<TreeNode*> q{{root}};
-        while (q.front()) {
-            root = q.front();
-            q.pop();
-            q.push(root->left);
-            q.push(root->right);
-        }
-        while (!q.empty() && !q.front()) q.pop();
-        return q.empty();
-    }
-};
-```
-
-#### Go
-
-```go
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func isCompleteTree(root *TreeNode) bool {
-	q := []*TreeNode{root}
-	for q[0] != nil {
-		root = q[0]
-		q = q[1:]
-		q = append(q, root.Left)
-		q = append(q, root.Right)
-	}
-	for len(q) > 0 && q[0] == nil {
-		q = q[1:]
-	}
-	return len(q) == 0
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
 
 ## Description
@@ -20330,147 +18909,26 @@ class Solution:
     def intervalIntersection(
         self, firstList: List[List[int]], secondList: List[List[int]]
     ) -> List[List[int]]:
-        i = j = 0
-        ans = []
-        while i < len(firstList) and j < len(secondList):
-            s1, e1, s2, e2 = *firstList[i], *secondList[j]
-            l, r = max(s1, s2), min(e1, e2)
-            if l <= r:
-                ans.append([l, r])
-            if e1 < e2:
+        i, j = 0, 0
+        m, n = len(firstList), len(secondList)
+        res = []
+        while i < m and j < n:
+            if (
+                firstList[i][0] <= secondList[j][1]
+                and secondList[j][0] <= firstList[i][1]
+            ):
+                res.append(
+                    [
+                        max(firstList[i][0], secondList[j][0]),
+                        min(firstList[i][1], secondList[j][1]),
+                    ]
+                )
+            if firstList[i][1] < secondList[j][1]:
                 i += 1
             else:
                 j += 1
-        return ans
+        return res
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
-        List<int[]> ans = new ArrayList<>();
-        int m = firstList.length, n = secondList.length;
-        for (int i = 0, j = 0; i < m && j < n;) {
-            int l = Math.max(firstList[i][0], secondList[j][0]);
-            int r = Math.min(firstList[i][1], secondList[j][1]);
-            if (l <= r) {
-                ans.add(new int[] {l, r});
-            }
-            if (firstList[i][1] < secondList[j][1]) {
-                ++i;
-            } else {
-                ++j;
-            }
-        }
-        return ans.toArray(new int[ans.size()][]);
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<vector<int>> intervalIntersection(vector<vector<int>>& firstList, vector<vector<int>>& secondList) {
-        vector<vector<int>> ans;
-        int m = firstList.size(), n = secondList.size();
-        for (int i = 0, j = 0; i < m && j < n;) {
-            int l = max(firstList[i][0], secondList[j][0]);
-            int r = min(firstList[i][1], secondList[j][1]);
-            if (l <= r) ans.push_back({l, r});
-            if (firstList[i][1] < secondList[j][1])
-                ++i;
-            else
-                ++j;
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func intervalIntersection(firstList [][]int, secondList [][]int) [][]int {
-	m, n := len(firstList), len(secondList)
-	var ans [][]int
-	for i, j := 0, 0; i < m && j < n; {
-		l := max(firstList[i][0], secondList[j][0])
-		r := min(firstList[i][1], secondList[j][1])
-		if l <= r {
-			ans = append(ans, []int{l, r})
-		}
-		if firstList[i][1] < secondList[j][1] {
-			i++
-		} else {
-			j++
-		}
-	}
-	return ans
-}
-```
-
-#### TypeScript
-
-```ts
-function intervalIntersection(firstList: number[][], secondList: number[][]): number[][] {
-    const n = firstList.length;
-    const m = secondList.length;
-    const res = [];
-    let i = 0;
-    let j = 0;
-    while (i < n && j < m) {
-        const start = Math.max(firstList[i][0], secondList[j][0]);
-        const end = Math.min(firstList[i][1], secondList[j][1]);
-        if (start <= end) {
-            res.push([start, end]);
-        }
-        if (firstList[i][1] < secondList[j][1]) {
-            i++;
-        } else {
-            j++;
-        }
-    }
-    return res;
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn interval_intersection(
-        first_list: Vec<Vec<i32>>,
-        second_list: Vec<Vec<i32>>,
-    ) -> Vec<Vec<i32>> {
-        let n = first_list.len();
-        let m = second_list.len();
-        let mut res = Vec::new();
-        let (mut i, mut j) = (0, 0);
-        while i < n && j < m {
-            let start = first_list[i][0].max(second_list[j][0]);
-            let end = first_list[i][1].min(second_list[j][1]);
-            if start <= end {
-                res.push(vec![start, end]);
-            }
-            if first_list[i][1] < second_list[j][1] {
-                i += 1;
-            } else {
-                j += 1;
-            }
-        }
-        res
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)
 
 [中文文档](/solution/0900-0999/0987.Vertical%20Order%20Traversal%20of%20a%20Binary%20Tree/README.md)
@@ -20691,7 +19149,7 @@ class Solution:
                     ws = w
             return cnt <= days
 
-        low, high = max(weights), sum(weights) + 1
+        low, high = max(weights), sum(weights)
         while low < high:
             mid = (low + high) // 2
             if not check(mid):
@@ -20700,142 +19158,6 @@ class Solution:
                 high = mid
         return low
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int shipWithinDays(int[] weights, int days) {
-        int left = 0, right = 0;
-        for (int w : weights) {
-            left = Math.max(left, w);
-            right += w;
-        }
-        while (left < right) {
-            int mid = (left + right) >> 1;
-            if (check(mid, weights, days)) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
-    }
-
-    private boolean check(int mx, int[] weights, int days) {
-        int ws = 0, cnt = 1;
-        for (int w : weights) {
-            ws += w;
-            if (ws > mx) {
-                ws = w;
-                ++cnt;
-            }
-        }
-        return cnt <= days;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int shipWithinDays(vector<int>& weights, int days) {
-        int left = 0, right = 0;
-        for (auto& w : weights) {
-            left = max(left, w);
-            right += w;
-        }
-        auto check = [&](int mx) {
-            int ws = 0, cnt = 1;
-            for (auto& w : weights) {
-                ws += w;
-                if (ws > mx) {
-                    ws = w;
-                    ++cnt;
-                }
-            }
-            return cnt <= days;
-        };
-        while (left < right) {
-            int mid = (left + right) >> 1;
-            if (check(mid)) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
-    }
-};
-```
-
-#### Go
-
-```go
-func shipWithinDays(weights []int, days int) int {
-	var left, right int
-	for _, w := range weights {
-		if left < w {
-			left = w
-		}
-		right += w
-	}
-	return left + sort.Search(right, func(mx int) bool {
-		mx += left
-		ws, cnt := 0, 1
-		for _, w := range weights {
-			ws += w
-			if ws > mx {
-				ws = w
-				cnt++
-			}
-		}
-		return cnt <= days
-	})
-}
-```
-
-#### TypeScript
-
-```ts
-function shipWithinDays(weights: number[], days: number): number {
-    let left = 0;
-    let right = 0;
-    for (const w of weights) {
-        left = Math.max(left, w);
-        right += w;
-    }
-    const check = (mx: number) => {
-        let ws = 0;
-        let cnt = 1;
-        for (const w of weights) {
-            ws += w;
-            if (ws > mx) {
-                ws = w;
-                ++cnt;
-            }
-        }
-        return cnt <= days;
-    };
-    while (left < right) {
-        const mid = (left + right) >> 1;
-        if (check(mid)) {
-            right = mid;
-        } else {
-            left = mid + 1;
-        }
-    }
-    return left;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [1028. Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal)
 
 ## Description
@@ -20919,205 +19241,6 @@ class Solution:
             return None
         return st[0]
 ```
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    public TreeNode recoverFromPreorder(String traversal) {
-        Stack<TreeNode> stack = new Stack<>();
-        int i = 0;
-
-        while (i < traversal.length()) {
-            int depth = 0;
-            while (i < traversal.length() && traversal.charAt(i) == '-') {
-                depth++;
-                i++;
-            }
-
-            int num = 0;
-            while (i < traversal.length() && Character.isDigit(traversal.charAt(i))) {
-                num = num * 10 + (traversal.charAt(i) - '0');
-                i++;
-            }
-
-            // Create the new node
-            TreeNode newNode = new TreeNode(num);
-
-            while (stack.size() > depth) {
-                stack.pop();
-            }
-            if (!stack.isEmpty()) {
-                if (stack.peek().left == null) {
-                    stack.peek().left = newNode;
-                } else {
-                    stack.peek().right = newNode;
-                }
-            }
-
-            stack.push(newNode);
-        }
-        return stack.isEmpty() ? null : stack.get(0);
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-class Solution {
-public:
-    TreeNode* recoverFromPreorder(string S) {
-        stack<TreeNode*> st;
-        int depth = 0;
-        int num = 0;
-        for (int i = 0; i < S.length(); ++i) {
-            if (S[i] == '-') {
-                depth++;
-            } else {
-                num = 10 * num + S[i] - '0';
-            }
-            if (i + 1 >= S.length() || (isdigit(S[i]) && S[i + 1] == '-')) {
-                TreeNode* newNode = new TreeNode(num);
-                while (st.size() > depth) {
-                    st.pop();
-                }
-                if (!st.empty()) {
-                    if (st.top()->left == nullptr) {
-                        st.top()->left = newNode;
-                    } else {
-                        st.top()->right = newNode;
-                    }
-                }
-                st.push(newNode);
-                depth = 0;
-                num = 0;
-            }
-        }
-        TreeNode* res;
-        while (!st.empty()) {
-            res = st.top();
-            st.pop();
-        }
-        return res;
-    }
-};
-```
-
-#### TypeScript
-
-```ts
-function recoverFromPreorder(traversal: string): TreeNode | null {
-    const stack: TreeNode[] = [];
-    let i = 0;
-
-    while (i < traversal.length) {
-        let depth = 0;
-        while (i < traversal.length && traversal[i] === '-') {
-            depth++;
-            i++;
-        }
-
-        let num = 0;
-        while (i < traversal.length && !Number.isNaN(+traversal[i])) {
-            num = num * 10 + +traversal[i];
-            i++;
-        }
-
-        // Create the new node
-        const newNode = new TreeNode(num);
-
-        while (stack.length > depth) {
-            stack.pop();
-        }
-
-        if (stack.length > 0) {
-            const i = stack.length - 1;
-            if (stack[i].left === null) {
-                stack[i].left = newNode;
-            } else {
-                stack[i].right = newNode;
-            }
-        }
-
-        stack.push(newNode);
-    }
-
-    return stack.length ? stack[0] : null;
-}
-```
-
-#### JavaScript
-
-```js
-function recoverFromPreorder(traversal) {
-    const stack = [];
-    let i = 0;
-
-    while (i < traversal.length) {
-        let depth = 0;
-        while (i < traversal.length && traversal[i] === '-') {
-            depth++;
-            i++;
-        }
-
-        let num = 0;
-        while (i < traversal.length && !Number.isNaN(+traversal[i])) {
-            num = num * 10 + +traversal[i];
-            i++;
-        }
-
-        // Create the new node
-        const newNode = new TreeNode(num);
-
-        while (stack.length > depth) {
-            stack.pop();
-        }
-
-        if (stack.length > 0) {
-            const i = stack.length - 1;
-            if (stack[i].left === null) {
-                stack[i].left = newNode;
-            } else {
-                stack[i].right = newNode;
-            }
-        }
-
-        stack.push(newNode);
-    }
-
-    return stack.length ? stack[0] : null;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Easy
@@ -21175,8 +19298,21 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 ## Solutions
 
 <!-- solution:start -->
+### O(N) time and O(1) space complexity
+```python
+class Solution:
+    def removeDuplicates(self, s: str) -> str:
+        index = 0
+        result = [""] * len(s)
+        for right in range(0, len(s)):
+            result[index] = s[right]
+            if index > 0 and result[index] == result[index - 1]:
+                index = index - 2
+            index += 1
+        return "".join(result[:index])
+```
 
-### Solution 1
+### Using Stack(Extra memory)
 
 <!-- tabs:start -->
 
@@ -21193,123 +19329,62 @@ class Solution:
                 stk.append(c)
         return ''.join(stk)
 ```
+## Meta variant
+What if you had to remove all adjacent duplicates as you iterate left-to-right?
 
-#### Java
+```python
+def remove_all_adjacent_duplicates_variant_1047_python(s):
+    letters = []
+    for ch in s:
+        if not letters:
+            letters.append({'val': ch, 'freq': 1})
+            continue
+        if letters[-1]['val'] == ch:
+            letters[-1]['freq'] += 1
+            continue
 
-```java
-class Solution {
-    public String removeDuplicates(String s) {
-        StringBuilder sb = new StringBuilder();
-        for (char c : s.toCharArray()) {
-            if (sb.length() > 0 && sb.charAt(sb.length() - 1) == c) {
-                sb.deleteCharAt(sb.length() - 1);
-            } else {
-                sb.append(c);
-            }
-        }
-        return sb.toString();
-    }
-}
+        if letters[-1]['freq'] > 1:
+            letters.pop()
+
+        if not letters or letters[-1]['val'] != ch:
+            letters.append({'val': ch, 'freq': 1})
+        elif letters[-1]['val'] == ch:
+            letters[-1]['freq'] += 1
+
+    if letters and letters[-1]['freq'] > 1:
+        letters.pop()
+
+    result = ''.join([letter['val'] for letter in letters])
+    return result
+
+if __name__ == '__main__':
+    s = "azxxxzy"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == "ay"
+
+    s = "abbaxx"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == ""
+
+    s = "aabbccdd"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == ""
+
+    s = "aaabbaad"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == "d"
+
+    s = "abcdefg"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == "abcdefg"
+
+    s = "abbcddeff"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == "ace"
+
+    s = "abcdeffedcba"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == ""
+
+    s = "aabccddeeffbbbbbbbbbf"
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == "f"
+
+    s = "abbbacca"; # Cannot pick and choose duplicates in the middle to delete first
+    assert remove_all_adjacent_duplicates_variant_1047_python(s) == "a"
 ```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    string removeDuplicates(string s) {
-        string stk;
-        for (char c : s) {
-            if (!stk.empty() && stk[stk.size() - 1] == c) {
-                stk.pop_back();
-            } else {
-                stk += c;
-            }
-        }
-        return stk;
-    }
-};
-```
-
-#### Go
-
-```go
-func removeDuplicates(s string) string {
-	stk := []rune{}
-	for _, c := range s {
-		if len(stk) > 0 && stk[len(stk)-1] == c {
-			stk = stk[:len(stk)-1]
-		} else {
-			stk = append(stk, c)
-		}
-	}
-	return string(stk)
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn remove_duplicates(s: String) -> String {
-        let mut stack = Vec::new();
-        for c in s.chars() {
-            if !stack.is_empty() && *stack.last().unwrap() == c {
-                stack.pop();
-            } else {
-                stack.push(c);
-            }
-        }
-        stack.into_iter().collect()
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {string} s
- * @return {string}
- */
-var removeDuplicates = function (s) {
-    const stk = [];
-    for (const c of s) {
-        if (stk.length && stk[stk.length - 1] == c) {
-            stk.pop();
-        } else {
-            stk.push(c);
-        }
-    }
-    return stk.join('');
-};
-```
-
-#### C
-
-```c
-char* removeDuplicates(char* s) {
-    int n = strlen(s);
-    char* stack = malloc(sizeof(char) * (n + 1));
-    int i = 0;
-    for (int j = 0; j < n; j++) {
-        char c = s[j];
-        if (i && stack[i - 1] == c) {
-            i--;
-        } else {
-            stack[i++] = c;
-        }
-    }
-    stack[i] = '\0';
-    return stack;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -21394,114 +19469,6 @@ class Solution:
         helper("", tiles)
         return len(res)
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int numTilePossibilities(String tiles) {
-        int[] cnt = new int[26];
-        for (char c : tiles.toCharArray()) {
-            ++cnt[c - 'A'];
-        }
-        return dfs(cnt);
-    }
-
-    private int dfs(int[] cnt) {
-        int res = 0;
-        for (int i = 0; i < cnt.length; ++i) {
-            if (cnt[i] > 0) {
-                ++res;
-                --cnt[i];
-                res += dfs(cnt);
-                ++cnt[i];
-            }
-        }
-        return res;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int numTilePossibilities(string tiles) {
-        int cnt[26]{};
-        for (char c : tiles) {
-            ++cnt[c - 'A'];
-        }
-        function<int(int* cnt)> dfs = [&](int* cnt) -> int {
-            int res = 0;
-            for (int i = 0; i < 26; ++i) {
-                if (cnt[i] > 0) {
-                    ++res;
-                    --cnt[i];
-                    res += dfs(cnt);
-                    ++cnt[i];
-                }
-            }
-            return res;
-        };
-        return dfs(cnt);
-    }
-};
-```
-
-#### Go
-
-```go
-func numTilePossibilities(tiles string) int {
-	cnt := [26]int{}
-	for _, c := range tiles {
-		cnt[c-'A']++
-	}
-	var dfs func(cnt [26]int) int
-	dfs = func(cnt [26]int) (res int) {
-		for i, x := range cnt {
-			if x > 0 {
-				res++
-				cnt[i]--
-				res += dfs(cnt)
-				cnt[i]++
-			}
-		}
-		return
-	}
-	return dfs(cnt)
-}
-```
-
-#### TypeScript
-
-```ts
-function numTilePossibilities(tiles: string): number {
-    const cnt: number[] = new Array(26).fill(0);
-    for (const c of tiles) {
-        ++cnt[c.charCodeAt(0) - 'A'.charCodeAt(0)];
-    }
-    const dfs = (cnt: number[]): number => {
-        let res = 0;
-        for (let i = 0; i < 26; ++i) {
-            if (cnt[i] > 0) {
-                ++res;
-                --cnt[i];
-                res += dfs(cnt);
-                ++cnt[i];
-            }
-        }
-        return res;
-    };
-    return dfs(cnt);
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -21579,7 +19546,8 @@ tags:
 
 #### Python3
 
-```pythonclass Solution:
+```python
+class Solution:
     def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
         if grid[0][0]:
             return -1
@@ -21601,182 +19569,6 @@ tags:
             ans += 1
         return -1
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int shortestPathBinaryMatrix(int[][] grid) {
-        if (grid[0][0] == 1) {
-            return -1;
-        }
-        int n = grid.length;
-        grid[0][0] = 1;
-        Deque<int[]> q = new ArrayDeque<>();
-        q.offer(new int[] {0, 0});
-        for (int ans = 1; !q.isEmpty(); ++ans) {
-            for (int k = q.size(); k > 0; --k) {
-                var p = q.poll();
-                int i = p[0], j = p[1];
-                if (i == n - 1 && j == n - 1) {
-                    return ans;
-                }
-                for (int x = i - 1; x <= i + 1; ++x) {
-                    for (int y = j - 1; y <= j + 1; ++y) {
-                        if (x >= 0 && x < n && y >= 0 && y < n && grid[x][y] == 0) {
-                            grid[x][y] = 1;
-                            q.offer(new int[] {x, y});
-                        }
-                    }
-                }
-            }
-        }
-        return -1;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
-        if (grid[0][0]) {
-            return -1;
-        }
-        int n = grid.size();
-        grid[0][0] = 1;
-        queue<pair<int, int>> q;
-        q.emplace(0, 0);
-        for (int ans = 1; !q.empty(); ++ans) {
-            for (int k = q.size(); k; --k) {
-                auto [i, j] = q.front();
-                q.pop();
-                if (i == n - 1 && j == n - 1) {
-                    return ans;
-                }
-                for (int x = i - 1; x <= i + 1; ++x) {
-                    for (int y = j - 1; y <= j + 1; ++y) {
-                        if (x >= 0 && x < n && y >= 0 && y < n && !grid[x][y]) {
-                            grid[x][y] = 1;
-                            q.emplace(x, y);
-                        }
-                    }
-                }
-            }
-        }
-        return -1;
-    }
-};
-```
-
-#### Go
-
-```go
-func shortestPathBinaryMatrix(grid [][]int) int {
-	if grid[0][0] == 1 {
-		return -1
-	}
-	n := len(grid)
-	grid[0][0] = 1
-	q := [][2]int{{0, 0}}
-	for ans := 1; len(q) > 0; ans++ {
-		for k := len(q); k > 0; k-- {
-			p := q[0]
-			i, j := p[0], p[1]
-			q = q[1:]
-			if i == n-1 && j == n-1 {
-				return ans
-			}
-			for x := i - 1; x <= i+1; x++ {
-				for y := j - 1; y <= j+1; y++ {
-					if x >= 0 && x < n && y >= 0 && y < n && grid[x][y] == 0 {
-						grid[x][y] = 1
-						q = append(q, [2]int{x, y})
-					}
-				}
-			}
-		}
-	}
-	return -1
-}
-```
-
-#### TypeScript
-
-```ts
-function shortestPathBinaryMatrix(grid: number[][]): number {
-    if (grid[0][0]) {
-        return -1;
-    }
-    const max = grid.length - 1;
-    grid[0][0] = 1;
-    let q: number[][] = [[0, 0]];
-    for (let ans = 1; q.length > 0; ++ans) {
-        const nq: number[][] = [];
-        for (const [i, j] of q) {
-            if (i === max && j === max) {
-                return ans;
-            }
-            for (let x = i - 1; x <= i + 1; ++x) {
-                for (let y = j - 1; y <= j + 1; ++y) {
-                    if (grid[x]?.[y] === 0) {
-                        grid[x][y] = 1;
-                        nq.push([x, y]);
-                    }
-                }
-            }
-        }
-        q = nq;
-    }
-    return -1;
-}
-```
-
-#### Rust
-
-```rust
-use std::collections::VecDeque;
-impl Solution {
-    pub fn shortest_path_binary_matrix(mut grid: Vec<Vec<i32>>) -> i32 {
-        let n = grid.len();
-        let mut queue = VecDeque::new();
-        queue.push_back([0, 0]);
-        let mut res = 0;
-        while !queue.is_empty() {
-            res += 1;
-            for _ in 0..queue.len() {
-                let [i, j] = queue.pop_front().unwrap();
-                if grid[i][j] == 1 {
-                    continue;
-                }
-                if i == n - 1 && j == n - 1 {
-                    return res;
-                }
-                grid[i][j] = 1;
-                for x in -1..=1 {
-                    for y in -1..=1 {
-                        let x = x + (i as i32);
-                        let y = y + (j as i32);
-                        if x < 0 || x == (n as i32) || y < 0 || y == (n as i32) {
-                            continue;
-                        }
-                        queue.push_back([x as usize, y as usize]);
-                    }
-                }
-            }
-        }
-        -1
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -22016,6 +19808,32 @@ tags:
 
 ## Solutions
 
+### recursion with caching
+
+```python
+class Solution:    
+    def isValidPalindrome(self,s,k):
+        @cache
+        def isPalindrome(s):
+            l, r = 0, len(s)-1
+            while l < r:
+               if s[l].lower() != s[r].lower():
+                   return False
+               l +=1; r -= 1
+            return True
+
+        @cache
+        def solve(s, k):
+            if k <0:
+                return False
+            if isPalindrome(s):
+                return True
+            for i in range(len(s)):
+                if solve(s[:i] + s[i+1:], k-1):
+                    return True
+            return False
+        return solve(s,k)
+```
 <!-- solution:start -->
 
 ### Solution 1: Dynamic Programming
@@ -22053,151 +19871,6 @@ class Solution:
                     return True
         return False
 ```
-
-#### Java
-
-```java
-class Solution {
-    public boolean isValidPalindrome(String s, int k) {
-        int n = s.length();
-        int[][] f = new int[n][n];
-        for (int i = 0; i < n; ++i) {
-            f[i][i] = 1;
-        }
-        for (int i = n - 2; i >= 0; --i) {
-            for (int j = i + 1; j < n; ++j) {
-                if (s.charAt(i) == s.charAt(j)) {
-                    f[i][j] = f[i + 1][j - 1] + 2;
-                } else {
-                    f[i][j] = Math.max(f[i + 1][j], f[i][j - 1]);
-                }
-                if (f[i][j] + k >= n) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    bool isValidPalindrome(string s, int k) {
-        int n = s.length();
-        int f[n][n];
-        memset(f, 0, sizeof f);
-        for (int i = 0; i < n; ++i) {
-            f[i][i] = 1;
-        }
-        for (int i = n - 2; i >= 0; --i) {
-            for (int j = i + 1; j < n; ++j) {
-                if (s[i] == s[j]) {
-                    f[i][j] = f[i + 1][j - 1] + 2;
-                } else {
-                    f[i][j] = max(f[i + 1][j], f[i][j - 1]);
-                }
-                if (f[i][j] + k >= n) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-};
-```
-
-#### Go
-
-```go
-func isValidPalindrome(s string, k int) bool {
-	n := len(s)
-	f := make([][]int, n)
-	for i := range f {
-		f[i] = make([]int, n)
-		f[i][i] = 1
-	}
-	for i := n - 2; i >= 0; i-- {
-		for j := i + 1; j < n; j++ {
-			if s[i] == s[j] {
-				f[i][j] = f[i+1][j-1] + 2
-			} else {
-				f[i][j] = max(f[i+1][j], f[i][j-1])
-			}
-			if f[i][j]+k >= n {
-				return true
-			}
-		}
-	}
-	return false
-}
-```
-
-#### TypeScript
-
-```ts
-function isValidPalindrome(s: string, k: number): boolean {
-    const n = s.length;
-    const f: number[][] = Array.from({ length: n }, () => Array.from({ length: n }, () => 0));
-    for (let i = 0; i < n; ++i) {
-        f[i][i] = 1;
-    }
-    for (let i = n - 2; ~i; --i) {
-        for (let j = i + 1; j < n; ++j) {
-            if (s[i] === s[j]) {
-                f[i][j] = f[i + 1][j - 1] + 2;
-            } else {
-                f[i][j] = Math.max(f[i + 1][j], f[i][j - 1]);
-            }
-            if (f[i][j] + k >= n) {
-                return true;
-            }
-        }
-    }
-    return false;
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn is_valid_palindrome(s: String, k: i32) -> bool {
-        let s = s.as_bytes();
-        let n = s.len();
-        let mut f = vec![vec![0; n]; n];
-
-        for i in 0..n {
-            f[i][i] = 1;
-        }
-
-        for i in (0..n - 2).rev() {
-            for j in i + 1..n {
-                if s[i] == s[j] {
-                    f[i][j] = f[i + 1][j - 1] + 2;
-                } else {
-                    f[i][j] = std::cmp::max(f[i + 1][j], f[i][j - 1]);
-                }
-
-                if f[i][j] + k >= (n as i32) {
-                    return true;
-                }
-            }
-        }
-
-        false
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)
 
 ## Description
@@ -22384,209 +20057,28 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Where $n$ is 
 #### Python3
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 class Solution:
     def balanceBST(self, root: TreeNode) -> TreeNode:
-        def dfs(root: TreeNode):
+        def inorder(root: TreeNode):
             if root is None:
                 return
-            dfs(root.left)
+            inorder(root.left)
             nums.append(root.val)
-            dfs(root.right)
+            inorder(root.right)
 
         def build(i: int, j: int) -> TreeNode:
             if i > j:
                 return None
-            mid = (i + j) >> 1
+            mid = (i + j) // 2
             left = build(i, mid - 1)
             right = build(mid + 1, j)
             return TreeNode(nums[mid], left, right)
 
         nums = []
-        dfs(root)
+        inorder(root)
         return build(0, len(nums) - 1)
+
 ```
-
-#### Java
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    private List<Integer> nums = new ArrayList<>();
-
-    public TreeNode balanceBST(TreeNode root) {
-        dfs(root);
-        return build(0, nums.size() - 1);
-    }
-
-    private void dfs(TreeNode root) {
-        if (root == null) {
-            return;
-        }
-        dfs(root.left);
-        nums.add(root.val);
-        dfs(root.right);
-    }
-
-    private TreeNode build(int i, int j) {
-        if (i > j) {
-            return null;
-        }
-        int mid = (i + j) >> 1;
-        TreeNode left = build(i, mid - 1);
-        TreeNode right = build(mid + 1, j);
-        return new TreeNode(nums.get(mid), left, right);
-    }
-}
-```
-
-#### C++
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    TreeNode* balanceBST(TreeNode* root) {
-        dfs(root);
-        return build(0, nums.size() - 1);
-    }
-
-private:
-    vector<int> nums;
-
-    void dfs(TreeNode* root) {
-        if (!root) {
-            return;
-        }
-        dfs(root->left);
-        nums.push_back(root->val);
-        dfs(root->right);
-    }
-
-    TreeNode* build(int i, int j) {
-        if (i > j) {
-            return nullptr;
-        }
-        int mid = (i + j) >> 1;
-        TreeNode* left = build(i, mid - 1);
-        TreeNode* right = build(mid + 1, j);
-        return new TreeNode(nums[mid], left, right);
-    }
-};
-```
-
-#### Go
-
-```go
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func balanceBST(root *TreeNode) *TreeNode {
-	ans := []int{}
-	var dfs func(*TreeNode)
-	dfs = func(root *TreeNode) {
-		if root == nil {
-			return
-		}
-		dfs(root.Left)
-		ans = append(ans, root.Val)
-		dfs(root.Right)
-	}
-	var build func(i, j int) *TreeNode
-	build = func(i, j int) *TreeNode {
-		if i > j {
-			return nil
-		}
-		mid := (i + j) >> 1
-		left := build(i, mid-1)
-		right := build(mid+1, j)
-		return &TreeNode{Val: ans[mid], Left: left, Right: right}
-	}
-	dfs(root)
-	return build(0, len(ans)-1)
-}
-```
-
-#### TypeScript
-
-```ts
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
-
-function balanceBST(root: TreeNode | null): TreeNode | null {
-    const nums: number[] = [];
-    const dfs = (root: TreeNode | null): void => {
-        if (root == null) {
-            return;
-        }
-        dfs(root.left);
-        nums.push(root.val);
-        dfs(root.right);
-    };
-    const build = (i: number, j: number): TreeNode | null => {
-        if (i > j) {
-            return null;
-        }
-        const mid: number = (i + j) >> 1;
-        const left: TreeNode | null = build(i, mid - 1);
-        const right: TreeNode | null = build(mid + 1, j);
-        return new TreeNode(nums[mid], left, right);
-    };
-    dfs(root);
-    return build(0, nums.length - 1);
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [1424. Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii)
 
 
@@ -22675,115 +20167,6 @@ class Solution:
         arr.sort()
         return [v[2] for v in arr]
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int[] findDiagonalOrder(List<List<Integer>> nums) {
-        List<int[]> arr = new ArrayList<>();
-        for (int i = 0; i < nums.size(); ++i) {
-            for (int j = 0; j < nums.get(i).size(); ++j) {
-                arr.add(new int[] {i + j, j, nums.get(i).get(j)});
-            }
-        }
-        arr.sort((a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
-        int[] ans = new int[arr.size()];
-        for (int i = 0; i < arr.size(); ++i) {
-            ans[i] = arr.get(i)[2];
-        }
-        return ans;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<int> findDiagonalOrder(vector<vector<int>>& nums) {
-        vector<tuple<int, int, int>> arr;
-        for (int i = 0; i < nums.size(); ++i) {
-            for (int j = 0; j < nums[i].size(); ++j) {
-                arr.push_back({i + j, j, nums[i][j]});
-            }
-        }
-        sort(arr.begin(), arr.end());
-        vector<int> ans;
-        for (auto& e : arr) {
-            ans.push_back(get<2>(e));
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func findDiagonalOrder(nums [][]int) []int {
-	arr := [][]int{}
-	for i, row := range nums {
-		for j, v := range row {
-			arr = append(arr, []int{i + j, j, v})
-		}
-	}
-	sort.Slice(arr, func(i, j int) bool {
-		if arr[i][0] == arr[j][0] {
-			return arr[i][1] < arr[j][1]
-		}
-		return arr[i][0] < arr[j][0]
-	})
-	ans := []int{}
-	for _, v := range arr {
-		ans = append(ans, v[2])
-	}
-	return ans
-}
-```
-
-#### TypeScript
-
-```ts
-function findDiagonalOrder(nums: number[][]): number[] {
-    const arr: number[][] = [];
-    for (let i = 0; i < nums.length; ++i) {
-        for (let j = 0; j < nums[i].length; ++j) {
-            arr.push([i + j, j, nums[i][j]]);
-        }
-    }
-    arr.sort((a, b) => (a[0] === b[0] ? a[1] - b[1] : a[0] - b[0]));
-    return arr.map(x => x[2]);
-}
-```
-
-#### C#
-
-```cs
-public class Solution {
-    public int[] FindDiagonalOrder(IList<IList<int>> nums) {
-        List<int[]> arr = new List<int[]>();
-        for (int i = 0; i < nums.Count; ++i) {
-            for (int j = 0; j < nums[i].Count; ++j) {
-                arr.Add(new int[] { i + j, j, nums[i][j] });
-            }
-        }
-        arr.Sort((a, b) => a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
-        int[] ans = new int[arr.Count];
-        for (int i = 0; i < arr.Count; ++i) {
-            ans[i] = arr[i][2];
-        }
-        return ans;
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)
 
 ## Description
@@ -22883,105 +20266,80 @@ class Solution:
                 right = mid
             else:
                 left = mid + 1
-        return arr[left - 1] + k - (arr[left - 1] - (left - 1) - 1)
+        # At index i, arr[i] - i - 1 elements are missing. subtract this from
+        # k, we get the remaining elements we have to add.
+        # we add this remaining number to arr[left-1] to get the answer
+        return k - (arr[left - 1] - (left - 1) -1) + arr[left - 1]
 ```
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/1500-1599/1570.Dot%20Product%20of%20Two%20Sparse%20Vectors/README_EN.md
+tags:
+    - Design
+    - Array
+    - Hash Table
+    - Two Pointers
+---
 
-#### Java
+<!-- problem:start -->
 
-```java
-class Solution {
-    public int findKthPositive(int[] arr, int k) {
-        if (arr[0] > k) {
-            return k;
-        }
-        int left = 0, right = arr.length;
-        while (left < right) {
-            int mid = (left + right) >> 1;
-            if (arr[mid] - mid - 1 >= k) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return arr[left - 1] + k - (arr[left - 1] - (left - 1) - 1);
-    }
-}
-```
+# [1570. Dot Product of Two Sparse Vectors 🔒](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)
 
-#### C++
+[中文文档](/solution/1500-1599/1570.Dot%20Product%20of%20Two%20Sparse%20Vectors/README.md)
 
-```cpp
-class Solution {
-public:
-    int findKthPositive(vector<int>& arr, int k) {
-        if (arr[0] > k) return k;
-        int left = 0, right = arr.size();
-        while (left < right) {
-            int mid = (left + right) >> 1;
-            if (arr[mid] - mid - 1 >= k)
-                right = mid;
-            else
-                left = mid + 1;
-        }
-        return arr[left - 1] + k - (arr[left - 1] - (left - 1) - 1);
-    }
-};
-```
+## Description
 
-#### Go
+<!-- description:start -->
 
-```go
-func findKthPositive(arr []int, k int) int {
-	if arr[0] > k {
-		return k
-	}
-	left, right := 0, len(arr)
-	for left < right {
-		mid := (left + right) >> 1
-		if arr[mid]-mid-1 >= k {
-			right = mid
-		} else {
-			left = mid + 1
-		}
-	}
-	return arr[left-1] + k - (arr[left-1] - (left - 1) - 1)
-}
-```
+<p>Given two sparse vectors, compute their dot product.</p>
 
-<!-- tabs:end -->
+<p>Implement class <code>SparseVector</code>:</p>
 
-<!-- solution:end -->
+<ul data-indent="0" data-stringify-type="unordered-list">
+	<li><code>SparseVector(nums)</code>&nbsp;Initializes the object with the vector <code>nums</code></li>
+	<li><code>dotProduct(vec)</code>&nbsp;Compute the dot product between the instance of <em>SparseVector</em> and <code>vec</code></li>
+</ul>
 
-<!-- problem:end -->
-# 1570. Dot Product of Two Sparse Vectors
-```
-Given two sparse vectors, compute their dot product.
-Implement class SparseVector:
-SparseVector(nums) Initializes the object with the vector nums
-dotProduct(vec) Compute the dot product between the instance of SparseVector and vec
-A sparse vector is a vector that has mostly zero values,
-you should store the sparse vector efficiently and compute the dot product between two SparseVector.
-Follow up: What if only one of the vectors is sparse?
- 
-Example 1:
-Input: nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]
-Output: 8
-Explanation: v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
+<p>A <strong>sparse vector</strong> is a vector that has mostly zero values, you should store the sparse vector&nbsp;<strong>efficiently </strong>and compute the dot product between two <em>SparseVector</em>.</p>
+
+<p><strong>Follow up:&nbsp;</strong>What if only one of the vectors is sparse?</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]
+<strong>Output:</strong> 8
+<strong>Explanation:</strong> v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
 v1.dotProduct(v2) = 1*0 + 0*3 + 0*0 + 2*4 + 3*0 = 8
-Example 2:
-Input: nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]
-Output: 0
-Explanation: v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
 v1.dotProduct(v2) = 0*0 + 1*0 + 0*0 + 0*0 + 0*2 = 0
-Example 3:
-Input: nums1 = [0,1,0,0,2,0,0], nums2 = [1,0,0,0,3,0,4]
-Output: 6
- 
-Constraints:
-n == nums1.length == nums2.length
-1 <= n <= 10^5
-0 <= nums1[i], nums2[i] <= 100
-```
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums1 = [0,1,0,0,2,0,0], nums2 = [1,0,0,0,3,0,4]
+<strong>Output:</strong> 6
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>n == nums1.length == nums2.length</code></li>
+	<li><code>1 &lt;= n &lt;= 10^5</code></li>
+	<li><code>0 &lt;= nums1[i], nums2[i]&nbsp;&lt;= 100</code></li>
+</ul>
+
 
 ```python
 class SparseVector:
@@ -22996,6 +20354,42 @@ class SparseVector:
        if len(b) < len(a):
            a, b = b, a
        return sum(v * b.get(i, 0) for i, v in a.items())
+```
+## Meta variant
+What if you had to optimize your algorithm using binary search?
+```python
+from collections import namedtuple
+from bisect import bisect_left
+
+
+class SparseVectorVariant:
+    def __init__(self, nums: list[int]):
+        Pair = namedtuple("Pair", "index value")
+        self.pairs = [
+            Pair(index, value) for index, value in enumerate(nums) if value != 0
+        ]
+
+    def dotProduct(self, vec: "SparseVectorVariant") -> int:
+        result = 0
+        shorter, longer = (
+            (self.pairs, vec.pairs)
+            if len(self.pairs) < len(vec.pairs)
+            else (vec.pairs, self.pairs)
+        )
+        for pair in shorter:
+            matched_idx = bisect_left(longer, (pair.index,))
+            if matched_idx >= len(longer) or longer[matched_idx].index != pair.index:
+                continue
+            result += pair.value * longer[matched_idx].value
+
+        return result
+nums1 = [0,1,0,0,2,0,0]
+nums2 = [1,0,0,0,3,0,4]
+
+s1 = SparseVectorVariant(nums1)
+s2 = SparseVectorVariant(nums2)
+
+print(s1.dotProduct(s2))
 ```
 # [1650. Lowest Common Ancestor of a Binary Tree III 🔒](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii)
 
@@ -23082,35 +20476,87 @@ def lowestCommonAncestor(self, a: 'Node', b: 'Node') -> 'Node':
        pointerB = pointerB.parent if pointerA else a
    return pointerA
 ```
-# 1762. Buildings With an Ocean View
 
+## Meta variant
+What if you were given all the nodes as a part of a vector, and no longer the root node?
 ```
-There are n buildings in a line. You are given an integer array heights of size n
-that represents the heights of the buildings in the line.
-
-The ocean is to the right of the buildings. A building has an ocean view if the building
-can see the ocean without obstructions. Formally, a building has an ocean
-view if all the buildings to its right have a smaller height.
-
-Return a list of indices (0-indexed) of buildings that have an ocean view, sorted in increasing order.
- 
-Example 1:
-Input: heights = [4,2,3,1]
-Output: [0,2,3]
-Explanation: Building 1 (0-indexed) does not have an ocean view because building 2 is taller.
-Example 2:
-Input: heights = [4,3,2,1]
-Output: [0,1,2,3]
-Explanation: All the buildings have an ocean view.
-Example 3:
-Input: heights = [1,3,2,4]
-Output: [3]
-Explanation: Only building 3 has an ocean view.
- 
-Constraints:
-1 <= heights.length <= 105
-1 <= heights[i] <= 109
+iterate over the vector and create child_to_parent map using left and right of each node and then do the same.
 ```
+
+```python
+def findancestor(nodes, p_start, q_start):
+    for node in nodes:
+        if node.left:
+            child_to_parent_map[node.left] = node
+        if node.right:
+            child_to_parent_map[node.right] = node
+            
+        p = p_start
+        q = q_start
+        while p != q:
+            p = child_to_parent_map[p] if p in child_to_parent_map else q_start
+            q = child_to_parent_map[q] if q in child_to_parent_map else p_start
+        return p
+```
+
+---
+comments: true
+difficulty: Medium
+edit_url: https://github.com/doocs/leetcode/edit/main/solution/1700-1799/1762.Buildings%20With%20an%20Ocean%20View/README_EN.md
+tags:
+    - Stack
+    - Array
+    - Monotonic Stack
+---
+
+<!-- problem:start -->
+
+# [1762. Buildings With an Ocean View 🔒](https://leetcode.com/problems/buildings-with-an-ocean-view)
+
+[中文文档](/solution/1700-1799/1762.Buildings%20With%20an%20Ocean%20View/README.md)
+
+## Description
+
+<!-- description:start -->
+
+<p>There are <code>n</code> buildings in a line. You are given an integer array <code>heights</code> of size <code>n</code> that represents the heights of the buildings in the line.</p>
+
+<p>The ocean is to the right of the buildings. A building has an ocean view if the building can see the ocean without obstructions. Formally, a building has an ocean view if all the buildings to its right have a <strong>smaller</strong> height.</p>
+
+<p>Return a list of indices <strong>(0-indexed)</strong> of buildings that have an ocean view, sorted in increasing order.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> heights = [4,2,3,1]
+<strong>Output:</strong> [0,2,3]
+<strong>Explanation:</strong> Building 1 (0-indexed) does not have an ocean view because building 2 is taller.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> heights = [4,3,2,1]
+<strong>Output:</strong> [0,1,2,3]
+<strong>Explanation:</strong> All the buildings have an ocean view.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> heights = [1,3,2,4]
+<strong>Output:</strong> [3]
+<strong>Explanation:</strong> Only building 3 has an ocean view.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= heights.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= heights[i] &lt;= 10<sup>9</sup></code></li>
+</ul>
 
 ```python
 class Solution:
@@ -23124,7 +20570,39 @@ class Solution:
        return ans[::-1]
 ```
 
+## Meta variant
+ What if you had to return all of the buildings that either have an ocean view to its left and/or its right? This becomes very similar to Leetcode 42 Trapping Rain Water
+```
+std::vector<int> findBuildingViewCount_second_variant_1762(std::vector<int>& heights) {
+    int n = heights.size();
+    if (n == 1)
+        return {0};
 
+    int left = 0, right = n - 1;
+    std::vector<int> left_view{left};
+    std::vector<int> right_view{right};
+    int left_max = heights[left];
+    int right_max = heights[right];
+    while (left < right) {
+        if (left_max < right_max) {
+            left++;
+            if (heights[left] > left_max && left < right) {
+                left_view.push_back(left);
+                left_max = heights[left];
+            }
+        }
+        else {
+            right--;
+            if (heights[right] > right_max && left < right) {
+                right_view.push_back(right);
+                right_max = heights[right];
+            }
+        }
+    }
+    left_view.insert(left_view.end(), right_view.rbegin(), right_view.rend());
+    return left_view;
+}
+```
 ---
 comments: true
 difficulty: Easy
@@ -23213,20 +20691,12 @@ class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         res = ""
         i = j = 0
-        count = 0
-        while i < len(word1) and j < len(word2):
-            if not count:
-                res += word1[i]
-                i += 1
-                count = 1
-            else:
-                res += word2[j]
-                j += 1
-                count = 0
-        if i < len(word1):
-            res += word1[i:]
-        if j < len(word2):
-            res += word2[j:]
+        m, n = len(word1), len(word2)
+        while i < m or j < n:
+            res += word1[i] if i < m else ""
+            res += word2[j] if j < n else ""
+            i += 1
+            j += 1
         return res
 ```
 
@@ -23245,132 +20715,6 @@ class Solution:
             res += word1[len(word2) :]
         return res
 ```
-
-
-#### Java
-
-```java
-class Solution {
-    public String mergeAlternately(String word1, String word2) {
-        int m = word1.length(), n = word2.length();
-        StringBuilder ans = new StringBuilder();
-        for (int i = 0; i < m || i < n; ++i) {
-            if (i < m) {
-                ans.append(word1.charAt(i));
-            }
-            if (i < n) {
-                ans.append(word2.charAt(i));
-            }
-        }
-        return ans.toString();
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    string mergeAlternately(string word1, string word2) {
-        int m = word1.size(), n = word2.size();
-        string ans;
-        for (int i = 0; i < m || i < n; ++i) {
-            if (i < m) ans += word1[i];
-            if (i < n) ans += word2[i];
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func mergeAlternately(word1 string, word2 string) string {
-	m, n := len(word1), len(word2)
-	ans := make([]byte, 0, m+n)
-	for i := 0; i < m || i < n; i++ {
-		if i < m {
-			ans = append(ans, word1[i])
-		}
-		if i < n {
-			ans = append(ans, word2[i])
-		}
-	}
-	return string(ans)
-}
-```
-
-#### TypeScript
-
-```ts
-function mergeAlternately(word1: string, word2: string): string {
-    const ans: string[] = [];
-    const [m, n] = [word1.length, word2.length];
-    for (let i = 0; i < m || i < n; ++i) {
-        if (i < m) {
-            ans.push(word1[i]);
-        }
-        if (i < n) {
-            ans.push(word2[i]);
-        }
-    }
-    return ans.join('');
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn merge_alternately(word1: String, word2: String) -> String {
-        let s1 = word1.as_bytes();
-        let s2 = word2.as_bytes();
-        let n = s1.len().max(s2.len());
-        let mut res = vec![];
-        for i in 0..n {
-            if s1.get(i).is_some() {
-                res.push(s1[i]);
-            }
-            if s2.get(i).is_some() {
-                res.push(s2[i]);
-            }
-        }
-        String::from_utf8(res).unwrap()
-    }
-}
-```
-
-#### C
-
-```c
-char* mergeAlternately(char* word1, char* word2) {
-    int m = strlen(word1);
-    int n = strlen(word2);
-    char* ans = malloc(sizeof(char) * (n + m + 1));
-    int i = 0;
-    int j = 0;
-    while (i + j != m + n) {
-        if (i < m) {
-            ans[i + j] = word1[i];
-            i++;
-        }
-        if (j < n) {
-            ans[i + j] = word2[j];
-            j++;
-        }
-    }
-    ans[n + m] = '\0';
-    return ans;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 # [1790. Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal)
 
 
@@ -23456,148 +20800,6 @@ class Solution:
             count == 2 and s1[diff1] == s2[diff2] and s1[diff2] == s2[diff1]
         )
 ```
-
-#### Java
-
-```java
-class Solution {
-    public boolean areAlmostEqual(String s1, String s2) {
-        int cnt = 0;
-        char c1 = 0, c2 = 0;
-        for (int i = 0; i < s1.length(); ++i) {
-            char a = s1.charAt(i), b = s2.charAt(i);
-            if (a != b) {
-                if (++cnt > 2 || (cnt == 2 && (a != c2 || b != c1))) {
-                    return false;
-                }
-                c1 = a;
-                c2 = b;
-            }
-        }
-        return cnt != 1;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    bool areAlmostEqual(string s1, string s2) {
-        int cnt = 0;
-        char c1 = 0, c2 = 0;
-        for (int i = 0; i < s1.size(); ++i) {
-            char a = s1[i], b = s2[i];
-            if (a != b) {
-                if (++cnt > 2 || (cnt == 2 && (a != c2 || b != c1))) {
-                    return false;
-                }
-                c1 = a, c2 = b;
-            }
-        }
-        return cnt != 1;
-    }
-};
-```
-
-#### Go
-
-```go
-func areAlmostEqual(s1 string, s2 string) bool {
-	cnt := 0
-	var c1, c2 byte
-	for i := range s1 {
-		a, b := s1[i], s2[i]
-		if a != b {
-			cnt++
-			if cnt > 2 || (cnt == 2 && (a != c2 || b != c1)) {
-				return false
-			}
-			c1, c2 = a, b
-		}
-	}
-	return cnt != 1
-}
-```
-
-#### TypeScript
-
-```ts
-function areAlmostEqual(s1: string, s2: string): boolean {
-    let c1, c2;
-    let cnt = 0;
-    for (let i = 0; i < s1.length; ++i) {
-        const a = s1.charAt(i);
-        const b = s2.charAt(i);
-        if (a != b) {
-            if (++cnt > 2 || (cnt == 2 && (a != c2 || b != c1))) {
-                return false;
-            }
-            c1 = a;
-            c2 = b;
-        }
-    }
-    return cnt != 1;
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn are_almost_equal(s1: String, s2: String) -> bool {
-        if s1 == s2 {
-            return true;
-        }
-        let (s1, s2) = (s1.as_bytes(), s2.as_bytes());
-        let mut idxs = vec![];
-        for i in 0..s1.len() {
-            if s1[i] != s2[i] {
-                idxs.push(i);
-            }
-        }
-        if idxs.len() != 2 {
-            return false;
-        }
-        s1[idxs[0]] == s2[idxs[1]] && s2[idxs[0]] == s1[idxs[1]]
-    }
-}
-```
-
-#### C
-
-```c
-bool areAlmostEqual(char* s1, char* s2) {
-    int n = strlen(s1);
-    int i1 = -1;
-    int i2 = -1;
-    for (int i = 0; i < n; i++) {
-        if (s1[i] != s2[i]) {
-            if (i1 == -1) {
-                i1 = i;
-            } else if (i2 == -1) {
-                i2 = i;
-            } else {
-                return 0;
-            }
-        }
-    }
-    if (i1 == -1 && i2 == -1) {
-        return 1;
-    }
-    if (i1 == -1 || i2 == -1) {
-        return 0;
-    }
-    return s1[i1] == s2[i2] && s1[i2] == s2[i1];
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -23619,15 +20821,15 @@ tags:
 
 <p>You are given an integer array <code>ribbons</code>, where <code>ribbons[i]</code> represents the length of the <code>i<sup>th</sup></code> ribbon, and an integer <code>k</code>. You may cut any of the ribbons into any number of segments of <strong>positive integer</strong> lengths, or perform no cuts at all.</p>
 
-<pre>
-	<li>For example, if you have a ribbon of length <code>4</code>, you can:</li>
+<p>For example, if you have a ribbon of length <code>4</code>, you can:</p>
+<ul>
     	<li>Keep the ribbon of length <code>4</code>,</li>
     	<li>Cut it into one ribbon of length <code>3</code> and one ribbon of length <code>1</code>,</li>
     	<li>Cut it into two ribbons of length <code>2</code>,</li>
     	<li>Cut it into one ribbon of length <code>2</code> and two ribbons of length <code>1</code>, or</li>
     	<li>Cut it into four ribbons of length <code>1</code>.</li>
 
-</pre>
+</ul>
 
 <p>Your task is to determine the <strong>maximum</strong> length of ribbon, <code>x</code>, that allows you to cut <em>at least</em> <code>k</code> ribbons, each of length <code>x</code>. You can discard any leftover ribbon from the cuts. If it is <strong>impossible</strong> to cut <code>k</code> ribbons of the same length, return 0.</p>
 
@@ -23693,171 +20895,19 @@ The time complexity is $O(n \times \log M)$, where $n$ and $M$ are the number of
 #### Python3
 
 ```python
-class Solution:
-    def maxLength(self, ribbons: List[int], k: int) -> int:
-        left, right = 0, max(ribbons)
-        while left < right:
-            mid = (left + right + 1) >> 1
-            cnt = sum(x // mid for x in ribbons)
-            if cnt >= k:
-                left = mid
-            else:
-                right = mid - 1
-        return left
+def maxLength(ribbons, k: int) -> int:
+    left, right = 0, max(ribbons)
+    while left < right:
+        mid = (left + right)//2
+        if mid == 0:
+            return mid
+        cnt = sum(x // mid for x in ribbons)
+        if cnt > k:
+            left = mid + 1
+        else:
+            right = mid
+    return left
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int maxLength(int[] ribbons, int k) {
-        int left = 0, right = 0;
-        for (int x : ribbons) {
-            right = Math.max(right, x);
-        }
-        while (left < right) {
-            int mid = (left + right + 1) >>> 1;
-            int cnt = 0;
-            for (int x : ribbons) {
-                cnt += x / mid;
-            }
-            if (cnt >= k) {
-                left = mid;
-            } else {
-                right = mid - 1;
-            }
-        }
-        return left;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int maxLength(vector<int>& ribbons, int k) {
-        int left = 0, right = *max_element(ribbons.begin(), ribbons.end());
-        while (left < right) {
-            int mid = (left + right + 1) >> 1;
-            int cnt = 0;
-            for (int ribbon : ribbons) {
-                cnt += ribbon / mid;
-            }
-            if (cnt >= k) {
-                left = mid;
-            } else {
-                right = mid - 1;
-            }
-        }
-        return left;
-    }
-};
-```
-
-#### Go
-
-```go
-func maxLength(ribbons []int, k int) int {
-	left, right := 0, slices.Max(ribbons)
-	for left < right {
-		mid := (left + right + 1) >> 1
-		cnt := 0
-		for _, x := range ribbons {
-			cnt += x / mid
-		}
-		if cnt >= k {
-			left = mid
-		} else {
-			right = mid - 1
-		}
-	}
-	return left
-}
-```
-
-#### TypeScript
-
-```ts
-function maxLength(ribbons: number[], k: number): number {
-    let left = 0;
-    let right = Math.max(...ribbons);
-    while (left < right) {
-        const mid = (left + right + 1) >> 1;
-        let cnt = 0;
-        for (const x of ribbons) {
-            cnt += Math.floor(x / mid);
-        }
-        if (cnt >= k) {
-            left = mid;
-        } else {
-            right = mid - 1;
-        }
-    }
-    return left;
-}
-```
-
-#### Rust
-
-```rust
-impl Solution {
-    pub fn max_length(ribbons: Vec<i32>, k: i32) -> i32 {
-        let mut left = 0i32;
-        let mut right = *ribbons.iter().max().unwrap();
-        while left < right {
-            let mid = (left + right + 1) / 2;
-            let mut cnt = 0i32;
-            for &entry in ribbons.iter() {
-                cnt += entry / mid;
-                if cnt >= k {
-                    break;
-                }
-            }
-            if cnt >= k {
-                left = mid;
-            } else {
-                right = mid - 1;
-            }
-        }
-        return left;
-    }
-}
-```
-
-#### JavaScript
-
-```js
-/**
- * @param {number[]} ribbons
- * @param {number} k
- * @return {number}
- */
-var maxLength = function (ribbons, k) {
-    let left = 0;
-    let right = Math.max(...ribbons);
-    while (left < right) {
-        const mid = (left + right + 1) >> 1;
-        let cnt = 0;
-        for (const x of ribbons) {
-            cnt += Math.floor(x / mid);
-        }
-        if (cnt >= k) {
-            left = mid;
-        } else {
-            right = mid - 1;
-        }
-    }
-    return left;
-};
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Easy
@@ -23948,109 +20998,39 @@ class Solution:
         return ans
 ```
 
-#### Java
+### Using math
+```python
+class Solution:
+    def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
+        n = len(grid)
+        n_squared = n * n
+        
+        expected_sum = n_squared * (n_squared + 1) // 2
+        expected_sum_squares = n_squared * (n_squared + 1) * (2 * n_squared + 1) // 6
+        
+        actual_sum = 0
+        actual_sum_squares = 0
+        
+        for i in range(n):
+            for j in range(n):
+                actual_sum += grid[i][j]
+                actual_sum_squares += grid[i][j] * grid[i][j]
 
-```java
-class Solution {
-    public int[] findMissingAndRepeatedValues(int[][] grid) {
-        int n = grid.length;
-        int[] cnt = new int[n * n + 1];
-        int[] ans = new int[2];
-        for (int[] row : grid) {
-            for (int x : row) {
-                if (++cnt[x] == 2) {
-                    ans[0] = x;
-                }
-            }
-        }
-        for (int x = 1;; ++x) {
-            if (cnt[x] == 0) {
-                ans[1] = x;
-                return ans;
-            }
-        }
-    }
-}
+        # a - b
+        diff_sum = actual_sum - expected_sum
+
+        # a² - b²
+        diff_sum_squares = actual_sum_squares - expected_sum_squares
+        
+        # a + b = (a² - b²) / (a - b)
+        sum_a_b = diff_sum_squares // diff_sum
+        
+        # Now we can find a and b
+        a = (sum_a_b + diff_sum) // 2
+        b = (sum_a_b - diff_sum) // 2
+        
+        return [a, b]
 ```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
-        int n = grid.size();
-        vector<int> cnt(n * n + 1);
-        vector<int> ans(2);
-        for (auto& row : grid) {
-            for (int x : row) {
-                if (++cnt[x] == 2) {
-                    ans[0] = x;
-                }
-            }
-        }
-        for (int x = 1;; ++x) {
-            if (cnt[x] == 0) {
-                ans[1] = x;
-                return ans;
-            }
-        }
-    }
-};
-```
-
-#### Go
-
-```go
-func findMissingAndRepeatedValues(grid [][]int) []int {
-	n := len(grid)
-	ans := make([]int, 2)
-	cnt := make([]int, n*n+1)
-	for _, row := range grid {
-		for _, x := range row {
-			cnt[x]++
-			if cnt[x] == 2 {
-				ans[0] = x
-			}
-		}
-	}
-	for x := 1; ; x++ {
-		if cnt[x] == 0 {
-			ans[1] = x
-			return ans
-		}
-	}
-}
-```
-
-#### TypeScript
-
-```ts
-function findMissingAndRepeatedValues(grid: number[][]): number[] {
-    const n = grid.length;
-    const cnt: number[] = Array(n * n + 1).fill(0);
-    const ans: number[] = Array(2).fill(0);
-    for (const row of grid) {
-        for (const x of row) {
-            if (++cnt[x] === 2) {
-                ans[0] = x;
-            }
-        }
-    }
-    for (let x = 1; ; ++x) {
-        if (cnt[x] === 0) {
-            ans[1] = x;
-            return ans;
-        }
-    }
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->
 ---
 comments: true
 difficulty: Medium
@@ -24161,111 +21141,3 @@ class Solution:
                 ans = max(ans, x)
         return ans
 ```
-
-#### Java
-
-```java
-class Solution {
-    public int getLargestOutlier(int[] nums) {
-        int s = 0;
-        Map<Integer, Integer> cnt = new HashMap<>();
-        for (int x : nums) {
-            s += x;
-            cnt.merge(x, 1, Integer::sum);
-        }
-        int ans = Integer.MIN_VALUE;
-        for (var e : cnt.entrySet()) {
-            int x = e.getKey(), v = e.getValue();
-            int t = s - x;
-            if (t % 2 != 0 || !cnt.containsKey(t / 2)) {
-                continue;
-            }
-            if (x != t / 2 || v > 1) {
-                ans = Math.max(ans, x);
-            }
-        }
-        return ans;
-    }
-}
-```
-
-#### C++
-
-```cpp
-class Solution {
-public:
-    int getLargestOutlier(vector<int>& nums) {
-        int s = 0;
-        unordered_map<int, int> cnt;
-        for (int x : nums) {
-            s += x;
-            cnt[x]++;
-        }
-        int ans = INT_MIN;
-        for (auto [x, v] : cnt) {
-            int t = s - x;
-            if (t % 2 || !cnt.contains(t / 2)) {
-                continue;
-            }
-            if (x != t / 2 || v > 1) {
-                ans = max(ans, x);
-            }
-        }
-        return ans;
-    }
-};
-```
-
-#### Go
-
-```go
-func getLargestOutlier(nums []int) int {
-	s := 0
-	cnt := map[int]int{}
-	for _, x := range nums {
-		s += x
-		cnt[x]++
-	}
-	ans := math.MinInt32
-	for x, v := range cnt {
-		t := s - x
-		if t%2 != 0 || cnt[t/2] == 0 {
-			continue
-		}
-		if x != t/2 || v > 1 {
-			ans = max(ans, x)
-		}
-	}
-	return ans
-}
-```
-
-#### TypeScript
-
-```ts
-function getLargestOutlier(nums: number[]): number {
-    let s = 0;
-    const cnt: Record<number, number> = {};
-    for (const x of nums) {
-        s += x;
-        cnt[x] = (cnt[x] || 0) + 1;
-    }
-    let ans = -Infinity;
-    for (const [x, v] of Object.entries(cnt)) {
-        const t = s - +x;
-        if (t % 2 || !cnt.hasOwnProperty((t / 2) | 0)) {
-            continue;
-        }
-        if (+x != ((t / 2) | 0) || v > 1) {
-            ans = Math.max(ans, +x);
-        }
-    }
-    return ans;
-}
-```
-
-<!-- tabs:end -->
-
-<!-- solution:end -->
-
-<!-- problem:end -->

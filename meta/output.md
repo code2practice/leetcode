@@ -522,6 +522,7 @@ class Solution:
             return -num
         return num
 ```
+
 ---
 comments: true
 difficulty: Easy

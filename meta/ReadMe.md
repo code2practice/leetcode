@@ -145,6 +145,8 @@
 
 [339.Nested List Weight Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0339.%20Nested%20List%20Weight%20Sum.md)
 
+[364. Nested List Weight Sum II 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0364.%20Nested%20List%20Weight%20Sum%20II.md)
+
 [341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/0341.%20Flatten%20Nested%20List%20Iterator.md)
 
 [346. Moving Average from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/0346.%20Moving%20Average%20from%20Data%20Stream.md)

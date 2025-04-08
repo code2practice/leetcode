@@ -200,6 +200,8 @@
 
 [647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/0647.%20Palindromic%20Substrings.md)
 
+[658. Find K Closest Elements](https://github.com/code2practice/leetcode/blob/main/Solutions/0658.%20Find%20K%20Closest%20Elements.md)
+
 [(revise)670. Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
 
 [680. Valid Palindrome II](https://github.com/code2practice/leetcode/blob/main/Solutions/0680.%20Valid%20Palindrome%20II.md)

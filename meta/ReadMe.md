@@ -274,6 +274,8 @@
 
 [1790. Check if One String Swap Can Make Strings Equal](https://github.com/code2practice/leetcode/blob/main/Solutions/1790.Check%20if%20One%20String%20Swap%20Can%20Make%20Strings%20Equal.md)
 
+[1868. Product of Two Run-Length Encoded Arrays 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1868.Product%20of%20Two%20Run-Length%20Encoded%20Arrays.md)
+
 [1891. Cutting Ribbons 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1891.Cutting%20Ribbons.md)
 
 [2965. Find Missing and Repeated Values](https://github.com/code2practice/leetcode/blob/main/Solutions/2965.Find%20Missing%20and%20Repeated%20Values.md)

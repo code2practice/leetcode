@@ -177,6 +177,8 @@
 
 [498. Diagonal Traverse](https://github.com/code2practice/leetcode/blob/main/Solutions/0498.Diagonal%20Traverse.md)
 
+[494. Target Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0494.Target%20Sum.md)
+
 [503. Next Greater Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0503.Next%20Greater%20Element%20II.md)
 
 [523. Continuous Subarray Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0523.%20Continuous%20Subarray%20Sum.md)

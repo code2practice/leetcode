@@ -103,7 +103,7 @@
 
 [199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/0199.%20Binary%20Tree%20Right%20Side%20View.md)
 
-[200.Number of Islands](https://github.com/code2practice/leetcode/blob/main/Solutions/0200.%20Number%20of%20Islands.md
+[200.Number of Islands](https://github.com/code2practice/leetcode/blob/main/Solutions/0200.%20Number%20of%20Islands.md)
 
 [202. Happy Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0202.Happy%20Number.md)
 

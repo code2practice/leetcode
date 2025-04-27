@@ -77,7 +77,7 @@
 
 [125. Valid Palindrome](https://github.com/code2practice/leetcode/blob/main/Solutions/0125.%20Valid%20Palindrome.md)
 
-[126. Word Ladder II](https://github.com/code2practice/leetcode/blob/main/Solutions/0126.Word%20Ladder%20II.md)
+[(pending)126. Word Ladder II](https://github.com/code2practice/leetcode/blob/main/Solutions/0126.Word%20Ladder%20II.md)
 
 [127.Word Ladder](https://github.com/code2practice/leetcode/blob/main/Solutions/0127.%20Word%20Ladder.md)
 

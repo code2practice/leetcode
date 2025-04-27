@@ -24,10 +24,11 @@
 
 [20.Valid Parentheses](https://github.com/code2practice/leetcode/blob/main/Solutions/0020.%20Valid%20Parentheses.md)
 
-
 [23.Merge k Sorted Lists](https://github.com/code2practice/leetcode/blob/main/Solutions/0023.%20Merge%20k%20Sorted%20Lists.md)
 
 [26. Remove Duplicates from Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0026.Remove%20Duplicates%20from%20Sorted%20Array.md)
+
+[27. Remove Element](https://github.com/code2practice/leetcode/blob/main/Solutions/0027.Remove%20Element.md)
 
 [31. Next Permutation](https://github.com/code2practice/leetcode/blob/main/Solutions/0031.%20Next%20Permutation.md)
 
@@ -37,9 +38,13 @@
 
 [43. Multiply Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/0043.Multiply%20Strings.md)
 
+[45. Jump Game II](https://github.com/code2practice/leetcode/blob/main/Solutions/0045.Jump%20Game%20II.md)
+
 [49. Group Anagrams](https://github.com/code2practice/leetcode/blob/main/Solutions/0049.Group%20Anagrams.md)
 
 [50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md)
+
+[55. Jump Game](https://github.com/code2practice/leetcode/blob/main/Solutions/0055.Jump%20Game.md)
 
 [56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/0056.%20Merge%20Intervals.md)
 
@@ -172,6 +177,8 @@
 [392. Is Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/0392.Is%20Subsequence.md)
 
 [398. Random Pick Index](https://github.com/code2practice/leetcode/blob/main/Solutions/0398.Random%20Pick%20Index.md)
+
+[399. Evaluate Division](https://github.com/code2practice/leetcode/blob/main/Solutions/0399.Evaluate%20Division.md)
 
 [408. Valid Word Abbreviation](https://github.com/code2practice/leetcode/blob/main/Solutions/0408.%20Valid%20Word%20Abbreviation.md)
 
@@ -313,6 +320,8 @@
 [2401. Longest Nice Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/2401.Longest%20Nice%20Subarray.md)
 
 [2551. Put Marbles in Bags](https://github.com/code2practice/leetcode/blob/main/Solutions/2551.Put%20Marbles%20in%20Bags.md)
+
+[2560. House Robber IV](https://github.com/code2practice/leetcode/blob/main/Solutions/2560.%20House%20Robber%20IV.md)
 
 [2965. Find Missing and Repeated Values](https://github.com/code2practice/leetcode/blob/main/Solutions/2965.Find%20Missing%20and%20Repeated%20Values.md)
 

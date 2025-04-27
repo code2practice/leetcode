@@ -101,6 +101,8 @@
 
 [173.Binary Search Tree Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/0173.%20Binary%20Search%20Tree%20Iterator.md)
 
+[189. Rotate Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0189.%20Rotate%20Array.md)
+
 [199. Binary Tree Right Side View](https://github.com/code2practice/leetcode/blob/main/Solutions/0199.%20Binary%20Tree%20Right%20Side%20View.md)
 
 [200.Number of Islands](https://github.com/code2practice/leetcode/blob/main/Solutions/0200.%20Number%20of%20Islands.md)

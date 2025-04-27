@@ -306,8 +306,6 @@
 
 [1891. Cutting Ribbons 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1891.Cutting%20Ribbons.md)
 
-[2235. Add Two Integers](https://github.com/code2practice/leetcode/blob/main/Solutions/2235.Add%20Two%20Integers.md)
-
 [2265. Count Nodes Equal to Average of Subtree](https://github.com/code2practice/leetcode/blob/main/Solutions/2265.Count%20Nodes%20Equal%20to%20Average%20of%20Subtree.md)
 
 [2401. Longest Nice Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/2401.Longest%20Nice%20Subarray.md)

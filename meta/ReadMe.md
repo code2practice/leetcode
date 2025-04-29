@@ -337,7 +337,7 @@
 
 [2401. Longest Nice Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/2401.Longest%20Nice%20Subarray.md)
 
-[2551. Put Marbles in Bags](https://github.com/code2practice/leetcode/blob/main/Solutions/2551.Put%20Marbles%20in%20Bags.md)
+[(pending)2551. Put Marbles in Bags](https://github.com/code2practice/leetcode/blob/main/Solutions/2551.Put%20Marbles%20in%20Bags.md)
 
 [2560. House Robber IV](https://github.com/code2practice/leetcode/blob/main/Solutions/2560.%20House%20Robber%20IV.md)
 

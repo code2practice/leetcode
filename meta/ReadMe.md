@@ -48,15 +48,25 @@
 
 [56.Merge Intervals](https://github.com/code2practice/leetcode/blob/main/Solutions/0056.%20Merge%20Intervals.md)
 
+[58. Length of Last Word](https://github.com/code2practice/leetcode/blob/main/Solutions/0058.Length%20of%20Last%20Word.md)
+
+[62. Unique Paths](https://github.com/code2practice/leetcode/blob/main/Solutions/0062.Unique%20Paths.md)
+
+[63. Unique Paths II](https://github.com/code2practice/leetcode/blob/main/Solutions/0063.Unique%20Paths%20II.md)
+
 [57.Insert Interval](https://github.com/code2practice/leetcode/blob/main/Solutions/0057.%20Insert%20Interval.md)
 
 [65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0065.%20Valid%20Number.md)
 
 [66. Plus One](https://github.com/code2practice/leetcode/blob/main/Solutions/0066.Plus%20One.md)
 
+[67. Add Binary](https://github.com/code2practice/leetcode/blob/main/Solutions/0067.Add%20Binary.md)
+
 [70. Climbing Stairs](https://github.com/code2practice/leetcode/blob/main/Solutions/0070.Climbing%20Stairs.md)
 
 [71. Simplify Path](https://github.com/code2practice/leetcode/blob/main/Solutions/0071.%20Simplify%20Path.md)
+
+[73. Set Matrix Zeroes](https://github.com/code2practice/leetcode/blob/main/Solutions/0073.Set%20Matrix%20Zeroes.md)
 
 [75. Sort Colors](https://github.com/code2practice/leetcode/blob/main/Solutions/0075.Sort%20Colors.md)
 
@@ -69,6 +79,8 @@
 [88. Merge Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0088.%20Merge%20Sorted%20Array.md)
 
 [90.Subsets II](https://github.com/code2practice/leetcode/blob/main/Solutions/0090.Subsets%20II.md)
+
+[94. Binary Tree Inorder Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/0094.Binary%20Tree%20Inorder%20Traversal.md)
 
 [116. Populating Next Right Pointers in Each Node](https://github.com/code2practice/leetcode/blob/main/Solutions/0116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md)
 
@@ -211,7 +223,11 @@
 
 [543. Diameter of Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0543.%20Diameter%20of%20Binary%20Tree.md)
 
+[556. Next Greater Element III](https://github.com/code2practice/leetcode/blob/main/Solutions/0556.Next%20Greater%20Element%20III.md)
+
 [560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/0560.%20Subarray%20Sum%20Equals%20K.md)
+
+[605. Can Place Flowers](https://github.com/code2practice/leetcode/blob/main/Solutions/0605.%20Can%20Place%20Flowers.md)
 
 [606. Construct String from Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0606.Construct%20String%20from%20Binary%20Tree.md)
 
@@ -238,6 +254,8 @@
 [733. Flood Fill](https://github.com/code2practice/leetcode/blob/main/Solutions/0733.Flood%20Fill.md)
 
 [(revise)766. Toeplitz Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/0766.Toeplitz%20Matrix.md)
+
+[(pending)784. Letter Case Permutation](https://github.com/code2practice/leetcode/blob/main/Solutions/0784.Letter%20Case%20Permutation.md)
 
 [791. Custom Sort String](https://github.com/code2practice/leetcode/blob/main/Solutions/0791.%20Custom%20Sort%20String.md)
 

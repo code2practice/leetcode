@@ -277,6 +277,8 @@
 
 [958. Check Completeness of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0958.Check%20Completeness%20of%20a%20Binary%20Tree.md)
 
+[968. Binary Tree Cameras](https://github.com/code2practice/leetcode/blob/main/Solutions/0968.Binary%20Tree%20Cameras.md)
+
 [973.K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/0973.%20K%20Closest%20Points%20to%20Origin.md)
 
 [977. Squares of a Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0977.Squares%20of%20a%20Sorted%20Array.md)

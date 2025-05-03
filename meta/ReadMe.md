@@ -42,7 +42,7 @@
 
 [49. Group Anagrams](https://github.com/code2practice/leetcode/blob/main/Solutions/0049.Group%20Anagrams.md)
 
-[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md)
+[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow(x%2C%20n).md)
 
 [55. Jump Game](https://github.com/code2practice/leetcode/blob/main/Solutions/0055.Jump%20Game.md)
 

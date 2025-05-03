@@ -134,7 +134,7 @@
 
 [224. Basic Calculator](https://github.com/code2practice/leetcode/blob/main/Solutions/0224.%20Basic%20Calculator.md)
 
-[227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md)
+[227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%20II.md)
 
 [235.Lowest Common Ancestor of a Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.md)
 

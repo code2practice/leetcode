@@ -211,6 +211,10 @@
 
 [295.Find Median from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/0295.%20Find%20Median%20from%20Data%20Stream.md)
 
+
+[297. Serialize and Deserialize Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0297.%20Serialize%20and%20Deserialize%20Binary%20Tree.md)
+
+
 [300. Longest Increasing Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/0300.Longest%20Increasing%20Subsequence.md)
 
 [311.Sparse Matrix Multiplication](https://github.com/code2practice/leetcode/blob/main/Solutions/0311.%20Sparse%20Matrix%20Multiplication.md)

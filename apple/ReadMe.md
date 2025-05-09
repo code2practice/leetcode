@@ -141,6 +141,8 @@
 
 [81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/81.%20Search%20in%20Rotated%20Sorted%20Array.md)
 
+[82. Remove Duplicates from Sorted List II](https://github.com/code2practice/leetcode/blob/main/Solutions/0082.Remove%20Duplicates%20from%20Sorted%20List%20II.md)
+
 [84. Largest Rectangle in Histogram](https://github.com/code2practice/leetcode/blob/main/Solutions/0084.Largest%20Rectangle%20in%20Histogram.md)
 
 [85. Maximal Rectangle](https://github.com/code2practice/leetcode/blob/main/Solutions/0085.Maximal%20Rectangle.md)
@@ -241,6 +243,8 @@
 
 [186. Reverse Words in a String II 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0186.Reverse%20Words%20in%20a%20String%20II.md)
 
+[187. Repeated DNA Sequences](https://github.com/code2practice/leetcode/blob/main/Solutions/0187.Repeated%20DNA%20Sequences.md)
+
 [189. Rotate Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0189.%20Rotate%20Array.md)
 
 [192. Word Frequency](https://github.com/code2practice/leetcode/blob/main/Solutions/0192.Word%20Frequency.md)
@@ -285,9 +289,13 @@
 
 [239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/0239.%20Sliding%20Window%20Maximum.md)
 
+[240. Search a 2D Matrix II](https://github.com/code2practice/leetcode/blob/main/Solutions/0240.%20Search%20a%202D%20Matrix.md)
+
 [252. Meeting Rooms 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0252.Meeting%20Rooms.md)
 
 [253. Meeting Rooms II 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0253.Meeting%20Rooms%20II.md)
+
+[260. Single Number III](https://github.com/code2practice/leetcode/blob/main/Solutions/0260.Single%20Number%20III.md)
 
 [273. Integer to English Words](https://github.com/code2practice/leetcode/blob/main/Solutions/0273.%20Integer%20to%20English%20Words.md)
 
@@ -299,15 +307,15 @@
 
 [295.Find Median from Data Stream](https://github.com/code2practice/leetcode/blob/main/Solutions/0295.%20Find%20Median%20from%20Data%20Stream.md)
 
-
 [297. Serialize and Deserialize Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0297.%20Serialize%20and%20Deserialize%20Binary%20Tree.md)
-
 
 [300. Longest Increasing Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/0300.Longest%20Increasing%20Subsequence.md)
 
 [311.Sparse Matrix Multiplication](https://github.com/code2practice/leetcode/blob/main/Solutions/0311.%20Sparse%20Matrix%20Multiplication.md)
 
 [322. Coin Change](https://github.com/code2practice/leetcode/blob/main/Solutions/0322.Coin%20Change.md)
+
+[332. Reconstruct Itinerary](https://github.com/code2practice/leetcode/blob/main/Solutions/0332.Reconstruct%20Itinerary.md)
 
 [518. Coin Change II](https://github.com/code2practice/leetcode/blob/main/Solutions/0518.Coin%20Change%20II.md)
 
@@ -323,11 +331,15 @@
 
 [348. Design Tic-Tac-Toe 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0348.Design%20Tic-Tac-Toe.md)
 
+[351. Android Unlock Patterns 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0351.Android%20Unlock%20Patterns.md)
+
 [362. Design Hit Counter 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0362.Design%20Hit%20Counter.md)
 
 [368. Largest Divisible Subset](https://github.com/code2practice/leetcode/blob/main/Solutions/0368.Largest%20Divisible%20Subset.md)
 
 [380.Insert Delete GetRandom O(1)](https://github.com/code2practice/leetcode/blob/main/Solutions/0380.%20Insert%20Delete%20GetRandom%20O(1).md)
+
+[388. Longest Absolute File Path](https://github.com/code2practice/leetcode/blob/main/Solutions/0388.Longest%20Absolute%20File%20Path.md)
 
 [394. Decode String](https://github.com/code2practice/leetcode/blob/main/Solutions/0394.Decode%20String.md)
 
@@ -345,29 +357,57 @@
 
 [443. String Compression](https://github.com/code2practice/leetcode/blob/main/Solutions/0443.String%20Compression.md)
 
+[445. Add Two Numbers II](https://github.com/code2practice/leetcode/blob/main/Solutions/0445.Add%20Two%20Numbers%20II.md)
+
 [450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/450.%20Delete%20Node%20in%20a%20BST.md)
+
+[490. The Maze 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0490.The%20Maze.md)
 
 [503. Next Greater Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0503.Next%20Greater%20Element%20II.md)
 
+[515. Find Largest Value in Each Tree Row](https://github.com/code2practice/leetcode/blob/main/Solutions/0515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row.md)
+
+[518. Coin Change II](https://github.com/code2practice/leetcode/blob/main/Solutions/0518.Coin%20Change%20II.md)
+
+[525. Contiguous Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0525.Contiguous%20Array.md)
+
 [523. Continuous Subarray Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0523.%20Continuous%20Subarray%20Sum.md)
+
+[528.Random Pick with Weight](https://github.com/code2practice/leetcode/blob/main/Solutions/0528.%20Random%20Pick%20with%20Weight.md)
+
+[542. 01 Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/542.%2001%20Matrix.md)
+
+[545. Boundary of Binary Tree 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0545.Boundary%20of%20Binary%20Tree.md)
 
 [560.Subarray Sum Equals K](https://github.com/code2practice/leetcode/blob/main/Solutions/0560.%20Subarray%20Sum%20Equals%20K.md)
 
 [583. Delete Operation for Two Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/0583.Delete%20Operation%20for%20Two%20Strings.md)
 
+[609. Find Duplicate File in System](https://github.com/code2practice/leetcode/blob/main/Solutions/0609.Find%20Duplicate%20File%20in%20System.md)
+
 [622. Design Circular Queue](https://github.com/code2practice/leetcode/blob/main/Solutions/0622.Design%20Circular%20Queue.md)
 
+[636.Exclusive Time of Functions](https://github.com/code2practice/leetcode/blob/main/Solutions/0636.%20Exclusive%20Time%20of%20Functions.md)
+
+[647. Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/0647.%20Palindromic%20Substrings.md)
+
 [658. Find K Closest Elements (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/658.%20Find%20K%20Closest%20Elements.md)
+
+[670. (revise)Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
 
 [678.Valid Parenthesis String](https://github.com/code2practice/leetcode/blob/main/Solutions/678.%20Valid%20Parenthesis%20String.md)
 
 [684. Redundant Connection](https://github.com/code2practice/leetcode/blob/main/Solutions/0684.Redundant%20Connection.md)
+
+[688. Knight Probability in Chessboard](https://github.com/code2practice/leetcode/blob/main/Solutions/0688.Knight%20Probability%20in%20Chessboard.md)
 
 [692. Top K Frequent Words](https://github.com/code2practice/leetcode/blob/main/Solutions/0692.Top%20K%20Frequent%20Words.md)
 
 [698.Partition to K Equal Sum Subsets (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.md)
 
 [714. Best Time to Buy and Sell Stock with Transaction Fee](https://github.com/code2practice/leetcode/blob/main/Solutions/0714.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Transaction%20Fee.md)
+
+[729. My Calendar I](https://github.com/code2practice/leetcode/blob/main/Solutions/0729.My%20Calendar%20I.md)
 
 [722. Remove Comments](https://github.com/code2practice/leetcode/blob/main/Solutions/0722.Remove%20Comments.md)
 
@@ -385,23 +425,37 @@
 
 [823. Binary Trees With Factors](https://github.com/code2practice/leetcode/blob/main/Solutions/0823.Binary%20Trees%20With%20Factors.md)
 
+[837. New 21 Game](https://github.com/code2practice/leetcode/blob/main/Solutions/0837.New%2021%20Game.md)
+
 [852. Peak Index in a Mountain Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0852.Peak%20Index%20in%20a%20Mountain%20Array.md)
+
+[863. All Nodes Distance K in Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree.md)
 
 [869. Reordered Power of 2](https://github.com/code2practice/leetcode/blob/main/Solutions/0869.Reordered%20Power%20of%202.md)
 
 [875. Koko Eating Bananas](https://github.com/code2practice/leetcode/blob/main/Solutions/875.%20Koko%20Eating%20Bananas.md)
 
+[886. Possible Bipartition](https://github.com/code2practice/leetcode/blob/main/Solutions/0886.%20Possible%20Bipartition.md)
+
 [890. Find and Replace Pattern](https://github.com/code2practice/leetcode/blob/main/Solutions/0890.Find%20and%20Replace%20Pattern.md)
 
 [904. Fruit Into Baskets](https://github.com/code2practice/leetcode/blob/main/Solutions/0904.Fruit%20Into%20Baskets.md)
 
+[909. Snakes and Ladders](https://github.com/code2practice/leetcode/blob/main/Solutions/0909.Snakes%20and%20Ladders.md)
+
 [916. Word Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/0916.Word%20Subsets.md)
 
+[931. Minimum Falling Path Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0931.Minimum%20Falling%20Path%20Sum.md)
+
 [958. Check Completeness of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0958.Check%20Completeness%20of%20a%20Binary%20Tree.md)
+
+[973. K Closest Points to Origin](https://github.com/code2practice/leetcode/blob/main/Solutions/0973.%20K%20Closest%20Points%20to%20Origin.md)
 
 [981. Time Based Key-Value Store](https://github.com/code2practice/leetcode/blob/main/Solutions/0981.%20Time%20Based%20Key-Value%20Store.md)
 
 [990. Satisfiability of Equality Equations](https://github.com/code2practice/leetcode/blob/main/Solutions/0990.Satisfiability%20of%20Equality%20Equations.md)
+
+[986. Interval List Intersections](https://github.com/code2practice/leetcode/blob/main/Solutions/0986.%20Interval%20List%20Intersections.md)
 
 [994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.md)
 
@@ -422,6 +476,8 @@
 [1155. Number of Dice Rolls With Target Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/1155.Number%20of%20Dice%20Rolls%20With%20Target%20Sum.md)
 
 [1209. Remove All Adjacent Duplicates in String II](https://github.com/code2practice/leetcode/blob/main/Solutions/1209.Remove%20All%20Adjacent%20Duplicates%20in%20String%20II.md)
+
+[1229. Meeting Scheduler 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1229.Meeting%20Scheduler.md)
 
 [1268. Search Suggestions System](https://github.com/code2practice/leetcode/blob/main/Solutions/1268.Search%20Suggestions%20System.md)
 

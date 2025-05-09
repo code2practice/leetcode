@@ -96,6 +96,8 @@
 
 [50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow(x%2C%20n).md)
 
+[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md)
+
 [51. N-Queens](https://github.com/code2practice/leetcode/blob/main/Solutions/0051.N-Queens.md)
 
 [53.Maximum Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/53.%20Maximum%20Subarray.md)
@@ -151,6 +153,8 @@
 [80. Remove Duplicates from Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/0080.Remove%20Duplicates%20from%20Sorted%20Array%20II.md)
 
 [81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/81.%20Search%20in%20Rotated%20Sorted%20Array.md)
+
+[82. Remove Duplicates from Sorted List II](https://github.com/code2practice/leetcode/blob/main/Solutions/0082.Remove%20Duplicates%20from%20Sorted%20List%20II.md)
 
 [84. Largest Rectangle in Histogram](https://github.com/code2practice/leetcode/blob/main/Solutions/0084.Largest%20Rectangle%20in%20Histogram.md)
 
@@ -276,6 +280,8 @@
 
 [186. Reverse Words in a String II 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0186.Reverse%20Words%20in%20a%20String%20II.md)
 
+[187. Repeated DNA Sequences](https://github.com/code2practice/leetcode/blob/main/Solutions/0187.Repeated%20DNA%20Sequences.md)
+
 [187.Repeated DNA Sequences]()
 
 [189. Rotate Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0189.%20Rotate%20Array.md)
@@ -318,6 +324,8 @@
 
 [224. Basic Calculator](https://github.com/code2practice/leetcode/blob/main/Solutions/0224.%20Basic%20Calculator.md)
 
+[227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md)
+
 [227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%20II.md)
 
 [229. Majority Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0229.Majority%20Element%20II.md)
@@ -331,6 +339,8 @@
 [236.Lowest Common Ancestor of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.md)
 
 [238. Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/0238.%20Product%20of%20Array%20Except%20Self.md)
+
+[238.Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/238.%20Product%20of%20Array%20Except%20Self.md)
 
 [239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/0239.%20Sliding%20Window%20Maximum.md)
 
@@ -355,6 +365,8 @@
 [254.Factor Combinations](https://github.com/code2practice/leetcode/blob/main/Solutions/254.%20Factor%20Combinations.md)
 
 [256.Paint House](https://github.com/code2practice/leetcode/blob/main/Solutions/256.%20Paint%20House.md)
+
+[260. Single Number III](https://github.com/code2practice/leetcode/blob/main/Solutions/0260.Single%20Number%20III.md)
 
 [261.Graph Valid Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/261.%20Graph%20Valid%20Tree.md)
 
@@ -404,6 +416,8 @@
 
 [328. Odd Even Linked List](https://github.com/code2practice/leetcode/blob/main/Solutions/0328.Odd%20Even%20Linked%20List.md)
 
+[332. Reconstruct Itinerary](https://github.com/code2practice/leetcode/blob/main/Solutions/0332.Reconstruct%20Itinerary.md)
+
 [339.Nested List Weight Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0339.%20Nested%20List%20Weight%20Sum.md)
 
 [341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/0341.%20Flatten%20Nested%20List%20Iterator.md)
@@ -419,6 +433,8 @@
 [349.Intersection of Two Arrays]()
 
 [350.Intersection of Two Arrays II]()
+
+[351. Android Unlock Patterns 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0351.Android%20Unlock%20Patterns.md)
 
 [360.Sort Transformed Array](https://github.com/code2practice/leetcode/blob/main/Solutions/360.%20Sort%20Transformed%20Array.md)
 
@@ -443,6 +459,8 @@
 [381.Insert Delete GetRandom O(1) - Duplicates allowed](https://github.com/code2practice/leetcode/blob/main/Solutions/381.%20Insert%20Delete%20GetRandom%20O(1)%20-%20Duplicates%20allowed.md)
 
 [384. Shuffle an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/384.%20Shuffle%20an%20Array.md)
+
+[388. Longest Absolute File Path](https://github.com/code2practice/leetcode/blob/main/Solutions/0388.Longest%20Absolute%20File%20Path.md)
 
 [392. Is Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/0392.Is%20Subsequence.md)
 
@@ -478,6 +496,8 @@
 
 [443. String Compression](https://github.com/code2practice/leetcode/blob/main/Solutions/0443.String%20Compression.md)
 
+[445. Add Two Numbers II](https://github.com/code2practice/leetcode/blob/main/Solutions/0445.Add%20Two%20Numbers%20II.md)
+
 [449.Serialize and Deserialize BST](https://github.com/code2practice/leetcode/blob/main/Solutions/449.%20Serialize%20and%20Deserialize%20BST.md)
 
 [450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/450.%20Delete%20Node%20in%20a%20BST.md)
@@ -492,11 +512,15 @@
 
 [489. Robot Room Cleaner (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/0489.%20Robot%20Room%20Cleaner.md)
 
+[490. The Maze 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0490.The%20Maze.md)
+
 [494. Target Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0494.Target%20Sum.md)
 
 [498. Diagonal Traverse](https://github.com/code2practice/leetcode/blob/main/Solutions/0498.Diagonal%20Traverse.md)
 
 [503. Next Greater Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0503.Next%20Greater%20Element%20II.md)
+
+[515. Find Largest Value in Each Tree Row](https://github.com/code2practice/leetcode/blob/main/Solutions/0515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row.md)
 
 [515.Find Largest Value in Each Tree Row](https://github.com/code2practice/leetcode/blob/main/Solutions/515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row.md)
 
@@ -520,6 +544,8 @@
 
 [543. Diameter of Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0543.%20Diameter%20of%20Binary%20Tree.md)
 
+[545. Boundary of Binary Tree 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0545.Boundary%20of%20Binary%20Tree.md)
+
 [556. Next Greater Element III](https://github.com/code2practice/leetcode/blob/main/Solutions/0556.Next%20Greater%20Element%20III.md)
 
 [559.Maximum Depth of N-ary Tree]()
@@ -531,6 +557,8 @@
 [605. Can Place Flowers](https://github.com/code2practice/leetcode/blob/main/Solutions/0605.%20Can%20Place%20Flowers.md)
 
 [606. Construct String from Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0606.Construct%20String%20from%20Binary%20Tree.md)
+
+[609. Find Duplicate File in System](https://github.com/code2practice/leetcode/blob/main/Solutions/0609.Find%20Duplicate%20File%20in%20System.md)
 
 [611.Valid Triangle Number](https://github.com/code2practice/leetcode/blob/main/Solutions/611.%20Valid%20Triangle%20Number.md)
 
@@ -545,6 +573,8 @@
 [642.Design Search Autocomplete System (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/642.%20Design%20Search%20Autocomplete%20System.md)
 
 [643. Maximum Average Subarray I](https://github.com/code2practice/leetcode/blob/main/Solutions/0643.Maximum%20Average%20Subarray%20I.md)
+
+[647. Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/0647.%20Palindromic%20Substrings.md)
 
 [647.Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/0647.%20Palindromic%20Substrings.md)
 
@@ -563,6 +593,8 @@
 [680. Valid Palindrome II](https://github.com/code2practice/leetcode/blob/main/Solutions/0680.%20Valid%20Palindrome%20II.md)
 
 [684. Redundant Connection](https://github.com/code2practice/leetcode/blob/main/Solutions/0684.Redundant%20Connection.md)
+
+[688. Knight Probability in Chessboard](https://github.com/code2practice/leetcode/blob/main/Solutions/0688.Knight%20Probability%20in%20Chessboard.md)
 
 [692. Top K Frequent Words](https://github.com/code2practice/leetcode/blob/main/Solutions/0692.Top%20K%20Frequent%20Words.md)
 
@@ -591,6 +623,8 @@
 [722. Remove Comments](https://github.com/code2practice/leetcode/blob/main/Solutions/0722.Remove%20Comments.md)
 
 [724. Find Pivot Index](https://github.com/code2practice/leetcode/blob/main/Solutions/0724.Find%20Pivot%20Index.md)
+
+[729. My Calendar I](https://github.com/code2practice/leetcode/blob/main/Solutions/0729.My%20Calendar%20I.md)
 
 [730.Count Different Palindromic Subsequences]()
 
@@ -632,6 +666,8 @@
 
 [833.Find And Replace in String](https://github.com/code2practice/leetcode/blob/main/Solutions/833.%20Find%20And%20Replace%20in%20String.md)
 
+[837. New 21 Game](https://github.com/code2practice/leetcode/blob/main/Solutions/0837.New%2021%20Game.md)
+
 [852. Peak Index in a Mountain Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0852.Peak%20Index%20in%20a%20Mountain%20Array.md)
 
 [863. All Nodes Distance K in Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree.md)
@@ -644,17 +680,23 @@
 
 [886. Possible Bipartition (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/886.%20Possible%20Bipartition.md)
 
+[886. Possible Bipartition](https://github.com/code2practice/leetcode/blob/main/Solutions/0886.%20Possible%20Bipartition.md)
+
 [890. Find and Replace Pattern](https://github.com/code2practice/leetcode/blob/main/Solutions/0890.Find%20and%20Replace%20Pattern.md)
 
 [895.Maximum Frequency Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/895.%20Maximum%20Frequency%20Stack.md)
 
 [904. Fruit Into Baskets](https://github.com/code2practice/leetcode/blob/main/Solutions/0904.Fruit%20Into%20Baskets.md)
 
+[909. Snakes and Ladders](https://github.com/code2practice/leetcode/blob/main/Solutions/0909.Snakes%20and%20Ladders.md)
+
 [916. Word Subsets](https://github.com/code2practice/leetcode/blob/main/Solutions/0916.Word%20Subsets.md)
 
 [921. Minimum Add to Make Parentheses Valid](https://github.com/code2practice/leetcode/blob/main/Solutions/0921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.md)
 
 [925. Long Pressed Name](https://github.com/code2practice/leetcode/blob/main/Solutions/925.%20Long%20Pressed%20Name.md)
+
+[931. Minimum Falling Path Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0931.Minimum%20Falling%20Path%20Sum.md)
 
 [938. Range Sum of BST](https://github.com/code2practice/leetcode/blob/main/Solutions/0938.%20Range%20Sum%20of%20BST.md)
 
@@ -723,6 +765,8 @@
 [1209. Remove All Adjacent Duplicates in String II](https://github.com/code2practice/leetcode/blob/main/Solutions/1209.Remove%20All%20Adjacent%20Duplicates%20in%20String%20II.md)
 
 [1216. Valid Palindrome III 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1216.Valid%20Palindrome%20III.md)
+
+[1229. Meeting Scheduler 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/1229.Meeting%20Scheduler.md)
 
 [1235. Maximum Profit in Job Scheduling](https://github.com/code2practice/leetcode/blob/main/Solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling.md)
 

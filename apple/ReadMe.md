@@ -493,7 +493,7 @@
 
 [1774. Closest Dessert Cost](https://github.com/code2practice/leetcode/blob/main/Solutions/1774.Closest%20Dessert%20Cost.md)
 
-[1802. Maximum Value at a Given Index in a Bounded Array](https://github.com/code2practice/leetcode/blob/main/Solutions/1802.Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array.md)
+[1802. (pending)Maximum Value at a Given Index in a Bounded Array](https://github.com/code2practice/leetcode/blob/main/Solutions/1802.Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array.md)
 
 [1963. Minimum Number of Swaps to Make the String Balanced](https://github.com/code2practice/leetcode/blob/main/Solutions/1963.Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced.md)
 

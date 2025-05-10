@@ -119,7 +119,7 @@
 
 [65.Valid Number](https://github.com/code2practice/leetcode/blob/main/Solutions/0065.%20Valid%20Number.md)
 
-[68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/68.%20Text%20Justification.md)
+[68.Text Justification](https://github.com/code2practice/leetcode/blob/main/Solutions/0068.%20Text%20Justification.md)
 
 [71. Simplify Path](https://github.com/code2practice/leetcode/blob/main/Solutions/0071.%20Simplify%20Path.md)
 

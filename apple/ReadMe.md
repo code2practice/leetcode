@@ -487,7 +487,7 @@
 
 [1626. Best Team With No Conflicts](https://github.com/code2practice/leetcode/blob/main/Solutions/1626.Best%20Team%20With%20No%20Conflicts.md)
 
-[1641. Count Sorted Vowel Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/1641.Count%20Sorted%20Vowel%20Strings.md)
+[1641. (pending)Count Sorted Vowel Strings](https://github.com/code2practice/leetcode/blob/main/Solutions/1641.Count%20Sorted%20Vowel%20Strings.md)
 
 [1642. Furthest Building You Can Reach](https://github.com/code2practice/leetcode/blob/main/Solutions/1642.Furthest%20Building%20You%20Can%20Reach.md)
 

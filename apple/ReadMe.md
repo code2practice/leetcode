@@ -457,7 +457,7 @@
 
 [986. Interval List Intersections](https://github.com/code2practice/leetcode/blob/main/Solutions/0986.%20Interval%20List%20Intersections.md)
 
-[994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/994.%20Rotting%20Oranges.md)
+[994.Rotting Oranges](https://github.com/code2practice/leetcode/blob/main/Solutions/0994.%20Rotting%20Oranges.md)
 
 [1027. Longest Arithmetic Subsequence](https://github.com/code2practice/leetcode/blob/main/Solutions/1027.Longest%20Arithmetic%20Subsequence.md)
 

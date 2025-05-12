@@ -69,13 +69,13 @@
 
 [38. Count and Say](https://github.com/code2practice/leetcode/blob/main/Solutions/0038.Count%20and%20Say.md)
 
-[39.Combination Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/39.Combination%20Sum.md)
+[39.Combination Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0039.Combination%20Sum.md)
 
-[40. Combination Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/40.Combination%20Sum%202.md#40-combination-sum-ii)
+[40. Combination Sum II](https://github.com/code2practice/leetcode/blob/main/Solutions/0040.Combination%20Sum%202.md#40-combination-sum-ii)
 
 [41. First Missing Positive](https://github.com/code2practice/leetcode/blob/main/Solutions/0041.First%20Missing%20Positive.md)
 
-[216. Combination Sum III](https://github.com/code2practice/leetcode/blob/main/Solutions/216.%20Combination%20Sum%20III.md)
+[216. Combination Sum III](https://github.com/code2practice/leetcode/blob/main/Solutions/0216.%20Combination%20Sum%20III.md)
 
 [42. Trapping Rain Water](https://github.com/code2practice/leetcode/blob/main/Solutions/0042.Trapping%20Rain%20Water.md)
 
@@ -95,7 +95,7 @@
 
 [49. Group Anagrams](https://github.com/code2practice/leetcode/blob/main/Solutions/0049.Group%20Anagrams.md)
 
-[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md)
+[50.Pow(x, n)]([https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow(x%2C%20n).md))
 
 [51. N-Queens](https://github.com/code2practice/leetcode/blob/main/Solutions/0051.N-Queens.md)
 
@@ -123,7 +123,7 @@
 
 [71. Simplify Path](https://github.com/code2practice/leetcode/blob/main/Solutions/0071.%20Simplify%20Path.md)
 
-[72.Edit Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/72.%20Edit%20Distance.md)
+[72.Edit Distance](https://github.com/code2practice/leetcode/blob/main/Solutions/0072.%20Edit%20Distance.md)
 
 [73. Set Matrix Zeroes](https://github.com/code2practice/leetcode/blob/main/Solutions/0073.Set%20Matrix%20Zeroes.md)
 
@@ -139,7 +139,7 @@
 
 [80. Remove Duplicates from Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/0080.Remove%20Duplicates%20from%20Sorted%20Array%20II.md)
 
-[81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/81.%20Search%20in%20Rotated%20Sorted%20Array.md)
+[81.Search in Rotated Sorted Array II](https://github.com/code2practice/leetcode/blob/main/Solutions/0081.%20Search%20in%20Rotated%20Sorted%20Array.md)
 
 [82. Remove Duplicates from Sorted List II](https://github.com/code2practice/leetcode/blob/main/Solutions/0082.Remove%20Duplicates%20from%20Sorted%20List%20II.md)
 
@@ -165,13 +165,13 @@
 
 [97. Interleaving String](https://github.com/code2practice/leetcode/blob/main/Solutions/0097.Interleaving%20String.md)
 
-[98. Validate Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/98.%20Validate%20Binary%20Search%20Tree.md)
+[98. Validate Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0098.%20Validate%20Binary%20Search%20Tree.md)
 
 [99. Recover Binary Search Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0099.Recover%20Binary%20Search%20Tree.md)
 
-[102.Binary Tree Level Order Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal.md)
+[102.Binary Tree Level Order Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/0102.%20Binary%20Tree%20Level%20Order%20Traversal.md)
 
-[103.Binary Tree Zigzag Level Order Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.md)
+[103.Binary Tree Zigzag Level Order Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/0103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.md)
 
 [105. Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/code2practice/leetcode/blob/main/Solutions/0105.Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.md)
 
@@ -227,11 +227,11 @@
 
 [151. Reverse Words in a String](https://github.com/code2practice/leetcode/blob/main/Solutions/0151.%20Reverse%20Words%20in%20a%20String.md)
 
-[152.Maximum Product Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/152.%20Maximum%20Product%20Subarray.py)
+[152.Maximum Product Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/0152.%20Maximum%20Product%20Subarray.py)
 
 [153. Find Minimum in Rotated Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0153.Find%20Minimum%20in%20Rotated%20Sorted%20Array.md)
 
-[155. Min Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/155.%20Min%20Stack.md)
+[155. Min Stack](https://github.com/code2practice/leetcode/blob/main/Solutions/0155.%20Min%20Stack.md)
 
 [162. Find Peak Element](https://github.com/code2practice/leetcode/blob/main/Solutions/0162.%20Find%20Peak%20Element.md)
 
@@ -261,13 +261,13 @@
 
 [209. Minimum Size Subarray Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0209.Minimum%20Size%20Subarray%20Sum.md)
 
-[210. Course Schedule II](https://github.com/code2practice/leetcode/blob/main/Solutions/210.%20Course%20Schedule%20II.md)
+[210. Course Schedule II](https://github.com/code2practice/leetcode/blob/main/Solutions/0210.%20Course%20Schedule%20II.md)
 
-[211. Design Add and Search Words Data Structure](https://github.com/code2practice/leetcode/blob/main/Solutions/211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure.md)
+[211. Design Add and Search Words Data Structure](https://github.com/code2practice/leetcode/blob/main/Solutions/0211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure.md)
 
 [212. Word Search II](https://github.com/code2practice/leetcode/blob/main/Solutions/0212.Word%20Search%20II.md)
 
-[213. House Robber II](https://github.com/code2practice/leetcode/blob/main/Solutions/213.%20House%20Robber%20II.md)
+[213. House Robber II](https://github.com/code2practice/leetcode/blob/main/Solutions/0213.%20House%20Robber%20II.md)
 
 [215.Kth Largest Element in an Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0215.%20Kth%20Largest%20Element%20in%20an%20Array.md)
 
@@ -275,7 +275,7 @@
 
 [223. Rectangle Area](https://github.com/code2practice/leetcode/blob/main/Solutions/0223.Rectangle%20Area.md)
 
-[227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md)
+[227.Basic Calculator II]([https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%20II.md))
 
 [229. Majority Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0229.Majority%20Element%20II.md)
 
@@ -285,7 +285,7 @@
 
 [236.Lowest Common Ancestor of a Binary Tree](https://github.com/code2practice/leetcode/blob/main/Solutions/0236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.md)
 
-[238.Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/238.%20Product%20of%20Array%20Except%20Self.md)
+[238.Product of Array Except Self](https://github.com/code2practice/leetcode/blob/main/Solutions/0238.%20Product%20of%20Array%20Except%20Self.md)
 
 [239. Sliding Window Maximum](https://github.com/code2practice/leetcode/blob/main/Solutions/0239.%20Sliding%20Window%20Maximum.md)
 
@@ -391,7 +391,7 @@
 
 [647. Palindromic Substrings](https://github.com/code2practice/leetcode/blob/main/Solutions/0647.%20Palindromic%20Substrings.md)
 
-[658. Find K Closest Elements (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/658.%20Find%20K%20Closest%20Elements.md)
+[658. Find K Closest Elements (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/0658.%20Find%20K%20Closest%20Elements.md)
 
 [670. (revise)Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
 
@@ -433,7 +433,7 @@
 
 [869. Reordered Power of 2](https://github.com/code2practice/leetcode/blob/main/Solutions/0869.Reordered%20Power%20of%202.md)
 
-[875. Koko Eating Bananas](https://github.com/code2practice/leetcode/blob/main/Solutions/875.%20Koko%20Eating%20Bananas.md)
+[875. Koko Eating Bananas](https://github.com/code2practice/leetcode/blob/main/Solutions/0875.%20Koko%20Eating%20Bananas.md)
 
 [886. Possible Bipartition](https://github.com/code2practice/leetcode/blob/main/Solutions/0886.%20Possible%20Bipartition.md)
 

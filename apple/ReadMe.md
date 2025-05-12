@@ -375,7 +375,7 @@
 
 [528.Random Pick with Weight](https://github.com/code2practice/leetcode/blob/main/Solutions/0528.%20Random%20Pick%20with%20Weight.md)
 
-[542. 01 Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/542.%2001%20Matrix.md)
+[542. 01 Matrix](https://github.com/code2practice/leetcode/blob/main/Solutions/0542.%2001%20Matrix.md)
 
 [545. Boundary of Binary Tree 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0545.Boundary%20of%20Binary%20Tree.md)
 
@@ -395,7 +395,7 @@
 
 [670. (revise)Maximum Swap](https://github.com/code2practice/leetcode/blob/main/Solutions/0670.%20Maximum%20Swap.md)
 
-[678.Valid Parenthesis String](https://github.com/code2practice/leetcode/blob/main/Solutions/678.%20Valid%20Parenthesis%20String.md)
+[678.Valid Parenthesis String](https://github.com/code2practice/leetcode/blob/main/Solutions/0678.%20Valid%20Parenthesis%20String.md)
 
 [684. Redundant Connection](https://github.com/code2practice/leetcode/blob/main/Solutions/0684.Redundant%20Connection.md)
 
@@ -403,7 +403,7 @@
 
 [692. Top K Frequent Words](https://github.com/code2practice/leetcode/blob/main/Solutions/0692.Top%20K%20Frequent%20Words.md)
 
-[698.Partition to K Equal Sum Subsets (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.md)
+[698.Partition to K Equal Sum Subsets (Important)](https://github.com/code2practice/leetcode/blob/main/Solutions/0698.%20Partition%20to%20K%20Equal%20Sum%20Subsets.md)
 
 [714. Best Time to Buy and Sell Stock with Transaction Fee](https://github.com/code2practice/leetcode/blob/main/Solutions/0714.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Transaction%20Fee.md)
 
@@ -413,7 +413,7 @@
 
 [739. Daily Temperatures](https://github.com/code2practice/leetcode/blob/main/Solutions/0739.Daily%20Temperatures.md)
 
-[763. Partition Labels](https://github.com/code2practice/leetcode/blob/main/Solutions/763.%20Partition%20Labels.md)
+[763. Partition Labels](https://github.com/code2practice/leetcode/blob/main/Solutions/0763.%20Partition%20Labels.md)
 
 [767. Reorganize String](https://github.com/code2practice/leetcode/blob/main/Solutions/0767.Reorganize%20String.md)
 
@@ -421,11 +421,11 @@
 
 [781. Rabbits in Forest](https://github.com/code2practice/leetcode/blob/main/Solutions/0781.Rabbits%20in%20Forest.md)
 
-[785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/785.%20Is%20Graph%20Bipartite.md)
+[785.Is Graph Bipartite?](https://github.com/code2practice/leetcode/blob/main/Solutions/0785.%20Is%20Graph%20Bipartite.md)
 
 [823. Binary Trees With Factors](https://github.com/code2practice/leetcode/blob/main/Solutions/0823.Binary%20Trees%20With%20Factors.md)
 
-[837. New 21 Game](https://github.com/code2practice/leetcode/blob/main/Solutions/0837.New%2021%20Game.md)
+[837. (pending)New 21 Game](https://github.com/code2practice/leetcode/blob/main/Solutions/0837.New%2021%20Game.md)
 
 [852. Peak Index in a Mountain Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0852.Peak%20Index%20in%20a%20Mountain%20Array.md)
 

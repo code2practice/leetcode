@@ -95,7 +95,7 @@
 
 [49. Group Anagrams](https://github.com/code2practice/leetcode/blob/main/Solutions/0049.Group%20Anagrams.md)
 
-[50.Pow(x, n)]([https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow.md](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow(x%2C%20n).md))
+[50.Pow(x, n)](https://github.com/code2practice/leetcode/blob/main/Solutions/0050.%20Pow(x%2C%20n).md)
 
 [51. N-Queens](https://github.com/code2practice/leetcode/blob/main/Solutions/0051.N-Queens.md)
 

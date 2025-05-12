@@ -275,7 +275,7 @@
 
 [223. Rectangle Area](https://github.com/code2practice/leetcode/blob/main/Solutions/0223.Rectangle%20Area.md)
 
-[227.Basic Calculator II]([https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%20II.md)
+[227.Basic Calculator II](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%20II.md)
 
 [229. Majority Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0229.Majority%20Element%20II.md)
 

@@ -325,7 +325,7 @@
 
 [341.Flatten Nested List Iterator](https://github.com/code2practice/leetcode/blob/main/Solutions/0341.%20Flatten%20Nested%20List%20Iterator.md)
 
-[343. Integer Break](https://github.com/code2practice/leetcode/blob/main/Solutions/343.%20Integer%20Break.md)
+[343. Integer Break](https://github.com/code2practice/leetcode/blob/main/Solutions/0343.%20Integer%20Break.md)
 
 [347.Top K Frequent Elements](https://github.com/code2practice/leetcode/blob/main/Solutions/0347.%20Top%20K%20Frequent%20Elements.md)
 
@@ -347,7 +347,7 @@
 
 [399. Evaluate Division](https://github.com/code2practice/leetcode/blob/main/Solutions/0399.Evaluate%20Division.md)
 
-[416.Partition Equal Subset Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/416.%20Partition%20Equal%20Subset%20Sum.md)
+[416.Partition Equal Subset Sum](https://github.com/code2practice/leetcode/blob/main/Solutions/0416.%20Partition%20Equal%20Subset%20Sum.md)
 
 [417. Pacific Atlantic Water Flow](https://github.com/code2practice/leetcode/blob/main/Solutions/0417.Pacific%20Atlantic%20Water%20Flow.md)
 

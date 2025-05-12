@@ -227,7 +227,7 @@
 
 [151. Reverse Words in a String](https://github.com/code2practice/leetcode/blob/main/Solutions/0151.%20Reverse%20Words%20in%20a%20String.md)
 
-[152.Maximum Product Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/0152.%20Maximum%20Product%20Subarray.py)
+[152.Maximum Product Subarray](https://github.com/code2practice/leetcode/blob/main/Solutions/0152.%20Maximum%20Product%20Subarray.md)
 
 [153. Find Minimum in Rotated Sorted Array](https://github.com/code2practice/leetcode/blob/main/Solutions/0153.Find%20Minimum%20in%20Rotated%20Sorted%20Array.md)
 
@@ -275,7 +275,7 @@
 
 [223. Rectangle Area](https://github.com/code2practice/leetcode/blob/main/Solutions/0223.Rectangle%20Area.md)
 
-[227.Basic Calculator II]([https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%20II.md))
+[227.Basic Calculator II]([https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%202.md](https://github.com/code2practice/leetcode/blob/main/Solutions/0227.%20Basic%20Calculator%20II.md)
 
 [229. Majority Element II](https://github.com/code2practice/leetcode/blob/main/Solutions/0229.Majority%20Element%20II.md)
 

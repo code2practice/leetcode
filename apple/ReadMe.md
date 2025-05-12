@@ -359,7 +359,7 @@
 
 [445. Add Two Numbers II](https://github.com/code2practice/leetcode/blob/main/Solutions/0445.Add%20Two%20Numbers%20II.md)
 
-[450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/450.%20Delete%20Node%20in%20a%20BST.md)
+[450.Delete Node in a BST](https://github.com/code2practice/leetcode/blob/main/Solutions/0450.%20Delete%20Node%20in%20a%20BST.md)
 
 [490. The Maze 🔒](https://github.com/code2practice/leetcode/blob/main/Solutions/0490.The%20Maze.md)
 
